@@ -171,21 +171,35 @@ This master index provides comprehensive navigation to all components of the MUD
 
 ## Templates & Documents
 
-### [Template Index](callables/templates/TEMPLATE_INDEX.md)
-- Complete list of all templates
-- Template structures and outlines
-- Development status
-- **Location:** `callables/templates/TEMPLATE_INDEX.md`
+### Template System
 
-**Template Categories:**
-- Contracts & Legal Agreements
-- Legal Notices & Packets
-- Communication Templates
-- Insurance & Financial
-- Legal & Regulatory
-- Protection Declarations
-- Technical & Procedural
-- Trust & Asset Protection
+**Location:** `callables/templates/`
+
+**Template System Status:** ✅ Complete Structure (59 templates generated)
+
+**Key Documents:**
+- [Template Selection Guide](../callables/templates/TEMPLATE_SELECTION_GUIDE.md) - Decision tree for template selection
+- [Template Navigation](../callables/templates/TEMPLATE_NAVIGATION.md) - Comprehensive navigation system
+- [Template Index](../callables/templates/TEMPLATE_INDEX.md) - Master template catalog
+- [QA Validation Checklist](../callables/templates/QA_VALIDATION_CHECKLIST.md) - Validation requirements
+- [Validation Report](../callables/templates/VALIDATION_REPORT.md) - Initial validation results
+
+**Template Organization:**
+- **Tier 1:** Parent-Parent Resolution (42 templates - complete)
+- **Tier 2:** School Activation (4 template types - structure established)
+- **Tier 3:** Platform Removal (3 template types - structure established)
+- **Tier 4:** Insurance Activation (3 template types - structure established)
+- **Tier 5:** Civil Litigation (4 template types - structure established)
+- **Tier 6:** Regulatory Complaints (3 template types - structure established)
+- **Tier 7:** Appellate and Constitutional (3 template types - structure established)
+
+**Template Framework:**
+- **Logic Gates:** 6 scenario categories (LG_01A through LG_06)
+- **Evidence Classes:** 5 evidence strength levels (E1 through E5)
+- **Citation Modes:** Mode A (jurisdiction-agnostic) and Mode B (jurisdiction-specific)
+- **Boilerplate Library:** 5 mandatory boilerplate blocks
+
+**See:** [Template Selection Guide](../callables/templates/TEMPLATE_SELECTION_GUIDE.md) for complete decision framework
 
 ---
 
