@@ -302,6 +302,17 @@ This master index provides comprehensive navigation to all components of the MUD
 
 ## Building the System
 
+### [Implementation Requirements](IMPLEMENTATION_REQUIREMENTS.md)
+- **Complete checklist** of all contracts, documents, and tools needed
+- **Modeling contract** requirements and execution
+- **Financial documentation** (annual receipts, proof of income)
+- **School pre-notification** system and delivery requirements
+- **Trust titling** and asset assignment requirements
+- **UCC filing** requirements
+- **Implementation timeline** and priority checklist
+- **Annual maintenance** requirements
+- **Location:** `docs/IMPLEMENTATION_REQUIREMENTS.md`
+
 ### Phase-by-Phase Implementation
 
 1. **Phase 1: Copyright Registration**
@@ -312,6 +323,7 @@ This master index provides comprehensive navigation to all components of the MUD
    - See [Implementation Phases - Phase 2](plans/implementation_phases.yaml#phase-2-likeness-licensing-framework)
    - Create [Likeness Declaration](callables/templates/TEMPLATE_INDEX.md#12-likeness-licensing--ip-asset-declaration-1-page)
    - Develop [Modeling Contract](callables/templates/TEMPLATE_INDEX.md#11-child-modeling--likeness-licensing-agreement)
+   - **See:** [Implementation Requirements - Modeling Contract](IMPLEMENTATION_REQUIREMENTS.md#11-child-modeling--likeness-licensing-agreement)
 
 3. **Phase 3: Technical Provenance**
    - See [Implementation Phases - Phase 3](plans/implementation_phases.yaml#phase-3-technical-provenance-system)
@@ -327,6 +339,7 @@ This master index provides comprehensive navigation to all components of the MUD
    - See [Implementation Phases - Phase 5](plans/implementation_phases.yaml#phase-5-economic-harm-documentation)
    - Maintain valuation records
    - Link to modeling contract
+   - **See:** [Implementation Requirements - Financial Documentation](IMPLEMENTATION_REQUIREMENTS.md#12-annual-valuation-addenda--financial-documentation)
 
 ---
 
