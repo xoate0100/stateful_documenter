@@ -1,0 +1,201 @@
+# Jurisdiction Overlay Template
+# Template structure for creating jurisdiction-specific overlays for Mode B templates
+
+# Purpose: Provide jurisdiction-specific legal information for template generation
+# Usage: Copy this template, fill in jurisdiction-specific information
+# Status: Template for overlay creation
+
+jurisdiction_overlay:
+  # Basic Information
+  jurisdiction: "[JURISDICTION_NAME]"
+  state_code: "[STATE_CODE]"
+  country: "United States"
+  effective_date: "[DATE]"
+  last_verified: "[DATE]"
+  
+  # Legal Note
+  legal_note: |
+    This overlay provides jurisdiction-specific legal information for template generation.
+    All statute citations must be verified for accuracy and currency before use in legal
+    documents. This overlay is for template generation purposes only and does not
+    constitute legal advice. All legal documents should be reviewed by qualified legal
+    counsel before use.
+  
+  # Federal Statutes (applicable in all states)
+  federal_statutes:
+    child_protection:
+      csam_distribution:
+        citation: "18 U.S.C. §2252"
+        name: "Distribution of Child Sexual Abuse Material"
+        notes: "Applies to AI-generated sexualized content of minors"
+      csam_definition:
+        citation: "18 U.S.C. §2256"
+        name: "Definition of Child Sexual Abuse Material"
+        notes: "Includes AI-generated content"
+      cyberstalking:
+        citation: "18 U.S.C. §2261A"
+        name: "Cyberstalking"
+        notes: "Applies to harassment and threats"
+      extortion:
+        citation: "18 U.S.C. §875"
+        name: "Extortion and Threats"
+        notes: "Applies to threats via interstate commerce"
+    
+    privacy_protection:
+      coppa:
+        citation: "15 U.S.C. §6501-6506"
+        name: "Children's Online Privacy Protection Act"
+        notes: "Applies to online services directed to children under 13"
+    
+    consumer_protection:
+      ftc_act:
+        citation: "15 U.S.C. §45"
+        name: "FTC Act Section 5"
+        notes: "Unfair or deceptive trade practices"
+  
+  # State Statutes
+  state_statutes:
+    child_protection:
+      # Example structure - fill in with actual statutes
+      sexual_exploitation:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+      mandatory_reporting:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+    
+    right_of_publicity:
+      # Example structure - fill in with actual statutes
+      right_of_publicity:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+      likeness_protection:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+    
+    privacy_torts:
+      # Example structure - fill in with actual statutes
+      invasion_of_privacy:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+      false_light:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+    
+    defamation:
+      # Example structure - fill in with actual statutes
+      defamation:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+      per_se_defamation:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+    
+    consumer_protection:
+      # Example structure - fill in with actual statutes
+      deceptive_practices:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+      unfair_practices:
+        citation: "[STATE_CODE] [STATUTE_NUMBER]"
+        name: "[STATUTE_NAME]"
+        notes: "[RELEVANT_NOTES]"
+    
+    biometric_privacy:
+      # Example structure - fill in with actual statutes (if applicable)
+      biometric_privacy:
+        citation: "[STATE_CODE] [STATUTE_NUMBER] or 'No specific statute'"
+        name: "[STATUTE_NAME] or 'No BIPA equivalent'"
+        notes: "[RELEVANT_NOTES]"
+  
+  # Legal Frameworks
+  legal_frameworks:
+    title_ix:
+      applies: true
+      notes: "Federal Title IX applies to educational institutions"
+    
+    ferpa:
+      applies: true
+      notes: "Family Educational Rights and Privacy Act applies"
+    
+    mandatory_reporting:
+      applies: true
+      statute: "[STATE_CODE] [STATUTE_NUMBER]"
+      who_must_report: "[DESCRIPTION]"
+      what_must_be_reported: "[DESCRIPTION]"
+      timeline: "[DESCRIPTION]"
+      notes: "[ADDITIONAL_NOTES]"
+    
+    biometric_privacy:
+      has_bipa_equivalent: false  # Set to true if state has biometric privacy law
+      statute: "[STATE_CODE] [STATUTE_NUMBER] or 'N/A'"
+      notes: "[RELEVANT_NOTES]"
+    
+    right_of_publicity:
+      has_statute: false  # Set to true if state has right of publicity statute
+      statute: "[STATE_CODE] [STATUTE_NUMBER] or 'Common law'"
+      notes: "[RELEVANT_NOTES]"
+      post_mortem_rights: "[YES/NO/DESCRIPTION]"
+      duration: "[DESCRIPTION]"
+  
+  # Court Rules
+  court_rules:
+    filing_requirements:
+      notes: "[STATE-SPECIFIC_FILING_REQUIREMENTS]"
+    
+    service_requirements:
+      notes: "[STATE-SPECIFIC_SERVICE_REQUIREMENTS]"
+    
+    local_rules:
+      notes: "[LOCAL_COURT_RULES_IF_APPLICABLE]"
+  
+  # Terminology
+  terminology:
+    preferred_terms:
+      - "[JURISDICTION-SPECIFIC_TERM_1]"
+      - "[JURISDICTION-SPECIFIC_TERM_2]"
+      - "[JURISDICTION-SPECIFIC_TERM_3]"
+    
+    avoided_terms:
+      - "[TERM_TO_AVOID_1]"
+      - "[TERM_TO_AVOID_2]"
+    
+    legal_terms_of_art:
+      - "[LEGAL_TERM_1]: [DEFINITION]"
+      - "[LEGAL_TERM_2]: [DEFINITION]"
+  
+  # Template Generation Notes
+  template_generation:
+    mode_b_requirements:
+      - "Include specific statute citations"
+      - "Use jurisdiction-specific terminology"
+      - "Follow state-specific legal requirements"
+      - "Reference local court rules if applicable"
+    
+    citation_format:
+      state_statutes: "[STATE_CODE] [STATUTE_NUMBER]"
+      example: "[EXAMPLE_CITATION]"
+    
+    language_adjustments:
+      - "[LANGUAGE_ADJUSTMENT_1]"
+      - "[LANGUAGE_ADJUSTMENT_2]"
+  
+  # Validation Checklist
+  validation_checklist:
+    - [ ] All statute citations verified for accuracy
+    - [ ] All statute citations verified for currency
+    - [ ] Legal frameworks verified
+    - [ ] Court rules verified
+    - [ ] Terminology verified
+    - [ ] Legal review completed
+    - [ ] Overlay tested with sample template
+

@@ -1,0 +1,209 @@
+# Kansas Jurisdiction Overlay
+# Jurisdiction-specific legal information for Mode B template generation
+
+# Purpose: Provide Kansas-specific legal information for template generation
+# Status: Initial Version - Requires Legal Review
+# Legal Note: All citations must be verified for accuracy and currency before use
+
+jurisdiction_overlay:
+  # Basic Information
+  jurisdiction: "Kansas"
+  state_code: "KS"
+  country: "United States"
+  effective_date: "2025-12-23"
+  last_verified: "2025-12-23"
+  verification_status: "REQUIRES_LEGAL_REVIEW"
+  
+  # Legal Note
+  legal_note: |
+    This overlay provides Kansas-specific legal information for template generation.
+    All statute citations must be verified for accuracy and currency before use in legal
+    documents. This overlay is for template generation purposes only and does not
+    constitute legal advice. All legal documents should be reviewed by qualified legal
+    counsel before use. This overlay requires legal review to verify all citations.
+  
+  # Federal Statutes (applicable in all states)
+  federal_statutes:
+    child_protection:
+      csam_distribution:
+        citation: "18 U.S.C. §2252"
+        name: "Distribution of Child Sexual Abuse Material"
+        notes: "Applies to AI-generated sexualized content of minors"
+      csam_definition:
+        citation: "18 U.S.C. §2256"
+        name: "Definition of Child Sexual Abuse Material"
+        notes: "Includes AI-generated content"
+      cyberstalking:
+        citation: "18 U.S.C. §2261A"
+        name: "Cyberstalking"
+        notes: "Applies to harassment and threats"
+      extortion:
+        citation: "18 U.S.C. §875"
+        name: "Extortion and Threats"
+        notes: "Applies to threats via interstate commerce"
+    
+    privacy_protection:
+      coppa:
+        citation: "15 U.S.C. §6501-6506"
+        name: "Children's Online Privacy Protection Act"
+        notes: "Applies to online services directed to children under 13"
+    
+    consumer_protection:
+      ftc_act:
+        citation: "15 U.S.C. §45"
+        name: "FTC Act Section 5"
+        notes: "Unfair or deceptive trade practices"
+  
+  # Kansas State Statutes
+  state_statutes:
+    child_protection:
+      sexual_exploitation:
+        citation: "K.S.A. §21-5506"
+        name: "Sexual Exploitation of a Child"
+        notes: "Covers sexual exploitation of minors - VERIFY CURRENT STATUTE NUMBER"
+      mandatory_reporting:
+        citation: "K.S.A. §38-2223"
+        name: "Mandatory Reporting of Child Abuse"
+        notes: "Requires certain professionals to report child abuse - VERIFY CURRENT STATUTE NUMBER"
+      child_abuse:
+        citation: "K.S.A. §38-2202"
+        name: "Child Abuse Definitions"
+        notes: "Definitions related to child abuse - VERIFY CURRENT STATUTE NUMBER"
+    
+    right_of_publicity:
+      right_of_publicity:
+        citation: "K.S.A. §60-3301"
+        name: "Right of Publicity"
+        notes: "Protects right of publicity - VERIFY CURRENT STATUTE NUMBER AND EXACT PROVISIONS"
+      likeness_protection:
+        citation: "Common law and K.S.A. §60-3301"
+        name: "Likeness Protection"
+        notes: "May include common law protections - VERIFY"
+    
+    privacy_torts:
+      invasion_of_privacy:
+        citation: "Common law"
+        name: "Invasion of Privacy"
+        notes: "Kansas recognizes common law invasion of privacy torts - VERIFY SPECIFIC ELEMENTS"
+      false_light:
+        citation: "Common law"
+        name: "False Light"
+        notes: "Kansas recognizes false light as invasion of privacy - VERIFY"
+      intrusion_upon_seclusion:
+        citation: "Common law"
+        name: "Intrusion Upon Seclusion"
+        notes: "Kansas recognizes intrusion upon seclusion - VERIFY"
+    
+    defamation:
+      defamation:
+        citation: "Common law"
+        name: "Defamation"
+        notes: "Kansas recognizes common law defamation - VERIFY ELEMENTS AND DEFENSES"
+      per_se_defamation:
+        citation: "Common law"
+        name: "Defamation Per Se"
+        notes: "Kansas recognizes defamation per se categories - VERIFY CATEGORIES"
+    
+    consumer_protection:
+      deceptive_practices:
+        citation: "K.S.A. §50-626"
+        name: "Kansas Consumer Protection Act - Deceptive Practices"
+        notes: "Prohibits deceptive acts and practices - VERIFY CURRENT STATUTE NUMBER"
+      unfair_practices:
+        citation: "K.S.A. §50-626"
+        name: "Kansas Consumer Protection Act - Unfair Practices"
+        notes: "Prohibits unfair acts and practices - VERIFY CURRENT STATUTE NUMBER"
+    
+    biometric_privacy:
+      biometric_privacy:
+        citation: "No specific statute"
+        name: "No BIPA Equivalent"
+        notes: "Kansas does not have a specific biometric privacy statute equivalent to BIPA"
+  
+  # Legal Frameworks
+  legal_frameworks:
+    title_ix:
+      applies: true
+      notes: "Federal Title IX applies to educational institutions in Kansas"
+    
+    ferpa:
+      applies: true
+      notes: "Family Educational Rights and Privacy Act applies to educational institutions"
+    
+    mandatory_reporting:
+      applies: true
+      statute: "K.S.A. §38-2223"
+      who_must_report: "Certain professionals including teachers, healthcare providers, law enforcement - VERIFY EXACT LIST"
+      what_must_be_reported: "Suspected child abuse or neglect - VERIFY EXACT REQUIREMENTS"
+      timeline: "Immediate reporting required - VERIFY EXACT TIMELINE"
+      notes: "Kansas has mandatory reporting requirements - VERIFY CURRENT STATUTE AND REQUIREMENTS"
+    
+    biometric_privacy:
+      has_bipa_equivalent: false
+      statute: "N/A"
+      notes: "Kansas does not have a specific biometric privacy statute"
+    
+    right_of_publicity:
+      has_statute: true
+      statute: "K.S.A. §60-3301"
+      notes: "Kansas has a right of publicity statute - VERIFY EXACT PROVISIONS, POST-MORTEM RIGHTS, DURATION"
+      post_mortem_rights: "VERIFY - May have post-mortem rights"
+      duration: "VERIFY - Check statute for duration of rights"
+  
+  # Court Rules
+  court_rules:
+    filing_requirements:
+      notes: "Kansas state court filing requirements apply - VERIFY SPECIFIC REQUIREMENTS"
+    
+    service_requirements:
+      notes: "Kansas state court service requirements apply - VERIFY SPECIFIC REQUIREMENTS"
+    
+    local_rules:
+      notes: "Check local court rules for specific jurisdictions - VERIFY IF APPLICABLE"
+  
+  # Terminology
+  terminology:
+    preferred_terms:
+      - "Kansas state law"
+      - "Kansas statutes"
+      - "K.S.A."
+    
+    avoided_terms:
+      - "Kansas code"  # Use "Kansas statutes" or "K.S.A." instead
+      - "KS code"  # Use "K.S.A." instead
+    
+    legal_terms_of_art:
+      - "K.S.A.: Kansas Statutes Annotated"
+      - "Right of publicity: Statutory protection under K.S.A. §60-3301"
+  
+  # Template Generation Notes
+  template_generation:
+    mode_b_requirements:
+      - "Include specific K.S.A. citations where applicable"
+      - "Use 'Kansas state law' or 'Kansas statutes' terminology"
+      - "Reference K.S.A. §60-3301 for right of publicity claims"
+      - "Note common law for privacy torts and defamation"
+      - "Reference mandatory reporting under K.S.A. §38-2223"
+    
+    citation_format:
+      state_statutes: "K.S.A. §[NUMBER]"
+      example: "K.S.A. §60-3301"
+    
+    language_adjustments:
+      - "Use 'Kansas state law' instead of generic 'state law'"
+      - "Reference 'Kansas statutes' or 'K.S.A.' for statutory citations"
+      - "Note common law for torts without specific statutes"
+  
+  # Validation Checklist
+  validation_checklist:
+    - [ ] All K.S.A. citations verified for accuracy
+    - [ ] All K.S.A. citations verified for currency
+    - [ ] Right of publicity statute verified (K.S.A. §60-3301)
+    - [ ] Mandatory reporting statute verified (K.S.A. §38-2223)
+    - [ ] Consumer protection statutes verified
+    - [ ] Common law torts verified
+    - [ ] Court rules verified
+    - [ ] Terminology verified
+    - [ ] Legal review completed
+    - [ ] Overlay tested with sample template
+

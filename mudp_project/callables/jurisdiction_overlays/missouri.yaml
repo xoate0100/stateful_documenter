@@ -1,0 +1,209 @@
+# Missouri Jurisdiction Overlay
+# Jurisdiction-specific legal information for Mode B template generation
+
+# Purpose: Provide Missouri-specific legal information for template generation
+# Status: Initial Version - Requires Legal Review
+# Legal Note: All citations must be verified for accuracy and currency before use
+
+jurisdiction_overlay:
+  # Basic Information
+  jurisdiction: "Missouri"
+  state_code: "MO"
+  country: "United States"
+  effective_date: "2025-12-23"
+  last_verified: "2025-12-23"
+  verification_status: "REQUIRES_LEGAL_REVIEW"
+  
+  # Legal Note
+  legal_note: |
+    This overlay provides Missouri-specific legal information for template generation.
+    All statute citations must be verified for accuracy and currency before use in legal
+    documents. This overlay is for template generation purposes only and does not
+    constitute legal advice. All legal documents should be reviewed by qualified legal
+    counsel before use. This overlay requires legal review to verify all citations.
+  
+  # Federal Statutes (applicable in all states)
+  federal_statutes:
+    child_protection:
+      csam_distribution:
+        citation: "18 U.S.C. §2252"
+        name: "Distribution of Child Sexual Abuse Material"
+        notes: "Applies to AI-generated sexualized content of minors"
+      csam_definition:
+        citation: "18 U.S.C. §2256"
+        name: "Definition of Child Sexual Abuse Material"
+        notes: "Includes AI-generated content"
+      cyberstalking:
+        citation: "18 U.S.C. §2261A"
+        name: "Cyberstalking"
+        notes: "Applies to harassment and threats"
+      extortion:
+        citation: "18 U.S.C. §875"
+        name: "Extortion and Threats"
+        notes: "Applies to threats via interstate commerce"
+    
+    privacy_protection:
+      coppa:
+        citation: "15 U.S.C. §6501-6506"
+        name: "Children's Online Privacy Protection Act"
+        notes: "Applies to online services directed to children under 13"
+    
+    consumer_protection:
+      ftc_act:
+        citation: "15 U.S.C. §45"
+        name: "FTC Act Section 5"
+        notes: "Unfair or deceptive trade practices"
+  
+  # Missouri State Statutes
+  state_statutes:
+    child_protection:
+      sexual_exploitation:
+        citation: "Mo. Rev. Stat. §566.151"
+        name: "Sexual Exploitation of a Minor"
+        notes: "Covers sexual exploitation of minors - VERIFY CURRENT STATUTE NUMBER"
+      mandatory_reporting:
+        citation: "Mo. Rev. Stat. §210.115"
+        name: "Mandatory Reporting of Child Abuse"
+        notes: "Requires certain professionals to report child abuse - VERIFY CURRENT STATUTE NUMBER"
+      child_abuse:
+        citation: "Mo. Rev. Stat. §210.110"
+        name: "Child Abuse Definitions"
+        notes: "Definitions related to child abuse - VERIFY CURRENT STATUTE NUMBER"
+    
+    right_of_publicity:
+      right_of_publicity:
+        citation: "Common law"
+        name: "Right of Publicity"
+        notes: "Missouri recognizes common law right of publicity - VERIFY SPECIFIC ELEMENTS AND CASE LAW"
+      likeness_protection:
+        citation: "Common law"
+        name: "Likeness Protection"
+        notes: "Missouri recognizes common law likeness protection - VERIFY"
+    
+    privacy_torts:
+      invasion_of_privacy:
+        citation: "Common law"
+        name: "Invasion of Privacy"
+        notes: "Missouri recognizes common law invasion of privacy torts - VERIFY SPECIFIC ELEMENTS"
+      false_light:
+        citation: "Common law"
+        name: "False Light"
+        notes: "Missouri recognizes false light as invasion of privacy - VERIFY"
+      intrusion_upon_seclusion:
+        citation: "Common law"
+        name: "Intrusion Upon Seclusion"
+        notes: "Missouri recognizes intrusion upon seclusion - VERIFY"
+    
+    defamation:
+      defamation:
+        citation: "Common law"
+        name: "Defamation"
+        notes: "Missouri recognizes common law defamation - VERIFY ELEMENTS AND DEFENSES"
+      per_se_defamation:
+        citation: "Common law"
+        name: "Defamation Per Se"
+        notes: "Missouri recognizes defamation per se categories - VERIFY CATEGORIES"
+    
+    consumer_protection:
+      deceptive_practices:
+        citation: "Mo. Rev. Stat. §407.020"
+        name: "Missouri Merchandising Practices Act - Deceptive Practices"
+        notes: "Prohibits deceptive acts and practices - VERIFY CURRENT STATUTE NUMBER"
+      unfair_practices:
+        citation: "Mo. Rev. Stat. §407.020"
+        name: "Missouri Merchandising Practices Act - Unfair Practices"
+        notes: "Prohibits unfair acts and practices - VERIFY CURRENT STATUTE NUMBER"
+    
+    biometric_privacy:
+      biometric_privacy:
+        citation: "No specific statute"
+        name: "No BIPA Equivalent"
+        notes: "Missouri does not have a specific biometric privacy statute equivalent to BIPA"
+  
+  # Legal Frameworks
+  legal_frameworks:
+    title_ix:
+      applies: true
+      notes: "Federal Title IX applies to educational institutions in Missouri"
+    
+    ferpa:
+      applies: true
+      notes: "Family Educational Rights and Privacy Act applies to educational institutions"
+    
+    mandatory_reporting:
+      applies: true
+      statute: "Mo. Rev. Stat. §210.115"
+      who_must_report: "Certain professionals including teachers, healthcare providers, law enforcement - VERIFY EXACT LIST"
+      what_must_be_reported: "Suspected child abuse or neglect - VERIFY EXACT REQUIREMENTS"
+      timeline: "Immediate reporting required - VERIFY EXACT TIMELINE"
+      notes: "Missouri has mandatory reporting requirements - VERIFY CURRENT STATUTE AND REQUIREMENTS"
+    
+    biometric_privacy:
+      has_bipa_equivalent: false
+      statute: "N/A"
+      notes: "Missouri does not have a specific biometric privacy statute"
+    
+    right_of_publicity:
+      has_statute: false
+      statute: "Common law"
+      notes: "Missouri recognizes common law right of publicity - VERIFY CASE LAW AND ELEMENTS"
+      post_mortem_rights: "VERIFY - Check case law for post-mortem rights"
+      duration: "VERIFY - Check case law for duration of rights"
+  
+  # Court Rules
+  court_rules:
+    filing_requirements:
+      notes: "Missouri state court filing requirements apply - VERIFY SPECIFIC REQUIREMENTS"
+    
+    service_requirements:
+      notes: "Missouri state court service requirements apply - VERIFY SPECIFIC REQUIREMENTS"
+    
+    local_rules:
+      notes: "Check local court rules for specific jurisdictions - VERIFY IF APPLICABLE"
+  
+  # Terminology
+  terminology:
+    preferred_terms:
+      - "Missouri state law"
+      - "Missouri statutes"
+      - "Mo. Rev. Stat."
+    
+    avoided_terms:
+      - "Missouri code"  # Use "Missouri statutes" or "Mo. Rev. Stat." instead
+      - "MO code"  # Use "Mo. Rev. Stat." instead
+    
+    legal_terms_of_art:
+      - "Mo. Rev. Stat.: Missouri Revised Statutes"
+      - "Right of publicity: Common law protection in Missouri"
+  
+  # Template Generation Notes
+  template_generation:
+    mode_b_requirements:
+      - "Include specific Mo. Rev. Stat. citations where applicable"
+      - "Use 'Missouri state law' or 'Missouri statutes' terminology"
+      - "Note common law for right of publicity, privacy torts, and defamation"
+      - "Reference mandatory reporting under Mo. Rev. Stat. §210.115"
+      - "Reference consumer protection under Mo. Rev. Stat. §407.020"
+    
+    citation_format:
+      state_statutes: "Mo. Rev. Stat. §[NUMBER]"
+      example: "Mo. Rev. Stat. §407.020"
+    
+    language_adjustments:
+      - "Use 'Missouri state law' instead of generic 'state law'"
+      - "Reference 'Missouri statutes' or 'Mo. Rev. Stat.' for statutory citations"
+      - "Note common law for right of publicity and torts without specific statutes"
+  
+  # Validation Checklist
+  validation_checklist:
+    - [ ] All Mo. Rev. Stat. citations verified for accuracy
+    - [ ] All Mo. Rev. Stat. citations verified for currency
+    - [ ] Right of publicity common law verified
+    - [ ] Mandatory reporting statute verified (Mo. Rev. Stat. §210.115)
+    - [ ] Consumer protection statutes verified (Mo. Rev. Stat. §407.020)
+    - [ ] Common law torts verified
+    - [ ] Court rules verified
+    - [ ] Terminology verified
+    - [ ] Legal review completed
+    - [ ] Overlay tested with sample template
+
