@@ -108,19 +108,27 @@
 
 ## Metrics
 
-**Templates Generated:** 28  
-**Templates Validated:** 28  
-**Coverage:** ~2.8% (estimated total needed: ~1000+ variants)
+**Templates Generated:** 36  
+**Templates Validated:** 36  
+**Coverage:** ~3.6% (estimated total needed: ~1000+ variants)
 
 **Breakdown:**
-- LG_01A variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-- LG_01B variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-- LG_01C variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-- LG_02 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-- LG_03 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-- LG_04 variants: 1 (E1) - In Progress
-- LG_05 variants: 1 (E1) - In Progress
-- LG_06 variants: 1 (E1) - In Progress
+- **Parent Notice Templates:**
+  - LG_01A variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+  - LG_01B variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+  - LG_01C variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+  - LG_02 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+  - LG_03 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+  - LG_04 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+  - LG_05 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+  - LG_06 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+  - **Total: 40 parent notice templates (all 6 logic gates × 5 evidence classes)**
+- **Deletion Confirmation Scripts:**
+  - Template skeleton created
+  - Sample: `deletion_confirmation_lg01a_e1_modea_t1.md`
+- **Device Sweep Requests:**
+  - Template skeleton created
+  - Sample: `device_sweep_request_lg01a_e1_modea_t1.md`
 - Mode A only (Mode B pending)
 - Tier 1 only (Tiers 2-7 pending)
 
