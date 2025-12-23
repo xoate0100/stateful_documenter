@@ -108,9 +108,9 @@
 
 ## Metrics
 
-**Templates Generated:** 41  
-**Templates Validated:** 41  
-**Coverage:** ~4.1% (estimated total needed: ~1000+ variants)
+**Templates Generated:** 45  
+**Templates Validated:** 45  
+**Coverage:** ~4.5% (estimated total needed: ~1000+ variants)
 
 **Breakdown:**
 - **Tier 1: Parent-Parent Resolution**
@@ -122,8 +122,12 @@
   - **Safety Plan Requests:** Template skeleton + 1 sample (LG_04, E1)
   - **District Legal Notices:** Template skeleton + 1 sample (LG_04, E1)
   - **Documentation Requests:** Template skeleton + 1 sample (LG_04, E1)
+- **Tier 3: Platform Removal**
+  - **Urgent Removal Requests:** Template skeleton + 1 sample (LG_01A+LG_05, E1)
+  - **Preservation Notices:** Template skeleton + 1 sample (LG_01A+LG_05, E1)
+  - **Repeat Upload Suppression Requests:** Template skeleton + 1 sample (LG_01A+LG_05, E1)
 - Mode A only (Mode B pending)
-- Tiers 3-7 pending
+- Tiers 4-7 pending
 
 ---
 
