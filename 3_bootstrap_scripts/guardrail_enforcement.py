@@ -35,6 +35,38 @@ def load_active_plan():
         return None
 
 
+def detect_project_type() -> str:
+    """
+    Detect project type from MVP_SPECIFICATION or ACTIVE_PLAN.
+    Returns 'programming' or 'documentation', defaults to 'programming' for backward compatibility.
+    """
+    # Try MVP_SPECIFICATION first
+    mvp_path = pathlib.Path("0_phase0_bootstrap/MVP_SPECIFICATION.yaml")
+    if mvp_path.exists():
+        try:
+            mvp = yaml.safe_load(open(mvp_path))
+            # Check both naming conventions
+            project_type = mvp.get("Project_Type") or mvp.get("project_type")
+            if project_type:
+                return project_type.lower()
+        except:
+            pass
+    
+    # Fall back to ACTIVE_PLAN
+    plan_path = pathlib.Path("6_ai_runtime_context/ACTIVE_PLAN.yaml")
+    if plan_path.exists():
+        try:
+            plan = yaml.safe_load(open(plan_path))
+            project_type = plan.get("project_type")
+            if project_type:
+                return project_type.lower()
+        except:
+            pass
+    
+    # Default to programming for backward compatibility
+    return "programming"
+
+
 def get_staged_files() -> List[str]:
     """Get list of staged files"""
     try:
@@ -119,23 +151,50 @@ def forbid_folder_creation_outside_scope(guardrails: dict, staged_files: List[st
     """
     Guardrail: forbid_folder_creation_outside_scope
     New directories validated against plan context; off-scope blocked.
+    Project-type aware: supports both programming and documentation project structures.
     """
     if not guardrails.get("forbid_folder_creation_outside_scope", False):
         return True  # Not enabled
     
     flags = load_feature_flags()
+    project_type = detect_project_type()
+    
+    # Get base allowed paths from feature flags
     allowed_paths = set(flags.get("permissions", {}).get("write_to", []))
+    
+    # Add project-type specific paths
+    if project_type == "documentation":
+        # Documentation projects: docs/, data/, plans/, evidence/, callables/
+        documentation_paths = ["docs/", "data/", "plans/", "evidence/", "callables/"]
+        allowed_paths.update(documentation_paths)
+        
+        # Also check MVP_SPECIFICATION for custom documentation structure
+        mvp_path = pathlib.Path("0_phase0_bootstrap/MVP_SPECIFICATION.yaml")
+        if mvp_path.exists():
+            try:
+                mvp = yaml.safe_load(open(mvp_path))
+                doc_structure = mvp.get("DOCUMENTATION_STRUCTURE", {})
+                if doc_structure:
+                    for key in ["docs_directory", "data_directory", "plans_directory", 
+                               "evidence_directory", "callables_directory"]:
+                        if key in doc_structure:
+                            allowed_paths.add(doc_structure[key])
+            except:
+                pass
     
     violations = []
     for file_path in staged_files:
         path = pathlib.Path(file_path)
         
         # Check if file is in allowed write paths
-        in_allowed = any(str(path).startswith(allowed) for allowed in allowed_paths)
+        in_allowed = any(str(path).startswith(allowed.rstrip("/")) for allowed in allowed_paths)
         
         if not in_allowed:
             # Allow root files
             if path.name in ("README.md", ".pre-commit-config.yaml", ".gitignore"):
+                continue
+            # Allow files in project root for documentation projects (e.g., INGESTION_PROTOCOL.md)
+            if project_type == "documentation" and "/" not in str(path) and path.suffix in (".md", ".yaml", ".yml"):
                 continue
             violations.append(file_path)
     
@@ -143,7 +202,8 @@ def forbid_folder_creation_outside_scope(guardrails: dict, staged_files: List[st
         print("[guardrail] forbid_folder_creation_outside_scope: Files outside allowed paths:")
         for v in violations:
             print(f"  - {v}")
-        print(f"  Allowed paths: {list(allowed_paths)}")
+        print(f"  Project type: {project_type}")
+        print(f"  Allowed paths: {sorted(allowed_paths)}")
         return False
     
     return True
@@ -154,9 +214,15 @@ def enforce_tdd_cycle(guardrails: dict, staged_files: List[str]) -> bool:
     Guardrail: enforce_tdd_cycle
     BLOCKING: Commits are blocked if code files are modified without corresponding test files.
     Enforces TDD discipline: Red → Green → Refactor → Document.
+    Project-type aware: Only enforces for programming projects.
     """
     if not guardrails.get("enforce_tdd_cycle", False):
         return True  # Not enabled
+    
+    # Skip TDD enforcement for documentation projects
+    project_type = detect_project_type()
+    if project_type == "documentation":
+        return True  # TDD doesn't apply to documentation projects
     
     def is_test_file(file_path: str) -> bool:
         """Check if file is a test file based on patterns"""

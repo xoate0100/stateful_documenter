@@ -1,0 +1,379 @@
+# Cross-Reference Map
+# Comprehensive mapping of relationships between all MUDP system components
+
+# Source: All extracted documents
+# Created: 2025-12-22
+# Status: Complete Cross-Reference System
+
+cross_references:
+  overview: |
+    This map documents all relationships, dependencies, and connections
+    between components of the MUDP system. It enables navigation,
+    ensures consistency, and supports comprehensive understanding.
+
+  core_systems:
+    mudp_philosophy:
+      file: "docs/strategic/mudp_philosophy.md"
+      relates_to:
+        - "four_pillars"
+        - "implementation_phases"
+        - "binder_structure"
+        - "enforcement_tiers"
+      underpins: ["all_systems"]
+      informs: ["all_decisions"]
+    
+    four_pillars:
+      file: "docs/strategic/four_pillars.md"
+      relates_to:
+        - "mudp_philosophy"
+        - "implementation_phases"
+        - "enforcement_tiers"
+        - "crisis_playbook"
+        - "causes_of_action"
+        - "technical_provenance"
+        - "regulatory_matrix"
+      components:
+        pillar_1_economic:
+          supports: ["causes_of_action.economic_harm", "binder_structure.tab_2"]
+          enabled_by: ["implementation_phases.phase_2", "templates.modeling_contract"]
+        pillar_2_technical:
+          supports: ["causes_of_action.evidence", "binder_structure.tab_7"]
+          enabled_by: ["implementation_phases.phase_3", "technical_provenance"]
+        pillar_3_legal:
+          supports: ["causes_of_action.all", "binder_structure.tab_9", "binder_structure.tab_13"]
+          enabled_by: ["implementation_phases.phase_4", "templates.rapid_response"]
+        pillar_4_institutional:
+          supports: ["binder_structure.tab_11", "crisis_playbook.level_2"]
+          enabled_by: ["binder_structure.tab_11", "templates.school_notification"]
+
+  implementation:
+    implementation_phases:
+      file: "plans/implementation_phases.yaml"
+      relates_to:
+        - "four_pillars"
+        - "binder_structure"
+        - "technical_provenance"
+        - "templates"
+      phases:
+        phase_1_copyright:
+          creates: ["legal_basis.dmca", "binder_structure.tab_2"]
+          supports: ["causes_of_action.dmca", "templates.dmca_takedown"]
+        phase_2_likeness:
+          creates: ["four_pillars.pillar_1", "templates.likeness_declaration"]
+          supports: ["causes_of_action.ropa", "causes_of_action.economic_harm"]
+        phase_3_provenance:
+          creates: ["technical_provenance", "binder_structure.tab_7"]
+          supports: ["four_pillars.pillar_2", "causes_of_action.evidence"]
+        phase_4_rapid_response:
+          creates: ["templates.rapid_response", "binder_structure.tab_13"]
+          supports: ["four_pillars.pillar_3", "crisis_playbook"]
+        phase_5_economic_harm:
+          creates: ["binder_structure.tab_2"]
+          supports: ["causes_of_action.economic_harm", "four_pillars.pillar_1"]
+
+  legal_framework:
+    causes_of_action:
+      file: "docs/legal/causes_of_action.md"
+      data_file: "data/causes_of_action.yaml"
+      relates_to:
+        - "four_pillars.pillar_3"
+        - "regulatory_matrix"
+        - "enforcement_tiers"
+        - "crisis_playbook"
+        - "templates.rapid_response"
+      primary_causes:
+        csam:
+          triggers: ["enforcement_tiers.tier_3", "crisis_playbook.level_3", "regulatory_matrix.us_federal"]
+          supports: ["templates.platform_removal", "binder_structure.tab_13"]
+        ropa:
+          triggers: ["enforcement_tiers.tier_3", "crisis_playbook.level_3"]
+          supports: ["templates.rapid_response", "four_pillars.pillar_1"]
+        defamation:
+          triggers: ["enforcement_tiers.tier_3", "crisis_playbook.level_3"]
+          supports: ["templates.rapid_response", "binder_structure.tab_9"]
+        dmca:
+          triggers: ["enforcement_tiers.tier_3", "crisis_playbook.level_3"]
+          supports: ["templates.dmca_takedown", "implementation_phases.phase_1"]
+        economic_harm:
+          triggers: ["enforcement_tiers.tier_5", "crisis_playbook.level_5"]
+          supports: ["four_pillars.pillar_1", "templates.modeling_contract"]
+
+  technical_systems:
+    technical_provenance:
+      file: "docs/technical/provenance_system.md"
+      relates_to:
+        - "four_pillars.pillar_2"
+        - "implementation_phases.phase_3"
+        - "binder_structure.tab_7"
+        - "causes_of_action.evidence"
+        - "crisis_playbook.triage"
+      components:
+        hashing:
+          supports: ["causes_of_action.evidence", "crisis_playbook.verification"]
+          used_in: ["binder_structure.tab_7", "templates.provenance_logging"]
+        registry:
+          supports: ["causes_of_action.evidence", "four_pillars.pillar_2"]
+          used_in: ["binder_structure.tab_7", "implementation_phases.phase_3"]
+        watermarking:
+          supports: ["causes_of_action.evidence", "technical_provenance.identification"]
+          used_in: ["binder_structure.tab_7"]
+
+  operational:
+    crisis_playbook:
+      file: "docs/operational/crisis_playbook.md"
+      relates_to:
+        - "enforcement_tiers"
+        - "four_pillars"
+        - "binder_structure.tab_15"
+        - "templates"
+        - "causes_of_action"
+      levels:
+        level_1_parents:
+          uses: ["templates.parent_notification", "enforcement_tiers.tier_1"]
+          activates: ["four_pillars.pillar_3"]
+        level_2_school:
+          uses: ["templates.school_notification", "enforcement_tiers.tier_2"]
+          activates: ["four_pillars.pillar_4", "regulatory_matrix.title_ix"]
+        level_3_platform:
+          uses: ["templates.platform_removal", "enforcement_tiers.tier_3"]
+          activates: ["causes_of_action.csam", "causes_of_action.dmca"]
+        level_4_insurance:
+          uses: ["templates.insurance_report", "enforcement_tiers.tier_4"]
+          activates: ["binder_structure.tab_14"]
+        level_5_legal:
+          uses: ["causes_of_action.all", "enforcement_tiers.tier_5"]
+          activates: ["binder_structure.tab_9"]
+        level_6_criminal:
+          uses: ["enforcement_tiers.tier_6", "regulatory_matrix.csam"]
+          activates: ["binder_structure.tab_10"]
+    
+    enforcement_tiers:
+      file: "data/enforcement_tiers.yaml"
+      relates_to:
+        - "crisis_playbook"
+        - "four_pillars"
+        - "causes_of_action"
+        - "binder_structure"
+      tiers:
+        tier_1:
+          corresponds_to: ["crisis_playbook.level_1", "binder_structure.tab_12"]
+          uses: ["templates.parent_notification"]
+        tier_2:
+          corresponds_to: ["crisis_playbook.level_2", "binder_structure.tab_11"]
+          uses: ["templates.school_notification", "regulatory_matrix.title_ix"]
+        tier_3:
+          corresponds_to: ["crisis_playbook.level_3", "binder_structure.tab_13"]
+          uses: ["templates.platform_removal", "causes_of_action.csam"]
+        tier_4:
+          corresponds_to: ["crisis_playbook.level_4", "binder_structure.tab_14"]
+          uses: ["templates.insurance_report"]
+        tier_5:
+          corresponds_to: ["crisis_playbook.level_5", "binder_structure.tab_9"]
+          uses: ["causes_of_action.all"]
+        tier_6:
+          corresponds_to: ["crisis_playbook.level_6", "binder_structure.tab_10"]
+          uses: ["regulatory_matrix.csam"]
+
+  regulatory:
+    regulatory_matrix:
+      file: "data/regulatory_matrix.yaml"
+      relates_to:
+        - "causes_of_action"
+        - "enforcement_tiers"
+        - "binder_structure.tab_8"
+        - "crisis_playbook"
+      frameworks:
+        us_federal:
+          supports: ["causes_of_action.csam", "causes_of_action.coppa", "enforcement_tiers.tier_3"]
+          used_in: ["binder_structure.tab_8", "crisis_playbook.level_3"]
+        state_laws:
+          supports: ["causes_of_action.ropa", "causes_of_action.defamation", "enforcement_tiers.all"]
+          used_in: ["binder_structure.tab_8", "binder_structure.tab_9"]
+        gdpr:
+          supports: ["causes_of_action.biometric", "templates.biometric_license"]
+          used_in: ["binder_structure.tab_8", "regulatory_matrix.multi_jurisdiction"]
+        bipa:
+          supports: ["causes_of_action.biometric", "templates.biometric_license"]
+          used_in: ["binder_structure.tab_8", "binder_structure.tab_5"]
+        title_ix:
+          supports: ["crisis_playbook.level_2", "enforcement_tiers.tier_2"]
+          used_in: ["binder_structure.tab_11", "templates.school_notification"]
+
+  binder_structure:
+    file: "plans/binder_structure.yaml"
+    relates_to:
+      - "all_systems"
+    tabs:
+      tab_1_executive:
+        references: ["mudp_philosophy", "four_pillars"]
+      tab_2_modeling:
+        references: ["templates.modeling_contract", "four_pillars.pillar_1", "implementation_phases.phase_2"]
+      tab_3_trust:
+        references: ["templates.trust_formation"]
+      tab_4_ucc1:
+        references: ["templates.ucc1_filing"]
+      tab_5_biometric:
+        references: ["templates.biometric_license", "regulatory_matrix.bipa"]
+      tab_6_guardianship:
+        references: ["templates.digital_guardianship"]
+      tab_7_provenance:
+        references: ["technical_provenance", "four_pillars.pillar_2", "implementation_phases.phase_3"]
+      tab_8_regulatory:
+        references: ["regulatory_matrix", "causes_of_action"]
+      tab_9_causes:
+        references: ["causes_of_action", "enforcement_tiers.tier_5"]
+      tab_10_criminal:
+        references: ["regulatory_matrix.csam", "enforcement_tiers.tier_6"]
+      tab_11_school:
+        references: ["templates.school_notification", "crisis_playbook.level_2", "four_pillars.pillar_4"]
+      tab_12_parent:
+        references: ["templates.parent_notification", "crisis_playbook.level_1", "enforcement_tiers.tier_1"]
+      tab_13_rapid_response:
+        references: ["templates.rapid_response", "crisis_playbook.level_3", "four_pillars.pillar_3"]
+      tab_14_insurance:
+        references: ["templates.insurance_report", "crisis_playbook.level_4", "enforcement_tiers.tier_4"]
+      tab_15_crisis:
+        references: ["crisis_playbook", "enforcement_tiers", "all_templates"]
+
+  templates:
+    location: "callables/templates/"
+    relates_to:
+      - "binder_structure"
+      - "crisis_playbook"
+      - "four_pillars"
+      - "implementation_phases"
+    categories:
+      contracts:
+        - "modeling_contract"
+        - "likeness_declaration"
+      legal_notices:
+        - "rapid_response_packet"
+        - "platform_removal_packet"
+        - "dmca_takedown"
+        - "evidence_preservation"
+      communications:
+        - "parent_notification"
+        - "school_notification"
+        - "school_pre_notification"
+      insurance:
+        - "insurance_incident_report"
+        - "insurance_trigger_letter"
+      protection:
+        - "biometric_non_consent_license"
+        - "digital_guardianship"
+        - "faceprint_burn_notice"
+      technical:
+        - "provenance_logging_template"
+        - "copyright_registration_workflow"
+
+  navigation_paths:
+    by_phase:
+      phase_1_copyright:
+        - "implementation_phases.phase_1"
+        - "templates.copyright_workflow"
+        - "causes_of_action.dmca"
+        - "binder_structure.tab_2"
+      phase_2_likeness:
+        - "implementation_phases.phase_2"
+        - "templates.likeness_declaration"
+        - "four_pillars.pillar_1"
+        - "causes_of_action.ropa"
+      phase_3_provenance:
+        - "implementation_phases.phase_3"
+        - "technical_provenance"
+        - "templates.provenance_logging"
+        - "four_pillars.pillar_2"
+      phase_4_rapid_response:
+        - "implementation_phases.phase_4"
+        - "templates.rapid_response"
+        - "four_pillars.pillar_3"
+        - "binder_structure.tab_13"
+      phase_5_economic_harm:
+        - "implementation_phases.phase_5"
+        - "templates.modeling_contract"
+        - "four_pillars.pillar_1"
+        - "causes_of_action.economic_harm"
+    
+    by_incident_response:
+      immediate_triage:
+        - "crisis_playbook.triage"
+        - "technical_provenance.verification"
+        - "binder_structure.tab_15"
+      level_1_parents:
+        - "crisis_playbook.level_1"
+        - "templates.parent_notification"
+        - "enforcement_tiers.tier_1"
+      level_2_school:
+        - "crisis_playbook.level_2"
+        - "templates.school_notification"
+        - "enforcement_tiers.tier_2"
+        - "regulatory_matrix.title_ix"
+      level_3_platform:
+        - "crisis_playbook.level_3"
+        - "templates.platform_removal"
+        - "enforcement_tiers.tier_3"
+        - "causes_of_action.csam"
+      level_4_insurance:
+        - "crisis_playbook.level_4"
+        - "templates.insurance_report"
+        - "enforcement_tiers.tier_4"
+      level_5_legal:
+        - "crisis_playbook.level_5"
+        - "causes_of_action.all"
+        - "enforcement_tiers.tier_5"
+      level_6_criminal:
+        - "crisis_playbook.level_6"
+        - "enforcement_tiers.tier_6"
+        - "regulatory_matrix.csam"
+    
+    by_legal_strategy:
+      csam_enforcement:
+        - "causes_of_action.csam"
+        - "regulatory_matrix.us_federal.csam"
+        - "templates.platform_removal"
+        - "enforcement_tiers.tier_3"
+      economic_harm:
+        - "causes_of_action.economic_harm"
+        - "four_pillars.pillar_1"
+        - "templates.modeling_contract"
+        - "implementation_phases.phase_2"
+      technical_evidence:
+        - "technical_provenance"
+        - "four_pillars.pillar_2"
+        - "causes_of_action.evidence"
+        - "binder_structure.tab_7"
+      multi_jurisdiction:
+        - "regulatory_matrix.multi_jurisdiction"
+        - "causes_of_action.multi_jurisdiction"
+        - "regulatory_matrix.gdpr"
+        - "regulatory_matrix.bipa"
+
+  dependency_graph:
+    foundational:
+      - "mudp_philosophy"
+      - "four_pillars"
+    builds_on_foundation:
+      - "implementation_phases"
+      - "binder_structure"
+    supports_operations:
+      - "crisis_playbook"
+      - "enforcement_tiers"
+    provides_details:
+      - "causes_of_action"
+      - "technical_provenance"
+      - "regulatory_matrix"
+    enables_execution:
+      - "templates"
+      - "binder_structure.tabs"
+
+  completeness_check:
+    core_systems: "complete"
+    implementation: "complete"
+    legal_framework: "complete"
+    technical_systems: "complete"
+    operational: "complete"
+    regulatory: "complete"
+    binder_structure: "complete"
+    templates: "structures_complete_content_pending"
+    cross_references: "complete"
+

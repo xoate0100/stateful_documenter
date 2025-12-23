@@ -1,0 +1,258 @@
+# MVP Specification - MUDP Documentation Project
+# This file defines the project structure for a documentation/task management project
+# Adapted from the stateful_documenter framework for documentation projects
+
+# Required Core Fields
+Project: "mudp"
+Project_Type: "documentation"  # documentation | programming
+Maturity: "L2.5"  # L2 | L2.5 | L3
+Architecture: "documentation-hierarchical"  # Descriptive architecture type
+Repo_Type: "documentation"  # frontend | backend | fullstack | microservice | monorepo | documentation
+Execution_Mode: "Controlled Agentic Execution"  # Human Directed | Controlled Agentic Execution | Fully Agentic
+
+# Goals and Principles
+GOALS_AND_PRINCIPLES:
+  goals:
+    - "Extract and structure MUDP system from stream-of-consciousness chat"
+    - "Create comprehensive child digital personhood protection documentation"
+    - "Build reusable template library for legal and procedural documents"
+    - "Establish structured data for legal frameworks and regulatory compliance"
+    - "Generate actionable implementation plans and workflows"
+  principles:
+    - "Maintain source attribution and traceability"
+    - "Structure for maximum usability and cross-referencing"
+    - "Flag areas requiring legal/technical review"
+    - "Create reusable, parameterized templates"
+    - "Document extraction methodology for reproducibility"
+
+# Documentation Structure (replaces MONOREPO_LAYOUT for documentation projects)
+DOCUMENTATION_STRUCTURE:
+  docs_directory: "docs/"
+  data_directory: "data/"
+  plans_directory: "plans/"
+  evidence_directory: "evidence/"
+  callables_directory: "callables/"
+  
+  # Subdirectories for organized documentation
+  docs_subdirectories:
+    - "strategic/"      # Philosophy, principles, high-level strategy
+    - "legal/"          # Legal frameworks, causes of action, statutes
+    - "technical/"      # Technical implementation guides
+    - "procedural/"     # Workflows, checklists, step-by-step guides
+    - "regulatory/"     # Compliance matrices, jurisdictional analysis
+    - "operational/"    # Crisis playbooks, response protocols
+  
+  callables_subdirectories:
+    - "templates/"      # Reusable document templates
+
+# Content Organization
+CONTENT_ORGANIZATION:
+  primary_systems:
+    - name: "Four-Pillar Defense Architecture"
+      description: "Economic, Technical, Legal, and Community protection pillars"
+      location: "docs/strategic/four_pillars.md"
+    - name: "Implementation Phases"
+      description: "5-phase implementation roadmap"
+      location: "plans/implementation_phases.yaml"
+    - name: "Binder Structure"
+      description: "15-tab comprehensive binder system"
+      location: "plans/binder_structure.yaml"
+    - name: "Enforcement Tiers"
+      description: "6-tier escalation system"
+      location: "data/enforcement_tiers.yaml"
+  
+  structured_data_files:
+    - "data/legal_frameworks.yaml"
+    - "data/regulatory_matrix.yaml"
+    - "data/causes_of_action.yaml"
+    - "data/enforcement_tiers.yaml"
+    - "data/cross_references.yaml"
+    - "data/extraction_metadata.yaml"
+    - "data/completeness_status.yaml"
+
+# Source Material
+SOURCE_MATERIAL:
+  source_file: "../MUDP.md"
+  source_type: "chat_transcript"
+  total_lines: 4296
+  extraction_protocol: "INGESTION_PROTOCOL.md"
+  analysis_document: "evidence/source_analysis.md"
+
+# Extraction Tasks
+EXTRACTION_TASKS:
+  high_priority:
+    - "Extract Four-Pillar Architecture"
+    - "Extract Implementation Phases"
+    - "Extract Binder Structure (15 Tabs)"
+    - "Extract Enforcement Tiers"
+    - "Extract MUDP Philosophy"
+  
+  medium_priority:
+    - "Extract Legal Causes of Action Library"
+    - "Extract Technical Provenance System"
+    - "Extract Crisis Playbook"
+    - "Extract Regulatory Compliance Matrix"
+    - "Extract School Activation Framework"
+  
+  lower_priority:
+    - "Extract individual template documents"
+    - "Extract specific tool recommendations"
+    - "Extract detailed procedural steps"
+    - "Extract cross-jurisdictional specifics"
+
+# Quality Assurance
+QUALITY_ASSURANCE:
+  legal_review_required: true
+  technical_review_required: true
+  completeness_tracking: true
+  cross_reference_validation: true
+  source_attribution: true
+
+# Active Plan Template
+# This will be used to generate 6_ai_runtime_context/ACTIVE_PLAN.yaml
+ACTIVE_PLAN_TEMPLATE:
+  plan_id: "mudp-extraction-phase-1"
+  project_type: "documentation"
+  goal: "Extract and structure core MUDP system components from chat transcript"
+  status: "active"
+  auto_commit: true
+  commit_frequency: checkpoint_based
+  commit_checkpoints:
+    after_phases: true
+    after_task_count: 3
+    after_file_threshold: 5
+    force_commit_on_checkpoint: true
+  
+  phases:
+    - id: "phase-1"
+      name: "Discovery & Analysis"
+      status: "completed"
+      tasks:
+        - id: 1
+          name: "Analyze source chat structure"
+          status: "completed"
+          outputs: ["evidence/source_analysis.md"]
+        - id: 2
+          name: "Create ingestion protocol"
+          status: "completed"
+          outputs: ["INGESTION_PROTOCOL.md"]
+        - id: 3
+          name: "Set up project structure"
+          status: "completed"
+          outputs: ["README.md", "MVP_SPECIFICATION.yaml"]
+    
+    - id: "phase-2"
+      name: "Core System Extraction"
+      status: "in_progress"
+      tasks:
+        - id: 4
+          name: "Extract Four-Pillar Architecture"
+          status: "pending"
+          outputs: ["docs/strategic/four_pillars.md"]
+        - id: 5
+          name: "Extract Implementation Phases"
+          status: "pending"
+          outputs: ["plans/implementation_phases.yaml"]
+        - id: 6
+          name: "Extract Binder Structure"
+          status: "pending"
+          outputs: ["plans/binder_structure.yaml"]
+        - id: 7
+          name: "Extract Enforcement Tiers"
+          status: "pending"
+          outputs: ["data/enforcement_tiers.yaml"]
+        - id: 8
+          name: "Extract MUDP Philosophy"
+          status: "pending"
+          outputs: ["docs/strategic/mudp_philosophy.md"]
+    
+    - id: "phase-3"
+      name: "Supporting Systems Extraction"
+      status: "pending"
+      tasks:
+        - id: 9
+          name: "Extract Legal Causes of Action"
+          status: "pending"
+          outputs: ["docs/legal/causes_of_action.md", "data/causes_of_action.yaml"]
+        - id: 10
+          name: "Extract Technical Provenance System"
+          status: "pending"
+          outputs: ["docs/technical/provenance_system.md"]
+        - id: 11
+          name: "Extract Crisis Playbook"
+          status: "pending"
+          outputs: ["docs/operational/crisis_playbook.md"]
+        - id: 12
+          name: "Extract Regulatory Compliance Matrix"
+          status: "pending"
+          outputs: ["data/regulatory_matrix.yaml"]
+    
+    - id: "phase-4"
+      name: "Template & Detail Extraction"
+      status: "pending"
+      tasks:
+        - id: 13
+          name: "Extract document templates"
+          status: "pending"
+          outputs: ["callables/templates/"]
+        - id: 14
+          name: "Create cross-reference map"
+          status: "pending"
+          outputs: ["data/cross_references.yaml"]
+        - id: 15
+          name: "Generate master index"
+          status: "pending"
+          outputs: ["docs/MASTER_INDEX.md"]
+
+# Feature Flags Reference
+FEATURE_FLAGS_REFERENCE:
+  cursor_agent_mode: "sandboxed"
+  agentic_write_ops: true
+  modify_meta_framework: false
+  documentation_project: true
+
+# Summary for Initializer
+SUMMARY_FOR_INITIALIZER:
+  intent:
+    - "Extract MUDP system from conversational chat transcript"
+    - "Structure content into organized documentation hierarchy"
+    - "Create reusable templates and structured data files"
+    - "Generate actionable implementation plans"
+    - "Maintain source attribution and traceability"
+    - "Enable systematic extraction and quality assurance"
+
+# Deliverables
+DELIVERABLES:
+  documentation:
+    - "Strategic overview documents"
+    - "Legal framework library"
+    - "Technical implementation guides"
+    - "Procedural workflows and playbooks"
+    - "Regulatory compliance matrices"
+  
+  structured_data:
+    - "Legal frameworks (YAML)"
+    - "Causes of action (YAML)"
+    - "Enforcement tiers (YAML)"
+    - "Regulatory matrix (YAML)"
+    - "Cross-references (YAML)"
+  
+  templates:
+    - "Legal document templates"
+    - "Communication templates"
+    - "Procedural checklists"
+    - "Response packets"
+  
+  plans:
+    - "Implementation phases"
+    - "Binder structure"
+    - "Extraction task tracking"
+
+# Success Metrics
+SUCCESS_METRICS:
+  extraction_completeness: "All high-priority components extracted and structured"
+  documentation_quality: "All documents properly formatted and cross-referenced"
+  template_usability: "All templates parameterized and ready for use"
+  data_structure: "All structured data files validated and complete"
+  traceability: "All content traceable to source with line references"
+

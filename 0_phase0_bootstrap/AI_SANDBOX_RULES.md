@@ -2,34 +2,46 @@
 
 You are the single authorized agent (Cursor Code). You may execute multi-step plans end-to-end.
 
+**Project-Type Awareness:** These rules automatically adapt based on project type (`programming` vs `documentation`). The system detects project type from `MVP_SPECIFICATION.yaml` or `ACTIVE_PLAN.yaml`.
+
 ## Allowed
+
+### Programming Projects
 - Read `6_ai_runtime_context/ACTIVE_PLAN.yaml` and execute tasks sequentially.
 - Write/refactor/delete only in: `frontend/`, `backend/`, `shared/`, `tests/`, `docs/`, `scripts/`.
+
+### Documentation Projects
+- Read `6_ai_runtime_context/ACTIVE_PLAN.yaml` and execute tasks sequentially.
+- Write/refactor/delete only in: `docs/`, `data/`, `plans/`, `evidence/`, `callables/`, and project root files (`.md`, `.yaml`, `.yml`).
+
+### All Projects
 - Run and fix pre-commit failures autonomously.
 - Commit autonomously **only** if all pre-commit hooks pass.
 
 ## Required (MANDATORY - BLOCKING)
 
-### TDD (Test-Driven Development) - BLOCKING
-- **MANDATORY**: Every code change MUST include corresponding test files in the same commit.
-- **BLOCKING**: Commits are **BLOCKED** if code files are modified without tests.
-- **Process**: Follow Red → Green → Refactor → Document cycle:
+### TDD (Test-Driven Development) - BLOCKING (Programming Projects Only)
+- **MANDATORY** (Programming Projects): Every code change MUST include corresponding test files in the same commit.
+- **BLOCKING** (Programming Projects): Commits are **BLOCKED** if code files are modified without tests.
+- **NOT APPLICABLE** (Documentation Projects): Documentation projects don't have code files, so TDD doesn't apply.
+- **Process** (Programming Projects): Follow Red → Green → Refactor → Document cycle:
   1. **Red**: Write failing test first
   2. **Green**: Implement minimal code to pass test
   3. **Refactor**: Improve code while keeping tests green
   4. **Document**: Update documentation as needed
-- **Test File Patterns**: 
+- **Test File Patterns** (Programming Projects): 
   - Python: `*_test.py`, `test_*.py`, files in `tests/` directories
   - TypeScript/JavaScript: `*.test.ts`, `*.test.tsx`, `*.spec.ts`, `*.spec.tsx`, files in `test/` directories
 - **Reference**: See `1_global_standards/TEST_STRATEGY_TDD.md` for detailed guidance.
 
-### SOLID Principles - BLOCKING
-- **MANDATORY**: All code MUST comply with SOLID design principles.
-- **BLOCKING**: Commits are **BLOCKED** on SOLID violations:
+### SOLID Principles - BLOCKING (Programming Projects Only)
+- **MANDATORY** (Programming Projects): All code MUST comply with SOLID design principles.
+- **BLOCKING** (Programming Projects): Commits are **BLOCKED** on SOLID violations:
   - **SRP (Single Responsibility)**: Functions must be ≤ 50 lines
   - **ISP (Interface Segregation)**: Interfaces/types must be ≤ 10 methods/properties
   - **DIP (Dependency Inversion)**: Depend on abstractions (interfaces), not concrete implementations
-- **Enforcement**: Pre-commit `architecture-check` hook validates SOLID compliance.
+- **NOT APPLICABLE** (Documentation Projects): Documentation projects don't have code architecture, so SOLID doesn't apply.
+- **Enforcement**: Pre-commit `architecture-check` hook validates SOLID compliance (automatically skipped for documentation projects).
 - **Reference**: See `1_global_standards/SOLID_PRINCIPLES.md` for comprehensive guide.
 
 ### Commit Frequency - INCREMENTAL COMMITS REQUIRED
@@ -43,11 +55,12 @@ You are the single authorized agent (Cursor Code). You may execute multi-step pl
 - **Commit Message Format**: MUST include `plan:<plan_id> component:<component> task:<id>`
 - **Reference**: See `docs/COMMIT_STRATEGY.md` for detailed commit frequency best practices
 
-### Other Requirements
-- Every commit message MUST include: `plan:<plan_id> component:<component> task:<id>`.
-- Keep docs in sync; update `docs/*` and regenerate indexes when code changes.
-- Obey `5_reference_architectures/LAYER_RULES.yaml` (no cross-component violations).
-- Stay inside current plan's scope; do not add new directories unless listed in plan.
+### Other Requirements (All Projects)
+- Every commit message MUST include: `plan:<plan_id> component:<component> task:<id>` (or `task:<id>` for documentation projects).
+- **Programming Projects**: Keep docs in sync; update `docs/*` and regenerate indexes when code changes.
+- **Programming Projects**: Obey `5_reference_architectures/LAYER_RULES.yaml` (no cross-component violations).
+- **Documentation Projects**: Maintain documentation structure, cross-references, and completeness tracking.
+- **All Projects**: Stay inside current plan's scope; do not add new directories unless listed in plan.
 
 ## Forbidden
 - Editing any files in: `0_phase0_bootstrap/`, `1_global_standards/`, `7_schemas/`, `.github/`, `8_ci/`, `4_docs_index/`, `5_reference_architectures/`.

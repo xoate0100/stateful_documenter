@@ -16,10 +16,43 @@ else:
 
 flags_path = pathlib.Path("0_phase0_bootstrap/feature_flags.yml")
 enforce_solid = False
+project_type = "programming"  # Default to programming for backward compatibility
+
+# Detect project type
+def detect_project_type() -> str:
+    """Detect project type from MVP_SPECIFICATION or ACTIVE_PLAN"""
+    # Try MVP_SPECIFICATION first
+    mvp_path = pathlib.Path("0_phase0_bootstrap/MVP_SPECIFICATION.yaml")
+    if mvp_path.exists():
+        try:
+            mvp = yaml.safe_load(open(mvp_path))
+            project_type = mvp.get("Project_Type") or mvp.get("project_type")
+            if project_type:
+                return project_type.lower()
+        except:
+            pass
+    
+    # Fall back to ACTIVE_PLAN
+    plan_path = pathlib.Path("6_ai_runtime_context/ACTIVE_PLAN.yaml")
+    if plan_path.exists():
+        try:
+            plan = yaml.safe_load(open(plan_path))
+            project_type = plan.get("project_type")
+            if project_type:
+                return project_type.lower()
+        except:
+            pass
+    
+    return "programming"
+
 if flags_path.exists():
     try:
         flags = yaml.safe_load(open(flags_path))
         enforce_solid = flags.get("ai_guardrails", {}).get("enforce_solid_principles", False)
+        project_type = detect_project_type()
+        # Skip SOLID enforcement for documentation projects
+        if project_type == "documentation":
+            enforce_solid = False
     except:
         pass
 
@@ -293,13 +326,18 @@ def check_dip_dependency_inversion():
 
 
 # Run all checks
-check_cross_component_imports()
-check_layer_rules()
-
-if enforce_solid:
-    check_srp_single_responsibility()
-    check_isp_interface_segregation()
-    check_dip_dependency_inversion()
+# Skip architecture checks for documentation projects (no code to check)
+if project_type != "documentation":
+    check_cross_component_imports()
+    check_layer_rules()
+    
+    if enforce_solid:
+        check_srp_single_responsibility()
+        check_isp_interface_segregation()
+        check_dip_dependency_inversion()
+else:
+    # Documentation projects: skip architecture checks
+    print("[architecture] Project type is 'documentation' - skipping architecture checks (no code files)")
 
 if violations:
     print("[architecture] ❌ BLOCKING: Architecture violations detected:")

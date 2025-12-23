@@ -1,0 +1,260 @@
+# MUDP Extraction Tasks
+# Hierarchical task list for extracting and structuring MUDP system from chat transcript
+
+extraction_plan:
+  plan_id: "mudp-extraction"
+  project_type: "documentation"
+  source_file: "../MUDP.md"
+  total_tasks: 15
+  status: "in_progress"
+
+phases:
+  - id: "phase-1"
+    name: "Discovery & Analysis"
+    status: "completed"
+    description: "Analyze source material and create extraction methodology"
+    tasks:
+      - id: 1
+        name: "Analyze source chat structure"
+        status: "completed"
+        description: "Identify organizational systems, content categories, and key components"
+        outputs:
+          - "evidence/source_analysis.md"
+        notes: "Identified 4 Pillars, 5 Phases, 15 Tabs, 6 Tiers"
+      
+      - id: 2
+        name: "Create ingestion protocol"
+        status: "completed"
+        description: "Document systematic process for extracting and structuring chat content"
+        outputs:
+          - "INGESTION_PROTOCOL.md"
+        notes: "Defined 5-phase extraction process with quality assurance"
+      
+      - id: 3
+        name: "Set up project structure"
+        status: "completed"
+        description: "Create directory structure and initial project files"
+        outputs:
+          - "README.md"
+          - "MVP_SPECIFICATION.yaml"
+          - "Directory structure (docs/, data/, plans/, evidence/, callables/)"
+        notes: "Following stateful_documenter framework for documentation projects"
+
+  - id: "phase-2"
+    name: "Core System Extraction"
+    status: "completed"
+    description: "Extract primary organizational systems and architecture"
+    priority: "high"
+    tasks:
+      - id: 4
+        name: "Extract Four-Pillar Architecture"
+        status: "completed"
+        description: "Extract and document the four-pillar defense system"
+        source_location: "Lines ~1635-1900"
+        outputs:
+          - "docs/strategic/four_pillars.md"
+        subtasks:
+          - "Extract Pillar 1: Economic & Contractual Protection"
+          - "Extract Pillar 2: Technical & Evidentiary Infrastructure"
+          - "Extract Pillar 3: Legal & Regulatory Framework"
+          - "Extract Pillar 4: School & Community Activation"
+        dependencies: []
+      
+      - id: 5
+        name: "Extract Implementation Phases"
+        status: "completed"
+        description: "Extract 5-phase implementation roadmap"
+        source_location: "Lines ~608-700"
+        outputs:
+          - "plans/implementation_phases.yaml"
+        subtasks:
+          - "Phase 1: Copyright Registration"
+          - "Phase 2: Likeness Licensing Framework"
+          - "Phase 3: Technical Provenance System"
+          - "Phase 4: Rapid Response Legal Packet"
+          - "Phase 5: Economic Harm Documentation"
+        dependencies: []
+      
+      - id: 6
+        name: "Extract Binder Structure"
+        status: "completed"
+        description: "Extract 15-tab binder organization system"
+        source_location: "Lines ~3750-4296"
+        outputs:
+          - "plans/binder_structure.yaml"
+          - "docs/operational/binder_index.md"
+        subtasks:
+          - "Extract each of 15 tabs with descriptions"
+          - "Document sub-tabs and content organization"
+          - "Create cross-reference map"
+        dependencies: []
+      
+      - id: 7
+        name: "Extract Enforcement Tiers"
+        status: "completed"
+        description: "Extract 6-tier escalation system"
+        source_location: "Lines ~3651-3680"
+        outputs:
+          - "data/enforcement_tiers.yaml"
+          - "docs/operational/enforcement_tiers.md"
+        subtasks:
+          - "Tier 1: Soft Resolution"
+          - "Tier 2: School Activation"
+          - "Tier 3: Platform Removal"
+          - "Tier 4: Insurance Notification"
+          - "Tier 5: Legal Exposure"
+          - "Tier 6: Criminal Pathways"
+        dependencies: []
+      
+      - id: 8
+        name: "Extract MUDP Philosophy"
+        status: "completed"
+        description: "Extract strategic philosophy and principles"
+        source_location: "Lines ~1603-1632"
+        outputs:
+          - "docs/strategic/mudp_philosophy.md"
+        subtasks:
+          - "Extract core principles"
+          - "Document strategic approach"
+          - "Capture key concepts and terminology"
+        dependencies: []
+
+  - id: "phase-3"
+    name: "Supporting Systems Extraction"
+    status: "completed"
+    description: "Extract legal, technical, and operational supporting systems"
+    priority: "medium"
+    tasks:
+      - id: 9
+        name: "Extract Legal Causes of Action"
+        status: "completed"
+        description: "Extract comprehensive legal causes of action library"
+        source_location: "Lines ~1095-1600, ~4062-4100"
+        outputs:
+          - "docs/legal/causes_of_action.md"
+          - "data/causes_of_action.yaml"
+        subtasks:
+          - "Right of Publicity"
+          - "Defamation / False Light"
+          - "Federal CSAM Law"
+          - "DMCA Takedown"
+          - "Emotional Distress + Privacy Tort"
+          - "Economic Harm Theory"
+          - "Additional causes (10+)"
+        dependencies: [4]  # Depends on Four Pillars
+      
+      - id: 10
+        name: "Extract Technical Provenance System"
+        status: "completed"
+        description: "Extract technical implementation for provenance tracking"
+        source_location: "Lines ~637-651, ~2000-2100"
+        outputs:
+          - "docs/technical/provenance_system.md"
+        subtasks:
+          - "Hash Boundary System (HBS)"
+          - "Perceptual hashing (pHash, dHash, aHash)"
+          - "Embedding vectors (FaceNet, ArcFace)"
+          - "Watermarking systems"
+          - "Cryptographic signing"
+          - "Registry systems"
+        dependencies: [4]  # Depends on Four Pillars
+      
+      - id: 11
+        name: "Extract Crisis Playbook"
+        status: "completed"
+        description: "Extract step-by-step crisis response procedures"
+        source_location: "Lines ~4213-4247"
+        outputs:
+          - "docs/operational/crisis_playbook.md"
+        subtasks:
+          - "Immediate Triage Checklist"
+          - "Level 1-6 Response Protocols"
+          - "Post-Resolution Follow-Up"
+        dependencies: [7]  # Depends on Enforcement Tiers
+      
+      - id: 12
+        name: "Extract Regulatory Compliance Matrix"
+        status: "completed"
+        description: "Extract regulatory frameworks and jurisdictional analysis"
+        source_location: "Lines ~4018-4059"
+        outputs:
+          - "data/regulatory_matrix.yaml"
+          - "docs/regulatory/compliance_matrix.md"
+        subtasks:
+          - "U.S. Federal Laws"
+          - "State Law Matrix (Kansas & Missouri)"
+          - "GDPR Impact Matrix"
+          - "BIPA Risk Matrix"
+          - "Canadian Privacy Act"
+          - "International CSAM Reporting Laws"
+        dependencies: [9]  # Depends on Legal Causes
+
+  - id: "phase-4"
+    name: "Template & Detail Extraction"
+    status: "completed"
+    description: "Extract reusable templates and complete detailed sections"
+    priority: "low"
+    tasks:
+      - id: 13
+        name: "Extract document templates"
+        status: "completed"
+        description: "Extract and parameterize reusable document templates"
+        source_location: "Scattered throughout, Lines ~1030-1070, ~3830-3900"
+        outputs:
+          - "callables/templates/modeling_contract.md"
+          - "callables/templates/biometric_license.md"
+          - "callables/templates/school_notification.md"
+          - "callables/templates/parent_letters.md"
+          - "callables/templates/rapid_response_packet.md"
+          - "callables/templates/dmca_notice.md"
+        subtasks:
+          - "Child Modeling & Likeness Licensing Agreement"
+          - "Biometric Non-Consent License"
+          - "School Pre-Notification Letter"
+          - "Parent Communication Templates (4 types)"
+          - "Rapid Response Legal Packet"
+          - "DMCA Takedown Notice"
+          - "Evidence Preservation Notice"
+          - "Insurance Trigger Letter"
+        dependencies: [4, 9]  # Depends on Four Pillars and Legal Framework
+      
+      - id: 14
+        name: "Create cross-reference map"
+        status: "completed"
+        description: "Map relationships between all extracted components"
+        outputs:
+          - "data/cross_references.yaml"
+          - "docs/MASTER_INDEX.md"
+        subtasks:
+          - "Map dependencies between systems"
+          - "Create navigation structure"
+          - "Generate master index"
+        dependencies: [4, 5, 6, 7, 8, 9, 10, 11, 12]  # Depends on all previous extractions
+      
+      - id: 15
+        name: "Generate master index"
+        status: "completed"
+        description: "Create comprehensive index of all extracted content"
+        outputs:
+          - "docs/MASTER_INDEX.md"
+        subtasks:
+          - "Organize by system and category"
+          - "Include cross-references"
+          - "Add navigation aids"
+        dependencies: [14]  # Depends on cross-reference map
+
+metadata:
+  extraction_started: "2025-12-22"
+  last_updated: "2025-12-22"
+  source_file_lines: 4296
+  phase_2_completed: "2025-12-22"
+  phase_3_completed: "2025-12-22"
+  phase_4_completed: "2025-12-22"
+  extraction_status: "complete"
+  estimated_completion: "2025-12-22"
+  notes:
+    - "Legal content should be reviewed by qualified legal counsel"
+    - "Technical implementations may require tool selection"
+    - "Templates need parameterization for reuse"
+    - "Some sections are conceptual and may need expansion"
+

@@ -1,0 +1,334 @@
+# Causes of Action - Structured Data
+# Comprehensive legal causes of action library in structured format
+
+# Source: MUDP.md, Lines ~364-600, ~1095-1600, ~4062-4100
+# Extracted: 2025-12-22
+# Status: Structured Legal Framework Data
+
+causes_of_action:
+  primary:
+    - id: "ropa"
+      name: "Right of Publicity (ROPA)"
+      legal_basis: "State statutes (most states)"
+      priority: "high"
+      remedies:
+        - "Statutory damages"
+        - "Punitive damages"
+        - "Injunctions"
+        - "Attorney's fees"
+        - "Disgorgement of profits"
+        - "Criminal implications (some states)"
+      strategic_advantage: "No safe harbor like DMCA; platforms hate these claims"
+      evidence_required:
+        - "Proof of likeness use"
+        - "Derivative work creation"
+        - "State ROPA statute"
+    
+    - id: "defamation"
+      name: "Defamation / False Light"
+      legal_basis: "Common law and state statutes"
+      priority: "high"
+      remedies:
+        - "Compensatory damages"
+        - "Punitive damages"
+        - "Injunctions"
+        - "Attorney's fees"
+      strategic_advantage: "Almost per se defamatory for sexualized minors"
+      evidence_required:
+        - "False statement"
+        - "Publication"
+        - "Harm to reputation"
+        - "Fault"
+    
+    - id: "csam"
+      name: "Federal CSAM Law"
+      legal_basis: "18 U.S.C. §2252, §2256"
+      priority: "highest"
+      remedies:
+        - "Criminal prosecution (federal)"
+        - "Mandatory platform removal"
+        - "Mandatory reporting to NCMEC"
+        - "Civil damages (some cases)"
+      strategic_advantage: "Most powerful lever; mandatory action; no safe harbor"
+      evidence_required:
+        - "Sexualized image of minor"
+        - "AI-generated (still counts)"
+        - "Distribution/hosting evidence"
+    
+    - id: "dmca"
+      name: "DMCA Takedown (Copyright)"
+      legal_basis: "Digital Millennium Copyright Act (17 U.S.C. §512)"
+      priority: "high"
+      remedies:
+        - "Immediate takedown"
+        - "Statutory damages (if registered, up to $150k)"
+        - "Attorney's fees (if registered)"
+        - "Injunctions"
+      strategic_advantage: "Fastest initial response; platforms must act immediately"
+      evidence_required:
+        - "Copyright ownership"
+        - "Derivative work creation"
+        - "Registration (for statutory damages)"
+    
+    - id: "emotional_distress"
+      name: "Emotional Distress + Privacy Tort"
+      legal_basis: "Common law and state statutes"
+      priority: "medium"
+      remedies:
+        - "Compensatory damages"
+        - "Punitive damages"
+        - "Attorney's fees"
+      strategic_advantage: "High damage awards possible; covers child and parents"
+      evidence_required:
+        - "Outrageous conduct"
+        - "Emotional harm"
+        - "Causation"
+        - "Damages"
+    
+    - id: "economic_harm"
+      name: "Economic Harm Theory"
+      legal_basis: "Tortious interference, contract law, property rights"
+      priority: "high"
+      remedies:
+        - "Economic damages"
+        - "Loss of future income"
+        - "Devaluation damages"
+        - "Tortious interference damages"
+      strategic_advantage: "Creates quantifiable damages; works with modeling contract"
+      evidence_required:
+        - "Commercial value of likeness"
+        - "Modeling contract"
+        - "Derivative use"
+        - "Economic loss"
+
+  additional:
+    - id: "civil_conspiracy"
+      name: "Civil Conspiracy / Concerted Action"
+      legal_basis: "Common law"
+      priority: "medium"
+      applies_to: ["platforms", "hosting services", "app developers", "social networks", "individual creators"]
+      strategic_advantage: "Dramatically broadens liability; ropes in multiple parties"
+    
+    - id: "negligent_design"
+      name: "Negligent Entrustment / Negligent Design"
+      legal_basis: "Tort law"
+      priority: "medium"
+      applies_to: ["AI app developers", "tech companies"]
+      strategic_advantage: "Doesn't require intent; only failure to prevent predictable misuse"
+    
+    - id: "product_liability"
+      name: "Product Liability"
+      legal_basis: "Emerging tort theory"
+      priority: "low"
+      strategic_advantage: "Bypasses negligence and intent; strict liability"
+    
+    - id: "deceptive_trade"
+      name: "Deceptive Trade Practices / Consumer Protection"
+      legal_basis: "State and federal consumer protection laws"
+      priority: "high"
+      remedies: ["Treble damages", "Statutory penalties", "Attorney's fees"]
+      strategic_advantage: "HUGE lever; high damage multipliers"
+    
+    - id: "loss_of_chance"
+      name: "Loss of Chance (Economic & Reputational)"
+      legal_basis: "Emerging tort theory"
+      priority: "medium"
+      requirements: ["Long-term modeling agreement", "Exclusivity agreement", "Clear valuation"]
+      strategic_advantage: "Rarely invoked but incredibly effective"
+    
+    - id: "loss_of_consortium"
+      name: "Loss of Consortium (Parent Derivative Claim)"
+      legal_basis: "Common law"
+      priority: "low"
+      strategic_advantage: "Parents have standing; additional damages claim"
+    
+    - id: "invasion_of_privacy"
+      name: "Invasion of Privacy (Four Tort Branches)"
+      legal_basis: "Common law privacy torts"
+      priority: "medium"
+      branches:
+        - "Intrusion upon seclusion"
+        - "Public disclosure of private facts"
+        - "Appropriation of likeness"
+        - "False light"
+      strategic_advantage: "Multiple claims from single act; comprehensive protection"
+    
+    - id: "misappropriation"
+      name: "Misappropriation of Name or Image (Common Law)"
+      legal_basis: "Common law"
+      priority: "medium"
+      strategic_advantage: "Broader than statutory ROPA; no commercial use requirement"
+    
+    - id: "fraud"
+      name: "Fraudulent Misrepresentation (Against Apps & Developers)"
+      legal_basis: "Common law fraud"
+      priority: "medium"
+      strategic_advantage: "High damages; punitive damages possible"
+    
+    - id: "good_faith"
+      name: "Breach of Implied Covenant of Good Faith & Fair Dealing"
+      legal_basis: "Contract law"
+      priority: "low"
+      strategic_advantage: "Contract-based; platform's own TOS creates obligation"
+    
+    - id: "vicarious_liability"
+      name: "Vicarious Liability"
+      legal_basis: "Agency law, tort law"
+      priority: "medium"
+      strategic_advantage: "Attaches liability up the chain; holds platforms responsible"
+    
+    - id: "aiding_abetting"
+      name: "Aiding & Abetting / Facilitation"
+      legal_basis: "Common law, emerging AI case law"
+      priority: "medium"
+      strategic_advantage: "Makes platform co-liable; strong emerging theory"
+    
+    - id: "conversion"
+      name: "Conversion / Theft of Likeness"
+      legal_basis: "Property law, tort law"
+      priority: "low"
+      strategic_advantage: "Perfect complement to modeling contract; property-based claim"
+    
+    - id: "digital_endangerment"
+      name: "Digital Child Endangerment (Emerging Tort)"
+      legal_basis: "Emerging tort theory"
+      priority: "medium"
+      strategic_advantage: "Courts recognizing in deepfake cases; comprehensive harm theory"
+    
+    - id: "constructive_defamation"
+      name: "Constructive Defamation Per Se"
+      legal_basis: "Defamation law"
+      priority: "medium"
+      strategic_advantage: "Applies even without publication; strong legal position"
+    
+    - id: "harassment_proxy"
+      name: "Harassment by Proxy: AI Synthesis as Intentional Abuse"
+      legal_basis: "Harassment laws, state statutes"
+      priority: "medium"
+      strategic_advantage: "Applies to tool users; intentional abuse theory"
+    
+    - id: "synthetic_sexualization"
+      name: "Unauthorized Synthetic Sexualization of a Minor"
+      legal_basis: "Emerging tort theory"
+      priority: "medium"
+      strategic_advantage: "Successfully argued in recent deepfake cases"
+    
+    - id: "algorithmic_assault"
+      name: "Algorithmic Assault (Novel Theory)"
+      legal_basis: "Cutting-edge argument"
+      priority: "low"
+      strategic_advantage: "Will gain traction; position yourself ahead of it"
+    
+    - id: "false_attribution"
+      name: "False Attribution of Conduct"
+      legal_basis: "Defamation law"
+      priority: "low"
+      strategic_advantage: "Additional defamation angle; implied false statements"
+    
+    - id: "multi_jurisdiction"
+      name: "Multi-Jurisdiction Liability"
+      legal_basis: "Multiple jurisdictions' laws"
+      priority: "medium"
+      applicable_laws: ["GDPR", "Quebec Privacy Act", "California DPRA", "New York SHIELD Act", "COPPA"]
+      strategic_advantage: "Multi-front regulatory problem; comprehensive coverage"
+
+  enforcement_mechanisms:
+    - id: "mandatory_reporting"
+      name: "Mandatory Federal Reporting (CSAM Statutes)"
+      legal_basis: "18 U.S.C. §2252, §2256"
+      requirements: ["Remove immediately", "Report to NCMEC", "Preserve logs"]
+      strategic_advantage: "Instantly escalates platform's risk; mandatory action"
+    
+    - id: "injunctions"
+      name: "Permanent Injunctions & Image Suppression Orders"
+      legal_basis: "Equity, court orders"
+      can_demand: ["De-indexing", "Hash-matching blocks", "Content hashing registries", "Automated suppression", "Proactive scanning"]
+      strategic_advantage: "Extremely effective; ongoing protection"
+    
+    - id: "trademark"
+      name: "Persona-Based Trademark Claim"
+      legal_basis: "Trademark law"
+      remedies: ["Trademark damages", "Statutory penalties", "Anti-counterfeiting remedies"]
+      strategic_advantage: "Opens door to trademark damages; additional legal theory"
+    
+    - id: "dmca_penalties"
+      name: "DMCA §512(f) Misrepresentation Penalties"
+      legal_basis: "DMCA"
+      strategic_advantage: "Exposes platform to monetary penalties"
+    
+    - id: "insurance"
+      name: "Insurance Policy Leverage"
+      legal_basis: "Insurance contracts"
+      requirements: ["Immediate removal", "Full cooperation", "Evidence preservation"]
+      strategic_advantage: "Insurance forces action; fast resolution"
+    
+    - id: "ag_complaint"
+      name: "State Attorney General Complaints"
+      legal_basis: "Consumer protection, state AG authority"
+      applies_to: ["Minors", "Sexualization", "AI", "Deceptive apps"]
+      strategic_advantage: "AG offices may open investigations; platforms avoid this"
+
+  digital_personhood_asset_interference:
+    name: "Digital Personhood Asset Interference"
+    legal_basis: "Emerging hybrid legal theory"
+    combines:
+      - "Right of publicity"
+      - "Property rights"
+      - "Brand value"
+      - "Emotional damages"
+      - "Future income expectancy"
+    requirements:
+      - "Modeling contract"
+      - "Valuation schedule"
+      - "Licensing terms"
+      - "Restrictions"
+      - "Clawback clauses"
+    converts: "Likeness → Commercial digital asset"
+    unauthorized_ai_becomes:
+      - "Asset degradation"
+      - "Destruction of future value"
+      - "Interference with ongoing licensing"
+      - "Loss of enforceable expectancy interest"
+    strategic_advantage: "Comprehensive theory; property-based; economic harm focus"
+
+  usage_strategy:
+    combining:
+      note: "Multiple causes can be invoked simultaneously for maximum leverage"
+      benefits:
+        - "Creates maximum leverage"
+        - "Covers all bases"
+        - "Ensures comprehensive protection"
+        - "Makes defense difficult"
+    
+    prioritization:
+      highest_priority:
+        - "CSAM Law (mandatory action)"
+        - "DMCA (fast takedown)"
+        - "Right of Publicity (strong leverage)"
+      high_priority:
+        - "Defamation/False Light"
+        - "Emotional Distress"
+        - "Economic Harm"
+      additional:
+        - "All other causes as appropriate"
+
+  evidence_requirements:
+    general:
+      - "Provenance (technical proof)"
+      - "Contracts (economic value)"
+      - "Documentation (timeline, harm)"
+      - "Witnesses (if applicable)"
+      - "Expert testimony (if needed)"
+    
+    specific_by_cause:
+      ropa: ["Proof of likeness use", "Derivative work creation", "State ROPA statute"]
+      defamation: ["False statement", "Publication", "Harm to reputation", "Fault"]
+      csam: ["Sexualized image of minor", "AI-generated (still counts)", "Distribution/hosting evidence"]
+      dmca: ["Copyright ownership", "Derivative work creation", "Registration (for statutory damages)"]
+      economic_harm: ["Commercial value of likeness", "Modeling contract", "Derivative use", "Economic loss"]
+
+  legal_review_note: |
+    IMPORTANT: This document provides legal information, not legal advice.
+    All causes of action should be reviewed by qualified legal counsel before use.
+    Legal standards, remedies, and availability vary by jurisdiction.
+

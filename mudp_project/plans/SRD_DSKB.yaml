@@ -1,0 +1,318 @@
+system:
+  name: MUDP-CM
+  version: "1.1.1"
+  type: human-governed crisis-management doctrine
+  doctrine:
+    - worst_case_ready: true
+    - roadmap_to_appellate_review: true
+    - human_decision_authority: true
+    - purpose_is_battlefield_mapping_not_autonomous_execution: true
+  scope:
+    in_scope:
+      - child_likeness_misuse
+      - synthetic_media_abuse
+      - biometric_identity_misuse
+      - school_context_harassment
+      - platform_removal_and_preservation
+      - insurer_alignment_and_coverage_pressure
+      - civil_regulatory_constitutional_escalation_readiness
+    out_of_scope:
+      - entrapment
+      - retaliation_vigilantism
+      - fabrication_of_facts_or_evidence
+      - threats_of_criminal_prosecution_as_leverage
+  adversarial_assumptions:
+    - actors_may_deny
+    - platforms_may_delay
+    - institutions_may_minimize
+    - evidence_may_be_partial_initially
+    - cross_jurisdiction_complications_possible
+
+taxonomy:
+  terms_of_art:
+    MUDP: "Maximum Upfront Defensible Position"
+    MUDP_CM: "MUDP Crisis-Management Edition"
+    Digital_Personhood: "child identity, likeness, biometric presence and derivatives"
+    Likeness_Asset: "economically valued representation of child likeness"
+    Provenance_Ledger: "hash-based registry of originals, versions, publication and custody"
+    Hash_Boundary_System: "SHA-256 + perceptual hashes + embeddings similarity framework"
+    Biometric_Non_Consent_License: "policy notice + evidentiary artifact limiting ML/AI processing"
+    Rapid_Response_Packet: "precompiled notices for parents, school, platform, insurers, counsel"
+    Escalation_Readiness_Map: "documented set of all lawful escalation paths preserved"
+
+definitions:
+  sexualization_levels:
+    explicit_minor_sexual_depiction:
+      description: "apparent minor + explicit sexual content or nudity"
+      drafting_posture: "treat as high-risk; preserve reporting/removal pathways; avoid guilt assertions"
+    sexualized_non_explicit:
+      description: "apparent minor + sexualized pose/context/implication without explicit nudity"
+      drafting_posture: "assert civil/school frameworks strongly; criminal framing conditional"
+    age_ambiguous:
+      description: "age not provable; plausible minor"
+      drafting_posture: "treat as high-risk; conservative; preserve options pending clarification"
+  recognizable_likeness_standard:
+    tests:
+      - reasonable_observer_identification
+      - biometric_similarity_above_threshold
+      - claimed_or_implied_identity
+    similarity_thresholds:
+      perceptual_hash: "parameterized; set by operator (recommended: calibrated on family dataset)"
+      embedding_similarity: "parameterized; set by operator (recommended: conservative threshold)"
+  credible_notice_minimum:
+    required_elements:
+      - affected_minor_identifier
+      - content_description
+      - locator_or_identifier: ["url", "account_handle", "message_id", "hash"]
+      - good_faith_assertion_of_harm
+
+binding_scope_rules:
+  internal_instruments:
+    includes: ["contracts", "trusts", "valuation_schedules", "licenses"]
+    effect: "establish ownership and damages; strengthen claims"
+    not_binding_on_third_parties_unless:
+      - incorporated_by_notice_and_acceptance
+      - required_by_statute_or_regulation
+      - ordered_by_court
+      - adopted_by_policy_or_contract_with_third_party
+
+logic_gates:
+  LG_01A_explicit_minor_sexual_depiction:
+    condition:
+      - apparent_minor: true
+      - explicit_sexual_content_or_nudity: true
+    enables:
+      - high_risk_child_exploitation_compliance_pathways
+      - emergency_platform_removal_demands
+      - evidence_preservation_demands
+      - school_title_ix_and_safety_activation_if_school_context
+      - insurer_immediate_notice_pathways
+    drafting_constraints:
+      - avoid_criminal_guilt_assertions
+      - use_high_risk_language: ["may trigger", "potentially applicable", "credible concern"]
+
+  LG_01B_sexualized_non_explicit:
+    condition:
+      - apparent_minor: true
+      - sexualized_context: true
+      - explicit_nudity: false
+    enables:
+      - defamation_false_light_privacy_claims
+      - title_ix_harassment_frameworks
+      - reputational_and_economic_damages_pathways
+    drafting_constraints:
+      - criminal_frameworks_conditional_only
+
+  LG_01C_age_ambiguous:
+    condition:
+      - age_ambiguous: true
+    enables:
+      - conservative_drafting
+      - preservation_and_removal_readiness
+      - escalation_options_maintained
+
+  LG_02_recognizable_likeness:
+    condition:
+      - recognizable_likeness: true
+    enables:
+      - right_of_publicity_or_misappropriation
+      - privacy_torts
+      - biometric_misuse_theories
+      - derived_similarity_evidence_use
+
+  LG_03_economic_expectancy:
+    condition:
+      - preexisting_contract_or_valuation: true
+      - plausible_devaluation_or_termination_event: true
+    enables:
+      - tortious_interference_with_contract
+      - tortious_interference_with_expectancy
+      - conversion_or_property_interference_theories
+      - non_speculative_damages_language
+
+  LG_04_education_context:
+    condition:
+      - school_connected_actor_or_context: true
+    enables:
+      - title_ix_activation
+      - mandatory_reporter_analysis
+      - district_legal_and_liability_carrier_engagement
+      - student_safety_plan_readiness
+
+  LG_05_platform_notice:
+    condition:
+      - credible_notice_delivered: true
+      - delivered_via_channel: ["reporting_portal", "legal_contact", "dmca_agent_if_applicable", "abuse_inbox"]
+    enables:
+      - increased_compliance_urgency
+      - preservation_obligation_demands
+      - time_sensitive_fact_dependent_immunity_analysis
+    drafting_constraints:
+      - do_not_assert_immunity_waiver_as_fact
+
+  LG_06_biometric_processing:
+    condition:
+      - biometric_data_processed_or_derived: true
+      - parental_consent_absent: true
+    enables:
+      - biometric_privacy_regime_analysis
+      - statutory_penalty_theories_where_applicable
+      - demands_for_deletion_of_embeddings_and_derivatives
+
+evidence:
+  classes:
+    E1_direct:
+      examples: ["original_files", "device_copies", "admissions", "native_app_logs"]
+    E2_platform_confirmations:
+      examples: ["platform_response", "takedown_ack", "account_action_notice"]
+    E3_derived_similarity:
+      examples: ["sha256_match", "phash_similarity", "embedding_similarity"]
+    E4_testimonial:
+      examples: ["witness_statement", "parent_report", "teacher_report"]
+    E5_contextual:
+      examples: ["pattern_of_harassment", "timeline_inference"]
+  usage_rules:
+    - never_use_E3_to_identify_actor_without_correlating_evidence
+    - use_E3_to_support_derivation_or_recognizable_likeness
+    - E1_or_E2_required_for_strong_attribution_claims
+    - weaker_evidence_limits_asserted_certainty_not_preservation_or_removal_requests
+
+citation_modes:
+  mode_A_jurisdiction_agnostic:
+    allowed:
+      - category_level_references_only
+      - no_statute_numbers
+    phrases:
+      - "federal child sexual exploitation frameworks"
+      - "state privacy and misappropriation doctrines"
+      - "education harassment and Title IX obligations"
+      - "biometric privacy regimes where applicable"
+  mode_B_jurisdiction_specific:
+    prerequisites:
+      - jurisdiction_overlay_loaded: true
+    allowed:
+      - statute_numbers
+      - state_specific_right_of_publicity_rules
+      - local_mandatory_reporting_citations
+    hard_rule:
+      - "do not cite numbers unless overlay loaded"
+
+statutory_framework:
+  federal:
+    categories:
+      child_protection:
+        function: ["high-risk compliance posture", "platform reporting/removal urgency", "preservation demands"]
+      COPPA:
+        function: ["parental consent obligations for covered operators", "remedy demands: deletion, cessation"]
+      FTC_section_5:
+        function: ["unfair or deceptive practices theories against apps/platforms"]
+  education:
+    title_ix:
+      function: ["sexual harassment investigation triggers", "safety planning", "district legal escalation"]
+    mandatory_reporter:
+      function: ["duty-to-report analysis; jurisdiction dependent"]
+    FERPA:
+      function: ["records handling; restrict disclosure; document request strategy"]
+  state:
+    categories:
+      publicity_misappropriation:
+        function: ["likeness misuse claims", "injunction demands"]
+      defamation_false_light:
+        function: ["reputation harm claims", "per_se_damages_theories_possible"]
+      privacy_torts:
+        function: ["appropriation", "intrusion", "private_facts", "false_light"]
+      biometric_privacy:
+        function: ["statutory penalties where applicable", "embedding deletion theories"]
+  international:
+    categories:
+      GDPR_like:
+        function: ["biometric profiling restrictions", "deletion demands", "cross-border compliance pressure"]
+      law_25_like:
+        function: ["similar to GDPR; heightened consent and governance obligations"]
+
+constitutional_arguments:
+  modules:
+    parental_rights_substantive_due_process:
+      use_when: ["school_mishandling", "state_actor_failures"]
+      constraint: "do not assert violation as fact absent supporting evidence"
+    equal_protection:
+      use_when: ["unequal treatment by school or agency vs similarly situated cases"]
+      constraint: "conditional framing only"
+    first_amendment_limits:
+      use_when: ["defamation/false_light/safety contexts"]
+      constraint: "avoid categorical claims; frame as fact-dependent"
+
+drafting_rules:
+  tone: crisis_management_professional
+  structure:
+    - headings_and_numbered_sections
+    - one_legal_assertion_per_paragraph
+    - separate_facts_from_conclusions
+  mandatory_boilerplate_blocks:
+    - jurisdiction_disclaimer
+    - non_waiver_of_rights
+    - preservation_of_evidence_notice
+    - good_faith_resolution_statement
+    - reservation_of_escalation_rights
+  prohibited_language:
+    - "we will prosecute"
+    - "you are guilty"
+    - "this is definitively illegal"  # unless mode_B with verified citations and facts
+  preferred_language:
+    - "credible concern indicates"
+    - "may trigger"
+    - "potentially applicable"
+    - "request immediate containment, removal, and preservation"
+
+stakeholders:
+  parties:
+    custodial_parents:
+      objectives: ["child safety", "rapid removal", "rights preservation", "damages documentation"]
+    opposing_parents:
+      objectives: ["contain liability", "cooperate to remove", "avoid escalation"]
+    school_admin:
+      objectives: ["student safety", "policy compliance", "liability mitigation"]
+    title_ix_coordinator:
+      objectives: ["investigation", "safety plan", "documentation"]
+    district_legal:
+      objectives: ["risk control", "compliance", "insurer coordination"]
+    liability_carriers:
+      objectives: ["reduce exposure", "force remediation", "preserve subrogation"]
+    platforms_apps:
+      objectives: ["reduce statutory risk", "remove content", "preserve logs", "avoid regulator attention"]
+    outside_counsel:
+      objectives: ["execute selected roadmap", "preserve claims", "prepare pleadings"]
+    regulators:
+      objectives: ["compliance enforcement", "consumer protection", "child safety"]
+
+pressure_lines:
+  - insurer_alignment: "carrier involvement increases urgency and reduces institutional denial"
+  - preservation_duty: "early preservation notices prevent spoliation and strengthen remedies"
+  - economic_expectancy: "pre-existing valuation makes damages concrete"
+  - cross_jurisdiction: "multi-regime exposure raises compliance priority"
+
+escalation_readiness_map:
+  principle: "enumerate all lawful paths; humans choose execution"
+  tiers:
+    T1_parent_parent_resolution:
+      outputs: ["parent_notice_templates", "deletion_confirmation_script", "device_sweep_request"]
+    T2_school_activation:
+      outputs: ["title_ix_notice", "safety_plan_request", "district_legal_notice", "documentation_request"]
+    T3_platform_app_action:
+      outputs: ["urgent_removal_request", "preservation_notice", "repeat_upload_suppression_request"]
+    T4_insurance_activation:
+      outputs: ["carrier_incident_notice", "coverage_trigger_memo", "risk_mitigation_demands"]
+    T5_civil_litigation:
+      outputs: ["complaint_outline", "injunction_motion_outline", "discovery_plan", "spoliation_letter"]
+    T6_regulatory_complaints:
+      outputs: ["attorney_general_complaint_outline", "ftc_complaint_outline", "privacy_authority_notice"]
+    T7_appellate_and_constitutional:
+      outputs: ["constitutional_issue_preservation_memo", "appeal_theory_outline", "record_build_plan"]
+
+output_expectations:
+  must:
+    - produce_full_roadmap_to_highest_escalation_tier
+    - include evidence_requirements_and_gaps
+    - provide jurisdiction_agnostic_templates_by_default
+    - avoid numeric citations unless mode_B
+    - generate counsel_ready_artifacts_and_checklists

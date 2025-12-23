@@ -1,0 +1,277 @@
+# Regulatory Compliance Matrix
+# Cross-jurisdictional regulatory framework for child digital personhood protection
+
+# Source: MUDP.md, Lines ~4018-4059
+# Extracted: 2025-12-22
+# Status: Regulatory Framework Data
+
+regulatory_matrix:
+  overview: |
+    This matrix provides a comprehensive overview of regulatory frameworks
+    applicable to child digital personhood protection across multiple
+    jurisdictions. It covers federal, state, and international laws that
+    can be invoked for protection and enforcement.
+
+  us_federal_laws:
+    - id: "coppa"
+      name: "Children's Online Privacy Protection Act (COPPA)"
+      statute: "15 U.S.C. §6501-6506"
+      applies_to: "Online services directed to children under 13"
+      protection_scope:
+        - "Privacy protection for children"
+        - "Parental consent requirements"
+        - "Data collection restrictions"
+      enforcement: "FTC enforcement"
+      strategic_advantage: "Applies to platforms serving children"
+    
+    - id: "csam_statutes"
+      name: "CSAM Statutes"
+      statutes:
+        - "18 U.S.C. §2252 (Distribution)"
+        - "18 U.S.C. §2256 (Definition)"
+      applies_to: "Sexualized imagery of minors (including AI-generated)"
+      protection_scope:
+        - "AI-generated minors in sexualized imagery = treated as CSAM"
+        - "Distribution, hosting, or production is federal felony"
+        - "Platforms REQUIRED to remove and report"
+        - "Mandatory reporting to NCMEC"
+      enforcement: "Federal criminal prosecution"
+      strategic_advantage: "Most powerful lever; mandatory action; no safe harbor"
+      notes: "2024-2025 updates explicitly include AI-generated content"
+    
+    - id: "cyberstalking"
+      name: "Federal Cyberstalking/Extortion"
+      statute: "18 U.S.C. §2261A, §875"
+      applies_to: "Cyberstalking, extortion, threats"
+      protection_scope:
+        - "Cyberstalking protection"
+        - "Extortion prevention"
+        - "Threat prosecution"
+      enforcement: "Federal criminal prosecution"
+      strategic_advantage: "Covers harassment and extortion"
+    
+    - id: "ftc_act"
+      name: "FTC Act §5"
+      statute: "15 U.S.C. §45"
+      applies_to: "Unfair or deceptive trade practices"
+      protection_scope:
+        - "Unfair practices"
+        - "Deceptive practices"
+        - "Consumer protection"
+      enforcement: "FTC enforcement"
+      strategic_advantage: "Applies to deceptive apps and platforms"
+
+  state_law_matrix:
+    focus_states:
+      - "Kansas"
+      - "Missouri"
+    
+    applicable_laws:
+      - id: "right_of_publicity"
+        name: "Right of Publicity"
+        states: "Most states (including Kansas, Missouri)"
+        protection_scope:
+          - "Protection of likeness"
+          - "Commercial use restrictions"
+          - "Derivative work protection"
+        remedies:
+          - "Statutory damages"
+          - "Punitive damages"
+          - "Injunctions"
+          - "Attorney's fees"
+        strategic_advantage: "No safe harbor; strong leverage"
+      
+      - id: "defamation"
+        name: "Defamation"
+        states: "All states"
+        protection_scope:
+          - "False statements"
+          - "Reputation harm"
+          - "Per se defamation (sexualized minors)"
+        remedies:
+          - "Compensatory damages"
+          - "Punitive damages"
+          - "Injunctions"
+        strategic_advantage: "Almost per se defamatory for sexualized minors"
+      
+      - id: "privacy_torts"
+        name: "Privacy Torts"
+        states: "Most states"
+        protection_scope:
+          - "Intrusion upon seclusion"
+          - "Public disclosure of private facts"
+          - "Appropriation of likeness"
+          - "False light"
+        remedies:
+          - "Compensatory damages"
+          - "Punitive damages"
+          - "Injunctions"
+        strategic_advantage: "Comprehensive privacy protection"
+      
+      - id: "child_exploitation"
+        name: "Child Exploitation Statutes"
+        states: "All states"
+        protection_scope:
+          - "Sexual exploitation of minors"
+          - "Child abuse imagery"
+          - "Mandatory reporting"
+        enforcement: "State criminal prosecution"
+        strategic_advantage: "Criminal penalties; mandatory reporting"
+
+  gdpr_impact_matrix:
+    name: "GDPR Impact Matrix"
+    applies_to: "Only for platforms touching EU servers"
+    regulation: "General Data Protection Regulation (EU)"
+    protection_scope:
+      - "Biometric data protection"
+      - "Profiling prohibitions"
+      - "Data processing restrictions"
+      - "Right to erasure"
+      - "Data portability"
+    enforcement: "EU data protection authorities"
+    strategic_advantage: "Applies if platform has EU presence"
+    notes: "Can create multi-jurisdictional liability"
+
+  bipa_risk_matrix:
+    name: "BIPA Risk Matrix"
+    statute: "Illinois Biometric Information Privacy Act"
+    applies_to: "Biometric data collection and use"
+    protection_scope:
+      - "Strict biometric liability"
+      - "Consent requirements"
+      - "Retention limitations"
+      - "Disclosure restrictions"
+    enforcement: "Private right of action"
+    remedies:
+      - "Statutory damages ($1,000-$5,000 per violation)"
+      - "Attorney's fees"
+    strategic_advantage: "Strict liability; high damages"
+    notes: "Illinois BIPA has analogues in other states"
+    similar_laws:
+      - "California Privacy Act"
+      - "Texas Biometric Privacy Act"
+      - "Washington Biometric Privacy Act"
+
+  canadian_privacy_act:
+    name: "Canadian Privacy Act"
+    applies_to: "Quebec's law covers synthetic depictions"
+    protection_scope:
+      - "Privacy protection"
+      - "Synthetic content regulation"
+      - "Biometric data protection"
+    enforcement: "Canadian privacy authorities"
+    strategic_advantage: "Applies if platform processes in Canada"
+    notes: "Quebec has specific synthetic content laws"
+
+  international_csam_reporting:
+    name: "International CSAM Reporting Laws"
+    applies_to: "Global platforms and services"
+    protection_scope:
+      - "Mandatory reporting requirements"
+      - "Cross-border cooperation"
+      - "International law enforcement"
+    enforcement: "International law enforcement cooperation"
+    strategic_advantage: "Global reach; international pressure"
+    notes: "Many countries have mandatory reporting laws"
+
+  multi_jurisdiction_liability:
+    name: "Multi-Jurisdiction Liability"
+    scenario: |
+      If platform/app:
+      - Stores data in Europe
+      - Processes in Canada
+      - Hosts in California
+    applicable_laws:
+      - "GDPR (EU)"
+      - "Quebec Privacy Act (Canada)"
+      - "California DPRA (California)"
+      - "New York SHIELD Act (New York)"
+      - "COPPA (Federal)"
+    strategic_advantage: "Multi-front regulatory problem for platforms"
+    enforcement: "Multiple jurisdictions simultaneously"
+
+  biometric_privacy_laws:
+    states_with_bipa_analogues:
+      - "Illinois (BIPA)"
+      - "California (CPRA)"
+      - "Texas"
+      - "Washington"
+      - "New York"
+    protection_scope:
+      - "Biometric data collection restrictions"
+      - "Consent requirements"
+      - "Retention limitations"
+      - "Disclosure restrictions"
+    strategic_advantage: "Strict liability; high statutory damages"
+    activation: "Biometric Non-Consent License triggers these laws"
+
+  consumer_protection_laws:
+    federal:
+      - "FTC Act §5"
+      - "COPPA"
+    state:
+      - "State deceptive trade practices acts"
+      - "State consumer protection statutes"
+    protection_scope:
+      - "Deceptive practices"
+      - "Unfair practices"
+      - "Consumer injury"
+    remedies:
+      - "Treble damages (some states)"
+      - "Statutory penalties"
+      - "Attorney's fees"
+    strategic_advantage: "High damage multipliers; strong consumer protection"
+
+  title_ix:
+    name: "Title IX"
+    statute: "20 U.S.C. §1681"
+    applies_to: "Educational institutions receiving federal funding"
+    protection_scope:
+      - "Sexual harassment"
+      - "Gender discrimination"
+      - "Hostile environment"
+    enforcement: "Department of Education, OCR"
+    strategic_advantage: "Mandatory action for schools; deepfakes = sexual harassment"
+    notes: "Deepfakes of minors = sexual harassment = mandatory action"
+
+  usage_strategy:
+    primary_levers:
+      - "CSAM statutes (federal, mandatory)"
+      - "Right of Publicity (state, strong leverage)"
+      - "Defamation (state, per se for sexualized minors)"
+      - "Title IX (schools, mandatory action)"
+    
+    supporting_levers:
+      - "COPPA (if platform serves children)"
+      - "BIPA/analogues (if biometric data involved)"
+      - "GDPR (if EU presence)"
+      - "Consumer protection (if deceptive practices)"
+    
+    multi_jurisdiction:
+      note: "Invoke all applicable jurisdictions for maximum pressure"
+      benefit: "Creates multi-front regulatory problem"
+      example: "GDPR + BIPA + CSAM + ROPA = comprehensive coverage"
+
+  enforcement_priorities:
+    highest:
+      - "CSAM statutes (mandatory, federal)"
+      - "Title IX (mandatory, schools)"
+    high:
+      - "Right of Publicity (strong leverage)"
+      - "Defamation (per se for sexualized minors)"
+      - "BIPA/analogues (strict liability)"
+    medium:
+      - "COPPA (if applicable)"
+      - "GDPR (if EU presence)"
+      - "Consumer protection"
+    supporting:
+      - "Privacy torts"
+      - "State child exploitation"
+      - "International CSAM reporting"
+
+  legal_review_note: |
+    IMPORTANT: This matrix provides regulatory information, not legal advice.
+    All regulatory frameworks should be reviewed by qualified legal counsel
+    before use. Regulatory requirements and enforcement vary by jurisdiction
+    and may change over time.
+

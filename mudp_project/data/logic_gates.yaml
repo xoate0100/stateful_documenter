@@ -1,0 +1,335 @@
+# MUDP Logic Gates System
+# Decision framework for scenario mapping and template pre-generation
+
+# Source: SRD_DSKB.yaml
+# Purpose: Define all scenario categories for complete artifact pre-generation
+# Status: Core System Component
+
+logic_gates:
+  overview: |
+    Logic gates define scenario categories that determine which pre-generated
+    templates and legal pathways are available. They enable complete scenario
+    mapping for comprehensive artifact pre-generation. Humans assess situations
+    against these gates to select appropriate pre-generated artifacts.
+
+  purpose: |
+    - Map all possible scenarios
+    - Enable pre-generation of all template variants
+    - Provide decision framework for human selection
+    - Ensure complete coverage of all lawful paths
+
+  gates:
+    LG_01A_explicit_minor_sexual_depiction:
+      id: "LG_01A"
+      name: "Explicit Minor Sexual Depiction"
+      description: "Apparent minor + explicit sexual content or nudity"
+      
+      conditions:
+        - apparent_minor: true
+        - explicit_sexual_content_or_nudity: true
+      
+      enables:
+        - high_risk_child_exploitation_compliance_pathways
+        - emergency_platform_removal_demands
+        - evidence_preservation_demands
+        - school_title_ix_and_safety_activation_if_school_context
+        - insurer_immediate_notice_pathways
+        - mandatory_reporting_considerations
+      
+      drafting_constraints:
+        - avoid_criminal_guilt_assertions
+        - use_high_risk_language: ["may trigger", "potentially applicable", "credible concern"]
+        - preserve_reporting_pathways
+        - maintain_professional_tone
+      
+      template_variants_required:
+        - parent_notice_high_risk
+        - platform_removal_emergency
+        - school_title_ix_activation
+        - insurance_incident_report
+        - evidence_preservation_demand
+        - regulatory_complaint_high_risk
+      
+      escalation_paths:
+        - tier_1: "Parent notification (high-risk variant)"
+        - tier_2: "School activation (mandatory if school context)"
+        - tier_3: "Platform removal (emergency)"
+        - tier_4: "Insurance notification (immediate)"
+        - tier_5: "Civil litigation (if needed)"
+        - tier_6: "Regulatory complaints (if platform fails)"
+        - tier_7: "Appellate/constitutional (if lower tiers fail)"
+
+    LG_01B_sexualized_non_explicit:
+      id: "LG_01B"
+      name: "Sexualized Non-Explicit"
+      description: "Apparent minor + sexualized pose/context/implication without explicit nudity"
+      
+      conditions:
+        - apparent_minor: true
+        - sexualized_context: true
+        - explicit_nudity: false
+      
+      enables:
+        - defamation_false_light_privacy_claims
+        - title_ix_harassment_frameworks
+        - reputational_and_economic_damages_pathways
+        - civil_school_frameworks
+      
+      drafting_constraints:
+        - criminal_frameworks_conditional_only
+        - assert_civil_school_frameworks_strongly
+        - focus_on_reputational_harm
+      
+      template_variants_required:
+        - parent_notice_civil_focus
+        - defamation_false_light_notice
+        - title_ix_harassment_notice
+        - school_activation_civil
+        - platform_removal_civil
+        - economic_damages_documentation
+      
+      escalation_paths:
+        - tier_1: "Parent notification (civil focus)"
+        - tier_2: "School activation (Title IX/harassment)"
+        - tier_3: "Platform removal (civil basis)"
+        - tier_4: "Insurance (if applicable)"
+        - tier_5: "Civil litigation (defamation/privacy)"
+        - tier_6: "Regulatory (if platform fails)"
+        - tier_7: "Appellate (if needed)"
+
+    LG_01C_age_ambiguous:
+      id: "LG_01C"
+      name: "Age Ambiguous"
+      description: "Age not provable; plausible minor"
+      
+      conditions:
+        - age_ambiguous: true
+        - plausible_minor: true
+      
+      enables:
+        - conservative_drafting
+        - preservation_and_removal_readiness
+        - escalation_options_maintained
+        - high_risk_treatment
+      
+      drafting_constraints:
+        - treat_as_high_risk
+        - conservative_language
+        - preserve_all_options
+        - pending_clarification_note
+      
+      template_variants_required:
+        - parent_notice_conservative
+        - platform_removal_conservative
+        - evidence_preservation_conservative
+        - escalation_readiness_maintained
+      
+      escalation_paths:
+        - tier_1: "Parent notification (conservative)"
+        - tier_2: "School activation (if school context)"
+        - tier_3: "Platform removal (conservative)"
+        - tier_4: "Insurance (if applicable)"
+        - tier_5: "Civil litigation (if needed)"
+        - tier_6: "Regulatory (if needed)"
+        - tier_7: "Appellate (if needed)"
+
+    LG_02_recognizable_likeness:
+      id: "LG_02"
+      name: "Recognizable Likeness"
+      description: "Child's likeness is recognizable through reasonable observer or biometric similarity"
+      
+      conditions:
+        - recognizable_likeness: true
+        - tests:
+          - reasonable_observer_identification: true
+          - biometric_similarity_above_threshold: true
+          - claimed_or_implied_identity: true
+      
+      enables:
+        - right_of_publicity_or_misappropriation
+        - privacy_torts
+        - biometric_misuse_theories
+        - derived_similarity_evidence_use
+        - likeness_asset_protection
+      
+      drafting_constraints:
+        - assert_likeness_recognition
+        - use_biometric_evidence_appropriately
+        - claim_right_of_publicity
+        - privacy_tort_theories
+      
+      template_variants_required:
+        - right_of_publicity_notice
+        - misappropriation_notice
+        - privacy_tort_notice
+        - biometric_misuse_notice
+        - likeness_protection_demand
+      
+      escalation_paths:
+        - applicable_to_all_tiers: true
+        - enhances_all_claims: true
+
+    LG_03_economic_expectancy:
+      id: "LG_03"
+      name: "Economic Expectancy"
+      description: "Preexisting contract or valuation establishes economic value"
+      
+      conditions:
+        - preexisting_contract_or_valuation: true
+        - plausible_devaluation_or_termination_event: true
+      
+      enables:
+        - tortious_interference_with_contract
+        - tortious_interference_with_expectancy
+        - conversion_or_property_interference_theories
+        - non_speculative_damages_language
+        - quantifiable_economic_harm
+      
+      drafting_constraints:
+        - assert_contractual_relationship
+        - claim_quantifiable_damages
+        - avoid_speculative_language
+        - document_economic_value
+      
+      template_variants_required:
+        - tortious_interference_notice
+        - economic_harm_documentation
+        - contract_valuation_evidence
+        - damages_calculation
+      
+      escalation_paths:
+        - tier_1: "Parent notification (with economic harm)"
+        - tier_5: "Civil litigation (tortious interference)"
+        - tier_6: "Regulatory (if applicable)"
+        - tier_7: "Appellate (if needed)"
+
+    LG_04_education_context:
+      id: "LG_04"
+      name: "Education Context"
+      description: "Incident involves school-connected actor or context"
+      
+      conditions:
+        - school_connected_actor_or_context: true
+      
+      enables:
+        - title_ix_activation
+        - mandatory_reporter_analysis
+        - district_legal_and_liability_carrier_engagement
+        - student_safety_plan_readiness
+        - ferpa_considerations
+      
+      drafting_constraints:
+        - assert_title_ix_obligations
+        - mandatory_reporter_analysis
+        - district_liability_theories
+        - student_safety_focus
+      
+      template_variants_required:
+        - title_ix_notice
+        - mandatory_reporter_analysis
+        - district_legal_notice
+        - student_safety_plan_request
+        - ferpa_documentation_request
+      
+      escalation_paths:
+        - tier_2: "School activation (mandatory)"
+        - tier_4: "Insurance (district liability)"
+        - tier_5: "Civil litigation (if needed)"
+        - tier_6: "Regulatory (education department)"
+        - tier_7: "Appellate (if needed)"
+
+    LG_05_platform_notice:
+      id: "LG_05"
+      name: "Platform Notice"
+      description: "Credible notice delivered to platform via proper channel"
+      
+      conditions:
+        - credible_notice_delivered: true
+        - delivered_via_channel:
+          - reporting_portal
+          - legal_contact
+          - dmca_agent_if_applicable
+          - abuse_inbox
+      
+      enables:
+        - increased_compliance_urgency
+        - preservation_obligation_demands
+        - time_sensitive_fact_dependent_immunity_analysis
+        - platform_liability_theories
+      
+      drafting_constraints:
+        - do_not_assert_immunity_waiver_as_fact
+        - assert_preservation_obligations
+        - time_sensitive_language
+        - compliance_urgency
+      
+      template_variants_required:
+        - platform_preservation_demand
+        - platform_liability_notice
+        - repeat_upload_suppression_request
+        - compliance_urgency_demand
+      
+      escalation_paths:
+        - tier_3: "Platform action (enhanced)"
+        - tier_6: "Regulatory (if platform fails)"
+        - tier_7: "Appellate (if needed)"
+
+    LG_06_biometric_processing:
+      id: "LG_06"
+      name: "Biometric Processing"
+      description: "Biometric data processed or derived without parental consent"
+      
+      conditions:
+        - biometric_data_processed_or_derived: true
+        - parental_consent_absent: true
+      
+      enables:
+        - biometric_privacy_regime_analysis
+        - statutory_penalty_theories_where_applicable
+        - demands_for_deletion_of_embeddings_and_derivatives
+        - biometric_privacy_claims
+      
+      drafting_constraints:
+        - assert_biometric_privacy_violations
+        - demand_embedding_deletion
+        - statutory_penalty_theories
+        - cross_jurisdiction_considerations
+      
+      template_variants_required:
+        - biometric_privacy_notice
+        - embedding_deletion_demand
+        - statutory_penalty_notice
+        - biometric_privacy_complaint
+      
+      escalation_paths:
+        - tier_3: "Platform action (biometric deletion)"
+        - tier_5: "Civil litigation (biometric privacy)"
+        - tier_6: "Regulatory (privacy authorities)"
+        - tier_7: "Appellate (if needed)"
+
+  decision_tree:
+    purpose: |
+      Logic gates can combine to create complex scenarios. All combinations
+      must be pre-generated to ensure complete artifact library.
+    
+    combination_examples:
+      - "LG_01A + LG_02 + LG_04": "Explicit content, recognizable likeness, school context"
+      - "LG_01B + LG_03": "Sexualized non-explicit with economic expectancy"
+      - "LG_01C + LG_05": "Age ambiguous with platform notice"
+      - "LG_02 + LG_06": "Recognizable likeness with biometric processing"
+    
+    pre_generation_requirement: |
+      All logic gate combinations must have pre-generated template variants
+      to ensure complete coverage for human selection during incidents.
+
+  human_assessment_process:
+    step_1: "Assess incident against all logic gates"
+    step_2: "Identify which gates are TRUE"
+    step_3: "Determine combination of active gates"
+    step_4: "Select appropriate pre-generated artifacts"
+    step_5: "Execute chosen path(s)"
+    
+    note: |
+      Logic gates provide the decision framework. Humans assess and select.
+      The system maps all scenarios; humans choose execution.
+

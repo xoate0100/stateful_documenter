@@ -6,6 +6,11 @@ mode:
   human_review_required_for_merge: true
 
 permissions:
+  # Write permissions are project-type aware:
+  # - Programming projects: frontend/, backend/, shared/
+  # - Documentation projects: docs/, data/, plans/, evidence/, callables/
+  # The guardrail_enforcement.py script dynamically adds documentation paths
+  # based on project type detection from MVP_SPECIFICATION.yaml or ACTIVE_PLAN.yaml
   write_to:
     - frontend/
     - backend/
@@ -52,12 +57,16 @@ thresholds:
   line_length: 100
 
 ai_guardrails:
-  enforce_task_scope: true
-  forbid_folder_creation_outside_scope: true
-  enforce_tdd_cycle: true  # BLOCKING: Commits blocked if code modified without tests
-  enforce_solid_principles: true  # BLOCKING: Commits blocked on SOLID violations (SRP, ISP, DIP)
-  require_doc_sync: true
-  require_commit_plan_tags: true
+  # Project-type aware guardrails:
+  # - Programming projects: All guardrails enforced (TDD, SOLID, task scope, etc.)
+  # - Documentation projects: Skip TDD/SOLID (no code), enforce task scope, doc sync, commit tags
+  # Guardrail enforcement automatically detects project type from MVP_SPECIFICATION.yaml or ACTIVE_PLAN.yaml
+  enforce_task_scope: true  # Applies to all projects - ensures commits stay within task boundaries
+  forbid_folder_creation_outside_scope: true  # Project-type aware - supports both programming and documentation structures
+  enforce_tdd_cycle: true  # Programming projects only - automatically skipped for documentation projects
+  enforce_solid_principles: true  # Programming projects only - automatically skipped for documentation projects
+  require_doc_sync: true  # Applies to all projects - encourages documentation updates
+  require_commit_plan_tags: true  # Applies to all projects - ensures traceability
 
 # Metadata (optional but recommended)
 meta:

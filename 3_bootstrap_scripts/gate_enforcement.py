@@ -21,6 +21,33 @@ def load_feature_flags():
     return yaml.safe_load(open(flags_path))
 
 
+def detect_project_type() -> str:
+    """Detect project type from MVP_SPECIFICATION or ACTIVE_PLAN"""
+    # Try MVP_SPECIFICATION first
+    mvp_path = pathlib.Path("0_phase0_bootstrap/MVP_SPECIFICATION.yaml")
+    if mvp_path.exists():
+        try:
+            mvp = yaml.safe_load(open(mvp_path))
+            project_type = mvp.get("Project_Type") or mvp.get("project_type")
+            if project_type:
+                return project_type.lower()
+        except:
+            pass
+    
+    # Fall back to ACTIVE_PLAN
+    plan_path = pathlib.Path("6_ai_runtime_context/ACTIVE_PLAN.yaml")
+    if plan_path.exists():
+        try:
+            plan = yaml.safe_load(open(plan_path))
+            project_type = plan.get("project_type")
+            if project_type:
+                return project_type.lower()
+        except:
+            pass
+    
+    return "programming"
+
+
 def warn_on_performance_regression(gates: dict, thresholds: dict):
     """
     Gate: warn_on_performance_regression
@@ -80,9 +107,16 @@ def main():
     flags = load_feature_flags()
     gates = flags.get("gates", {})
     thresholds = flags.get("thresholds", {})
+    project_type = detect_project_type()
     
     if not gates:
         print("[gate] No gates configured")
+        sys.exit(0)
+    
+    # Skip coverage/mutation gates for documentation projects
+    if project_type == "documentation":
+        print("[gate] Project type is 'documentation' - skipping code-related gates (coverage, mutation)")
+        print("[gate] Documentation projects don't have code to test")
         sys.exit(0)
     
     results = []

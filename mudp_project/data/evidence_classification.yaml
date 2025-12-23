@@ -1,0 +1,266 @@
+# MUDP Evidence Classification System
+# E1-E5 evidence classes with usage rules
+
+# Source: SRD_DSKB.yaml
+# Purpose: Classify evidence types and define usage rules for appropriate language
+# Status: Core System Component
+
+evidence_classification:
+  overview: |
+    Evidence is classified into 5 classes (E1-E5) to determine appropriate
+    language strength in pre-generated templates. Stronger evidence (E1-E2)
+    enables stronger claims. Weaker evidence (E3-E5) requires more conservative
+    language. All variants must be pre-generated.
+
+  purpose: |
+    - Classify evidence by strength
+    - Enable pre-generation of evidence-appropriate language variants
+    - Prevent over-claiming based on weak evidence
+    - Guide human selection of appropriate template variants
+
+  classes:
+    E1_direct:
+      id: "E1"
+      name: "Direct Evidence"
+      description: "Direct, first-hand evidence of the incident"
+      
+      examples:
+        - original_files
+        - device_copies
+        - admissions
+        - native_app_logs
+        - screenshots_with_metadata
+        - direct_communications
+        - authenticated_records
+      
+      strength: "strongest"
+      language_appropriate: |
+        - "We have direct evidence that..."
+        - "The evidence demonstrates..."
+        - "This definitively shows..."
+        - Strong attribution claims
+        - Definite statements
+      
+      usage_rules:
+        - can_identify_actor: true
+        - can_assert_strong_claims: true
+        - can_use_definitive_language: true
+        - required_for_strong_attribution: true
+      
+      template_variants_required:
+        - all_templates_strong_language
+        - strong_attribution_claims
+        - definitive_statements
+
+    E2_platform_confirmations:
+      id: "E2"
+      name: "Platform Confirmations"
+      description: "Official confirmations from platforms or institutions"
+      
+      examples:
+        - platform_response
+        - takedown_acknowledgment
+        - account_action_notice
+        - school_investigation_report
+        - official_documentation
+        - institutional_confirmations
+      
+      strength: "strong"
+      language_appropriate: |
+        - "Platform records confirm..."
+        - "Official documentation shows..."
+        - "Institutional records indicate..."
+        - Strong claims with official support
+        - Authoritative statements
+      
+      usage_rules:
+        - can_identify_actor: true
+        - can_assert_strong_claims: true
+        - can_use_definitive_language: true
+        - required_for_strong_attribution: true
+      
+      template_variants_required:
+        - all_templates_strong_language
+        - strong_attribution_claims
+        - authoritative_statements
+
+    E3_derived_similarity:
+      id: "E3"
+      name: "Derived Similarity"
+      description: "Technical analysis showing similarity or derivation"
+      
+      examples:
+        - sha256_match
+        - phash_similarity
+        - embedding_similarity
+        - biometric_matching
+        - hash_boundary_analysis
+        - technical_forensics
+      
+      strength: "moderate"
+      language_appropriate: |
+        - "Our analysis indicates similarity..."
+        - "Technical evidence suggests..."
+        - "Hash comparison shows..."
+        - "This appears to be derived from..."
+        - Moderate claims
+        - Probabilistic language
+      
+      usage_rules:
+        - can_identify_actor: false
+          note: "Never use E3 alone to identify actor without correlating evidence"
+        - can_support_derivation: true
+        - can_support_recognizable_likeness: true
+        - can_use_moderate_language: true
+        - requires_correlating_evidence_for_attribution: true
+      
+      template_variants_required:
+        - all_templates_moderate_language
+        - derivation_claims
+        - similarity_claims
+        - no_actor_identification
+
+    E4_testimonial:
+      id: "E4"
+      name: "Testimonial Evidence"
+      description: "Witness statements and reports"
+      
+      examples:
+        - witness_statement
+        - parent_report
+        - teacher_report
+        - student_report
+        - third_party_observations
+        - hearsay_evidence
+      
+      strength: "moderate_to_weak"
+      language_appropriate: |
+        - "Reports indicate..."
+        - "Witnesses state..."
+        - "According to reports..."
+        - "It has been reported that..."
+        - Moderate to weak claims
+        - Reported information language
+      
+      usage_rules:
+        - can_identify_actor: conditional
+          note: "Only if witness has direct knowledge"
+        - can_support_claims: true
+        - can_use_moderate_language: true
+        - requires_corroboration_for_strong_claims: true
+      
+      template_variants_required:
+        - all_templates_moderate_language
+        - testimonial_claims
+        - reported_information_language
+
+    E5_contextual:
+      id: "E5"
+      name: "Contextual Evidence"
+      description: "Patterns, timelines, and circumstantial evidence"
+      
+      examples:
+        - pattern_of_harassment
+        - timeline_inference
+        - circumstantial_evidence
+        - behavioral_patterns
+        - contextual_indicators
+        - inference_based_evidence
+      
+      strength: "weakest"
+      language_appropriate: |
+        - "Patterns suggest..."
+        - "Timeline indicates..."
+        - "Circumstantial evidence points to..."
+        - "This may indicate..."
+        - Weak claims
+        - Suggestive language
+        - Preserves options
+      
+      usage_rules:
+        - can_identify_actor: false
+        - can_support_pattern_claims: true
+        - can_use_suggestive_language: true
+        - limits_asserted_certainty: true
+        - preserves_removal_requests: true
+          note: "Weaker evidence limits asserted certainty, not preservation or removal requests"
+      
+      template_variants_required:
+        - all_templates_weak_language
+        - suggestive_claims
+        - pattern_claims
+        - no_actor_identification
+
+  usage_rules_summary:
+    critical_rules:
+      - rule: "Never use E3 to identify actor without correlating evidence"
+        applies_to: "E3_derived_similarity"
+        reason: "Technical similarity alone cannot prove identity"
+      
+      - rule: "Use E3 to support derivation or recognizable likeness"
+        applies_to: "E3_derived_similarity"
+        reason: "Technical evidence is appropriate for technical claims"
+      
+      - rule: "E1 or E2 required for strong attribution claims"
+        applies_to: "All templates"
+        reason: "Strong claims require strong evidence"
+      
+      - rule: "Weaker evidence limits asserted certainty, not preservation or removal requests"
+        applies_to: "E3, E4, E5"
+        reason: "Can still request removal/preservation with weaker evidence"
+    
+    evidence_combination:
+      - "E1 + E3": "Strong attribution (E1) + derivation proof (E3)"
+      - "E2 + E3": "Strong attribution (E2) + derivation proof (E3)"
+      - "E3 + E4": "Derivation proof (E3) + testimonial support (E4)"
+      - "E4 + E5": "Testimonial (E4) + contextual support (E5)"
+    
+    template_selection_guidance:
+      - "E1 or E2 available": "Select strong-language template variants"
+      - "E3 only": "Select moderate-language variants, no actor identification"
+      - "E4 only": "Select moderate-language variants, conditional attribution"
+      - "E5 only": "Select weak-language variants, no attribution"
+      - "Multiple classes": "Select variant matching strongest available evidence"
+
+  pre_generation_requirements:
+    all_templates_must_have:
+      - "E1/E2 variant (strong language)"
+      - "E3 variant (moderate language, no actor ID)"
+      - "E4 variant (moderate language, conditional)"
+      - "E5 variant (weak language, no attribution)"
+    
+    language_strength_matrix:
+      E1_E2:
+        - "Definitive statements"
+        - "Strong attribution"
+        - "Authoritative language"
+      
+      E3:
+        - "Moderate statements"
+        - "Derivation claims"
+        - "Similarity language"
+        - "No actor identification"
+      
+      E4:
+        - "Moderate statements"
+        - "Reported information"
+        - "Conditional attribution"
+      
+      E5:
+        - "Suggestive statements"
+        - "Pattern claims"
+        - "No attribution"
+        - "Preserves options"
+
+  human_selection_process:
+    step_1: "Assess available evidence"
+    step_2: "Classify evidence into E1-E5"
+    step_3: "Identify strongest available evidence class"
+    step_4: "Select template variant matching evidence strength"
+    step_5: "Apply usage rules (e.g., no actor ID for E3 alone)"
+    
+    note: |
+      Evidence classification guides template selection. Humans assess evidence
+      and select appropriate pre-generated variant. All variants must be
+      available for selection.
+

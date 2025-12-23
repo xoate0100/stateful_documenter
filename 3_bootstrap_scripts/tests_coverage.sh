@@ -2,6 +2,53 @@
 set -euo pipefail
 STATUS=0
 
+# Detect project type
+detect_project_type() {
+  # Try MVP_SPECIFICATION first
+  if [ -f "0_phase0_bootstrap/MVP_SPECIFICATION.yaml" ]; then
+    PROJECT_TYPE=$(python3 <<EOF
+import yaml
+try:
+    with open("0_phase0_bootstrap/MVP_SPECIFICATION.yaml") as f:
+        mvp = yaml.safe_load(f)
+    project_type = mvp.get("Project_Type") or mvp.get("project_type")
+    if project_type:
+        print(project_type.lower())
+    else:
+        print("programming")
+except:
+    print("programming")
+EOF
+    )
+  else
+    # Fall back to ACTIVE_PLAN
+    if [ -f "6_ai_runtime_context/ACTIVE_PLAN.yaml" ]; then
+      PROJECT_TYPE=$(python3 <<EOF
+import yaml
+try:
+    with open("6_ai_runtime_context/ACTIVE_PLAN.yaml") as f:
+        plan = yaml.safe_load(f)
+    project_type = plan.get("project_type", "programming")
+    print(project_type.lower())
+except:
+    print("programming")
+EOF
+      )
+    else
+      PROJECT_TYPE="programming"
+    fi
+  fi
+  echo "$PROJECT_TYPE"
+}
+
+PROJECT_TYPE=$(detect_project_type)
+
+# Skip test coverage for documentation projects
+if [ "$PROJECT_TYPE" = "documentation" ]; then
+  echo "[coverage] Project type is 'documentation' - skipping test coverage checks (no code to test)"
+  exit 0
+fi
+
 # Load feature flags to get component-specific thresholds
 load_thresholds() {
   if [ -f "0_phase0_bootstrap/feature_flags.yml" ]; then
