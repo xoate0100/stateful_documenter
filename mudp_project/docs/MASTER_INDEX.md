@@ -205,6 +205,13 @@ This master index provides comprehensive navigation to all components of the MUD
 
 ## Project Documentation
 
+### [Terminology Glossary](TERMINOLOGY.md)
+- Comprehensive glossary of all key terms
+- Terminology alignment across documents
+- Cross-reference map
+- Usage guidelines
+- **Location:** `docs/TERMINOLOGY.md`
+
 ### [README](README.md)
 - Project overview
 - Current status

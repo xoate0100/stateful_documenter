@@ -454,6 +454,15 @@ cross_references:
       - "templates"
       - "binder_structure.tabs"
 
+  documentation:
+    terminology:
+      file: "docs/TERMINOLOGY.md"
+      relates_to:
+        - "all_documentation"
+        - "srd_dskb"
+        - "template_system"
+      purpose: "Ensure consistent terminology across all documentation"
+  
   completeness_check:
     core_systems: "complete"
     implementation: "complete"
@@ -466,4 +475,7 @@ cross_references:
     template_system: "complete"
     cross_references: "complete"
     template_cross_references: "complete"
+    terminology: "complete"
+    stakeholders: "complete"
+    jurisdiction_overlays: "complete"
 
