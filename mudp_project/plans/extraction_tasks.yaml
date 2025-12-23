@@ -243,18 +243,85 @@ phases:
           - "Add navigation aids"
         dependencies: [14]  # Depends on cross-reference map
 
+  - id: "phase-5"
+    name: "Template Pre-Generation"
+    status: "in_progress"
+    description: "Pre-generate complete library of decision-ready template artifacts using SRD_DSKB framework"
+    priority: "high"
+    tasks:
+      - id: 16
+        name: "Create unified protocol document"
+        status: "completed"
+        description: "Integrate INGESTION_PROTOCOL, SRD_DSKB, and SRD_INTEGRATION_PLAN into unified document"
+        outputs:
+          - "UNIFIED_PROTOCOL.md"
+        notes: "Single source of truth with atomic steps and tracking update points"
+      
+      - id: 17
+        name: "Create template skeleton"
+        status: "completed"
+        description: "Create base template structure for all variants"
+        outputs:
+          - "callables/templates/tier_1_parent_resolution/parent_notice/TEMPLATE_SKELETON.md"
+          - "callables/templates/tier_1_parent_resolution/parent_notice/mode_a/parent_notice_lg01a_e1_modea_t1.md"
+        notes: "Sample template demonstrates full structure and requirements"
+      
+      - id: 18
+        name: "Generate Tier 1 templates"
+        status: "in_progress"
+        description: "Generate all Tier 1 template variants (parent notices, deletion confirmations, device sweeps)"
+        outputs:
+          - "callables/templates/tier_1_parent_resolution/"
+        dependencies: [17]
+      
+      - id: 19
+        name: "Generate Tier 2-7 templates"
+        status: "pending"
+        description: "Generate all template variants for Tiers 2-7"
+        outputs:
+          - "callables/templates/tier_2_school_activation/"
+          - "callables/templates/tier_3_platform_action/"
+          - "callables/templates/tier_4_insurance/"
+          - "callables/templates/tier_5_civil_litigation/"
+          - "callables/templates/tier_6_regulatory/"
+          - "callables/templates/tier_7_appellate/"
+        dependencies: [18]
+      
+      - id: 20
+        name: "Create template selection guide"
+        status: "pending"
+        description: "Create decision tree and selection guide for human template selection"
+        outputs:
+          - "docs/operational/template_selection_guide.md"
+        dependencies: [19]
+      
+      - id: 21
+        name: "Final validation and indexing"
+        status: "pending"
+        description: "Validate all templates, update indexes, create navigation"
+        outputs:
+          - "callables/templates/TEMPLATE_INDEX.md (updated)"
+          - "docs/MASTER_INDEX.md (updated)"
+          - "plans/PHASE_5_QA_REPORT.md"
+        dependencies: [19, 20]
+
 metadata:
   extraction_started: "2025-12-22"
-  last_updated: "2025-12-22"
+  last_updated: "2025-12-23"
   source_file_lines: 4296
+  phase_1_completed: "2025-12-22"
   phase_2_completed: "2025-12-22"
   phase_3_completed: "2025-12-22"
   phase_4_completed: "2025-12-22"
-  extraction_status: "complete"
-  estimated_completion: "2025-12-22"
+  srd_integration_completed: "2025-12-23"
+  unified_protocol_created: "2025-12-23"
+  phase_5_started: "2025-12-23"
+  extraction_status: "phase_5_in_progress"
+  estimated_completion: "TBD"
   notes:
     - "Legal content should be reviewed by qualified legal counsel"
     - "Technical implementations may require tool selection"
-    - "Templates need parameterization for reuse"
+    - "Templates need customization with actual facts before use"
     - "Some sections are conceptual and may need expansion"
+    - "See UNIFIED_PROTOCOL.md for complete system documentation and atomic steps"
 

@@ -1,14 +1,20 @@
 # MUDP Chat Ingestion Protocol
 
+**⚠️ SUPERSEDED:** This document has been superseded by [`UNIFIED_PROTOCOL.md`](UNIFIED_PROTOCOL.md)
+
 **Project:** MUDP (MudPie Protocol) - Child Digital Personhood Protection System  
 **Source:** Stream-of-consciousness chat conversation (MUDP.md, 4296 lines)  
 **Goal:** Transform unstructured chat into a logical, structured documentation system
+
+**Status:** Historical reference only. See [`UNIFIED_PROTOCOL.md`](UNIFIED_PROTOCOL.md) for current system documentation.
 
 ---
 
 ## Overview
 
 This protocol defines the systematic process for extracting, organizing, and structuring information from a conversational chat transcript into a formal documentation project within the stateful_documenter framework.
+
+**Note:** This document is preserved for historical reference. All current work should reference [`UNIFIED_PROTOCOL.md`](UNIFIED_PROTOCOL.md).
 
 ### Key Challenges
 
