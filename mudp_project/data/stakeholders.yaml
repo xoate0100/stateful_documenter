@@ -1,0 +1,534 @@
+# MUDP Stakeholder Objectives
+# Formalized stakeholder types, objectives, and template mappings
+
+# Source: SRD_DSKB.yaml, Enforcement Tiers, Template System
+# Purpose: Document stakeholder objectives and map to appropriate templates
+# Status: Core System Component
+
+stakeholders:
+  overview: |
+    Stakeholders are parties involved in or affected by incidents involving
+    child digital personhood protection. Each stakeholder has specific objectives
+    that inform template selection and communication strategy. Understanding
+    stakeholder objectives enables appropriate template selection and effective
+    communication.
+
+  purpose: |
+    - Document all stakeholder types in the MUDP system
+    - Formalize stakeholder objectives
+    - Map objectives to appropriate templates
+    - Guide template selection based on stakeholder
+    - Inform communication strategy
+
+  parties:
+    custodial_parents:
+      id: "custodial_parents"
+      name: "Custodial Parents"
+      description: "Primary decision-makers and legal guardians of the child"
+      role: "Primary stakeholder - decision authority"
+      
+      objectives:
+        - "child_safety"
+        - "rapid_removal"
+        - "rights_preservation"
+        - "damages_documentation"
+      
+      objective_details:
+        child_safety:
+          priority: "highest"
+          description: "Ensure child's immediate and long-term safety"
+          actions: ["remove harmful content", "prevent further distribution", "protect child from harm"]
+        
+        rapid_removal:
+          priority: "high"
+          description: "Remove harmful content as quickly as possible"
+          actions: ["demand immediate removal", "verify deletion", "prevent re-upload"]
+        
+        rights_preservation:
+          priority: "high"
+          description: "Preserve all legal rights and remedies"
+          actions: ["preserve evidence", "maintain legal options", "document incidents"]
+        
+        damages_documentation:
+          priority: "medium"
+          description: "Document economic and non-economic harm"
+          actions: ["document valuation", "track damages", "preserve claims"]
+      
+      template_mappings:
+        tier_1:
+          - "parent_notice (all variants)"
+          - "deletion_confirmation_script"
+          - "device_sweep_request"
+        tier_2:
+          - "title_ix_notice (if school context)"
+          - "safety_plan_request (if school context)"
+        tier_3:
+          - "urgent_removal_request"
+          - "preservation_notice"
+        tier_4:
+          - "carrier_incident_notice"
+          - "coverage_trigger_memo"
+        tier_5:
+          - "complaint_outline"
+          - "injunction_motion_outline"
+        tier_6:
+          - "attorney_general_complaint"
+          - "ftc_complaint"
+        tier_7:
+          - "constitutional_issue_preservation"
+          - "appeal_theory_outline"
+      
+      communication_style: "Professional, factual, firm but respectful"
+      decision_authority: "Primary decision-maker for all escalation decisions"
+
+    opposing_parents:
+      id: "opposing_parents"
+      name: "Opposing Parents"
+      description: "Parents of the child who created or distributed harmful content"
+      role: "Target of Tier 1 resolution"
+      
+      objectives:
+        - "contain_liability"
+        - "cooperate_to_remove"
+        - "avoid_escalation"
+      
+      objective_details:
+        contain_liability:
+          priority: "high"
+          description: "Limit legal and financial exposure"
+          actions: ["cooperate with removal", "prevent further distribution", "avoid legal action"]
+        
+        cooperate_to_remove:
+          priority: "high"
+          description: "Remove content and prevent re-upload"
+          actions: ["delete content", "remove from devices", "deactivate accounts"]
+        
+        avoid_escalation:
+          priority: "high"
+          description: "Prevent escalation to higher tiers"
+          actions: ["respond promptly", "cooperate fully", "take corrective action"]
+      
+      template_mappings:
+        tier_1:
+          - "parent_notice (recipient)"
+          - "deletion_confirmation_script (to complete)"
+          - "device_sweep_request (to complete)"
+      
+      communication_style: "Professional, clear, non-accusatory but firm"
+      response_expected: "Immediate action within 24 hours"
+
+    school_admin:
+      id: "school_admin"
+      name: "School Administrators"
+      description: "School administrators and principals"
+      role: "Tier 2 stakeholder - institutional response"
+      
+      objectives:
+        - "student_safety"
+        - "policy_compliance"
+        - "liability_mitigation"
+      
+      objective_details:
+        student_safety:
+          priority: "highest"
+          description: "Ensure safety of all students"
+          actions: ["investigate incidents", "implement safety measures", "prevent further harm"]
+        
+        policy_compliance:
+          priority: "high"
+          description: "Comply with school policies and legal requirements"
+          actions: ["follow Title IX procedures", "comply with mandatory reporting", "document actions"]
+        
+        liability_mitigation:
+          priority: "high"
+          description: "Reduce school district liability exposure"
+          actions: ["take appropriate disciplinary action", "involve district legal", "coordinate with insurance"]
+      
+      template_mappings:
+        tier_2:
+          - "title_ix_notice (recipient)"
+          - "safety_plan_request (recipient)"
+          - "district_legal_notice (copied)"
+          - "documentation_request (recipient)"
+      
+      communication_style: "Professional, institutional, compliance-focused"
+      response_expected: "Immediate investigation and action per Title IX timelines"
+
+    title_ix_coordinator:
+      id: "title_ix_coordinator"
+      name: "Title IX Coordinator"
+      description: "School district Title IX coordinator"
+      role: "Tier 2 stakeholder - Title IX compliance"
+      
+      objectives:
+        - "investigation"
+        - "safety_plan"
+        - "documentation"
+      
+      objective_details:
+        investigation:
+          priority: "highest"
+          description: "Conduct Title IX investigation"
+          actions: ["investigate complaint", "gather evidence", "determine findings"]
+        
+        safety_plan:
+          priority: "high"
+          description: "Develop and implement safety plan"
+          actions: ["assess safety needs", "develop safety plan", "implement measures"]
+        
+        documentation:
+          priority: "high"
+          description: "Document investigation and actions"
+          actions: ["maintain investigation records", "document safety measures", "preserve evidence"]
+      
+      template_mappings:
+        tier_2:
+          - "title_ix_notice (primary recipient)"
+          - "safety_plan_request (recipient)"
+          - "documentation_request (recipient)"
+      
+      communication_style: "Professional, compliance-focused, procedural"
+      response_expected: "Immediate investigation initiation per Title IX requirements"
+
+    district_legal:
+      id: "district_legal"
+      name: "District Legal Counsel"
+      description: "School district legal counsel or outside counsel"
+      role: "Tier 2 stakeholder - legal risk management"
+      
+      objectives:
+        - "risk_control"
+        - "compliance"
+        - "insurer_coordination"
+      
+      objective_details:
+        risk_control:
+          priority: "highest"
+          description: "Control legal and financial risk"
+          actions: ["assess liability", "develop risk mitigation strategy", "coordinate response"]
+        
+        compliance:
+          priority: "high"
+          description: "Ensure legal compliance"
+          actions: ["verify Title IX compliance", "ensure mandatory reporting", "comply with FERPA"]
+        
+        insurer_coordination:
+          priority: "high"
+          description: "Coordinate with insurance carriers"
+          actions: ["notify carriers", "coordinate coverage", "manage claims"]
+      
+      template_mappings:
+        tier_2:
+          - "district_legal_notice (primary recipient)"
+          - "title_ix_notice (copied)"
+          - "documentation_request (copied)"
+        tier_4:
+          - "carrier_incident_notice (coordination)"
+          - "coverage_trigger_memo (coordination)"
+      
+      communication_style: "Professional, legal, risk-focused"
+      response_expected: "Immediate legal review and risk assessment"
+
+    liability_carriers:
+      id: "liability_carriers"
+      name: "Liability Insurance Carriers"
+      description: "School district or institutional liability insurance carriers"
+      role: "Tier 4 stakeholder - financial leverage"
+      
+      objectives:
+        - "reduce_exposure"
+        - "force_remediation"
+        - "preserve_subrogation"
+      
+      objective_details:
+        reduce_exposure:
+          priority: "highest"
+          description: "Reduce financial exposure and claims"
+          actions: ["assess coverage", "mitigate damages", "control costs"]
+        
+        force_remediation:
+          priority: "high"
+          description: "Force immediate remediation to reduce exposure"
+          actions: ["demand immediate action", "require compliance", "monitor remediation"]
+        
+        preserve_subrogation:
+          priority: "medium"
+          description: "Preserve subrogation rights against third parties"
+          actions: ["preserve evidence", "document third-party liability", "maintain claims"]
+      
+      template_mappings:
+        tier_4:
+          - "carrier_incident_notice (primary recipient)"
+          - "coverage_trigger_memo (primary recipient)"
+          - "risk_mitigation_demands (primary recipient)"
+      
+      communication_style: "Professional, business-focused, risk management"
+      response_expected: "Immediate coverage analysis and risk mitigation demands"
+
+    platforms_apps:
+      id: "platforms_apps"
+      name: "Platforms and Apps"
+      description: "Social media platforms, apps, and online services hosting content"
+      role: "Tier 3 stakeholder - content removal"
+      
+      objectives:
+        - "reduce_statutory_risk"
+        - "remove_content"
+        - "preserve_logs"
+        - "avoid_regulator_attention"
+      
+      objective_details:
+        reduce_statutory_risk:
+          priority: "highest"
+          description: "Reduce risk of statutory violations (CSAM, COPPA, etc.)"
+          actions: ["remove CSAM content immediately", "comply with legal requirements", "avoid penalties"]
+        
+        remove_content:
+          priority: "high"
+          description: "Remove harmful content from platform"
+          actions: ["remove content", "suspend accounts", "prevent re-upload"]
+        
+        preserve_logs:
+          priority: "high"
+          description: "Preserve evidence and logs for legal compliance"
+          actions: ["preserve user data", "maintain logs", "comply with preservation notices"]
+        
+        avoid_regulator_attention:
+          priority: "high"
+          description: "Avoid regulatory enforcement action"
+          actions: ["comply with legal requirements", "cooperate with investigations", "implement safeguards"]
+      
+      template_mappings:
+        tier_3:
+          - "urgent_removal_request (primary recipient)"
+          - "preservation_notice (primary recipient)"
+          - "repeat_upload_suppression_request (primary recipient)"
+        tier_6:
+          - "attorney_general_complaint (if platform fails)"
+          - "ftc_complaint (if platform fails)"
+          - "privacy_authority_notice (if applicable)"
+      
+      communication_style: "Professional, legal, compliance-focused"
+      response_expected: "Immediate content removal (hours, not days)"
+
+    outside_counsel:
+      id: "outside_counsel"
+      name: "Outside Legal Counsel"
+      description: "Retained legal counsel for custodial parents"
+      role: "Tier 5 stakeholder - litigation"
+      
+      objectives:
+        - "execute_selected_roadmap"
+        - "preserve_claims"
+        - "prepare_pleadings"
+      
+      objective_details:
+        execute_selected_roadmap:
+          priority: "highest"
+          description: "Execute selected legal strategy and roadmap"
+          actions: ["implement legal strategy", "file appropriate documents", "pursue remedies"]
+        
+        preserve_claims:
+          priority: "high"
+          description: "Preserve all legal claims and remedies"
+          actions: ["preserve evidence", "meet deadlines", "maintain claims"]
+        
+        prepare_pleadings:
+          priority: "high"
+          description: "Prepare and file legal pleadings"
+          actions: ["draft complaints", "prepare motions", "file documents"]
+      
+      template_mappings:
+        tier_5:
+          - "complaint_outline (uses for drafting)"
+          - "injunction_motion_outline (uses for drafting)"
+          - "discovery_plan (uses for planning)"
+          - "spoliation_letter (uses for drafting)"
+        tier_7:
+          - "constitutional_issue_preservation (uses for drafting)"
+          - "appeal_theory_outline (uses for drafting)"
+          - "record_build_plan (uses for planning)"
+      
+      communication_style: "Professional, legal, strategic"
+      response_expected: "Strategic legal execution per selected roadmap"
+
+    regulators:
+      id: "regulators"
+      name: "Regulatory Agencies"
+      description: "Federal and state regulatory agencies (FTC, Attorney General, Privacy Authorities)"
+      role: "Tier 6 stakeholder - regulatory enforcement"
+      
+      objectives:
+        - "compliance_enforcement"
+        - "consumer_protection"
+        - "child_safety"
+      
+      objective_details:
+        compliance_enforcement:
+          priority: "highest"
+          description: "Enforce legal compliance and regulations"
+          actions: ["investigate violations", "enforce compliance", "impose penalties"]
+        
+        consumer_protection:
+          priority: "high"
+          description: "Protect consumers from harm"
+          actions: ["investigate complaints", "take enforcement action", "prevent future harm"]
+        
+        child_safety:
+          priority: "high"
+          description: "Protect children from harm"
+          actions: ["investigate child safety violations", "enforce child protection laws", "coordinate with law enforcement"]
+      
+      template_mappings:
+        tier_6:
+          - "attorney_general_complaint (recipient)"
+          - "ftc_complaint (recipient)"
+          - "privacy_authority_notice (recipient)"
+      
+      communication_style: "Professional, regulatory, enforcement-focused"
+      response_expected: "Investigation and enforcement action per agency procedures"
+
+  pressure_lines:
+    overview: |
+      Pressure lines are strategic leverage points that can be used to
+      influence stakeholder behavior and achieve objectives. Understanding
+      pressure lines helps select appropriate templates and communication
+      strategies.
+    
+    insurer_alignment:
+      description: "Carrier involvement increases urgency and reduces institutional denial"
+      applicable_stakeholders: ["school_admin", "district_legal", "liability_carriers"]
+      templates: ["carrier_incident_notice", "coverage_trigger_memo", "risk_mitigation_demands"]
+      effectiveness: "high"
+    
+    preservation_duty:
+      description: "Early preservation notices prevent spoliation and strengthen remedies"
+      applicable_stakeholders: ["platforms_apps", "school_admin", "district_legal"]
+      templates: ["preservation_notice", "spoliation_letter"]
+      effectiveness: "high"
+    
+    economic_expectancy:
+      description: "Pre-existing valuation makes damages concrete"
+      applicable_stakeholders: ["opposing_parents", "platforms_apps", "liability_carriers"]
+      templates: ["parent_notice (with economic harm)", "complaint_outline (with damages)"]
+      effectiveness: "medium"
+    
+    cross_jurisdiction:
+      description: "Multi-regime exposure raises compliance priority"
+      applicable_stakeholders: ["platforms_apps", "regulators"]
+      templates: ["urgent_removal_request", "privacy_authority_notice", "ftc_complaint"]
+      effectiveness: "high"
+
+  template_selection_by_stakeholder:
+    overview: |
+      Template selection should consider the target stakeholder's objectives
+      and the appropriate communication style. This mapping guides template
+      selection based on stakeholder type.
+    
+    custodial_parents:
+      primary_templates: ["parent_notice", "urgent_removal_request", "carrier_incident_notice"]
+      communication_focus: "Child safety, rapid resolution, rights preservation"
+    
+    opposing_parents:
+      primary_templates: ["parent_notice (recipient)"]
+      communication_focus: "Clear expectations, immediate action, cooperation"
+    
+    school_admin:
+      primary_templates: ["title_ix_notice", "safety_plan_request", "district_legal_notice"]
+      communication_focus: "Student safety, policy compliance, legal obligations"
+    
+    title_ix_coordinator:
+      primary_templates: ["title_ix_notice", "safety_plan_request", "documentation_request"]
+      communication_focus: "Title IX compliance, investigation, safety planning"
+    
+    district_legal:
+      primary_templates: ["district_legal_notice", "carrier_incident_notice"]
+      communication_focus: "Risk control, compliance, legal obligations"
+    
+    liability_carriers:
+      primary_templates: ["carrier_incident_notice", "coverage_trigger_memo", "risk_mitigation_demands"]
+      communication_focus: "Risk mitigation, exposure reduction, remediation"
+    
+    platforms_apps:
+      primary_templates: ["urgent_removal_request", "preservation_notice", "repeat_upload_suppression_request"]
+      communication_focus: "Legal compliance, content removal, risk reduction"
+    
+    outside_counsel:
+      primary_templates: ["complaint_outline", "injunction_motion_outline", "discovery_plan"]
+      communication_focus: "Legal strategy, claim preservation, remedy pursuit"
+    
+    regulators:
+      primary_templates: ["attorney_general_complaint", "ftc_complaint", "privacy_authority_notice"]
+      communication_focus: "Compliance enforcement, consumer protection, child safety"
+
+  escalation_paths:
+    overview: |
+      Stakeholders are involved at different escalation tiers. Understanding
+      which stakeholders are involved at each tier helps select appropriate
+      templates and communication strategies.
+    
+    tier_1:
+      primary_stakeholders: ["custodial_parents", "opposing_parents"]
+      secondary_stakeholders: []
+      templates: ["parent_notice", "deletion_confirmation_script", "device_sweep_request"]
+    
+    tier_2:
+      primary_stakeholders: ["school_admin", "title_ix_coordinator", "district_legal"]
+      secondary_stakeholders: ["custodial_parents"]
+      templates: ["title_ix_notice", "safety_plan_request", "district_legal_notice", "documentation_request"]
+    
+    tier_3:
+      primary_stakeholders: ["platforms_apps"]
+      secondary_stakeholders: ["custodial_parents"]
+      templates: ["urgent_removal_request", "preservation_notice", "repeat_upload_suppression_request"]
+    
+    tier_4:
+      primary_stakeholders: ["liability_carriers", "district_legal"]
+      secondary_stakeholders: ["school_admin", "custodial_parents"]
+      templates: ["carrier_incident_notice", "coverage_trigger_memo", "risk_mitigation_demands"]
+    
+    tier_5:
+      primary_stakeholders: ["outside_counsel"]
+      secondary_stakeholders: ["custodial_parents"]
+      templates: ["complaint_outline", "injunction_motion_outline", "discovery_plan", "spoliation_letter"]
+    
+    tier_6:
+      primary_stakeholders: ["regulators"]
+      secondary_stakeholders: ["custodial_parents", "platforms_apps"]
+      templates: ["attorney_general_complaint", "ftc_complaint", "privacy_authority_notice"]
+    
+    tier_7:
+      primary_stakeholders: ["outside_counsel"]
+      secondary_stakeholders: ["custodial_parents"]
+      templates: ["constitutional_issue_preservation", "appeal_theory_outline", "record_build_plan"]
+
+  usage_guidance:
+    template_selection: |
+      When selecting templates, consider:
+      1. Target stakeholder's objectives
+      2. Appropriate escalation tier
+      3. Communication style for stakeholder
+      4. Pressure lines applicable to stakeholder
+      5. Expected response from stakeholder
+    
+    communication_strategy: |
+      Communication strategy should align with:
+      1. Stakeholder's primary objectives
+      2. Stakeholder's role and authority
+      3. Appropriate tone and language
+      4. Expected response timeline
+      5. Escalation readiness
+    
+    objective_alignment: |
+      Template selection and communication should align with:
+      1. Custodial parent objectives (primary)
+      2. Target stakeholder objectives (secondary)
+      3. System objectives (overall)
+      4. Legal and strategic objectives
+
+  cross_references:
+    - "plans/SRD_DSKB.yaml - Source stakeholder definitions"
+    - "data/enforcement_tiers.yaml - Escalation tier definitions"
+    - "callables/templates/TEMPLATE_INDEX.md - Template catalog"
+    - "callables/templates/TEMPLATE_SELECTION_GUIDE.md - Template selection process"
+
