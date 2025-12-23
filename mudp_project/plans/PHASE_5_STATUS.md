@@ -108,9 +108,9 @@
 
 ## Metrics
 
-**Templates Generated:** 53  
-**Templates Validated:** 53  
-**Coverage:** ~5.3% (estimated total needed: ~1000+ variants)
+**Templates Generated:** 56  
+**Templates Validated:** 56  
+**Coverage:** ~5.6% (estimated total needed: ~1000+ variants)
 
 **Breakdown:**
 - **Tier 1: Parent-Parent Resolution**
@@ -135,8 +135,12 @@
   - **Injunction Motion Outlines:** Template skeleton + 1 sample (LG_01A, E1)
   - **Discovery Plans:** Template skeleton + 1 sample (LG_01A, E1)
   - **Spoliation Letters:** Template skeleton + 1 sample (LG_01A, E1)
+- **Tier 6: Regulatory Complaints**
+  - **Attorney General Complaints:** Template skeleton + 1 sample (LG_01A, E1)
+  - **FTC Complaints:** Template skeleton + 1 sample (LG_01A, E1)
+  - **Privacy Authority Notices:** Template skeleton + 1 sample (LG_06, E1)
 - Mode A only (Mode B pending)
-- Tiers 6-7 pending
+- Tier 7 pending
 
 ---
 
