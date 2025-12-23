@@ -242,7 +242,95 @@ cross_references:
       - "crisis_playbook"
       - "four_pillars"
       - "implementation_phases"
-    categories:
+      - "enforcement_tiers"
+      - "logic_gates"
+      - "evidence_classification"
+      - "citation_modes"
+      - "drafting_rules"
+    system_status: "structure_complete"
+    total_templates: 59
+    template_system:
+      selection_guide: "callables/templates/TEMPLATE_SELECTION_GUIDE.md"
+      navigation: "callables/templates/TEMPLATE_NAVIGATION.md"
+      index: "callables/templates/TEMPLATE_INDEX.md"
+      validation_checklist: "callables/templates/QA_VALIDATION_CHECKLIST.md"
+      validation_report: "callables/templates/VALIDATION_REPORT.md"
+      cross_references: "data/template_cross_references.yaml"
+    tiers:
+      tier_1:
+        status: "complete"
+        templates: 42
+        location: "callables/templates/tier_1_parent_resolution/"
+        types:
+          - "parent_notice (40 templates: 6 LGs × 5 E-classes)"
+          - "deletion_confirmation"
+          - "device_sweep"
+      tier_2:
+        status: "structure_established"
+        templates: 4
+        location: "callables/templates/tier_2_school_activation/"
+        types:
+          - "title_ix_notice"
+          - "safety_plan_request"
+          - "district_legal_notice"
+          - "documentation_request"
+      tier_3:
+        status: "structure_established"
+        templates: 3
+        location: "callables/templates/tier_3_platform_removal/"
+        types:
+          - "urgent_removal_request"
+          - "preservation_notice"
+          - "repeat_upload_suppression_request"
+      tier_4:
+        status: "structure_established"
+        templates: 3
+        location: "callables/templates/tier_4_insurance_activation/"
+        types:
+          - "carrier_incident_notice"
+          - "coverage_trigger_memo"
+          - "risk_mitigation_demands"
+      tier_5:
+        status: "structure_established"
+        templates: 4
+        location: "callables/templates/tier_5_civil_litigation/"
+        types:
+          - "complaint_outline"
+          - "injunction_motion_outline"
+          - "discovery_plan"
+          - "spoliation_letter"
+      tier_6:
+        status: "structure_established"
+        templates: 3
+        location: "callables/templates/tier_6_regulatory_complaints/"
+        types:
+          - "attorney_general_complaint"
+          - "ftc_complaint"
+          - "privacy_authority_notice"
+      tier_7:
+        status: "structure_established"
+        templates: 3
+        location: "callables/templates/tier_7_appellate_constitutional/"
+        types:
+          - "constitutional_issue_preservation"
+          - "appeal_theory_outline"
+          - "record_build_plan"
+    framework_components:
+      logic_gates:
+        file: "data/logic_gates.yaml"
+        gates: ["LG_01A", "LG_01B", "LG_01C", "LG_02", "LG_03", "LG_04", "LG_05", "LG_06"]
+      evidence_classes:
+        file: "data/evidence_classification.yaml"
+        classes: ["E1", "E2", "E3", "E4", "E5"]
+      citation_modes:
+        file: "docs/legal/citation_modes.md"
+        modes: ["Mode A (jurisdiction-agnostic)", "Mode B (jurisdiction-specific)"]
+      drafting_rules:
+        file: "docs/legal/drafting_rules.md"
+      boilerplate:
+        location: "callables/templates/boilerplate/"
+        blocks: 5
+    legacy_categories:
       contracts:
         - "modeling_contract"
         - "likeness_declaration"
@@ -374,6 +462,8 @@ cross_references:
     operational: "complete"
     regulatory: "complete"
     binder_structure: "complete"
-    templates: "structures_complete_content_pending"
+    templates: "structure_complete_59_templates_validated"
+    template_system: "complete"
     cross_references: "complete"
+    template_cross_references: "complete"
 
