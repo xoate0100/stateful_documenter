@@ -108,29 +108,22 @@
 
 ## Metrics
 
-**Templates Generated:** 36  
-**Templates Validated:** 36  
-**Coverage:** ~3.6% (estimated total needed: ~1000+ variants)
+**Templates Generated:** 41  
+**Templates Validated:** 41  
+**Coverage:** ~4.1% (estimated total needed: ~1000+ variants)
 
 **Breakdown:**
-- **Parent Notice Templates:**
-  - LG_01A variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-  - LG_01B variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-  - LG_01C variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-  - LG_02 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-  - LG_03 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-  - LG_04 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-  - LG_05 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-  - LG_06 variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-  - **Total: 40 parent notice templates (all 6 logic gates × 5 evidence classes)**
-- **Deletion Confirmation Scripts:**
-  - Template skeleton created
-  - Sample: `deletion_confirmation_lg01a_e1_modea_t1.md`
-- **Device Sweep Requests:**
-  - Template skeleton created
-  - Sample: `device_sweep_request_lg01a_e1_modea_t1.md`
+- **Tier 1: Parent-Parent Resolution**
+  - **Parent Notice Templates:** 40 templates (6 logic gates × 5 evidence classes) - Mode A COMPLETE
+  - **Deletion Confirmation Scripts:** Template skeleton + 1 sample
+  - **Device Sweep Requests:** Template skeleton + 1 sample
+- **Tier 2: School Activation**
+  - **Title IX Notices:** Template skeleton + 1 sample (LG_04, E1)
+  - **Safety Plan Requests:** Template skeleton + 1 sample (LG_04, E1)
+  - **District Legal Notices:** Template skeleton + 1 sample (LG_04, E1)
+  - **Documentation Requests:** Template skeleton + 1 sample (LG_04, E1)
 - Mode A only (Mode B pending)
-- Tier 1 only (Tiers 2-7 pending)
+- Tiers 3-7 pending
 
 ---
 
