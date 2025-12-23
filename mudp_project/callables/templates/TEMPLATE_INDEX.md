@@ -6,6 +6,20 @@
 
 ---
 
+## Template Selection
+
+**For detailed template selection guidance, see:** [TEMPLATE_SELECTION_GUIDE.md](./TEMPLATE_SELECTION_GUIDE.md)
+
+The selection guide provides:
+- Decision tree for logic gate identification
+- Evidence classification process
+- Citation mode selection
+- Escalation tier determination
+- Quick reference matrices
+- Example scenarios
+
+---
+
 ## Overview
 
 This directory contains template structures and outlines for all documents referenced in the MUDP system. The chat transcript describes what each template should contain, but does not provide full text. These templates serve as starting points and should be:
@@ -14,6 +28,14 @@ This directory contains template structures and outlines for all documents refer
 2. **Reviewed by legal counsel** before use
 3. **Parameterized** with placeholders for specific information
 4. **Completed** with actual content
+
+**Template System Status:**
+- **59 templates generated** across all 7 escalation tiers
+- **Template skeletons** created for all template types
+- **Sample templates** (E1, Mode A) created for each template type
+- **Template Selection Guide** created for decision-making
+- **Mode B (jurisdiction-specific)** templates pending
+- **Additional evidence class variants** pending
 
 ---
 

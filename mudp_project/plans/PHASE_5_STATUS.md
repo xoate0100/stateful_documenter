@@ -144,6 +144,7 @@
   - **Appeal Theory Outlines:** Template skeleton + 1 sample (LG_01A, E1)
   - **Record Build Plans:** Template skeleton + 1 sample (LG_01A, E1)
 - **ALL 7 TIERS STRUCTURE ESTABLISHED**
+- **Template Selection Guide:** Complete decision tree and selection guidance
 - Mode A only (Mode B pending)
 - Additional evidence class variants pending
 
