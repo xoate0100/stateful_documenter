@@ -695,31 +695,32 @@ This unified protocol integrates:
 
 #### Step 6.1: Jurisdiction Overlay Creation
 
-**Status:** PENDING  
-**Priority:** MEDIUM
+**Status:** ✅ COMPLETE  
+**Priority:** MEDIUM  
+**Completed:** 2025-12-23
 
 **Atomic Steps:**
 
 **6.1.1: Create Kansas Overlay**
-- [ ] Create [`callables/jurisdiction_overlays/kansas.yaml`](callables/jurisdiction_overlays/kansas.yaml)
-- [ ] Document Kansas-specific statutes
-- [ ] Document Kansas-specific legal frameworks
-- [ ] Document Kansas-specific terminology
+- [x] Create [`callables/jurisdiction_overlays/kansas.yaml`](callables/jurisdiction_overlays/kansas.yaml)
+- [x] Document Kansas-specific statutes
+- [x] Document Kansas-specific legal frameworks
+- [x] Document Kansas-specific terminology
 
 **Tracker Update:** After Kansas overlay complete, update [`plans/extraction_tasks.yaml`](plans/extraction_tasks.yaml) - Add Step 6.1.1, mark complete
 
 **6.1.2: Create Missouri Overlay**
-- [ ] Create [`callables/jurisdiction_overlays/missouri.yaml`](callables/jurisdiction_overlays/missouri.yaml)
-- [ ] Document Missouri-specific statutes
-- [ ] Document Missouri-specific legal frameworks
-- [ ] Document Missouri-specific terminology
+- [x] Create [`callables/jurisdiction_overlays/missouri.yaml`](callables/jurisdiction_overlays/missouri.yaml)
+- [x] Document Missouri-specific statutes
+- [x] Document Missouri-specific legal frameworks
+- [x] Document Missouri-specific terminology
 
 **Tracker Update:** After Missouri overlay complete, update [`plans/extraction_tasks.yaml`](plans/extraction_tasks.yaml) - Add Step 6.1.2, mark complete
 
 **6.1.3: Create Overlay Template**
-- [ ] Create overlay template structure
-- [ ] Document overlay creation process
-- [ ] Create overlay validation checklist
+- [x] Create overlay template structure
+- [x] Document overlay creation process
+- [x] Create overlay validation checklist
 
 **Tracker Update:** After overlay template complete, update [`plans/extraction_tasks.yaml`](plans/extraction_tasks.yaml) - Mark Step 6.1 complete
 
