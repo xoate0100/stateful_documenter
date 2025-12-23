@@ -108,9 +108,9 @@
 
 ## Metrics
 
-**Templates Generated:** 56  
-**Templates Validated:** 56  
-**Coverage:** ~5.6% (estimated total needed: ~1000+ variants)
+**Templates Generated:** 59  
+**Templates Validated:** 59  
+**Coverage:** ~5.9% (estimated total needed: ~1000+ variants)
 
 **Breakdown:**
 - **Tier 1: Parent-Parent Resolution**
@@ -139,8 +139,13 @@
   - **Attorney General Complaints:** Template skeleton + 1 sample (LG_01A, E1)
   - **FTC Complaints:** Template skeleton + 1 sample (LG_01A, E1)
   - **Privacy Authority Notices:** Template skeleton + 1 sample (LG_06, E1)
+- **Tier 7: Appellate and Constitutional**
+  - **Constitutional Issue Preservation Memos:** Template skeleton + 1 sample (LG_01A, E1)
+  - **Appeal Theory Outlines:** Template skeleton + 1 sample (LG_01A, E1)
+  - **Record Build Plans:** Template skeleton + 1 sample (LG_01A, E1)
+- **ALL 7 TIERS STRUCTURE ESTABLISHED**
 - Mode A only (Mode B pending)
-- Tier 7 pending
+- Additional evidence class variants pending
 
 ---
 
