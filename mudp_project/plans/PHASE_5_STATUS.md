@@ -108,9 +108,9 @@
 
 ## Metrics
 
-**Templates Generated:** 45  
-**Templates Validated:** 45  
-**Coverage:** ~4.5% (estimated total needed: ~1000+ variants)
+**Templates Generated:** 49  
+**Templates Validated:** 49  
+**Coverage:** ~4.9% (estimated total needed: ~1000+ variants)
 
 **Breakdown:**
 - **Tier 1: Parent-Parent Resolution**
@@ -126,8 +126,12 @@
   - **Urgent Removal Requests:** Template skeleton + 1 sample (LG_01A+LG_05, E1)
   - **Preservation Notices:** Template skeleton + 1 sample (LG_01A+LG_05, E1)
   - **Repeat Upload Suppression Requests:** Template skeleton + 1 sample (LG_01A+LG_05, E1)
+- **Tier 4: Insurance Activation**
+  - **Carrier Incident Notices:** Template skeleton + 1 sample (LG_01A, E1)
+  - **Coverage Trigger Memos:** Template skeleton + 1 sample (LG_01A, E1)
+  - **Risk Mitigation Demands:** Template skeleton + 1 sample (LG_01A, E1)
 - Mode A only (Mode B pending)
-- Tiers 4-7 pending
+- Tiers 5-7 pending
 
 ---
 
