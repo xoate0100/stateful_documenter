@@ -108,9 +108,9 @@
 
 ## Metrics
 
-**Templates Generated:** 49  
-**Templates Validated:** 49  
-**Coverage:** ~4.9% (estimated total needed: ~1000+ variants)
+**Templates Generated:** 53  
+**Templates Validated:** 53  
+**Coverage:** ~5.3% (estimated total needed: ~1000+ variants)
 
 **Breakdown:**
 - **Tier 1: Parent-Parent Resolution**
@@ -130,8 +130,13 @@
   - **Carrier Incident Notices:** Template skeleton + 1 sample (LG_01A, E1)
   - **Coverage Trigger Memos:** Template skeleton + 1 sample (LG_01A, E1)
   - **Risk Mitigation Demands:** Template skeleton + 1 sample (LG_01A, E1)
+- **Tier 5: Civil Litigation**
+  - **Complaint Outlines:** Template skeleton + 1 sample (LG_01A, E1)
+  - **Injunction Motion Outlines:** Template skeleton + 1 sample (LG_01A, E1)
+  - **Discovery Plans:** Template skeleton + 1 sample (LG_01A, E1)
+  - **Spoliation Letters:** Template skeleton + 1 sample (LG_01A, E1)
 - Mode A only (Mode B pending)
-- Tiers 5-7 pending
+- Tiers 6-7 pending
 
 ---
 
