@@ -108,14 +108,15 @@
 
 ## Metrics
 
-**Templates Generated:** 9  
-**Templates Validated:** 9  
-**Coverage:** ~0.9% (estimated total needed: ~1000+ variants)
+**Templates Generated:** 15  
+**Templates Validated:** 15  
+**Coverage:** ~1.5% (estimated total needed: ~1000+ variants)
 
 **Breakdown:**
 - LG_01A variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
-- LG_01B variants: 3 (E1, E2, E3)
-- LG_01C variants: 1 (E1)
+- LG_01B variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+- LG_01C variants: 5 (E1, E2, E3, E4, E5) - Mode A COMPLETE
+- LG_02 variants: 1 (E1) - Started
 - Mode A only (Mode B pending)
 - Tier 1 only (Tiers 2-7 pending)
 
