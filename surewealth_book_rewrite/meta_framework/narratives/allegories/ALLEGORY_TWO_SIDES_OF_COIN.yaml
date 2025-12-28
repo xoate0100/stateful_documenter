@@ -1,0 +1,80 @@
+# Allegory: Two Sides of the Same Coin
+# Death benefit and cash value relationship
+# Source: Transcript Analysis - Elizabeth Wiltsie - Aug 2025
+
+allegory_id: ALLEGORY_TWO_SIDES_OF_COIN
+title: "Two Sides of the Same Coin"
+version: 1.0
+source: "Transcript Analysis - Elizabeth Wiltsie - Aug 2025"
+status: active
+primary_theme: policy_mechanics
+
+description: |
+  Complete narrative explaining how death benefit and cash value are two sides 
+  of the same coin. At the end of the policy (age 121), they become equal. 
+  This explains why the company isn't "taking your money"—it's all yours, just 
+  in different forms.
+
+narrative: |
+  Imagine you have a coin. On one side is the death benefit—the amount your 
+  beneficiaries receive if you pass away. On the other side is the cash 
+  value—the amount you can access while you're alive. They're two sides of the 
+  same coin.
+  
+  When you're young, the coin is weighted more toward death benefit. The 
+  company is taking on more risk—if something happens to you, they owe a large 
+  amount. But as you get older and pay more premiums, the coin starts to 
+  balance. The cash value grows. By age 121 (the end of the policy), both sides 
+  are equal. The coin is perfectly balanced.
+  
+  If you outlive the policy, the company writes you a check for the full 
+  amount—both sides of the coin. They're not taking your money. It's all 
+  yours. It's just that when you're young, more of it is in the form of death 
+  benefit (protection), and as you age, more of it becomes cash value 
+  (access).
+  
+  This is why focusing on cash value makes sense. You're not losing the death 
+  benefit—you're just shifting the balance of the coin toward the side you can 
+  use while you're alive.
+
+usage_context:
+  - Explaining death benefit vs. cash value
+  - Addressing "company takes your money" concern
+  - Showing how policy mechanics work
+  - Demonstrating value of cash value focus
+
+written_adaptation: |
+  [Full narrative above can be used as-is in written content, or adapted to 
+  shorter versions for different formats]
+
+psychological_impact:
+  - Removes fear about "losing" death benefit
+  - Shows it's all your money
+  - Explains policy mechanics clearly
+  - Reduces confusion about policy structure
+
+funnel_stage:
+  - mid_funnel: "Explain policy mechanics"
+  - conversion: "Address common concerns"
+
+persona_fit:
+  - all: "Works for all personas"
+  - engineer_retiree: "Logical, clear explanation"
+
+emotional_state:
+  - confusion
+  - concern_about_death_benefit
+  - need_for_clarity
+
+visual_elements:
+  - Coin diagram showing two sides
+  - Timeline showing balance shift
+  - Age 121 illustration
+
+related_metaphors:
+  - SAILBOAT_METAPHOR
+
+cross_references:
+  - "meta_framework/language/confirmation_patterns.yaml"
+  - "meta_framework/language/friction_resolution.yaml"
+

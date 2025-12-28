@@ -1,0 +1,137 @@
+# Allegory: The Leaky Bucket
+story_vault_entry:
+  id: ALLEGORY_LEAKY_BUCKET
+  title: "The Leaky Bucket"
+  type: allegory
+  description: >
+    Illustrates how tax drag and inefficiencies quietly drain wealth over time,
+    even when savings efforts appear successful.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: medium
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: mid_funnel
+  user_intent_profile: researching
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - high_earner_tax_conscious
+    - pre_retiree_optimizer
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - confident
+    - unaware
+  emotional_end_state:
+    - unsettled
+    - curious
+    - motivated_to_verify
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Paying more in taxes than expected
+    - Feeling like savings don't grow fast enough
+    - Confusion about where money is leaking
+  dreams_aspirations:
+    - Keeping more of what they earn
+    - Predictable income
+    - Feeling smart and proactive
+  objection_patterns:
+    - "I'm already doing everything right"
+    - "Taxes are just part of life"
+    - "I don't make enough to worry about taxes"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      A homeowner fills a bucket daily, unaware that a small crack
+      at the bottom quietly drains it overnight.
+    conflict: >
+      No matter how much water is added, the level never seems to rise.
+    realization: >
+      The issue was never the effort — it was the leak.
+    resolution: >
+      Fixing the crack changed everything, without adding more water.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Leaky Bucket"
+    elements:
+      - symbol: bucket
+        represents: lifetime wealth
+      - symbol: leak
+        represents: taxes and inefficiencies
+      - symbol: water_added
+        represents: savings and investments
+
+  charts_graphs:
+    recommended:
+      - lifetime_tax_drag_line_chart
+      - before_after_after_tax_income_table
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I feel like I'm saving but not getting ahead"
+      - "Where is all my money going?"
+      - "I thought I was doing everything right"
+    aspiration_language:
+      - "I want to keep more of what I earn"
+      - "I want to be smarter about taxes"
+      - "I want predictable growth"
+    decision_triggers:
+      - "Show me where I'm losing money"
+      - "I need to see the numbers"
+      - "What's my actual tax impact?"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Myth_vs_Reality
+    modal_urgency_language:
+      - "Every year the leak stays open, it compounds."
+      - "What if the problem isn't how much you're saving — but what's quietly draining it?"
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - tool_result_page
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See where your money may be leaking."
+    primary_cta:
+      - "Run your personalized tax impact review."
+    urgency_trigger:
+      - "Every year the leak stays open, it compounds."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - lifetime_tax_estimator
+    interactive_tools:
+      - tax_impact_calculator
+    downloadable_assets: []
+    webinar_integration:
+      - tax_planning_webinar
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Fixing the leak matters more than pouring faster."
+    - "Most people never see the leak."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null

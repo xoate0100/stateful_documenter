@@ -1,0 +1,91 @@
+# Future Visioning Language Patterns
+# Patterns to point to future recovery and success
+# Source: Transcript Analysis - ANDY_DANIELS_TRANSCRIPT_ANALYSIS.md
+
+version: 1.0
+source: "Transcript Analysis - 17 client service calls"
+purpose: "Create hope and forward momentum"
+
+future_visioning_patterns:
+  recovery_language:
+    - "You'll get through this"
+    - "This is temporary, not permanent"
+    - "In [timeframe], you'll be [positive_state]"
+    - "You have [time] to [recover/build/grow]"
+    - "You guys will totally come through it and it's going to be fine"
+    - "You have lots of years of productivity left"
+    - "This is a hiccup, it's a speed bump"
+  
+  success_language:
+    - "By [age/timeframe], you'll have [achievement]"
+    - "Imagine [future_scenario]"
+    - "Picture yourself [future_state]"
+    - "When you [future_action], you'll be able to [benefit]"
+    - "When you guys get stability. The first thing that we should do is..."
+    - "By the time you're [age], you'll have [achievement]"
+  
+  timeline_language:
+    - "In 5 years, you'll..."
+    - "By the time you're [age]..."
+    - "When you reach [milestone]..."
+    - "In [timeframe], you'll be able to..."
+    - "We've got 4 straight weeks. Um, what do you think about the prospects of jobs between now and then?"
+
+written_content_adaptation:
+  closing_sections:
+    - "In 10 years, you'll look back and see how this decision changed everything..."
+    - "By age 65, you'll have [achievement]..."
+    - "Imagine yourself in [future_scenario]..."
+  
+  case_studies:
+    - "By age 65, she had accumulated $2 million..."
+    - "In just 8 years, he went from [X] to [Y]..."
+    - "When she reached retirement, she had [achievement]..."
+  
+  vision_statements:
+    - "Imagine having complete control over your retirement income..."
+    - "Picture yourself at [age] with [achievement]..."
+    - "When you reach [milestone], you'll be able to [benefit]..."
+
+usage_guidelines:
+  when_to_use:
+    - When client feels stuck
+    - When client needs hope
+    - In closing sections
+    - In case studies
+    - When painting future scenarios
+  
+  emotional_states:
+    - stuck
+    - hopeless
+    - overwhelmed
+    - anxious_about_future
+  
+  funnel_stage:
+    - mid_funnel: "Create hope and vision"
+    - conversion: "Show future benefits"
+    - post_conversion: "Reinforce future vision"
+  
+  persona_fit:
+    - all: "Works for all personas"
+    - faith_family_builder: "Emphasize legacy and generational impact"
+    - engineer_retiree: "Emphasize specific numbers and timelines"
+
+examples_from_transcripts:
+  - transcript: "Oct 10 - Dustin"
+    quote: "You guys will totally come through it and it's going to be fine"
+    context: "Creating hope for recovery"
+  
+  - transcript: "Oct 10 - Dustin"
+    quote: "You have lots of years of productivity left"
+    context: "Pointing to future potential"
+  
+  - transcript: "Oct 10 - Dustin"
+    quote: "When you guys get stability. The first thing that we should do is..."
+    context: "Painting future action plan"
+
+cross_references:
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/language/mathematical_proof_patterns.yaml"
+  - "meta_framework/narratives/case_studies/"
+

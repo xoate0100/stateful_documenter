@@ -1,0 +1,44 @@
+# Illustrations Index
+# Registry of illustration concepts and visual metaphors
+
+illustrations:
+  # Format:
+  # illustration_id:
+  #   name: Display Name
+  #   type: metaphor | allegory | concept | process
+  #   visual_description: Description of visual
+  #   associated_narrative: narrative_id
+  #   usage_context: chapter | blog | landing_page
+  
+  leaky_bucket_illustration:
+    name: "Leaky Bucket Illustration"
+    type: metaphor
+    visual_description: "Bucket with water being added, small crack at bottom draining water"
+    associated_narrative: ALLEGORY_LEAKY_BUCKET
+    usage_context: [chapter, blog, landing_page]
+    emotional_trigger: tax_drag_fear
+  
+  house_of_cards_illustration:
+    name: "House of Cards Illustration"
+    type: allegory
+    visual_description: "Tall house of cards, wind threatening to topple it"
+    associated_narrative: ALLEGORY_HOUSE_OF_CARDS
+    usage_context: [chapter, blog, landing_page]
+    emotional_trigger: market_dependency_fear
+  
+  bridge_to_legacy:
+    name: "Bridge Between Now & Legacy"
+    type: concept
+    visual_description: "Bridge connecting current financial state to legacy/estate"
+    associated_narrative: null
+    usage_context: [chapter, blog, landing_page]
+    emotional_trigger: legacy_fear
+  
+  financial_clarity_path:
+    name: "From Fog to Framework"
+    type: process
+    visual_description: "Path from confusion (fog) to clarity (clear framework)"
+    associated_narrative: null
+    usage_context: [chapter, blog]
+    emotional_trigger: confusion_to_clarity
+

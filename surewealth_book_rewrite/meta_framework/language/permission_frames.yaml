@@ -1,0 +1,104 @@
+# Permission Frames
+# Language patterns that reduce resistance by asking permission
+# Source: Markdown Export Conversion Analysis
+
+version: 1.0
+source: "Markdown Export Conversion Analysis"
+purpose: "Reduce resistance before asking questions or making requests"
+
+permission_frames:
+  question_introduction:
+    description: "Frames that introduce questions respectfully"
+    patterns:
+      - "If you don't mind me asking..."
+      - "Before we go any further..."
+      - "Let me ask you..."
+      - "I'm curious..."
+      - "Would you mind if I asked..."
+      - "Can I ask you something?"
+      - "If it's okay with you..."
+    
+    usage: "Use before asking personal or financial questions"
+  
+  information_sharing:
+    description: "Frames that introduce information or insights"
+    patterns:
+      - "Let me share something with you..."
+      - "Before we go any further, I want to tell you..."
+      - "I've something really important to get off my chest..."
+      - "Let me be honest with you..."
+      - "Can I be straight with you?"
+    
+    usage: "Use when sharing potentially uncomfortable truths"
+  
+  transition_frames:
+    description: "Frames that transition between topics"
+    patterns:
+      - "Before we get into [topic]..."
+      - "Before we go any further..."
+      - "Let me pause here for a moment..."
+      - "Here's what most people don't know..."
+      - "The truth is..."
+    
+    usage: "Use at section breaks or before important information"
+  
+  assumption_checking:
+    description: "Frames that check assumptions before proceeding"
+    patterns:
+      - "I'm assuming [assumption]. Is that correct?"
+      - "Let me make sure I understand..."
+      - "If I'm hearing you correctly..."
+      - "Just to clarify..."
+      - "So what you're saying is..."
+    
+    usage: "Use to confirm understanding before moving forward"
+
+usage_guidelines:
+  when_to_use:
+    - Before asking personal financial questions
+    - Before sharing uncomfortable truths
+    - When transitioning to sensitive topics
+    - Before making assumptions
+    - When building rapport
+  
+  effectiveness:
+    - Reduces resistance by showing respect
+    - Creates psychological permission
+    - Builds rapport and trust
+    - Makes questions feel like conversation, not interrogation
+  
+  content_format:
+    email:
+      - text: "Quick question..."
+        note: "Use as subject line"
+      - "If you don't mind me asking..."
+    
+    blog_post:
+      - "Before we go any further..."
+      - "Let me share something with you..."
+    
+    presentation:
+      - "Before we get into [topic]..."
+      - "Let me pause here for a moment..."
+    
+    conversation:
+      - "If you don't mind me asking..."
+      - "Can I ask you something?"
+
+examples:
+  question_with_permission:
+    - "If you don't mind me asking, how much income are you currently living on?"
+    - "Before we go any further, let me ask you: How do you feel about your current retirement plan?"
+  
+  information_with_permission:
+    - "Before we get into how to attract ideal prospects, I've something really important to get off my chest."
+    - "Let me share something with you that most agents don't want to hear..."
+  
+  transition_with_permission:
+    - "Before we go any further, let me make sure I understand your situation..."
+    - "Let me pause here for a moment. Here's what most people don't know..."
+
+cross_references:
+  - "meta_framework/language/question_frameworks.yaml"
+  - "meta_framework/language/linguistic_patterns.yaml"
+

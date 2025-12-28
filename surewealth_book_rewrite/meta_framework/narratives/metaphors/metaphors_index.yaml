@@ -1,0 +1,60 @@
+# Metaphors Index
+# Registry of all metaphors used in the book
+
+metaphors:
+  SAVINGS_ACCOUNT_METAPHOR:
+    title: "Policy Loans as Savings Account"
+    file: narratives/metaphors/SAVINGS_ACCOUNT_METAPHOR.yaml
+    primary_theme: policy_loans
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Oct 10 - Dustin"
+  
+  WATERFALL_CASCADE_METAPHOR:
+    title: "Waterfall Debt Paydown Strategy"
+    file: narratives/metaphors/WATERFALL_CASCADE_METAPHOR.yaml
+    primary_theme: debt_strategy
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Pat Petrakis - June 2024"
+  
+  SAILBOAT_METAPHOR:
+    title: "Policy Structure as Sailboat"
+    file: narratives/metaphors/SAILBOAT_METAPHOR.yaml
+    primary_theme: policy_structure
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Elizabeth Wiltsie - Aug 2025"
+  
+  WAREHOUSE_OF_WEALTH_METAPHOR:
+    title: "Policy as Warehouse of Wealth"
+    file: narratives/metaphors/WAREHOUSE_OF_WEALTH_METAPHOR.yaml
+    primary_theme: policy_mechanics
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Cheri M. - June 2025"
+  
+  LEFT_POCKET_RIGHT_POCKET_METAPHOR:
+    title: "Left Pocket to Right Pocket"
+    file: narratives/metaphors/LEFT_POCKET_RIGHT_POCKET_METAPHOR.yaml
+    primary_theme: tax_efficiency
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Multiple calls"
+  
+  HICCUP_SPEED_BUMP_METAPHOR:
+    title: "Hiccup or Speed Bump"
+    file: narratives/metaphors/HICCUP_SPEED_BUMP_METAPHOR.yaml
+    primary_theme: crisis_reframing
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Oct 10 - Dustin"
+  
+  PRESSURE_RELIEF_VALVE_METAPHOR:
+    title: "Policy as Pressure Relief Valve"
+    file: narratives/metaphors/PRESSURE_RELIEF_VALVE_METAPHOR.yaml
+    primary_theme: emergency_access
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Oct 10 - Dustin"
+

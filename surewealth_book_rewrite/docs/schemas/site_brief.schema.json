@@ -1,0 +1,813 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://meta-framework.io/schemas/site_brief.schema.json",
+  "title": "Site Generation Brief Schema",
+  "description": "Validation schema for site generation briefs used to instruct AI systems on generating complete site specifications including psychological, content, design, and technical requirements.",
+  "version": "1.0.0",
+  "type": "object",
+  "required": [
+    "projectOverview",
+    "targetAudience",
+    "marketingCopy",
+    "storyFramework",
+    "seo",
+    "ctaStrategy",
+    "layoutFlow",
+    "designSpecs",
+    "psychologicalDesign",
+    "contentModules",
+    "technicalRequirements"
+  ],
+  "properties": {
+    "projectOverview": {
+      "type": "object",
+      "required": ["siteName", "primaryPurpose", "targetOutcome", "businessContext", "successMetrics"],
+      "properties": {
+        "siteName": { "type": "string", "minLength": 1 },
+        "primaryPurpose": { "type": "string", "minLength": 10 },
+        "targetOutcome": { "type": "string", "minLength": 5 },
+        "businessContext": { "type": "string", "minLength": 10 },
+        "successMetrics": {
+          "type": "object",
+          "required": ["primaryKPI"],
+          "properties": {
+            "primaryKPI": { "type": "string", "minLength": 1 },
+            "secondaryKPIs": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 0
+            },
+            "conversionFunnelStages": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 2
+            }
+          }
+        }
+      }
+    },
+    "targetAudience": {
+      "type": "object",
+      "required": [
+        "demographics",
+        "psychographics",
+        "emotionalDrivers",
+        "avatarPersona"
+      ],
+      "properties": {
+        "demographics": {
+          "type": "object",
+          "required": ["ageRange", "incomeLevel", "geographicFocus"],
+          "properties": {
+            "ageRange": { "type": "string", "minLength": 1 },
+            "incomeLevel": { "type": "string", "minLength": 1 },
+            "assetLevel": { "type": "string" },
+            "geographicFocus": { "type": "string", "minLength": 1 },
+            "occupationBackground": { "type": "string" },
+            "educationLevel": { "type": "string" }
+          }
+        },
+        "psychographics": {
+          "type": "object",
+          "required": [
+            "sophisticationLevel",
+            "financialLiteracy",
+            "decisionStyle",
+            "informationConsumption",
+            "trustThreshold"
+          ],
+          "properties": {
+            "sophisticationLevel": { "type": "string", "minLength": 1 },
+            "financialLiteracy": { "type": "string", "minLength": 1 },
+            "decisionStyle": { "type": "string", "minLength": 1 },
+            "informationConsumption": { "type": "string", "minLength": 1 },
+            "trustThreshold": { "type": "string", "minLength": 1 }
+          }
+        },
+        "emotionalDrivers": {
+          "type": "object",
+          "required": ["primaryFears", "primaryDesires", "currentEmotionalState"],
+          "properties": {
+            "primaryFears": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["fear", "context"],
+                "properties": {
+                  "fear": { "type": "string", "minLength": 1 },
+                  "context": { "type": "string" }
+                }
+              },
+              "minItems": 3,
+              "maxItems": 5
+            },
+            "primaryDesires": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["desire", "context"],
+                "properties": {
+                  "desire": { "type": "string", "minLength": 1 },
+                  "context": { "type": "string" }
+                }
+              },
+              "minItems": 3,
+              "maxItems": 5
+            },
+            "currentEmotionalState": {
+              "type": "object",
+              "required": ["dominantEmotion", "emotionalJourneyGoal"],
+              "properties": {
+                "dominantEmotion": { "type": "string", "minLength": 1 },
+                "secondaryEmotions": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "emotionalJourneyGoal": { "type": "string", "minLength": 1 }
+              }
+            }
+          }
+        },
+        "avatarPersona": {
+          "type": "object",
+          "required": ["name", "oneSentenceDescription", "keyQuote"],
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "oneSentenceDescription": { "type": "string", "minLength": 10 },
+            "keyQuote": { "type": "string", "minLength": 10 }
+          }
+        }
+      }
+    },
+    "marketingCopy": {
+      "type": "object",
+      "required": [
+        "valueProposition",
+        "keyMessages",
+        "toneVoice",
+        "objectionHandling"
+      ],
+      "properties": {
+        "valueProposition": {
+          "type": "object",
+          "required": ["headline", "subheadline", "elevatorPitch", "usp"],
+          "properties": {
+            "headline": { "type": "string", "minLength": 8, "maxLength": 100 },
+            "subheadline": { "type": "string", "minLength": 15, "maxLength": 200 },
+            "elevatorPitch": { "type": "string", "minLength": 50 },
+            "usp": { "type": "string", "minLength": 10 }
+          }
+        },
+        "keyMessages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["message", "supportingPoints", "proofPoints"],
+            "properties": {
+              "message": { "type": "string", "minLength": 10 },
+              "supportingPoints": {
+                "type": "array",
+                "items": { "type": "string" },
+                "minItems": 2,
+                "maxItems": 5
+              },
+              "proofPoints": {
+                "type": "array",
+                "items": { "type": "string" },
+                "minItems": 1
+              }
+            }
+          },
+          "minItems": 3,
+          "maxItems": 5
+        },
+        "toneVoice": {
+          "type": "object",
+          "required": ["tone", "formalityLevel", "dos", "donts"],
+          "properties": {
+            "tone": { "type": "string", "minLength": 1 },
+            "voiceCharacteristics": {
+              "type": "object",
+              "properties": {
+                "formalityLevel": { "type": "string" },
+                "sentenceStructure": { "type": "string" },
+                "vocabulary": { "type": "string" }
+              }
+            },
+            "dos": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 3,
+              "maxItems": 5
+            },
+            "donts": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 3,
+              "maxItems": 5
+            }
+          }
+        },
+        "objectionHandling": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["objection", "responseStrategy", "keyPhrases"],
+            "properties": {
+              "objection": { "type": "string", "minLength": 1 },
+              "responseStrategy": { "type": "string", "minLength": 1 },
+              "keyPhrases": {
+                "type": "array",
+                "items": { "type": "string" },
+                "minItems": 1
+              }
+            }
+          },
+          "minItems": 3
+        }
+      }
+    },
+    "storyFramework": {
+      "type": "object",
+      "required": [
+        "narrativeFramework",
+        "coreStoryArc",
+        "metaphorsAnalogies",
+        "storyElements"
+      ],
+      "properties": {
+        "narrativeFramework": {
+          "type": "object",
+          "required": ["selectedFramework", "frameworkRationale"],
+          "properties": {
+            "selectedFramework": {
+              "type": "string",
+              "enum": ["AIDA", "PAS", "StoryBrand", "Custom"]
+            },
+            "frameworkRationale": { "type": "string", "minLength": 10 }
+          }
+        },
+        "coreStoryArc": {
+          "type": "object",
+          "required": ["act1Setup", "act2Conflict", "act3Resolution"],
+          "properties": {
+            "act1Setup": { "type": "string", "minLength": 10 },
+            "act2Conflict": { "type": "string", "minLength": 10 },
+            "act3Resolution": { "type": "string", "minLength": 10 }
+          }
+        },
+        "metaphorsAnalogies": {
+          "type": "object",
+          "required": ["primaryMetaphor", "supportingAnalogies"],
+          "properties": {
+            "primaryMetaphor": {
+              "type": "object",
+              "required": ["metaphor", "usage", "visualRepresentation"],
+              "properties": {
+                "metaphor": { "type": "string", "minLength": 1 },
+                "usage": { "type": "string", "minLength": 1 },
+                "visualRepresentation": { "type": "string" }
+              }
+            },
+            "supportingAnalogies": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["analogy", "usageContext"],
+                "properties": {
+                  "analogy": { "type": "string", "minLength": 1 },
+                  "usageContext": { "type": "string", "minLength": 1 }
+                }
+              },
+              "minItems": 2,
+              "maxItems": 3
+            }
+          }
+        },
+        "storyElements": {
+          "type": "object",
+          "required": ["hero", "guide", "villain", "transformation"],
+          "properties": {
+            "hero": { "type": "string", "minLength": 1 },
+            "guide": { "type": "string", "minLength": 1 },
+            "villain": { "type": "string", "minLength": 1 },
+            "transformation": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "seo": {
+      "type": "object",
+      "required": [
+        "primaryKeywords",
+        "secondaryKeywords",
+        "longTailKeywords",
+        "metaInformation",
+        "contentSeoRequirements"
+      ],
+      "properties": {
+        "primaryKeywords": {
+          "type": "object",
+          "required": ["primaryKeyword", "searchIntent"],
+          "properties": {
+            "primaryKeyword": { "type": "string", "minLength": 1 },
+            "searchIntent": {
+              "type": "string",
+              "enum": ["Informational", "Navigational", "Transactional", "Commercial"]
+            },
+            "searchVolume": { "type": "string" },
+            "competitionLevel": {
+              "type": "string",
+              "enum": ["Low", "Medium", "High"]
+            }
+          }
+        },
+        "secondaryKeywords": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["keyword", "intent", "usageContext"],
+            "properties": {
+              "keyword": { "type": "string", "minLength": 1 },
+              "intent": { "type": "string" },
+              "usageContext": { "type": "string" }
+            }
+          },
+          "minItems": 5,
+          "maxItems": 10
+        },
+        "longTailKeywords": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["phrase", "usageContext"],
+            "properties": {
+              "phrase": { "type": "string", "minLength": 1 },
+              "usageContext": { "type": "string" }
+            }
+          },
+          "minItems": 5,
+          "maxItems": 10
+        },
+        "metaInformation": {
+          "type": "object",
+          "required": ["metaTitle", "metaDescription", "h1Strategy"],
+          "properties": {
+            "metaTitle": { "type": "string", "minLength": 50, "maxLength": 60 },
+            "metaDescription": { "type": "string", "minLength": 150, "maxLength": 160 },
+            "h1Strategy": { "type": "string", "minLength": 1 },
+            "h2H6Strategy": { "type": "string" }
+          }
+        },
+        "contentSeoRequirements": {
+          "type": "object",
+          "required": ["targetWordCount", "keywordDensity"],
+          "properties": {
+            "targetWordCount": { "type": "string", "minLength": 1 },
+            "keywordDensity": { "type": "string", "minLength": 1 },
+            "internalLinkingStrategy": { "type": "string" },
+            "externalLinkingStrategy": { "type": "string" }
+          }
+        }
+      }
+    },
+    "ctaStrategy": {
+      "type": "object",
+      "required": ["primaryCTA", "secondaryCTAs", "ctaPsychology"],
+      "properties": {
+        "primaryCTA": {
+          "type": "object",
+          "required": ["ctaText", "ctaType", "ctaPlacement", "ctaRationale"],
+          "properties": {
+            "ctaText": { "type": "string", "minLength": 1 },
+            "ctaType": {
+              "type": "string",
+              "enum": ["Schedule", "Email Capture", "Download", "Learn More", "Custom"]
+            },
+            "ctaPlacement": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["Above Fold", "Mid Page", "End of Content", "Sticky", "Exit Intent"]
+              },
+              "minItems": 1
+            },
+            "ctaRationale": { "type": "string", "minLength": 10 }
+          }
+        },
+        "secondaryCTAs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["text", "type", "placement", "purpose"],
+            "properties": {
+              "text": { "type": "string", "minLength": 1 },
+              "type": { "type": "string" },
+              "placement": { "type": "string" },
+              "purpose": { "type": "string", "minLength": 1 }
+            }
+          },
+          "minItems": 0
+        },
+        "ctaPsychology": {
+          "type": "object",
+          "required": ["valueProposition", "riskReduction"],
+          "properties": {
+            "urgencyElements": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "valueProposition": { "type": "string", "minLength": 1 },
+            "riskReduction": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 1
+            },
+            "socialProofIntegration": { "type": "string" }
+          }
+        }
+      }
+    },
+    "layoutFlow": {
+      "type": "object",
+      "required": [
+        "pageStructure",
+        "userFlowSequence",
+        "engagementPoints",
+        "mobileConsiderations"
+      ],
+      "properties": {
+        "pageStructure": {
+          "type": "object",
+          "required": ["layoutType", "totalSections"],
+          "properties": {
+            "layoutType": {
+              "type": "string",
+              "enum": ["Single-page Scroll", "Multi-step Wizard", "Hub and Spoke", "Custom"]
+            },
+            "totalSections": { "type": "number", "minimum": 1 },
+            "estimatedScrollDepth": { "type": "string" }
+          }
+        },
+        "userFlowSequence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "sectionName",
+              "moduleType",
+              "purpose",
+              "keyContent",
+              "ctaPresent"
+            ],
+            "properties": {
+              "sectionName": { "type": "string", "minLength": 1 },
+              "moduleType": {
+                "type": "string",
+                "enum": [
+                  "hero",
+                  "key_idea",
+                  "scenario",
+                  "faq",
+                  "quiz",
+                  "testimonial",
+                  "social_proof",
+                  "calculator",
+                  "cta_section"
+                ]
+              },
+              "purpose": { "type": "string", "minLength": 1 },
+              "keyContent": {
+                "type": "array",
+                "items": { "type": "string" },
+                "minItems": 1
+              },
+              "ctaPresent": { "type": "boolean" },
+              "visualRequirements": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          },
+          "minItems": 1
+        },
+        "engagementPoints": {
+          "type": "object",
+          "required": ["interactiveElements"],
+          "properties": {
+            "interactiveElements": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 0
+            },
+            "engagementRationale": { "type": "string" },
+            "progressiveDisclosure": { "type": "string" }
+          }
+        },
+        "mobileConsiderations": {
+          "type": "object",
+          "required": ["mobileFirstElements"],
+          "properties": {
+            "mobileFirstElements": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "simplifiedFlow": { "type": "string" },
+            "touchTargets": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "designSpecs": {
+      "type": "object",
+      "required": [
+        "visualIdentity",
+        "visualStyle",
+        "componentSpecifications"
+      ],
+      "properties": {
+        "visualIdentity": {
+          "type": "object",
+          "required": ["colorPalette", "typography"],
+          "properties": {
+            "colorPalette": {
+              "type": "object",
+              "required": ["primaryColor", "accentColor"],
+              "properties": {
+                "primaryColor": {
+                  "type": "string",
+                  "pattern": "^#[0-9A-Fa-f]{6}$"
+                },
+                "accentColor": {
+                  "type": "string",
+                  "pattern": "^#[0-9A-Fa-f]{6}$"
+                },
+                "backgroundColors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^#[0-9A-Fa-f]{6}$"
+                  }
+                },
+                "textColors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^#[0-9A-Fa-f]{6}$"
+                  }
+                },
+                "colorPsychology": { "type": "string" }
+              }
+            },
+            "typography": {
+              "type": "object",
+              "required": ["primaryFont"],
+              "properties": {
+                "primaryFont": { "type": "string", "minLength": 1 },
+                "headingFont": { "type": "string" },
+                "fontSizes": { "type": "object" },
+                "typographyRationale": { "type": "string" }
+              }
+            }
+          }
+        },
+        "visualStyle": {
+          "type": "object",
+          "required": ["designAesthetic"],
+          "properties": {
+            "designAesthetic": { "type": "string", "minLength": 1 },
+            "imageStyle": { "type": "string" },
+            "iconStyle": { "type": "string" },
+            "visualHierarchy": { "type": "string" }
+          }
+        },
+        "componentSpecifications": {
+          "type": "object",
+          "properties": {
+            "buttonStyles": { "type": "object" },
+            "formStyles": { "type": "object" },
+            "cardContainerStyles": { "type": "object" },
+            "spacingSystem": { "type": "string" }
+          }
+        }
+      }
+    },
+    "psychologicalDesign": {
+      "type": "object",
+      "required": [
+        "trustBuilding",
+        "persuasionPrinciples",
+        "cognitiveLoadManagement",
+        "emotionalTriggers"
+      ],
+      "properties": {
+        "trustBuilding": {
+          "type": "object",
+          "required": ["trustSignals"],
+          "properties": {
+            "trustSignals": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 1
+            },
+            "placementStrategy": { "type": "string" },
+            "visualTrustElements": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "persuasionPrinciples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["principle", "implementation"],
+            "properties": {
+              "principle": { "type": "string", "minLength": 1 },
+              "implementation": { "type": "string", "minLength": 1 }
+            }
+          },
+          "minItems": 1
+        },
+        "cognitiveLoadManagement": {
+          "type": "object",
+          "required": ["informationChunking"],
+          "properties": {
+            "informationChunking": { "type": "string", "minLength": 1 },
+            "progressiveDisclosure": { "type": "string" },
+            "visualBreaks": { "type": "string" }
+          }
+        },
+        "emotionalTriggers": {
+          "type": "object",
+          "required": ["sectionEmotionalGoals"],
+          "properties": {
+            "sectionEmotionalGoals": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["section", "emotionalGoal"],
+                "properties": {
+                  "section": { "type": "string", "minLength": 1 },
+                  "emotionalGoal": { "type": "string", "minLength": 1 }
+                }
+              },
+              "minItems": 1
+            }
+          }
+        }
+      }
+    },
+    "contentModules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["moduleType", "purpose", "requiredContent", "tone"],
+        "properties": {
+          "moduleType": {
+            "type": "string",
+            "enum": [
+              "hero",
+              "key_idea",
+              "scenario",
+              "faq",
+              "quiz",
+              "testimonial",
+              "social_proof",
+              "calculator",
+              "cta_section"
+            ]
+          },
+          "purpose": { "type": "string", "minLength": 1 },
+          "requiredContent": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "optionalContent": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "tone": { "type": "string", "minLength": 1 },
+          "visualRequirements": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "technicalRequirements": {
+      "type": "object",
+      "required": ["technicalSpecifications"],
+      "properties": {
+        "technicalSpecifications": {
+          "type": "object",
+          "required": ["integrationRequirements", "analyticsEvents"],
+          "properties": {
+            "integrationRequirements": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 0
+            },
+            "analyticsEvents": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 1
+            },
+            "performanceTargets": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "contentDelivery": {
+          "type": "object",
+          "properties": {
+            "contentFormat": { "type": "string" },
+            "updateFrequency": { "type": "string" },
+            "abTestingConsiderations": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "complianceLegal": {
+      "type": "object",
+      "properties": {
+        "requiredDisclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["disclaimer", "placement"],
+            "properties": {
+              "disclaimer": { "type": "string", "minLength": 1 },
+              "placement": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "regulatoryConsiderations": {
+          "type": "object",
+          "properties": {
+            "industryRegulations": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "privacyRequirements": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "accessibilityStandards": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "successCriteria": {
+      "type": "object",
+      "properties": {
+        "contentValidation": {
+          "type": "object",
+          "properties": {
+            "minimumRequirements": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "qualityChecks": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "designValidation": {
+          "type": "object",
+          "properties": {
+            "usabilityChecks": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "visualChecks": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "psychologicalValidation": {
+          "type": "object",
+          "properties": {
+            "messageAlignment": { "type": "string" },
+            "emotionalJourney": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
+

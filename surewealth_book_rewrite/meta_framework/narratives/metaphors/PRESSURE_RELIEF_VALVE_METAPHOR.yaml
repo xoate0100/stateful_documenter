@@ -1,0 +1,75 @@
+# Pressure Relief Valve Metaphor
+# Policy as safety mechanism for emergencies
+# Source: Transcript Analysis - Oct 10 - Dustin
+
+metaphor_id: PRESSURE_RELIEF_VALVE_METAPHOR
+title: "Policy as Pressure Relief Valve"
+version: 1.0
+source: "Transcript Analysis - Oct 10 - Dustin"
+status: active
+
+description: |
+  Policy functions as a pressure relief valve—a safety mechanism that releases 
+  pressure when needed. Policy becomes a tool for relief, not a burden. Moves 
+  from obligation to resource.
+
+transcript_source:
+  - "Oct 10 - Dustin"
+
+original_quote: |
+  "For now, the pressure relief valve that you're looking for needs to come 
+  from the policy. It's that's what it's there for. That's what it's designed 
+  for."
+
+usage_context:
+  - Explaining emergency access to funds
+  - Showing policy as safety mechanism
+  - Reframing policy from burden to resource
+  - Demonstrating purpose of policy
+
+written_adaptation: |
+  Your policy is like a pressure relief valve. When pressure builds up—when 
+  you have an emergency, an unexpected expense, or a financial challenge—the 
+  valve opens and releases that pressure. That's what it's there for. That's 
+  what it's designed for. Your policy isn't a burden—it's a safety mechanism 
+  that gives you relief when you need it most.
+
+key_points:
+  - Safety mechanism, not burden
+  - Designed for emergencies
+  - Releases pressure when needed
+  - Tool for relief
+
+psychological_impact:
+  - Policy becomes tool for relief, not burden
+  - Moves from obligation to resource
+  - Reduces fear about using policy
+  - Creates sense of security
+
+funnel_stage:
+  - mid_funnel: "Explain policy purpose"
+  - conversion: "Show value of safety mechanism"
+
+persona_fit:
+  - all: "Works for all personas"
+  - widow_caregiver: "Highly effective - safety focus"
+
+emotional_state:
+  - pressure
+  - stress
+  - need_for_relief
+  - fear
+
+visual_elements:
+  - Pressure relief valve diagram
+  - Emergency access flowchart
+  - Safety mechanism illustration
+
+related_metaphors:
+  - SAVINGS_ACCOUNT_METAPHOR
+  - WAREHOUSE_OF_WEALTH_METAPHOR
+
+cross_references:
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/language/empowerment_patterns.yaml"
+

@@ -1,0 +1,94 @@
+# Mathematical Proof Language Patterns
+# Patterns to create objective truth through numbers and calculations
+# Source: Transcript Analysis - ANDY_DANIELS_TRANSCRIPT_ANALYSIS.md
+
+version: 1.0
+source: "Transcript Analysis - 17 client service calls"
+purpose: "Remove emotion from decision-making through objective numbers"
+
+mathematical_proof_patterns:
+  daily_cost_calculation:
+    - "That's [amount] per day"
+    - "Every day you [action], it costs you [amount]"
+    - "Break that down: [amount] per day, [amount] per week"
+    - "It's roughly costing you $[amount] a day to have that [debt/expense]"
+    - "That's [amount] per day, [amount] per week, [amount] per month"
+  
+  comparison_language:
+    - "While others can only [action] at [rate], you get [rate]"
+    - "Your peers think they need [amount], but you only need [amount]"
+    - "Traditional planning says [X], but the math shows [Y]"
+    - "They can only take four percent you get to take eight percent"
+    - "Somebody else... they can only take four percent you get to take eight percent"
+    - "Your peers... they think in order to get [amount] in retirement that they need to save [amount]. Because they can only withdraw [rate]"
+  
+  progress_celebration:
+    - "You've gone from [X] to [Y] in [timeframe]"
+    - "That's [amount] more than when we started"
+    - "Look at that growth: [X] to [Y]"
+    - "You've got from [X] to [Y]? Since we did that. Which is that's nuts."
+    - "We're at [amount]. Is that what's coming out of your account?"
+  
+  specific_number_usage:
+    - "We're at [exact_number]"
+    - "You've got [exact_amount] available right now"
+    - "That's [exact_calculation]"
+    - "The math says [specific_number]"
+
+written_content_adaptation:
+  body_paragraphs:
+    - "Let's break that down: $12,000 per year is $33 per day..."
+    - "Every day you carry that debt, it costs you $[amount]..."
+    - "In practical terms, that's [relatable_amount] per [timeframe]..."
+  
+  comparisons:
+    - "While traditional planning limits you to 4% withdrawals, this strategy allows 8%..."
+    - "Your peers think they need $1 million to generate $40,000 in retirement income. But with this strategy, you only need $500,000..."
+    - "Traditional planning says you need [X], but the math shows you only need [Y]..."
+  
+  case_studies:
+    - "In just 8 years, she went from $100,000 to $400,000..."
+    - "Look at that growth: from $145,000 to $172,000 in just [timeframe]..."
+    - "The numbers tell the story: [X] to [Y] in [timeframe]..."
+
+usage_guidelines:
+  when_to_use:
+    - When emotion is clouding judgment
+    - When client needs objective truth
+    - When comparing options
+    - When showing progress
+    - When demonstrating value
+  
+  emotional_states:
+    - overwhelm
+    - confusion
+    - fear
+    - uncertainty
+  
+  funnel_stage:
+    - mid_funnel: "Provide proof"
+    - conversion: "Show value through numbers"
+  
+  persona_fit:
+    - engineer_retiree: "Highly effective - data-driven"
+    - faith_family_builder: "Use with stories"
+    - widow_caregiver: "Simplify numbers"
+
+examples_from_transcripts:
+  - transcript: "Oct 1 - Roger"
+    quote: "We're at 89894. Is that what's coming out of your account?"
+    context: "Using specific numbers for clarity"
+  
+  - transcript: "Pat Petrakis - June 2024"
+    quote: "It's roughly costing you $2.36 a day to have that student loan"
+    context: "Breaking down to daily cost"
+  
+  - transcript: "Oct 1 - Roger"
+    quote: "You've got from 145 to 172? Since we did that. Which is that's nuts."
+    context: "Celebrating progress with numbers"
+
+cross_references:
+  - "meta_framework/tools_ctas/tools_index.yaml"
+  - "meta_framework/language/celebration_patterns.yaml"
+  - "marketing_automation/calculator_integration/calculator_system.yaml"
+

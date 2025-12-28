@@ -1,0 +1,136 @@
+# CTA Library
+# Pre-approved call-to-action templates
+# Enhanced with question-based CTAs from markdown export analysis
+
+version: 2.0
+source: "Markdown Export Conversion Analysis + Original CTAs"
+
+ctas:
+  # Format by context:
+  
+  question_based_ctas:
+    # Low-resistance, question-based invitations (highest conversion)
+    description: "Question-based CTAs reduce resistance and feel like invitations"
+    benefit_lead:
+      - "If there were a way to [benefit], would you like to know how?"
+      - "If I could show you how to [benefit], would it be worth 20 minutes of your time?"
+      - "If there were a way to [desired outcome], would you like to know how?"
+      - "Would you like to know how to [benefit]?"
+      - "Is that something you would like to consider?"
+    
+    time_commitment:
+      - "Would it be worth 20 minutes of your time?"
+      - "Would it be worth a quick conversation?"
+      - "Is 30 minutes worth [benefit]?"
+    
+    follow_up:
+      - "Do you still need help with [personalized problem]?"
+      - "Quick question: Are you still interested in [topic]?"
+      - "Just checking in: Do you still need help with [problem]?"
+    
+    solution_offer:
+      - "If we could come up with a way to [benefit] without [negative], would that be better for you?"
+      - "If I could show you how to [benefit], is that what you want?"
+      - "Can we work together to [outcome]?"
+  
+  soft_ctas:
+    # Low-pressure invitations
+    - "See where your money may be leaking."
+    - "Stress-test your current plan."
+    - "What would this cost you over 25 years?"
+    - "Would you like to know more?"
+    - "Is this something you'd like to explore?"
+  
+  primary_ctas:
+    # Main conversion points
+    - "Book your Personal Retirement Blueprint Call."
+    - "Let's run your numbers, privately."
+    - "Let's stress-test your current plan."
+    - "Let's confirm if you're overpaying taxes or not."
+    - "Get your personalized Retirement Strategy Call."
+    - "Would you like to schedule a no-obligation meeting?"
+    - "Is it worth 20 minutes to see if this could work for you?"
+  
+  urgency_ctas:
+    # Time-sensitive prompts (use sparingly)
+    - "Only 6 strategy calls available this month"
+    - "Every year the leak stays open, it compounds."
+    - "Don't wait until it's too late."
+    - "Limited consultation slots this month"
+  
+  curiosity_ctas:
+    # Knowledge-gap triggers
+    - "What's your conversion sweet spot?"
+    - "What's one decision your family would thank you for?"
+    - "Does this feel familiar?"
+    - "What would [benefit] mean to you?"
+    - "How would [outcome] change your situation?"
+  
+  framing_statements:
+    # How to position CTAs
+    - "This is not one-size-fits-all advice"
+    - "Our advisors have helped clients preserve $XM+ in taxes"
+    - "Let's get your personalized strategy before things change again"
+    - "No obligation, just information"
+    - "This is exactly what [strategy] was designed for"
+
+usage_guidelines:
+  best_practices:
+    - "Use question-based CTAs for highest conversion (6.7% response rate documented)"
+    - "Personalize follow-up CTAs with prospect's specific hot button"
+    - "Lead with benefit, not action"
+    - "Use time commitment frames ('Would it be worth 20 minutes?')"
+    - "Avoid hard sales language - use invitations"
+  
+  funnel_stage:
+    top_of_funnel:
+      - question_based_ctas.benefit_lead
+      - curiosity_ctas
+      - soft_ctas
+    
+    mid_funnel:
+      - question_based_ctas.solution_offer
+      - primary_ctas
+      - question_based_ctas.time_commitment
+    
+    bottom_of_funnel:
+      - question_based_ctas.solution_offer
+      - primary_ctas
+      - question_based_ctas.follow_up
+  
+  content_format:
+    email:
+      - type: question_based_ctas.follow_up
+        note: "Use 'quick question...' as subject line"
+      - question_based_ctas.benefit_lead
+    
+    blog_post:
+      - question_based_ctas.benefit_lead
+      - primary_ctas
+    
+    social_post:
+      - curiosity_ctas
+      - question_based_ctas.benefit_lead (shortened)
+    
+    landing_page:
+      - primary_ctas
+      - question_based_ctas.time_commitment
+
+performance_data:
+  question_based_email:
+    response_rate: "6.7% (20/300)"
+    reply_rate_from_opens: "25% (46/181)"
+    cases_reopened: "3 from 300 emails"
+    open_rate: "40%"
+  
+  text_message:
+    response_rate: "42% (5/12)"
+    appointments_booked: "1 from 12 texts"
+  
+  personalized_vs_generic:
+    note: "Personalized hot buttons perform better than generic 'retirement planning'"
+
+cross_references:
+  - "meta_framework/language/question_frameworks.yaml"
+  - "meta_framework/language/permission_frames.yaml"
+

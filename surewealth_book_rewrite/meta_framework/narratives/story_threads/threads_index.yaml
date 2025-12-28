@@ -1,0 +1,12 @@
+# Story Threads Index
+# Registry of running narrative themes across chapters
+
+story_threads:
+  # Format:
+  # THREAD_ID:
+  #   title: Thread Name
+  #   file: narratives/story_threads/thread_id.yaml
+  #   description: Brief description
+  #   chapters_used: []
+  #   status: active | archived
+

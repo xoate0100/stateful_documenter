@@ -253,3 +253,5 @@ We are available to discuss this matter and coordinate evidence preservation eff
 
 **This is a template only. Actual spoliation letters must be drafted by licensed attorneys in accordance with applicable legal requirements. This template is provided for planning and organizational purposes only and does not constitute legal advice.**
 
+
+

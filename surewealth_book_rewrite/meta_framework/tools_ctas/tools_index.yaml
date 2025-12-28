@@ -1,0 +1,15 @@
+# Tools Index
+# Registry of all conversion tools and calculators
+
+tools:
+  # Format:
+  # tool_id:
+  #   name: Display Name
+  #   type: calculator | pwa | assessment | quiz | checklist
+  #   primary_concept: financial_concept
+  #   emotional_hook: hook_description
+  #   awareness_level: target_awareness_level
+  #   mobile_friendly: true | false
+  #   requires_login: true | false
+  #   next_step: cta_id
+

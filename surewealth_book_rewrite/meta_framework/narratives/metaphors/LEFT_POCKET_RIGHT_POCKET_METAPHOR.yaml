@@ -1,0 +1,79 @@
+# Left Pocket/Right Pocket Metaphor
+# Tax efficiency - moving money from taxable to tax-free
+# Source: Transcript Analysis - Multiple calls
+
+metaphor_id: LEFT_POCKET_RIGHT_POCKET_METAPHOR
+title: "Left Pocket to Right Pocket"
+version: 1.0
+source: "Transcript Analysis - Multiple calls"
+status: active
+
+description: |
+  Taking money from taxable "left pocket" and putting it in tax-free "right 
+  pocket." Simple, visual metaphor that explains tax efficiency of policy loans.
+
+transcript_source:
+  - "Miranda Wood - March 2025"
+  - "Kim & Mark - Jan 2025"
+  - "Cheri M. - June 2025"
+
+original_quote: |
+  "if you're taking money from your left pocket and you got to give it to 
+  somebody else where you never see it again, or you could take money from 
+  your left pocket and then just put it right back into your own right pocket."
+  
+  "You're taking money from your always taxable left pocket and putting it 
+  into your never taxable right pocket."
+
+usage_context:
+  - Explaining tax efficiency
+  - Showing benefit of policy structure
+  - Comparing traditional loans to policy loans
+  - Making tax concepts simple
+
+written_adaptation: |
+  Think of it this way: You have two pockets. Your left pocket is always 
+  taxable—every dollar that goes in or out gets taxed. Your right pocket is 
+  never taxable—money can move in and out without tax consequences. When you 
+  move money from your left pocket to your right pocket, you're not losing 
+  anything—you're just making it more efficient. And when you need that money, 
+  you can take it from your right pocket without tax consequences.
+
+key_points:
+  - Left pocket = always taxable
+  - Right pocket = never taxable
+  - Moving money = efficiency, not loss
+  - Access without tax consequences
+
+psychological_impact:
+  - Simple, visual concept
+  - Clear benefit (tax efficiency)
+  - Easy to understand
+  - Reduces fear about tax implications
+
+funnel_stage:
+  - mid_funnel: "Explain tax efficiency"
+  - conversion: "Show tax advantages"
+
+persona_fit:
+  - all: "Works for all personas"
+  - engineer_retiree: "Logical, clear comparison"
+
+emotional_state:
+  - confusion_about_taxes
+  - fear_of_tax_consequences
+  - need_for_simplicity
+
+visual_elements:
+  - Simple diagram: Two pockets with arrows
+  - Tax comparison chart
+  - Money flow diagram
+
+related_metaphors:
+  - SAVINGS_ACCOUNT_METAPHOR
+  - WAREHOUSE_OF_WEALTH_METAPHOR
+
+cross_references:
+  - "meta_framework/language/mathematical_proof_patterns.yaml"
+  - "meta_framework/language/empowerment_patterns.yaml"
+

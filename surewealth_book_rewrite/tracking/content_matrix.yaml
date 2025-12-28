@@ -1,0 +1,16 @@
+# Content Objectives Matrix
+# Tracks content across multiple dimensions
+
+content_matrix:
+  # Format:
+  # content_id:
+  #   title: Content Title
+  #   awareness_level: unaware | problem-aware | solution-aware | product-aware | most-aware
+  #   emotional_trigger: emotion_name
+  #   cta_type: soft | primary | urgency
+  #   tool_linked: tool_id
+  #   persona_relevance: [persona_ids]
+  #   funnel_stage: awareness | interest | consideration | action
+  #   chapter: chapter_XX
+  #   status: planned | draft | finalized
+

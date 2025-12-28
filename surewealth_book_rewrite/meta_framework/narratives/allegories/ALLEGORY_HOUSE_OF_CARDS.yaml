@@ -1,0 +1,137 @@
+# Allegory: The House of Cards Plan
+story_vault_entry:
+  id: ALLEGORY_HOUSE_OF_CARDS
+  title: "The House of Cards Plan"
+  type: allegory
+  description: >
+    Demonstrates the fragility of market-dependent retirement plans and
+    the risk of sequence of returns timing.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: unaware_to_problem-aware
+  buyer_sophistication: low_to_medium
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: top_of_funnel
+  user_intent_profile: browsing
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - pre_retiree_anxious
+    - market_weary_investor
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - optimistic
+    - complacent
+  emotional_end_state:
+    - anxious
+    - alert
+    - seeking_stability
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Market volatility
+    - Fear of retirement timing
+    - Lack of income certainty
+  dreams_aspirations:
+    - Stability regardless of markets
+    - Sleep-at-night confidence
+    - Predictable lifestyle
+  objection_patterns:
+    - "The market always comes back"
+    - "I have time to recover"
+    - "My advisor says I'm on track"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      A beautiful house built quickly with impressive height.
+    conflict: >
+      A single strong gust threatens the entire structure.
+    realization: >
+      Strength wasn't in height — it was in the foundation.
+    resolution: >
+      Rebuilding lower, stronger, and steadier brought peace of mind.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "House of Cards"
+    elements:
+      - symbol: cards
+        represents: market-dependent assets
+      - symbol: wind
+        represents: volatility and timing risk
+      - symbol: foundation
+        represents: income certainty
+
+  charts_graphs:
+    recommended:
+      - sequence_of_returns_visual
+      - income_floor_vs_market_chart
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I'm worried about retiring at the wrong time"
+      - "What if the market crashes when I need the money?"
+      - "I can't sleep thinking about my portfolio"
+    aspiration_language:
+      - "I want income I can count on"
+      - "I want to sleep at night"
+      - "I want to know my plan will work"
+    decision_triggers:
+      - "I need to know if I'm really ready"
+      - "Show me what could go wrong"
+      - "What's my actual risk?"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - PAS  # Problem-Agitate-Solve
+      - Before_After_Bridge
+    modal_urgency_language:
+      - "What happens if the market stumbles at the wrong time?"
+      - "Retirement shouldn't depend on perfect timing."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - lead_magnet_teaser
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "Stress-test your current plan."
+    primary_cta:
+      - "See how exposed your income really is."
+    urgency_trigger:
+      - "Timing matters more than you think."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - retirement_risk_assessment
+    interactive_tools:
+      - sequence_of_returns_simulator
+    downloadable_assets: []
+    webinar_integration:
+      - retirement_planning_webinar
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Retirement shouldn't depend on perfect timing."
+    - "Strength wasn't in height — it was in the foundation."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null

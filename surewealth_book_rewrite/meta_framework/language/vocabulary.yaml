@@ -1,0 +1,46 @@
+# Vocabulary Control
+# Approved and banned words/phrases
+
+approved_power_words:
+  - control
+  - protect
+  - preserve
+  - unlock
+  - optimize
+  - predictable
+  - stable
+  - peace_of_mind
+  - clarity
+  - certainty
+  
+banned_words:
+  # Compliance/positioning reasons
+  - guaranteed_returns
+  - passive_income
+  - infinite_banking
+  - bank_on_yourself
+  - market_beating
+  - loophole
+  - guaranteed  # (standalone)
+  
+banned_ai_phrases:
+  # Phrases that sound too AI-generated
+  - "delve into"
+  - "harness the power of"
+  - "comprehensive guide"
+  - "in conclusion"
+  - "it's important to note"
+  - "unlock your potential"
+  - "revolutionizing the landscape"
+  
+approved_technical_terms:
+  # Terms we can use (with explanation)
+  - roth_conversion
+  - sequence_of_returns
+  - required_minimum_distribution
+  - tax_deferred
+  - cash_value
+  - whole_life_insurance
+  
+  # But always explain in plain language first
+

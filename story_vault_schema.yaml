@@ -1,0 +1,119 @@
+story_vault_entry:
+  id: STORY_ID_SLUG
+  title: "Story Title"
+  type: # allegory | composite_case_study | foil_story | legacy_parable
+  description: >
+    One-sentence internal-use descriptor of what this story is used to illustrate or provoke.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: # unaware | problem-aware | solution-aware | product-aware | most-aware
+  buyer_sophistication: # low | medium | high
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: # top_of_funnel | mid_funnel | conversion | post_conversion
+  user_intent_profile: # browsing | researching | comparing | ready_to_act
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - persona_slug_1
+    - persona_slug_2
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - emotion_1
+    - emotion_2
+  emotional_end_state:
+    - emotion_1
+    - emotion_2
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - problem_1
+    - problem_2
+  dreams_aspirations:
+    - aspiration_1
+    - aspiration_2
+  objection_patterns:
+    - "Objection quote or paraphrase"
+    - "Another"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      Initial framing: where the character or allegory begins.
+    conflict: >
+      What disrupts their assumptions or safety.
+    realization: >
+      The key insight, paradigm shift, or “aha.”
+    resolution: >
+      The outcome or new frame of reference.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Name or visual frame"
+    elements:
+      - symbol: what it represents
+      - ...
+  charts_graphs:
+    recommended:
+      - chart_name_slug
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "Verbatim or paraphrased customer phrases"
+    aspiration_language:
+      - "Verbatim or paraphrased goal language"
+    decision_triggers:
+      - "Language they use when ready to act"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - PAS
+      - Before_After_Bridge
+      - Myth_vs_Reality
+    modal_urgency_language:
+      - "Every year you wait, the cost grows..."
+      - "What if you could fix this — quietly?"
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - lead_magnet_teaser
+    - SMS_prompt
+    - tool_result_page
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "Curiosity-based or self-diagnostic CTA"
+    primary_cta:
+      - "Action-based CTA tied to next step"
+    urgency_trigger:
+      - "Urgency or opportunity language"
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - tool_slug_1
+    interactive_tools:
+      - tool_slug_2
+    downloadable_assets:
+      - asset_slug_1
+    webinar_integration:
+      - webinar_slug
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - avoid_tax_advice
+    - avoid_product_reference
+    - soft_language_required
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Phrase that is consistent across brand tone"
+    - "Another repeatable, ownable phrase"
+

@@ -1,0 +1,90 @@
+# Sailboat Metaphor
+# Life insurance policy structure (hull, mast, sail)
+# Source: Transcript Analysis - Elizabeth Wiltsie - Aug 2025
+
+metaphor_id: SAILBOAT_METAPHOR
+title: "Policy Structure as Sailboat"
+version: 1.0
+source: "Transcript Analysis - Elizabeth Wiltsie - Aug 2025"
+status: active
+
+description: |
+  Explains life insurance policy structure using sailboat components: hull 
+  (base death benefit), mast (term rider), sail (paid-up additions). Makes 
+  complex policy structure understandable.
+
+transcript_source:
+  - "Elizabeth Wiltsie - Aug 2025"
+
+original_quote: |
+  "So, the policy is like a sailboat and um the hole the hole is that is the 
+  base part of the policy. And I'm going to pull up an illustration so we can 
+  kind of talk about this, but I think doing it in context of this sailboat is 
+  going to help you fit it in really well."
+  
+  "So the base death benefit, this is like all the life insurance that you've 
+  heard about where Dave Ramsey says it's not a good deal, right? This is what 
+  he's talking about. It is a very long-term hundredyear. You're paying a 
+  premium and it takes a really long time to see any cash value, but you do get 
+  death benefit for it. This is what most traditional whole life standard whole 
+  life policies are. Um the mast. So this the mast is what holds up the sales and 
+  that's a term writer."
+
+usage_context:
+  - Explaining policy structure
+  - Breaking down complex components
+  - Showing why certain components are used
+  - Making policy design understandable
+
+written_adaptation: |
+  Think of your policy like a sailboat. The hull is the base death benefit—the 
+  foundation that keeps everything afloat. The mast is the term rider—it holds 
+  everything up and provides structure. The sail is the paid-up additions—this 
+  is where the real power and efficiency comes from. Just like a sailboat needs 
+  all three components to work, your policy is designed with all three working 
+  together.
+
+components:
+  hull:
+    description: "Base death benefit - expensive, long-term foundation"
+    analogy: "Keeps the boat afloat, but expensive to build"
+  
+  mast:
+    description: "Term rider - cheaper, temporary structure"
+    analogy: "Holds up the sail, but less expensive than hull"
+  
+  sail:
+    description: "Paid-up additions - cash accumulation, efficient"
+    analogy: "Where the power comes from, most efficient component"
+
+psychological_impact:
+  - Makes complex structure understandable
+  - Breaks down into relatable components
+  - Shows why each component is necessary
+  - Reduces confusion about policy design
+
+funnel_stage:
+  - mid_funnel: "Explain policy structure"
+  - conversion: "Show value of design"
+
+persona_fit:
+  - all: "Works for all personas"
+  - engineer_retiree: "Highly effective - visual structure"
+
+emotional_state:
+  - confusion
+  - overwhelm
+  - need_for_clarity
+
+visual_elements:
+  - Sailboat diagram with labeled components
+  - Policy structure comparison chart
+  - Component cost breakdown
+
+related_metaphors:
+  - WAREHOUSE_OF_WEALTH_METAPHOR
+
+cross_references:
+  - "meta_framework/language/friction_resolution.yaml"
+  - "meta_framework/language/confirmation_patterns.yaml"
+

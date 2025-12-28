@@ -1,0 +1,12 @@
+# Characters Index
+# Registry of all characters in the book
+
+characters:
+  # Format:
+  # CHARACTER_ID:
+  #   name: Full Name
+  #   file: characters/character_id.yaml
+  #   first_appearance: chapter_XX
+  #   last_referenced: chapter_XX
+  #   status: active | archived
+

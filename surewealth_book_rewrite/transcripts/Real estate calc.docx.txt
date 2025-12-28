@@ -1,0 +1,22 @@
+﻿How do I tell if my Real Estate deal is a “good one”?
+You’ve got to learn how to analyze the ROI of a real estate deal!
+Inside www.truthconcepts.com software is a one page Real Estate Analysis Calculator that enables you to put in simple information and get a ROR on your invested dollars. It does require you to set a time frame and you’ll want to know some detail.
+So let’s look at a $200,000 deal that we actually bought for $200,000. Remember the price and the value are not always the same.  We’ll identify $5000 for closing costs, a land value (since only the building is depreciable) of $35,000 and a loan amount of $160,000. Property taxes in the middle column are $200 per month, along with $200 for insurance and $50 for maintenance.  Gross monthly income is $2600.
+Basic Tax Information lists Income Tax at 35% and Capital Gains Tax at 15%. Depreciation Recapture is currently at 25%. This occurs when you take more depreciation loss for tax purposes than the property actually depreciated.  Include capital gains tax, even if you plan on doing a1031 exchange, because eventually you will have to pay that tax, and you want to be sure each deal can stand on his own.
+The Real Estate Professional box is checked only if you qualify, meaning you log 750 hours of real estate work during the year. This enables you to be able to write off losses against any regularly earned income in that year. If you cannot prove those 750 hours, then the losses will be rolled over. The IRS watches this area closely so make sure and coordinate with your CPA on any further requirements.
+On the right hand column, we’ll suggest 60 months for this analysis. No appreciation rate this first go-around as you’ll want to see if the property can stand on its own from a Cash Flow perspective. Appreciation is “gravy” if you get it. 
+The Down Payment was $45,000 and the Years for Depreciation are 39 for commercial and 27.5 for residential. (We did not use any Cost-Segregation specials.) Add in the Sales Fees/Closing Costs of $12,000 and now you can see the Rate of Return the money you have in this deal is earning.
+To summarize, you put $45,000 down, which included $5000 in closing costs on the buy side.  You received approximately $635 per month for 60 months. You paid $12000 to sell the property and cashed out with a net $84,442 5 years later.This is a 17.98 annual rate of return on those particular dollars.
+ TC dec 
+
+If we decide to add in appreciation of 4%, it looks like this:
+ tc dec 3 
+
+If you were able to borrow another $40,000 for a second mortgage against a life insurance policy or other source and this cost 8%, then how would it look? Notice the cash flow would go down, but the ROR will go up over 100% due to using other people’s money.
+ tc dec 4 
+
+The reason the ROR is so high is that for the $40,000 loan, the cost is 8% and the return is 26%. That equals a 225% ROR for that $40,000.
+ tc dec 5 
+
+The reason we only showed a second mortgage of $40,000 is that if we borrowed the entire down payment of $45,000, the ROR would be infinite since there would be no money in the deal. This is why true “no money down” deals earn such a high rate of return.
+In addition to the full suite of calculators, real estate investors and professionals can purchase a Truth Concepts Real Estate Software package that includes the Real Estate calculator, the Loan Analysis calculator and the Financial calculators together for only $200 with a $100 annual renewal.

@@ -1,0 +1,11 @@
+# Case Studies Index
+# Registry of all composite case studies
+
+case_studies:
+  COMPOSITE_CLIENT_ENGINEER:
+    title: "Mark, the Engineer Who Wanted Proof"
+    file: narratives/case_studies/CASE_STUDY_MARK_ENGINEER.yaml
+    primary_theme: complexity_to_clarity
+    used_in_chapters: []
+    status: active
+

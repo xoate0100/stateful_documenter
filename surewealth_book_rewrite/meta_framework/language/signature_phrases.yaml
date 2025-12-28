@@ -1,0 +1,25 @@
+# Signature Phrases
+# Brand phrases to use consistently
+
+signature_phrases:
+  - "You've worked too hard to risk it now."
+  - "This isn't about returns — it's about control."
+  - "Hope is not a strategy."
+  - "The cost of waiting is usually invisible… until it isn't."
+  - "Peace of mind over market performance."
+  - "Your plan should be built on math, not hope."
+  - "You deserve to know the truth about your money."
+  
+usage_context:
+  # Map phrases to appropriate contexts
+  closing_statements:
+    - "You've worked too hard to risk it now."
+    - "Hope is not a strategy."
+    
+  transitions:
+    - "The cost of waiting is usually invisible… until it isn't."
+    
+  positioning:
+    - "This isn't about returns — it's about control."
+    - "Peace of mind over market performance."
+

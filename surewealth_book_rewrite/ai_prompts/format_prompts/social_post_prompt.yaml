@@ -1,0 +1,62 @@
+# Social Media Post Generation Prompt Template
+
+format: social_post
+platforms:
+  linkedin:
+    max_length: 3000
+    min_length: 125
+    hashtags: true
+    mentions: true
+  twitter:
+    max_length: 280
+    min_length: 50
+    hashtags: true
+    mentions: true
+  facebook:
+    max_length: 5000
+    min_length: 100
+    hashtags: false
+    mentions: true
+  instagram:
+    max_length: 2200
+    min_length: 100
+    hashtags: true
+    mentions: true
+
+structure:
+  hook: "First line that grabs attention (10-20 words)"
+  value: "Core message or insight (50-150 words)"
+  cta: "Call to action (5-15 words)"
+  hashtags: "3-5 relevant hashtags"
+
+emotional_triggers:
+  - curiosity
+  - urgency
+  - empathy
+  - hope
+  - fear (soft)
+
+cta_options:
+  - "What's your number?"
+  - "See where you stand"
+  - "Get your personalized score"
+  - "Let's run your numbers"
+  - "Scan to calculate"
+
+qr_code_integration:
+  enabled: true
+  placement: "end_of_post"
+  tool_link: "relevant_calculator_or_landing_page"
+
+example_prompt: |
+  Generate a [PLATFORM] social media post about [TOPIC] for [PERSONA].
+  
+  Requirements:
+  - Length: [LENGTH] characters
+  - Emotional goal: [EMOTION]
+  - Include CTA: [CTA_TYPE]
+  - Reference: [STORY_ID or CHARACTER_ID] (if applicable)
+  - Add QR code to: [TOOL_ID]
+  
+  Use the framework constraints and maintain brand voice.
+

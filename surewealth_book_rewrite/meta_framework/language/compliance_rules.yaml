@@ -1,0 +1,802 @@
+# Compliance Word and Phrase Substitution Rules
+# Source: Compliant Word and Phrase Alternative document
+# Revision: 8/30/16
+# 
+# This file contains all non-compliant words/phrases and their approved alternatives.
+# All content generation must reference and enforce these rules.
+
+metadata:
+  source_document: "Compliant Word and Phrase Alternative.md"
+  revision_date: "2016-08-30"
+  last_updated: "2025-12-27"
+  enforcement_level: "required"  # required | recommended | optional
+  description: "Regulatory compliance rules for insurance and annuity marketing content"
+
+rules:
+  # Account
+  - non_compliant: "Account"
+    variants:
+      - "account"
+      - "accounts"
+      - "Account"
+      - "Accounts"
+    issue: "This word is in common usage for bank or brokerage accounts, and could mislead consumers into not being fully aware that annuities or insurance are being discussed."
+    alternatives:
+      - "Annuity"  # for use with annuities
+      - "Contract"  # for use with annuities
+      - "Policy"  # for use with Life or LTCi
+    case_sensitive: false
+    match_type: "word_boundary"  # word_boundary | partial | exact
+
+  # Advice (advise/advisor)
+  - non_compliant: "Advice"
+    variants:
+      - "advice"
+      - "advise"
+      - "advisor"
+      - "advisors"
+      - "Advice"
+      - "Advise"
+      - "Advisor"
+      - "Advisors"
+    issue: "Implies being qualified to have fee-based services, where most insurance agents earn commissions instead of being legally able to charge for their input. Utilizing variations of this word could mislead consumers into believing they are working with someone who is a Registered Investment Advisor or another professional who is legally able to charge for their consultations."
+    alternatives:
+      - "analysis"
+      - "guidance"
+      - "agent"
+      - "financial professional"
+      - "input"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Affordable
+  - non_compliant: "Affordable"
+    variants:
+      - "affordable"
+      - "Affordable"
+    issue: "What is affordable to one person may not be to another. Avoid subjective statements."
+    alternatives:
+      - "competitive"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Always/all
+  - non_compliant: "Always"
+    variants:
+      - "always"
+      - "Always"
+      - "all"
+      - "All"
+    issue: "Avoid extreme terms that would need to be substantiated; it is prudent to sway towards 'softer' terms to appeal to consumers and appease regulators."
+    alternatives:
+      - "usually"
+      - "frequently"
+      - "generally"
+      - "many"
+      - "some"
+      - "one of"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Best
+  - non_compliant: "Best"
+    variants:
+      - "best"
+      - "Best"
+      - "best"
+    issue: "This is an extreme term that would need to be substantiated."
+    alternatives:
+      - "favorable"
+      - "appropriate"
+      - "suitable"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Can rest easy
+  - non_compliant: "Can rest easy"
+    variants:
+      - "can rest easy"
+      - "rest easy"
+      - "Can rest easy"
+    issue: "An insurance product is not designed to promise a specific emotional state. In relation to investing this is promissory as it implies a lack of risk and suggests the client has little need to be concerned with a product's performance. To avoid this the focus should shift to the strategies designed to create this intent."
+    alternatives:
+      - "feel good about your retirement strategies"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Can recover loss
+  - non_compliant: "Can recover loss"
+    variants:
+      - "can recover loss"
+      - "recover loss"
+      - "recover losses"
+    issue: "Insurance products are not designed to recover a client's past realized losses. However, we can develop strategies with our products that can help rebuild a client's assets."
+    alternatives:
+      - "can help rebuild"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Complimentary Consultation
+  - non_compliant: "Complimentary Consultation"
+    variants:
+      - "complimentary consultation"
+      - "Complimentary Consultation"
+      - "free consultation"
+      - "Free Consultation"
+    issue: "This implies that there would normally be a charge. Note - insurance agents cannot charge for meetings."
+    alternatives:
+      - "no obligation meeting"
+      - "analysis"
+      - "review"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Comprehensive
+  - non_compliant: "Comprehensive"
+    variants:
+      - "comprehensive"
+      - "Comprehensive"
+      - "comprehensive strategy"
+      - "comprehensive plan"
+    issue: "Using this term implies a level of information and service that is not provided in the context of FIAs. Note - there have been cases where agents who have used comprehensive were held to a greater responsibility to the client which they were not able to fulfill."
+    alternatives:
+      - "detailed"
+      - "customized"
+      - "personalized"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Consultation
+  - non_compliant: "Consultation"
+    variants:
+      - "consultation"
+      - "Consultation"
+      - "consultations"
+    issue: "This implies an advisory relationship, particularly when referring to initial meetings. Agents do not charge fees for meetings or services."
+    alternatives:
+      - "meeting"
+      - "review"
+      - "appointment"
+      - "analysis"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Contribution
+  - non_compliant: "Contribution"
+    variants:
+      - "contribution"
+      - "Contributions"
+      - "contributions"
+    issue: "This term is specific to money for a retirement plan, not an annuity. Terminology should reflect the product, unless of course the annuity is part of a retirement plan."
+    alternatives:
+      - "premium"
+      - "purchase payment"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Critical
+  - non_compliant: "Critical"
+    variants:
+      - "critical"
+      - "Critical"
+    issue: "This word creates a false sense of urgency. Regulators do not look kindly on ads that try to create a false sense of urgency or play on the emotions of the consumer."
+    alternatives:
+      - "important"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Deposit
+  - non_compliant: "Deposit"
+    variants:
+      - "deposit"
+      - "Deposit"
+      - "deposits"
+    issue: "This word is specific to the banking industry. Use of it confuses annuities with savings accounts and CD's."
+    alternatives:
+      - "premium"
+      - "purchase payment"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Devastating / disaster / destroy / crisis
+  - non_compliant: "Devastating"
+    variants:
+      - "devastating"
+      - "Devastating"
+      - "disaster"
+      - "Disaster"
+      - "destroy"
+      - "Destroy"
+      - "crisis"
+      - "Crisis"
+    issue: "Use of this word can be perceived as a scare tactic. It is an extreme verb that preys on the emotions of a consumer. Remember regulators views advertisements that use this level of wording to be unfair to consumers. Aim to create awareness of solutions, not to evoke fear."
+    alternatives:
+      - "challenging times"
+      - "opportunity"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Dreams crushed
+  - non_compliant: "Dreams crushed"
+    variants:
+      - "dreams crushed"
+      - "Dreams crushed"
+      - "crushed dreams"
+    issue: "Creates a sense of fear and a false sense of urgency."
+    alternatives:
+      - "challenging times"
+      - "opportunity"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Eliminate
+  - non_compliant: "Eliminate"
+    variants:
+      - "eliminate"
+      - "Eliminate"
+      - "eliminates"
+    issue: "This is an extreme term that would need to be substantiated."
+    alternatives:
+      - "reduce"
+      - "lessen"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Equity Index Annuity
+  - non_compliant: "Equity Index Annuity"
+    variants:
+      - "equity index annuity"
+      - "Equity Index Annuity"
+      - "EIA"
+    issue: "This is a term that is no longer used by Allianz to describe this product."
+    alternatives:
+      - "Fixed Index Annuity"
+      - "FIA"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Exceptional
+  - non_compliant: "Exceptional"
+    variants:
+      - "exceptional"
+      - "Exceptional"
+    issue: "This is an extreme term that would need to be substantiated."
+    alternatives:
+      - "positive"
+      - "favorable"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Expert
+  - non_compliant: "Expert"
+    variants:
+      - "expert"
+      - "Expert"
+      - "experts"
+    issue: "It is difficult to substantiate the level of knowledge an agent. There is the potential that the agent is held to a higher fiduciary level by the client than is appropriate."
+    alternatives:
+      - "knowledgeable"
+      - "experienced"
+      - "professional"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Financial Planner
+  - non_compliant: "Financial Planner"
+    variants:
+      - "financial planner"
+      - "Financial Planner"
+      - "financial planners"
+    issue: "A financial planner is able to provide advice for a fee and generally has achieved a designation, such as a CFP, or is registered as an Investment Advisor, Series 65 licensed. An agent is not licensed to provide planning advice for a fee, therefore cannot be called a planner."
+    alternatives:
+      - "Financial professional"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Free
+  - non_compliant: "Free"
+    variants:
+      - "free"
+      - "Free"
+    issue: "We are not able to refer to a service as free if there is inherent cost or value. The SEC has ruled, and various state DOI regulations have indicated to do so is untrue which is deemed misleading since it gives the client a false impression of the level of service they are being provided."
+    alternatives:
+      - "no obligation"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Gain
+  - non_compliant: "Gain"
+    variants:
+      - "gain"
+      - "Gain"
+      - "gains"
+    issue: "The term 'gain' implies positive market performance. Since Fixed Index annuities are not investment products and considered fixed products. In order to avoid confusion of the product for securities, avoiding market related terminology is advised."
+    alternatives:
+      - "Potential for indexed interest accumulation"
+      - "interest potential"
+      - "accumulation"
+      - "interest"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Gain / Growth
+  - non_compliant: "Growth"
+    variants:
+      - "growth"
+      - "Growth"
+    issue: "We understand the confusion regarding using the word 'growth.' It is common to want to show the benefits of annuities, however, statements must be clear. Growth should be used when speaking directly to interest earned. Growth will be seen as inappropriate product positioning. It implies use of securities language and may cause FIA materials to be deemed as securities marketing by regulators."
+    alternatives:
+      - "Potential for indexed interest accumulation"
+      - "interest potential"
+      - "accumulation"
+      - "interest growth"  # only when tied to interest
+    case_sensitive: false
+    match_type: "word_boundary"
+    context_required: true  # Only allow when context is about interest
+
+  # Guaranteed returns
+  - non_compliant: "Guaranteed returns"
+    variants:
+      - "guaranteed returns"
+      - "Guaranteed returns"
+      - "guaranteed return"
+    issue: "Contract owners are receiving interest on their policy and statements should be reflective."
+    alternatives:
+      - "guaranteed interest"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Heirs
+  - non_compliant: "Heirs"
+    variants:
+      - "heirs"
+      - "Heirs"
+      - "heir"
+    issue: "Heirs is simply not the correct word to use when describing who benefits after an insured's death. Whether it be a life insurance policy or an annuity contract, we should be using 'beneficiaries'."
+    alternatives:
+      - "beneficiaries"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Highest
+  - non_compliant: "Highest"
+    variants:
+      - "highest"
+      - "Highest"
+    issue: "Another 'extreme' word that would require substantiation."
+    alternatives:
+      - "positive"
+      - "favorable"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Immediate access to your money
+  - non_compliant: "Immediate access to your money"
+    variants:
+      - "immediate access to your money"
+      - "Immediate access to your money"
+      - "immediate access"
+    issue: "Statement is misleading as contract provisions would stipulate restrictions."
+    alternatives:
+      - "loan features and surrender options"
+      - "access to your money"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Increase their comfort
+  - non_compliant: "Increase their comfort"
+    variants:
+      - "increase their comfort"
+      - "Increase their comfort"
+      - "increase comfort"
+    issue: "It is not possible for an insurance product to promise a specific emotional state. This would be considered promissory."
+    alternatives:
+      - "feel good about your retirement strategies"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Invest
+  - non_compliant: "Invest"
+    variants:
+      - "invest"
+      - "Invest"
+      - "investing"
+      - "investment"
+    issue: "This term risks giving the impression the client is entering into a security. Since it is not possible to purchase shares in an annuity it is not accurate to refer to the transaction as investing. Instead it is more accurate to refer to the interaction as purchasing the annuity."
+    alternatives:
+      - "purchase"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Investments
+  - non_compliant: "Investments"
+    variants:
+      - "investments"
+      - "Investments"
+      - "investment"
+    issue: "Investments are securities and the term should not be used in reference to fixed annuities, or other insurance company products."
+    alternatives:
+      - "financial vehicles"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Life / LTCi (abbreviations)
+  - non_compliant: "Life"
+    variants:
+      - "Life"
+      - "LTCi"
+    issue: "So to give a better understanding of the product being referred to and to avoid industry 'jargon' the fuller product term must be used."
+    alternatives:
+      - "life insurance"
+    case_sensitive: false
+    match_type: "word_boundary"
+    context_required: true  # Only when used as abbreviation
+
+  # Most / All
+  - non_compliant: "Most"
+    variants:
+      - "most"
+      - "Most"
+      - "All"
+      - "all"
+    issue: "Extreme term - again these should be avoided as misleading or promissory to consumers. Substantiation would be needed."
+    alternatives:
+      - "favorable"
+      - "some"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Maximize / Minimize
+  - non_compliant: "Maximize"
+    variants:
+      - "maximize"
+      - "Maximize"
+      - "minimize"
+      - "Minimize"
+    issue: "Extreme terms - again these should be avoided as misleading or promissory to consumers. Consider your consumer and present a balanced offering/ad. (Maximize can be used when discussing contributions to retirement plans."
+    alternatives:
+      - "potentially"
+      - "seek to"
+    case_sensitive: false
+    match_type: "word_boundary"
+    exceptions:
+      - context: "retirement plan contributions"
+        allowed: true
+
+  # No cost
+  - non_compliant: "No cost"
+    variants:
+      - "no cost"
+      - "No cost"
+    issue: "Be clear on what is offered and if it is beyond a normal offering."
+    alternatives:
+      - "no additional cost or obligation"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Nothing to lose
+  - non_compliant: "Nothing to lose"
+    variants:
+      - "nothing to lose"
+      - "Nothing to lose"
+    issue: "It is not possible for an insurance, or any product to promise no losses under any circumstance. This term is used to produce a specific emotional state and is considered promissory."
+    alternatives:
+      - "options for your consideration"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Partnership/partner
+  - non_compliant: "Partnership"
+    variants:
+      - "partnership"
+      - "Partnership"
+      - "partner"  # as noun
+    issue: "When used as a noun it implies a contractual relationship and higher fiduciary responsibilities. The term can be used as a verb, but not a noun."
+    alternatives:
+      - "teaming"
+      - "relationship"
+    case_sensitive: false
+    match_type: "word_boundary"
+    exceptions:
+      - context: "as verb (partnering)"
+        allowed: true
+
+  # Peace of mind
+  - non_compliant: "Peace of mind"
+    variants:
+      - "peace of mind"
+      - "Peace of mind"
+    issue: "It is not possible for an insurance product to promise a specific emotional state. In relation to investing this is promissory as it implies a lack of risk and suggests the client has little need to be concerned with a product's performance."
+    alternatives:
+      - "reassurance"
+      - "protection"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Permanent
+  - non_compliant: "Permanent"
+    variants:
+      - "permanent"
+      - "Permanent"
+    issue: "When referring to funds, an advertisement needs to be clear as to what is being referenced."
+    alternatives:
+      - "cash value"
+    case_sensitive: false
+    match_type: "word_boundary"
+    context_required: true  # Only when referring to funds
+
+  # Phenomenal
+  - non_compliant: "Phenomenal"
+    variants:
+      - "phenomenal"
+      - "Phenomenal"
+    issue: "Again - an extreme term that is promissory - avoid strong adjectives when describing products and services. The goal with terminology is always to strive for balance."
+    alternatives:
+      - "Positive"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Plan / financial plan
+  - non_compliant: "Plan"
+    variants:
+      - "plan"
+      - "Plan"
+      - "financial plan"
+      - "Financial plan"
+    issue: "Due to the potential legal implications these words may evoke they are to be avoided."
+    alternatives:
+      - "strategies"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Profits
+  - non_compliant: "Profits"
+    variants:
+      - "profits"
+      - "Profits"
+      - "profit"
+    issue: "Contracts do not earn 'profits' they do earn interest/earnings. Terms and statements should reflect what the consumer actually receives."
+    alternatives:
+      - "earnings"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Proven
+  - non_compliant: "Proven"
+    variants:
+      - "proven"
+      - "Proven"
+    issue: "It is difficult to substantiate this statement. To say it is proven implies that there is documentation to support the statement. To avoid this, it should not be used."
+    alternatives:
+      - "tested"
+      - "valuable"
+      - "effective"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Program
+  - non_compliant: "Program"
+    variants:
+      - "program"
+      - "Program"
+      - "programs"
+    issue: "This would imply more of a retirement program or plan than a policy or annuity. It could be misleading to consumers in that it could lead them to believe they are purchasing more than an annuity or insurance policy."
+    alternatives:
+      - "product"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Power of 10
+  - non_compliant: "Power of 10"
+    variants:
+      - "power of 10"
+      - "Power of 10"
+    issue: "Due to changes in the products this term no longer applies."
+    alternatives:
+      - "x-factor"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Risk free
+  - non_compliant: "Risk free"
+    variants:
+      - "risk free"
+      - "Risk free"
+      - "risk-free"
+    issue: "While annuities are designed to protect earnings they are intended to meet the client's long-term needs for retirement. To promote them as 'risk free' is not appropriate since the client is subject to inflation risk not to mention positive market risk since only a portion of their principal is available without a surrender charge at any given time. Understanding also all guarantees are based on the financial strength of the issuing company."
+    alternatives:
+      - "Protected"
+      - "guaranteed (tied to strength of the insuring company)"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Retirement principal
+  - non_compliant: "Retirement principal"
+    variants:
+      - "retirement principal"
+      - "Retirement principal"
+    issue: "There is no bucket in an annuity which segregates these funds. To be more clear it should not be referred to in this manner."
+    alternatives:
+      - "retirement assets"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Roth Alternative
+  - non_compliant: "Roth Alternative"
+    variants:
+      - "roth alternative"
+      - "Roth Alternative"
+    issue: "One should be careful to avoid making comparisons of an annuity with other products or plans. In this case the annuity is being compared to a qualified plan in order to additional tax advantages. However, this comparison is not appropriate in its original format."
+    alternatives:
+      - "supplemental retirement income"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Stock market risk
+  - non_compliant: "Stock market risk"
+    variants:
+      - "stock market risk"
+      - "Stock market risk"
+    issue: "Clients and prospects must be clear about what they are purchasing - an insurance product."
+    alternatives:
+      - "risk to principal"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Safe and secure
+  - non_compliant: "Safe and secure"
+    variants:
+      - "safe and secure"
+      - "Safe and secure"
+    issue: "When using these terms as absolutes without specific benefits of factors to tie to, these terms would be considered promissory."
+    alternatives:
+      - "confident about your retirement savings strategies"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Savings
+  - non_compliant: "Savings"
+    variants:
+      - "savings"
+      - "Savings"
+    issue: "Insurance products are not 'savings' or bank vehicles. To use this term risks leading the client to think they are using a savings account rather than purchasing an annuity contract."
+    alternatives:
+      - "cash surrender value"
+      - "Cash value"
+      - "Policy values"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Security
+  - non_compliant: "Security"
+    variants:
+      - "security"
+      - "Security"
+      - "securities"
+    issue: "While insurance products are considered safe, it should be clear as to what is offered. It is the guarantees that are backed by the financial strength of the issuing company that is being purchased."
+    alternatives:
+      - "guarantees (guarantee disclosure will be needed)"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Solve Problems
+  - non_compliant: "Solve Problems"
+    variants:
+      - "solve problems"
+      - "Solve Problems"
+      - "solves problems"
+    issue: "This is promissory."
+    alternatives:
+      - "provide solutions"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Troubled times
+  - non_compliant: "Troubled times"
+    variants:
+      - "troubled times"
+      - "Troubled times"
+    issue: "Be wary of using terminology that could be seen as trying to scare or evoke action on behalf of a prospect or client."
+    alternatives:
+      - "challenging"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Trusted
+  - non_compliant: "Trusted"
+    variants:
+      - "trusted"
+      - "Trusted"
+    issue: "This term holds user to a higher fiduciary responsibility."
+    alternatives:
+      - "dedicated"
+      - "focused"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Unique/unparalleled
+  - non_compliant: "Unique"
+    variants:
+      - "unique"
+      - "Unique"
+      - "unparalleled"
+      - "Unparalleled"
+    issue: "Unique is another term that is hard to substantiate. Avoid extreme language."
+    alternatives:
+      - "tailored"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Unprecedented
+  - non_compliant: "Unprecedented"
+    variants:
+      - "unprecedented"
+      - "Unprecedented"
+    issue: "Unprecedented is another term that is hard to substantiate. Avoid extreme language."
+    alternatives:
+      - "innovative"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Up front/Immediate bonus
+  - non_compliant: "Up front bonus"
+    variants:
+      - "up front bonus"
+      - "Up front bonus"
+      - "immediate bonus"
+      - "Immediate bonus"
+    issue: "Use of this terms could lead clients to misinterpret that the bonus percentages are available immediately. When discussing features or benefits, a clear discussion of the product needs to precede discussion of promotion of features, riders and or benefits."
+    alternatives:
+      - "premium bonus"
+      - "purchase payment bonus"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Volatile
+  - non_compliant: "Volatile"
+    variants:
+      - "volatile"
+      - "Volatile"
+      - "volatility"
+    issue: "This term should be used with caution as it is so closely tied to stock market performance. Remember, annuities are good alternatives, but cannot be directly positioned as a way to avoid market volatility. Also, the product itself is designed to not have volatile value swings. In most cases volatile is not a term to be associated with annuities."
+    alternatives:
+      - "challenging"
+    case_sensitive: false
+    match_type: "word_boundary"
+
+  # Walk away annuity
+  - non_compliant: "Walk away annuity"
+    variants:
+      - "walk away annuity"
+      - "Walk away annuity"
+    issue: "Annuities are intended for income in retirement - focus should be on the long-term nature of the product. Annuities are designed to meet long-term needs for retirement. Certain conditions must be met before a client can access their principle."
+    alternatives:
+      - "lump sum"
+    case_sensitive: false
+    match_type: "phrase"
+
+  # Will
+  - non_compliant: "Will"
+    variants:
+      - "will"
+      - "Will"
+    issue: "As referenced before - avoid exact terminology, swaying to use balanced and language that marketers or agents may consider 'soft' is actually regarded favorably by regulators. Always looking at something from the eyes of a consumer is a best practice."
+    alternatives:
+      - "may"
+      - "can"
+    case_sensitive: false
+    match_type: "word_boundary"
+    context_required: true  # Only when used as promissory statement
+
+  # Win
+  - non_compliant: "Win"
+    variants:
+      - "win"
+      - "Win"
+      - "winning"
+    issue: "In many cases this word risks being a term that borders on promissory. It is difficult for an agent to put a client in a position where they will win. It is better to moderate this language so not to overstate the point."
+    alternatives:
+      - "achieve financial or long-term financial goals"
+    case_sensitive: false
+    match_type: "word_boundary"
+

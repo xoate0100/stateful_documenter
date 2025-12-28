@@ -1,0 +1,80 @@
+# Hiccup/Speed Bump Metaphor
+# Temporary setbacks are normal, not catastrophic
+# Source: Transcript Analysis - Oct 10 - Dustin
+
+metaphor_id: HICCUP_SPEED_BUMP_METAPHOR
+title: "Hiccup or Speed Bump"
+version: 1.0
+source: "Transcript Analysis - Oct 10 - Dustin"
+status: active
+
+description: |
+  Minimizes crisis while acknowledging difficulty. Financial setbacks are 
+  temporary hiccups or speed bumps, not permanent disasters. Reduces 
+  catastrophic thinking.
+
+transcript_source:
+  - "Oct 10 - Dustin"
+  - "Multiple crisis calls"
+
+original_quote: |
+  "As you guys get this. I'm just gonna call it a hiccup, a speed bump. I'm 
+  sure that for both of you, it feels very like, oh my God, we're about to 
+  make a Monumental shift... But I will take, I will say this over the Long 
+  Haul... Your numbers. This is a hiccup, it's a speed bump."
+  
+  "This is a hiccup, it's a speed bump"
+
+usage_context:
+  - Normalizing financial setbacks
+  - Reducing catastrophic thinking
+  - Acknowledging difficulty while minimizing crisis
+  - Creating perspective on temporary vs. permanent
+
+written_adaptation: |
+  This isn't a disaster—it's a hiccup. A speed bump. You slow down for a 
+  moment, but you keep moving forward. Financial setbacks happen. They're 
+  temporary, not permanent. Just like a speed bump on the road, you navigate 
+  it and continue on your journey. The key is not to let a temporary setback 
+  derail your long-term plan.
+
+key_points:
+  - Temporary, not permanent
+  - Normal part of journey
+  - Slow down, don't stop
+  - Keep moving forward
+
+psychological_impact:
+  - Reduces catastrophic thinking
+  - Crisis becomes temporary setback
+  - Creates perspective
+  - Maintains forward momentum
+
+funnel_stage:
+  - top_of_funnel: "Normalize setbacks"
+  - mid_funnel: "Reframe crisis"
+  - conversion: "Reduce fear"
+
+persona_fit:
+  - all: "Works for all personas"
+  - crisis_navigator: "Highly effective"
+
+emotional_state:
+  - crisis
+  - panic
+  - catastrophic_thinking
+  - overwhelm
+
+visual_elements:
+  - Road with speed bump diagram
+  - Timeline showing temporary nature
+  - Before/after comparison
+
+related_metaphors:
+  - None (unique crisis reframing)
+
+cross_references:
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/language/normalization_patterns.yaml"
+  - "meta_framework/language/future_visioning_patterns.yaml"
+

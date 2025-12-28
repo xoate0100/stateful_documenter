@@ -1,0 +1,94 @@
+# Calculator Integration System
+# Integration framework for calculators and assessments
+
+calculator_system:
+  calculators:
+    lifetime_tax_calculator:
+      id: lifetime_tax_calculator
+      name: "Lifetime Tax Impact Calculator"
+      type: calculator
+      concept: roth_conversion
+      emotional_hook: fear_of_tax_spikes
+      awareness_level: solution-aware
+      funnel_stage: mid_funnel
+      
+      integration:
+        embed_code: true
+        pwa: true
+        landing_page: true
+        qr_code: true
+      
+      results:
+        email_capture: true
+        result_summary: true
+        next_step_cta: true
+        white_paper_offer: true
+      
+      triggers:
+        email_sequence: tax_planning_nurture
+        delay: 0_hours
+    
+    retirement_risk_assessment:
+      id: retirement_risk_assessment
+      name: "Retirement Risk Assessment"
+      type: assessment
+      concept: market_dependency
+      emotional_hook: fear_of_retirement_timing
+      awareness_level: problem-aware
+      funnel_stage: top_of_funnel
+      
+      integration:
+        embed_code: true
+        pwa: true
+        landing_page: true
+        qr_code: true
+      
+      results:
+        email_capture: true
+        risk_score: true
+        personalized_recommendations: true
+        next_step_cta: true
+      
+      triggers:
+        email_sequence: retirement_planning_nurture
+        delay: 0_hours
+    
+    social_security_optimizer:
+      id: social_security_optimizer
+      name: "Social Security Claiming Optimizer"
+      type: calculator
+      concept: social_security_claiming
+      emotional_hook: fear_of_missing_benefits
+      awareness_level: problem-aware
+      funnel_stage: mid_funnel
+      
+      integration:
+        embed_code: true
+        pwa: true
+        landing_page: true
+        qr_code: true
+  
+  platforms:
+    outgrow:
+      enabled: true
+      embed_method: iframe
+      tracking: true
+    custom_pwa:
+      enabled: true
+      framework: "react | vue | vanilla"
+      hosting: "vercel | netlify"
+    convertcalculator:
+      enabled: false
+  
+  result_pages:
+    structure:
+      summary: "Key findings"
+      hidden_risk: "Revealed problem"
+      next_step: "CTA to book call"
+      white_paper: "Bonus resource offer"
+    
+    personalization:
+      use_tool_result: true
+      use_persona: true
+      use_funnel_stage: true
+

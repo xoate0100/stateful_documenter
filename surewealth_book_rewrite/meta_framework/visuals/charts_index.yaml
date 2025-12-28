@@ -1,0 +1,58 @@
+# Charts Index
+# Registry of all chart types and their usage
+
+charts:
+  # Format:
+  # chart_id:
+  #   name: Display Name
+  #   type: line | bar | pie | table | visual
+  #   primary_use: concept_explanation | comparison | projection
+  #   emotional_trigger: emotion_name
+  #   recommended_for: [narrative_ids, character_ids]
+  #   usage_context: chapter | blog | landing_page | email
+  
+  lifetime_tax_drag_line_chart:
+    name: "Lifetime Tax Drag Line Chart"
+    type: line
+    primary_use: concept_explanation
+    emotional_trigger: tax_drag_fear
+    recommended_for: [ALLEGORY_LEAKY_BUCKET]
+    usage_context: [chapter, blog, landing_page]
+    description: "Shows cumulative tax impact over time"
+  
+  before_after_after_tax_income_table:
+    name: "Before/After After-Tax Income Table"
+    type: table
+    primary_use: comparison
+    emotional_trigger: tax_inefficiency
+    recommended_for: [ALLEGORY_LEAKY_BUCKET]
+    usage_context: [chapter, blog, landing_page]
+    description: "Compares traditional vs. tax-optimized income"
+  
+  sequence_of_returns_visual:
+    name: "Sequence of Returns Visual"
+    type: visual
+    primary_use: concept_explanation
+    emotional_trigger: market_timing_fear
+    recommended_for: [ALLEGORY_HOUSE_OF_CARDS]
+    usage_context: [chapter, blog, landing_page]
+    description: "Illustrates impact of market timing on retirement"
+  
+  income_floor_vs_market_chart:
+    name: "Income Floor vs. Market Chart"
+    type: line
+    primary_use: comparison
+    emotional_trigger: market_dependency_fear
+    recommended_for: [ALLEGORY_HOUSE_OF_CARDS]
+    usage_context: [chapter, blog, landing_page]
+    description: "Shows guaranteed income floor vs. market-dependent income"
+  
+  personalized_income_projection:
+    name: "Personalized Income Projection"
+    type: line
+    primary_use: projection
+    emotional_trigger: confidence
+    recommended_for: [CASE_STUDY_MARK_ENGINEER]
+    usage_context: [landing_page, tool_result]
+    description: "Shows projected income based on individual situation"
+

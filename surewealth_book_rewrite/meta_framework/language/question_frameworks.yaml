@@ -1,0 +1,248 @@
+# Question Frameworks
+# Conversion-optimized question patterns extracted from markdown export analysis
+# Source: Analysis of 26 converted PDF documents
+
+version: 1.0
+source: "Markdown Export Conversion Analysis"
+purpose: "Question-based engagement patterns for content generation"
+
+question_frameworks:
+  emotional_questions:
+    description: "Questions that tap into feelings, desires, and emotional states"
+    feeling_based:
+      - "How do you feel about [situation]?"
+      - "What does that mean to you?"
+      - "Why is that important to you?"
+      - "How would that make you feel?"
+      - "How do you feel about that?"
+      - "What would that mean to your [family/retirement/income]?"
+    
+    desire_based:
+      - "What would you like to [action]?"
+      - "Where would you like to [go/be]?"
+      - "When would you like to [action]?"
+      - "Who would you like to [see/help]?"
+      - "What would you like to see happen?"
+      - "If you could [desire], would you like to know how?"
+      - "What would you like to do?"
+    
+    consequence_based:
+      - "What would happen if [negative scenario]?"
+      - "How would that affect [important thing]?"
+      - "What would that mean to your [family/retirement/income]?"
+      - "How much more comfortable would you feel?"
+      - "How is that going to affect your income?"
+    
+    concern_based:
+      - "Are you concerned about [risk]?"
+      - "Are you worried about [outcome]?"
+      - "Does that concern you?"
+      - "How do you feel about that concern?"
+
+  pre_qualifying_questions:
+    description: "Questions that qualify prospects while creating desire for solution"
+    structure: "If [benefit], would you like to know how?"
+    time_commitment: "Would it be worth [X minutes] of your time?"
+    
+    yield_increase:
+      - "If there were a way to increase the yield on the money you have in the bank by 40% or more, would you like to know how?"
+      - "If you could get a [X]% return instead of a [Y]% return, would that interest you?"
+    
+    risk_elimination:
+      - "If I could show you how to recoup your stock market losses by participating in the upside of the stock market, without the risk of the downside, and both your principle and interest are 100% guaranteed, would it be worth 20 minutes of your time?"
+      - "If you could lock in current returns and position yourself so you could not lose any more money, but you could still reap the upside of the stock market, how much better off would you be?"
+    
+    tax_reduction:
+      - "If there were a way to stop paying income taxes on your interest earnings, would you like to know how?"
+      - "If there were a way to reduce or eliminate the income taxes on your social security income, would you like to know how?"
+      - "If you didn't have to pay quarterly income taxes, how much longer would your money last?"
+      - "If we could reduce your income taxes, would you like that?"
+    
+    income_guarantee:
+      - "If there were a way to guarantee a lifetime income for you and your spouse, would you like to know how?"
+      - "If I could show you how to increase your income with safety and guarantees, is that what you want?"
+      - "If there were a way to make your money last longer, without taking additional risks, would you like to know how?"
+    
+    principal_protection:
+      - "If there were a way to protect your capital, for your spouse, children and grandchildren, would you like to know how?"
+      - "If you could position your money so you could minimize your losses, would that appeal to you?"
+    
+    probate_avoidance:
+      - "If there were a way to avoid probate and court costs, would you like to know how?"
+    
+    comprehensive_benefit:
+      - "Would you like more income, more growth, less taxes, more money for your spouse, children, and grandchildren?"
+      - "If I could show you how to set up a savings plan that will provide significant additional wealth for you in retirement - tax free, would it be worth 20 minutes of your time?"
+
+  fact_finding_questions:
+    description: "Questions that uncover needs while building rapport"
+    permission_frame:
+      - "If you don't mind me asking..."
+      - "Before we go any further..."
+      - "Let me ask you..."
+    
+    income_questions:
+      - "How much income are you currently living on?"
+      - "How much are you getting from social security?"
+      - "Do you get a pension?"
+      - "What other income do you have?"
+      - "How much of that income are you using each month?"
+      - "Is that income comfortable?"
+      - "Does it allow you to do the things you'd like to do?"
+    
+    retirement_questions:
+      - "Have you thought about when you'd like to retire?"
+      - "How much money are you currently putting away for retirement?"
+      - "How much have you already saved for retirement?"
+      - "How much income will you need in retirement?"
+      - "How did you come up with that figure?"
+      - "How much money would you need to have saved in order to generate that income?"
+      - "When you retire, what's more important - the amount of money you've accumulated or the amount of money you get to spend?"
+    
+    concern_questions:
+      - "Are you concerned about outliving your current income?"
+      - "Are you concerned about inflation?"
+      - "Are you using any of the principal?"
+      - "How do you feel about that?"
+      - "Are you concerned you're going to run out of money?"
+    
+    investment_questions:
+      - "Do you have any of your money in CDs?"
+      - "Are you happy with the interest rate you're getting?"
+      - "How many of you have lost money in the market during the last 10 years?"
+      - "How many of you are back to where you were 10 years ago?"
+      - "How much more money are you willing to lose?"
+      - "What kind of return are you getting on that investment?"
+      - "How much are you paying in quarterly income taxes?"
+    
+    planning_questions:
+      - "Do you have a professional, that you trust, who assists in your financial matters and keeps you informed about new opportunities?"
+      - "Has anyone taken the time to figure out exactly how much you'll need when you retire?"
+      - "Do you have a will (or trust), a living will and a power of attorney?"
+
+  consultative_selling_questions:
+    description: "Questions that help prospects identify their own problems and solutions"
+    problem_identification:
+      - "Does your prospect recognize the problem they have?"
+      - "What can you do and say to get them to see they have a problem?"
+      - "Does the prospect want to solve the problem?"
+      - "Do they want to solve it right now?"
+    
+    solution_exploration:
+      - "If we could come up with a way to [benefit], without [negative], would that be better for you?"
+      - "If I could show you how to [benefit], is that what you want?"
+      - "Can you do that?"
+      - "From what I see here, I think with you and I working together we can do it."
+    
+    clarification:
+      - "Why do you say that?"
+      - "Is that how you really feel?"
+      - "Is that because you feel [reason]?"
+      - "What specifically would you like to think about?"
+
+  seminar_questions:
+    description: "Questions for group presentations with strategic pauses"
+    cd_questions:
+      - "How many of you own CDs? PAUSE"
+      - "How many of you are happy with the returns? PAUSE"
+      - "If you have $100,000 CD and you're lucky to be getting 2% return, then you're making $2,000 on that... RIGHT? PAUSE"
+      - "If you're in a 25% tax bracket you are probably netting around 1.5%... PAUSE"
+      - "If you could get a 4% return instead of a 2% return, in the same tax bracket you end with 3% right? PAUSE"
+      - "Which is double or 100% more income for you... right? PAUSE"
+      - "What would an additional $1,500 mean to you this year? PAUSE"
+      - "What could you do with that money? PAUSE"
+      - "For example, would you like to visit your grandchildren? Take a cruise? PAUSE"
+    
+    market_questions:
+      - "How many of you have lost money in the market during the last 10 years? PAUSE"
+      - "How many of you are back to where you were 10 years ago? PAUSE"
+      - "But what happens if it goes down again? PAUSE"
+      - "How much more money are you willing to lose? PAUSE"
+      - "How is that going to affect your income? PAUSE"
+      - "If there were no possibility of losing, what would that mean to you? PAUSE"
+    
+    tax_questions:
+      - "How many of you are paying taxes on your social security? PAUSE"
+      - "If you are being taxed on 85% of your social security and you're making $15,000 a year for both of you, then you're being taxed on $13,000 of your social security income!"
+      - "Doesn't that mean that if you're in a 28% tax bracket, you're paying almost $4,000 in unnecessary income taxes? PAUSE"
+      - "What could you do with an extra $4,000 a year? PAUSE"
+      - "New car? Home Repairs? More travel? PAUSE"
+      - "What if you could position your money so that you didn't have to pay taxes on your social security? PAUSE"
+      - "How much better off would you be? PAUSE"
+
+  objection_handling_questions:
+    description: "Questions that reframe objections"
+    assumption_challenge:
+      - "Why do you say that?"
+      - "Is that how you really feel?"
+      - "Is that because you feel [underlying reason]?"
+      - "What specifically would you like to think about?"
+    
+    reframing:
+      - objection: "I'll never retire!"
+        response: "Why do you say that?"
+        follow_up: "Is that because you feel you'll never save enough for retirement?"
+      - objection: "Let me think about it"
+        response: "What specifically would you like to think about?"
+      - objection: "I'm not interested"
+        response: "Is that because you feel [reason]?"
+
+usage_guidelines:
+  funnel_stage:
+    top_of_funnel:
+      - pre_qualifying_questions
+      - emotional_questions.desire_based
+      - seminar_questions
+    
+    mid_funnel:
+      - fact_finding_questions
+      - consultative_selling_questions
+      - emotional_questions.feeling_based
+    
+    bottom_of_funnel:
+      - consultative_selling_questions.solution_exploration
+      - objection_handling_questions
+      - emotional_questions.consequence_based
+  
+  persona_mapping:
+    engineer_retiree:
+      - fact_finding_questions with numbers/data focus
+      - "How did you come up with that figure?"
+      - "What kind of return are you getting?"
+    
+    faith_family_builder:
+      - emotional_questions with family focus
+      - "What would that mean to your family?"
+      - "Who would you like to help?"
+    
+    widow_caregiver:
+      - emotional_questions with security focus
+      - "Are you concerned about [risk]?"
+      - "How would that affect [important thing]?"
+  
+  content_format:
+    email:
+      - pre_qualifying_questions
+      - "Do you still need help with [problem]?"
+    
+    blog_post:
+      - emotional_questions as subheadings
+      - fact_finding_questions in examples
+    
+    social_post:
+      - pre_qualifying_questions (shortened)
+      - emotional_questions.desire_based
+    
+    presentation:
+      - seminar_questions with PAUSE markers
+      - consultative_selling_questions
+    
+    chapter:
+      - Mix of all question types
+      - Use questions as section transitions
+
+cross_references:
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/language/emotional_transitions.yaml"
+  - "meta_framework/language/permission_frames.yaml"
+

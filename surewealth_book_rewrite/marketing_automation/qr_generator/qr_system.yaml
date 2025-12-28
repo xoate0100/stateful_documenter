@@ -1,0 +1,51 @@
+# QR Code Generation and Tracking System
+
+qr_system:
+  generation:
+    tool: "qrcode | qrcode-monkey | custom"
+    default_size: "300x300"
+    error_correction: "M"  # L, M, Q, H
+    format: "png | svg"
+    
+  destinations:
+    calculators:
+      pattern: "https://surewealth.com/calc/{tool_id}?ref=book&qr=1"
+      tracking: true
+    landing_pages:
+      pattern: "https://surewealth.com/landing/{page_id}?ref=book&qr=1"
+      tracking: true
+    white_papers:
+      pattern: "https://surewealth.com/resource/{resource_id}?ref=book&qr=1"
+      tracking: true
+    booking:
+      pattern: "https://surewealth.com/book?ref=book&qr=1"
+      tracking: true
+  
+  tracking:
+    parameters:
+      - source: "book"
+      - chapter: "{chapter_number}"
+      - page: "{page_number}"
+      - tool: "{tool_id}"
+      - campaign: "{campaign_id}"
+    analytics:
+      provider: "google_analytics | custom"
+      events:
+        - qr_scan
+        - qr_conversion
+        - qr_tool_completion
+  
+  placement:
+    book_margins: true
+    callout_boxes: true
+    end_of_chapter: true
+    inline_with_text: false
+  
+  design:
+    logo_embed: true
+    logo_size: "20%"
+    colors:
+      primary: "#1a1a1a"
+      background: "#ffffff"
+    style: "square | rounded | custom"
+

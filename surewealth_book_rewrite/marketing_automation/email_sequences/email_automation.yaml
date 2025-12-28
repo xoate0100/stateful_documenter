@@ -1,0 +1,89 @@
+# Email Automation Framework
+# Triggered email sequences based on user actions
+
+email_automation:
+  triggers:
+    tool_completion:
+      tool: lifetime_tax_calculator
+      sequence: tax_planning_nurture
+      delay: 0_hours
+    tool_completion:
+      tool: retirement_risk_assessment
+      sequence: retirement_planning_nurture
+      delay: 0_hours
+    qr_scan:
+      source: book
+      chapter: 2
+      sequence: tax_planning_intro
+      delay: 1_day
+    white_paper_download:
+      resource: tax_strategies_guide
+      sequence: tax_advanced_content
+      delay: 2_days
+  
+  sequences:
+    tax_planning_nurture:
+      name: "Tax Planning Nurture Sequence"
+      persona: all
+      funnel_stage: mid_funnel
+      emails:
+        - email_1:
+            subject: "Your Tax Impact Results"
+            delay: 0_hours
+            type: conversion_email
+        - email_2:
+            subject: "The Leaky Bucket: What You're Missing"
+            delay: 2_days
+            type: nurture_email
+        - email_3:
+            subject: "3 Tax Strategies Most People Never Hear About"
+            delay: 5_days
+            type: nurture_email
+        - email_4:
+            subject: "Ready to See Your Personalized Plan?"
+            delay: 7_days
+            type: conversion_email
+    
+    retirement_planning_nurture:
+      name: "Retirement Planning Nurture"
+      persona: all
+      funnel_stage: mid_funnel
+      emails:
+        - email_1:
+            subject: "Your Retirement Risk Assessment"
+            delay: 0_hours
+            type: conversion_email
+        - email_2:
+            subject: "Is Your Portfolio Built on Sand?"
+            delay: 3_days
+            type: nurture_email
+        - email_3:
+            subject: "The House of Cards Plan"
+            delay: 6_days
+            type: nurture_email
+        - email_4:
+            subject: "Let's Stress-Test Your Current Plan"
+            delay: 10_days
+            type: conversion_email
+  
+  personalization:
+    tokens:
+      - "%FIRSTNAME%"
+      - "%TOOL_RESULT%"
+      - "%SCORE%"
+      - "%CHAPTER_REFERENCE%"
+    dynamic_content:
+      persona_specific: true
+      tool_result_specific: true
+      funnel_stage_specific: true
+  
+  a_b_testing:
+    enabled: true
+    test_elements:
+      - subject_lines
+      - cta_copy
+      - email_length
+      - send_time
+    split: 50_50
+    winner_criteria: "highest_open_rate_and_ctr"
+

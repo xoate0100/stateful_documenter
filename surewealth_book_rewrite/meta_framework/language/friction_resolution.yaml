@@ -1,0 +1,163 @@
+# Friction Resolution Framework
+# Patterns to identify and resolve confusion and overwhelm
+# Source: Transcript Analysis - Comprehensive Friction Point Analysis
+
+version: 1.0
+source: "Transcript Analysis - 17 client service calls"
+purpose: "Prevent and resolve confusion and overwhelm in written content"
+
+friction_resolution:
+  types:
+    large_number_overwhelm:
+      indicators:
+        - "Millions in taxes"
+        - "Age 101 projections"
+        - "Large asset numbers"
+        - "Complex calculations"
+      resolution_patterns:
+        - "Let's break that down: [daily/monthly amount]"
+        - "That number might seem overwhelming, but here's what it actually means..."
+        - "In practical terms, that's [relatable amount] per [timeframe]"
+        - "Let's put that in perspective: [comparison]"
+      written_adaptation:
+        - Proactive breakdown in opening paragraphs
+        - Daily/monthly cost calculations
+        - Comparison to familiar amounts
+        - Visual breaks (charts) after large numbers
+    
+    complexity_confusion:
+      indicators:
+        - Technical jargon
+        - Complex processes
+        - Multiple steps
+        - Unfamiliar concepts
+      resolution_patterns:
+        - "Let me simplify this..."
+        - "Think of it like [metaphor]"
+        - "Here's what's actually happening..."
+        - "To put it simply..."
+      written_adaptation:
+        - "You might be wondering..." sections
+        - Metaphor/analogy after complex explanation
+        - Step-by-step breakdowns
+        - Visual diagrams after process explanations
+    
+    emotional_overwhelm:
+      indicators:
+        - Fear language
+        - Hopelessness
+        - Anxiety
+        - Shame
+      resolution_patterns:
+        - "You're not alone in this"
+        - "This is more common than you think"
+        - "Many [persona] face this exact challenge"
+        - "This is normal, not a failure"
+      written_adaptation:
+        - Normalization in opening paragraphs
+        - Validation before correction
+        - Case studies showing others in similar situations
+        - Reframing sections
+    
+    process_mechanism_confusion:
+      indicators:
+        - "How does this work?"
+        - "I don't understand the process"
+        - Multiple clarifying questions
+      resolution_patterns:
+        - "Here's how it works..."
+        - "Think of it this way: [analogy]"
+        - "Let me walk you through this step by step..."
+        - Visual tools and examples
+      written_adaptation:
+        - Process flowcharts
+        - Step-by-step guides
+        - Visual diagrams
+        - Real-world examples
+    
+    information_overload:
+      indicators:
+        - Too much information at once
+        - Multiple concepts
+        - Long paragraphs without breaks
+      resolution_patterns:
+        - "Let's pause here for a moment..."
+        - "Before we move on, let's make sure this is clear..."
+        - "Take a moment to process this..."
+        - Information chunking
+      written_adaptation:
+        - Visual breaks (charts, diagrams)
+        - Summary sections
+        - "Here's what we've covered so far..."
+        - Short paragraphs, white space
+    
+    technology_friction:
+      indicators:
+        - Technical issues
+        - Login problems
+        - System confusion
+      resolution_patterns:
+        - "No worries, let's try this..."
+        - "Here's an alternative way..."
+        - Patience and humor
+      written_adaptation:
+        - N/A for written content (not applicable)
+        - But can address "complex systems" concerns
+
+  resolution_framework:
+    acknowledge:
+      - "I understand this might seem [overwhelming/confusing]"
+      - "This is a common concern"
+      - "You're not alone in wondering about this"
+      - "Let me clarify that..."
+    
+    simplify:
+      - "Let me break this down simply..."
+      - "Think of it like [metaphor]"
+      - "Here's what's actually happening..."
+      - "To put it in plain English..."
+    
+    validate:
+      - "This is normal. Many people feel this way."
+      - "You're not the first person to [concern]"
+      - "This is completely understandable"
+      - "That's a great question"
+    
+    proceed:
+      - "Now that we've clarified that, here's what's next..."
+      - "Now that you understand [concept], let's look at [next]..."
+      - "With that foundation, here's how we build on it..."
+
+written_content_adaptation:
+  proactive_prevention:
+    - "You might be wondering..." sections
+    - "Let me clarify..." callout boxes
+    - Simplified explanations after complex concepts
+    - Visual breaks to prevent overload
+  
+  reactive_resolution:
+    - "Here's what this means in plain English..."
+    - "To put it simply..."
+    - "Think of it this way: [analogy]"
+    - Summary sections after complex topics
+
+usage_guidelines:
+  when_to_use:
+    - Proactively: In opening paragraphs, after complex concepts
+    - Reactively: When content might cause confusion
+    - Always: After introducing new concepts
+  
+  emotional_states:
+    - confusion
+    - overwhelm
+    - anxiety
+    - fear
+  
+  funnel_stage:
+    - all: "Use throughout to prevent friction"
+
+cross_references:
+  - "meta_framework/language/confirmation_patterns.yaml"
+  - "meta_framework/language/emotional_transitions.yaml"
+  - "ai_prompts/format_prompts/chapter_prompt.yaml"
+

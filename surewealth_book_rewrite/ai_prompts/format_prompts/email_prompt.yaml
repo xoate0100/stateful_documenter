@@ -1,0 +1,64 @@
+# Email Generation Prompt Template
+
+format: email
+types:
+  nurture_email:
+    length: 200-400_words
+    purpose: "Education and relationship building"
+    cta: "soft_cta"
+  conversion_email:
+    length: 150-300_words
+    purpose: "Drive action"
+    cta: "primary_cta"
+  follow_up_email:
+    length: 100-200_words
+    purpose: "Re-engagement"
+    cta: "curiosity_cta"
+
+structure:
+  subject_line:
+    max_length: 50
+    emotional_hook: true
+    personalization: "%FIRSTNAME%"
+    curiosity_gap: true
+  preview_text:
+    max_length: 100
+    supports_subject: true
+  greeting:
+    personalization: "%FIRSTNAME%"
+    tone: "warm_but_professional"
+  body:
+    opening: "Hook or story (2-3 sentences)"
+    value: "Core message (3-5 paragraphs)"
+    cta_section: "Clear call to action"
+  closing:
+    signature: "SureWealth Solutions"
+    p.s.: "Optional urgency or bonus"
+
+personalization_tokens:
+  - "%FIRSTNAME%"
+  - "%FIRSTNAME|UPPERFIRST%"
+  - "%LASTNAME%"
+  - "%CITY%"
+  - "%TOOL_RESULT%"
+  - "%SCORE%"
+
+trigger_conditions:
+  - tool_completion: "After calculator/assessment"
+  - funnel_stage: "Based on progression"
+  - persona_match: "Persona-specific content"
+  - time_delay: "Days since last contact"
+
+example_prompt: |
+  Generate a [EMAIL_TYPE] email about [TOPIC] for [PERSONA].
+  
+  Requirements:
+  - Subject line: [EMOTIONAL_HOOK]
+  - Length: [LENGTH] words
+  - Personalization: Use %FIRSTNAME%
+  - Reference: [STORY_ID or CHARACTER_ID]
+  - CTA: Link to [TOOL_ID]
+  - Trigger: [TRIGGER_CONDITION]
+  
+  Use framework constraints and maintain brand voice.
+

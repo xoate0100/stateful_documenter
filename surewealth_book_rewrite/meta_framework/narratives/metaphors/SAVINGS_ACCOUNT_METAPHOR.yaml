@@ -1,0 +1,69 @@
+# Savings Account Metaphor
+# Reframes policy loans as savings account withdrawals
+# Source: Transcript Analysis - Oct 10 - Dustin, Multiple calls
+
+metaphor_id: SAVINGS_ACCOUNT_METAPHOR
+title: "Policy Loans as Savings Account"
+version: 1.0
+source: "Transcript Analysis - Oct 10 - Dustin, Multiple calls"
+status: active
+
+description: |
+  Reframes policy loans as normal savings account withdrawals, removing shame 
+  and obligation. Policy loans become a normal financial tool, not debt.
+
+transcript_source:
+  - "Oct 10 - Dustin"
+  - "Cheri M. - June 2025"
+  - "Kim & Mark - Jan 2025"
+
+original_quote: |
+  "I don't want you to think of it as a payback schedule, any more than you 
+  would say. Hey, we had 45,000 in a savings account, we drew it down when we 
+  had to change careers, but now we're going to build our savings account back up."
+
+usage_context:
+  - Reframing policy loans
+  - Reducing shame about using policy funds
+  - Normalizing financial behavior
+  - Explaining policy loan flexibility
+
+written_adaptation: |
+  Think of your policy like a savings account. When you need money, you withdraw 
+  it. When you have extra, you deposit it. There's no shame in using your 
+  savings—that's what it's there for. Just like a savings account, you can 
+  access your funds when needed, and you can build it back up when you have 
+  extra money.
+
+psychological_impact:
+  - Removes shame and obligation
+  - Normalizes financial behavior
+  - Policy loans become normal financial tool, not debt
+  - Reduces fear about using policy funds
+
+funnel_stage:
+  - mid_funnel: "Reframe policy loans"
+  - conversion: "Remove barriers to using policy"
+
+persona_fit:
+  - all: "Works for all personas"
+  - widow_caregiver: "Highly effective - familiar concept"
+
+emotional_state:
+  - shame
+  - fear
+  - confusion
+  - resistance
+
+visual_elements:
+  - Simple diagram: Savings account with deposit/withdraw arrows
+  - Comparison chart: Policy vs. Savings Account
+
+related_metaphors:
+  - WAREHOUSE_OF_WEALTH_METAPHOR
+  - LEFT_POCKET_RIGHT_POCKET_METAPHOR
+
+cross_references:
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/language/normalization_patterns.yaml"
+

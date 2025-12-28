@@ -1,0 +1,88 @@
+# Reframing Language Patterns
+# Patterns to transform problems into opportunities or expected situations
+# Source: Transcript Analysis - ANDY_DANIELS_TRANSCRIPT_ANALYSIS.md
+
+version: 1.0
+source: "Transcript Analysis - 17 client service calls"
+purpose: "Transform crisis into expected/planned-for situation"
+
+reframing_patterns:
+  crisis_to_opportunity:
+    - "This is exactly what [tool/strategy] was designed for"
+    - "This situation is why we [plan/prepare/build]"
+    - "This isn't a problem—it's an opportunity to [action]"
+    - "This is what it's supposed to be there for"
+    - "That's why we built this. We built this in this way, so that in case of an emergency or an opportunity..."
+    - "This is exactly the kind of situation [strategy] handles"
+    - "This is why we have [tool/strategy]"
+  
+  problem_to_expected:
+    - "This is a temporary setback, not a permanent situation"
+    - "This is why we planned for [scenario]"
+    - "This is exactly the kind of situation [strategy] handles"
+    - "This conversation is pretty familiar to me"
+    - "This is what it's supposed to be there for"
+    - "This is a hiccup, it's a speed bump"
+    - "This is temporary, not permanent"
+  
+  setback_to_planned:
+    - "This is why we built flexibility into [strategy]"
+    - "This is exactly what we prepared for"
+    - "This is the situation [tool] was designed to handle"
+    - "We planned for this possibility"
+
+written_content_adaptation:
+  problem_solution_sections:
+    - "This might seem like a crisis, but it's exactly what [strategy] was designed for..."
+    - "At first glance, this looks like a problem. But here's what's actually happening..."
+    - "This situation might feel overwhelming, but it's exactly why we [plan/prepare]..."
+  
+  transitions:
+    - "This isn't a problem—it's an opportunity to take control..."
+    - "What looks like a setback is actually a chance to [benefit]..."
+    - "This situation is why we build [strategy] into every plan..."
+  
+  case_studies:
+    - "This situation is why we build [strategy] into every plan..."
+    - "What seemed like a crisis became an opportunity to..."
+    - "This is exactly the kind of situation [strategy] was designed for..."
+
+usage_guidelines:
+  when_to_use:
+    - When client sees situation as crisis
+    - When client feels hopeless
+    - When client thinks they made a mistake
+    - In problem-solution sections
+    - After explaining a challenge
+  
+  emotional_states:
+    - crisis
+    - hopelessness
+    - panic
+    - fear
+  
+  funnel_stage:
+    - mid_funnel: "Transform problem into solution"
+    - conversion: "Show value of planning"
+  
+  persona_fit:
+    - all: "Works for all personas"
+
+examples_from_transcripts:
+  - transcript: "Oct 1 - Roger"
+    quote: "This is what it's supposed to be there for"
+    context: "Reframing policy loan usage"
+  
+  - transcript: "Oct 10 - Dustin"
+    quote: "That's why we built this. We built this in this way, so that in case of an emergency or an opportunity..."
+    context: "Reframing crisis as planned-for situation"
+  
+  - transcript: "Oct 10 - Dustin"
+    quote: "This is a hiccup, it's a speed bump"
+    context: "Minimizing crisis while acknowledging difficulty"
+
+cross_references:
+  - "meta_framework/language/normalization_patterns.yaml"
+  - "meta_framework/language/future_visioning_patterns.yaml"
+  - "meta_framework/narratives/metaphors/HICCUP_SPEED_BUMP_METAPHOR.yaml"
+

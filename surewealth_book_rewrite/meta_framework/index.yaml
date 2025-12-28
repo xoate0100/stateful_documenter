@@ -1,0 +1,70 @@
+# Master Index - SureWealth Book Meta Framework
+# This file tracks all elements in the system and their cross-references
+
+version: 1.0
+last_updated: 2024-01-01
+purpose: Central registry of all tracked elements for stateful book writing
+
+# Character Registry
+characters:
+  # Format: CHARACTER_ID: { metadata }
+  # Example entries will be added as characters are created
+  
+# Narrative Elements Registry
+narratives:
+  allegories:
+    - ALLEGORY_LEAKY_BUCKET
+    - ALLEGORY_HOUSE_OF_CARDS
+    - ALLEGORY_PRESSURE_RELIEF_VALVE
+    - ALLEGORY_TWO_SIDES_OF_COIN
+  metaphors:
+    - SAVINGS_ACCOUNT_METAPHOR
+    - WATERFALL_CASCADE_METAPHOR
+    - SAILBOAT_METAPHOR
+    - WAREHOUSE_OF_WEALTH_METAPHOR
+    - LEFT_POCKET_RIGHT_POCKET_METAPHOR
+    - HICCUP_SPEED_BUMP_METAPHOR
+    - PRESSURE_RELIEF_VALVE_METAPHOR
+  case_studies:
+    - COMPOSITE_CLIENT_ENGINEER
+  story_threads: {}
+  
+# Language Elements
+language:
+  tone_rules: language/tone_guide.yaml
+  vocabulary: language/vocabulary.yaml
+  signature_phrases: language/signature_phrases.yaml
+  linguistic_patterns: language/linguistic_patterns.yaml
+  # Transcript-derived language patterns (Phase 1-3 integration)
+  normalization_patterns: language/normalization_patterns.yaml
+  reframing_patterns: language/reframing_patterns.yaml
+  mathematical_proof_patterns: language/mathematical_proof_patterns.yaml
+  empowerment_patterns: language/empowerment_patterns.yaml
+  future_visioning_patterns: language/future_visioning_patterns.yaml
+  celebration_patterns: language/celebration_patterns.yaml
+  confirmation_patterns: language/confirmation_patterns.yaml
+  friction_resolution: language/friction_resolution.yaml
+  emotional_transitions: language/emotional_transitions.yaml
+  psychological_principles: language/psychological_principles.yaml
+  
+# Tools & CTAs
+tools_ctas:
+  tools: tools_ctas/tools_index.yaml
+  ctas: tools_ctas/cta_library.yaml
+  toolhook_map: tools_ctas/toolhook_map.yaml
+  
+# Visual Elements
+visuals:
+  charts: visuals/charts_index.yaml
+  illustrations: visuals/illustrations_index.yaml
+  visual_style_guide: ../visual_grammar/visual_style_guide.yaml
+  
+# Chapters
+chapters:
+  # Format: chapter_XX: { metadata_file }
+  
+# Cross-Reference Map
+cross_references:
+  # Tracks which elements reference which other elements
+  # Format: element_id: [referenced_element_ids]
+

@@ -1,0 +1,34 @@
+# Allegories Index
+# Registry of all allegories used in the book
+
+allegories:
+  ALLEGORY_LEAKY_BUCKET:
+    title: "The Leaky Bucket"
+    file: narratives/allegories/ALLEGORY_LEAKY_BUCKET.yaml
+    primary_theme: tax_drag
+    used_in_chapters: []
+    status: active
+    
+  ALLEGORY_HOUSE_OF_CARDS:
+    title: "The House of Cards Plan"
+    file: narratives/allegories/ALLEGORY_HOUSE_OF_CARDS.yaml
+    primary_theme: market_dependency
+    used_in_chapters: []
+    status: active
+  
+  ALLEGORY_PRESSURE_RELIEF_VALVE:
+    title: "The Pressure Relief Valve"
+    file: narratives/allegories/ALLEGORY_PRESSURE_RELIEF_VALVE.yaml
+    primary_theme: emergency_access
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Oct 10 - Dustin"
+  
+  ALLEGORY_TWO_SIDES_OF_COIN:
+    title: "Two Sides of the Same Coin"
+    file: narratives/allegories/ALLEGORY_TWO_SIDES_OF_COIN.yaml
+    primary_theme: policy_mechanics
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Elizabeth Wiltsie - Aug 2025"
+

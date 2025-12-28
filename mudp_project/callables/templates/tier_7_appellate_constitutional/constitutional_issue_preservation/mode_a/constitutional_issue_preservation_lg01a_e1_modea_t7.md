@@ -266,3 +266,5 @@ Defendant.
 
 **This is a template memo only. Actual constitutional issue preservation must be done by licensed attorneys in accordance with applicable court rules, local rules, and legal requirements. This template is provided for planning and organizational purposes only and does not constitute legal advice.**
 
+
+

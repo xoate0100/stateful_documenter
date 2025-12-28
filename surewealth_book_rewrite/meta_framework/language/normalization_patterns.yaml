@@ -1,0 +1,97 @@
+# Normalization Language Patterns
+# Patterns to reduce shame, anxiety, and isolation by normalizing situations
+# Source: Transcript Analysis - ANDY_DANIELS_TRANSCRIPT_ANALYSIS.md
+
+version: 1.0
+source: "Transcript Analysis - 17 client service calls"
+purpose: "Reduce shame/anxiety by normalizing client situations"
+
+normalization_patterns:
+  general_normalization:
+    - "This happens to [target_group] more often than you think"
+    - "You're not alone in [concern]"
+    - "This is a common situation for [persona]"
+    - "Many [persona] face this exact challenge"
+    - "Almost everybody I work with has had something like that happen"
+    - "You guys are not some kind of outlier, there's nothing wrong with you"
+    - "This is normal, not a failure"
+    - "This happens to everyone at some point"
+  
+  situation_specific:
+    layoffs:
+      - "Well that's that's usually how layoffs work"
+      - "Layoffs happen. It's not your fault."
+      - "Many people face unexpected job loss"
+    
+    financial_challenges:
+      - "I know that life happens"
+      - "Financial setbacks are more common than you think"
+      - "You're not the first person to face this"
+      - "This is exactly the kind of situation that you should be willing to go..."
+    
+    debt_shame:
+      - "Debt happens. It's not a character flaw."
+      - "Many successful people have been in debt"
+      - "This is temporary, not permanent"
+    
+    retirement_concerns:
+      - "Most people worry about having enough"
+      - "You're not alone in feeling behind"
+      - "This concern is completely normal"
+
+written_content_adaptation:
+  opening_paragraphs:
+    - "If you're reading this, you're not alone. Many [persona] face this exact challenge..."
+    - "This situation is more common than you think..."
+    - "You're not the first person to [concern]..."
+  
+  transitions:
+    - "This might feel overwhelming, but here's what's actually happening..."
+    - "Before we dive in, know this: you're not alone..."
+    - "Many people feel [emotion] about [situation]. That's completely normal..."
+  
+  case_studies:
+    - "This situation is more common than you think..."
+    - "You're not alone in [concern]..."
+    - "This happens to [target_group] regularly..."
+
+usage_guidelines:
+  when_to_use:
+    - When client expresses shame or embarrassment
+    - When client feels isolated or alone
+    - When client thinks they're a failure
+    - At the beginning of problem-solution sections
+    - In case studies to create relatability
+  
+  emotional_states:
+    - shame
+    - isolation
+    - embarrassment
+    - fear_of_judgment
+  
+  funnel_stage:
+    - top_of_funnel: "Create relatability"
+    - mid_funnel: "Reduce resistance"
+    - conversion: "Remove barriers"
+  
+  persona_fit:
+    - all: "Works for all personas"
+
+examples_from_transcripts:
+  - transcript: "Oct 1 - Roger"
+    quote: "Well that's that's usually how layoffs work"
+    context: "Normalizing unexpected job loss"
+  
+  - transcript: "Oct 10 - Dustin"
+    quote: "You guys are not some kind of outlier, there's nothing wrong with you"
+    context: "Reducing shame about financial situation"
+  
+  - transcript: "Oct 10 - Dustin"
+    quote: "Almost everybody I work with has had something like that happen"
+    context: "Normalizing financial setbacks"
+
+cross_references:
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/language/emotional_transitions.yaml"
+  - "meta_framework/language/psychological_principles.yaml"
+

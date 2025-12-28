@@ -1,0 +1,98 @@
+# Persona Voice Adaptation System
+# Dynamic voice shifting based on target persona
+
+persona_adaptations:
+  engineer_retiree:
+    voice_shift:
+      tone: "data-driven, calm logic"
+      formality: "semi-formal, professional"
+      sentence_structure: "Mix of analytical statements and logical conclusions"
+    
+    emphasis:
+      - "Charts, ROI, optimization"
+      - "Mathematical certainty"
+      - "Logical confidence"
+      - "Proof and evidence"
+    
+    language_preferences:
+      use_numbers: true
+      use_statistics: true
+      use_charts: true
+      technical_depth: "medium"  # Some technical terms with explanation
+    
+    cta_angle: "Let's run your numbers"
+    emotional_approach:
+      primary: "curiosity, need_for_proof"
+      secondary: "fear_of_being_wrong, desire_for_optimization"
+    
+    example_phrases:
+      - "The math tells one clear story"
+      - "Let's optimize your strategy"
+      - "Here's what the data shows"
+      - "The numbers don't lie"
+  
+  faith_family_builder:
+    voice_shift:
+      tone: "empathetic, legacy-driven"
+      formality: "warm, approachable"
+      sentence_structure: "Story-driven, values-focused"
+    
+    emphasis:
+      - "Biblical stewardship"
+      - "Family protection"
+      - "Generational impact"
+      - "Legacy and values"
+    
+    language_preferences:
+      use_stories: true
+      use_family_references: true
+      use_values_language: true
+      technical_depth: "low"  # Plain language
+    
+    cta_angle: "Protect what God entrusted you"
+    emotional_approach:
+      primary: "legacy_fear, family_protection"
+      secondary: "stewardship_responsibility, generational_impact"
+    
+    example_phrases:
+      - "Protect what God entrusted you"
+      - "Your family's financial legacy"
+      - "Steward your resources wisely"
+      - "Leave more than money"
+  
+  widow_caregiver:
+    voice_shift:
+      tone: "soothing, clear, safe"
+      formality: "very approachable, reassuring"
+      sentence_structure: "Simple, clear, step-by-step"
+    
+    emphasis:
+      - "Simplicity"
+      - "Control"
+      - "Security"
+      - "Peace of mind"
+    
+    language_preferences:
+      use_simple_language: true
+      avoid_jargon: true
+      use_reassurance: true
+      technical_depth: "very_low"  # No jargon
+    
+    cta_angle: "You don't have to do this alone"
+    emotional_approach:
+      primary: "fear_of_making_mistakes, need_for_guidance"
+      secondary: "overwhelm, desire_for_simplicity"
+    
+    example_phrases:
+      - "You don't have to do this alone"
+      - "Simple and safe"
+      - "We'll guide you step by step"
+      - "Peace of mind"
+
+adaptation_rules:
+  - "Always match tone to persona"
+  - "Adjust technical depth based on persona"
+  - "Use persona-specific phrases naturally"
+  - "Maintain brand voice while adapting"
+  - "Never lose empathy regardless of persona"
+

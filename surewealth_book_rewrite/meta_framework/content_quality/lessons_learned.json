@@ -1,0 +1,310 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-12-27",
+  "purpose": "Lessons learned from content quality analysis to prevent repetition and improve conversion",
+  "enforcement": "This file must be referenced during all content generation",
+  
+  "critical_issues": {
+    "repetitive_structure": {
+      "issue": "All posts follow identical formula: Permission frame → Story → Numbers → Multiple CTAs",
+      "impact": "Feels templated, loses authenticity, breaks suspension of disbelief",
+      "what_not_to_do": [
+        "Use the same structure for every piece of content",
+        "Follow a rigid template without variation",
+        "Create formulaic content that feels automated"
+      ],
+      "what_to_do_instead": [
+        "Vary structure: Start with story, start with question, start with statistic",
+        "Use different narrative approaches: Direct address, third-person story, first-person reflection",
+        "Rotate between allegory, case study, and direct explanation",
+        "Create structure library with 5+ different templates"
+      ],
+      "examples": {
+        "bad": "If you don't mind me asking... [story]... [numbers]... [CTA]",
+        "good": "Variation 1: [Hook question] → [Story] → [Insight] → [Soft CTA]",
+        "good": "Variation 2: [Statistic] → [Story] → [Question] → [Soft CTA]",
+        "good": "Variation 3: [Direct statement] → [Case study] → [Reflection] → [Soft CTA]"
+      }
+    },
+    
+    "permission_frame_overuse": {
+      "issue": "\"If you don't mind me asking...\" appears 3+ times per post, losing impact",
+      "impact": "Pattern becomes noticeable, feels scripted, interrupts flow",
+      "what_not_to_do": [
+        "Use permission frames more than 1-2 times per piece",
+        "Start every section with a permission frame",
+        "Use identical permission frame phrases repeatedly"
+      ],
+      "what_to_do_instead": [
+        "Use permission frames strategically: Once at opening, once before sensitive question",
+        "Vary permission frame language: \"Before we go any further...\", \"Let me share something...\", \"If you don't mind...\"",
+        "Use permission frames only when asking personal/sensitive questions",
+        "Track permission frame usage: Max 2 per 2000-word piece"
+      ],
+      "examples": {
+        "bad": "If you don't mind me asking... [content]... If you don't mind me asking... [content]... If you don't mind me asking...",
+        "good": "If you don't mind me asking... [opening question]... [content]... Before we go any further... [transition]"
+      }
+    },
+    
+    "signature_phrase_repetition": {
+      "issue": "Same signature phrases appear in every post: \"Hope is not a strategy\", \"The cost of waiting...\"",
+      "impact": "Loses impact, feels repetitive, breaks brand voice consistency",
+      "what_not_to_do": [
+        "Use the same signature phrase in multiple pieces",
+        "Include signature phrases in every piece of content",
+        "Use signature phrases back-to-back"
+      ],
+      "what_to_do_instead": [
+        "Rotate signature phrases: Use different ones in different posts",
+        "Use signature phrases contextually: Match phrase to content theme",
+        "Track usage: Don't repeat same phrase within 5 pieces of content",
+        "Create signature phrase rotation schedule"
+      ],
+      "examples": {
+        "bad": "Post 1: 'Hope is not a strategy' + 'The cost of waiting...' | Post 2: 'Hope is not a strategy' + 'The cost of waiting...'",
+        "good": "Post 1: 'Hope is not a strategy' | Post 2: 'You've worked too hard to risk it now' | Post 3: 'This isn't about returns—it's about control'"
+      }
+    },
+    
+    "cta_overload": {
+      "issue": "All posts have 3+ CTA sections, too aggressive for funnel stage",
+      "impact": "Feels pushy, breaks trust, inappropriate for top/mid-funnel",
+      "what_not_to_do": [
+        "Include multiple CTA sections in one piece",
+        "Use conversion-stage CTAs in top/mid-funnel content",
+        "Repeat same CTA format multiple times"
+      ],
+      "what_to_do_instead": [
+        "Match CTA to funnel stage: 1 soft CTA for top/mid-funnel, 1 primary for lower funnel",
+        "Place CTA strategically: End of piece, after key insight",
+        "Vary CTA format: Question-based, benefit-lead, curiosity-gap",
+        "Track CTA usage: One per piece, appropriate for stage"
+      ],
+      "funnel_guidelines": {
+        "top_of_funnel": {
+          "cta_count": 1,
+          "cta_type": "soft_cta",
+          "format": "Question-based, curiosity-driven",
+          "example": "Want to see if this applies to you?"
+        },
+        "mid_funnel": {
+          "cta_count": 1,
+          "cta_type": "soft_cta",
+          "format": "Benefit-lead, question-based",
+          "example": "If there were a way to [benefit], would you like to know how?"
+        },
+        "lower_funnel": {
+          "cta_count": 1,
+          "cta_type": "primary_cta",
+          "format": "Direct, action-oriented",
+          "example": "Let's run your numbers and see if this could work for you"
+        }
+      },
+      "examples": {
+        "bad": "[Content]... **CTA 1**... [Content]... **CTA 2**... [Content]... **CTA 3**",
+        "good": "[Content]... [Key insight]... **Single soft CTA at end**"
+      }
+    },
+    
+    "story_resolution_weakness": {
+      "issue": "Story resolutions are vague: \"everything changed\", \"retired. For real this time\", \"The Relief\"",
+      "impact": "Loses credibility, doesn't satisfy reader, breaks suspension of disbelief",
+      "what_not_to_do": [
+        "Use vague resolutions: \"everything changed\", \"it worked\", \"problem solved\"",
+        "Skip resolution details entirely",
+        "Make resolution too quick or easy"
+      ],
+      "what_to_do_instead": [
+        "Provide concrete resolution details: What changed? How? What was the outcome?",
+        "Show, don't tell: Use specific examples, numbers, or outcomes",
+        "Make resolution believable: Not too easy, not too perfect",
+        "Connect resolution to reader: \"This is what's possible when...\""
+      ],
+      "examples": {
+        "bad": "When we showed him strategies, everything changed. He could retire with confidence.",
+        "good": "We restructured his distributions to reduce his tax bracket from 25% to 15%. Over 25 years, that saved him $200,000 in taxes. He could retire two years earlier than planned."
+      }
+    },
+    
+    "dialogue_feels_scripted": {
+      "issue": "Character dialogue feels artificial: \"Wait. You're telling me I've been thinking...\"",
+      "impact": "Breaks suspension of disbelief, feels fake, loses credibility",
+      "what_not_to_do": [
+        "Use direct quotes that sound scripted",
+        "Create dialogue that's too perfect or formal",
+        "Use dialogue to dump information"
+      ],
+      "what_to_do_instead": [
+        "Use indirect quotes: \"He realized that...\", \"She discovered...\"",
+        "Use narrative style: \"The numbers surprised him. He'd never calculated...\"",
+        "Make dialogue natural: Use contractions, incomplete sentences, real speech patterns",
+        "Use dialogue sparingly: Only when it adds authenticity"
+      ],
+      "examples": {
+        "bad": "\"Wait,\" he said. \"You're telling me I've been thinking I have $800,000, but after taxes, I really only have access to about $600,000?\"",
+        "good": "The numbers surprised him. He'd always thought of his $800,000 as $800,000. But after taxes, it was really more like $600,000. The leak was bigger than he'd imagined."
+      }
+    },
+    
+    "number_specificity_issues": {
+      "issue": "Some numbers feel too perfect ($800k → $600k exactly 25%), some feel made up (Mary's $3,000 property tax)",
+      "impact": "Loses credibility, breaks suspension of disbelief",
+      "what_not_to_do": [
+        "Use numbers that are too perfect or round",
+        "Make up specific numbers without context",
+        "Use numbers that don't match reality"
+      ],
+      "what_to_do_instead": [
+        "Use ranges when appropriate: \"about $800,000\", \"roughly $600,000\"",
+        "Provide context for numbers: \"Based on average tax rates...\", \"According to recent data...\"",
+        "Use realistic numbers: Research actual averages, use believable specifics",
+        "Balance specificity: Not too vague, not too precise"
+      ],
+      "examples": {
+        "bad": "Her property taxes were exactly $3,000. Her insurance was $1,200.",
+        "good": "Her property taxes were about $3,000 a year. Insurance, utilities, and other fixed costs added another $4,000 or so."
+      }
+    }
+  },
+  
+  "content_structure_issues": {
+    "mixed_file_types": {
+      "issue": "Prompts and content files mixed in same directory",
+      "impact": "Hard to find content, cluttered structure, no clear organization",
+      "what_not_to_do": [
+        "Store prompts and content in same folder",
+        "Mix different file types without organization",
+        "Create flat directory structure"
+      ],
+      "what_to_do_instead": [
+        "Separate prompts from content: content/prompts/ vs content/published/",
+        "Organize by type: social/facebook/, social/linkedin/, blog/, email/",
+        "Use metadata files: Separate YAML files for tags, funnel, persona",
+        "Create clear directory hierarchy"
+      ]
+    },
+    
+    "no_metadata_system": {
+      "issue": "No way to search or categorize content by funnel, persona, topic",
+      "impact": "Can't find content, can't track usage, can't optimize",
+      "what_not_to_do": [
+        "Create content without metadata",
+        "Use only filenames for organization",
+        "Skip tagging or categorization"
+      ],
+      "what_to_do_instead": [
+        "Create metadata YAML for each piece: funnel_stage, persona, topic, tags",
+        "Use consistent naming: [date]_[topic]_[funnel]_[persona].md",
+        "Create content index: Searchable database of all content",
+        "Tag everything: topic, funnel, persona, format, performance"
+      ]
+    }
+  },
+  
+  "funnel_mismatches": {
+    "cta_aggressiveness": {
+      "issue": "CTAs too aggressive for funnel stage (3+ CTAs in top/mid-funnel content)",
+      "impact": "Feels pushy, breaks trust, reduces conversion",
+      "what_not_to_do": [
+        "Use conversion-stage CTAs in top-funnel content",
+        "Include multiple CTAs regardless of funnel stage",
+        "Make every CTA a hard ask"
+      ],
+      "what_to_do_instead": [
+        "Match CTA to funnel stage: Soft for top, primary for lower",
+        "Use one CTA per piece, placed strategically",
+        "Bridge to next content piece, not consultation (top-funnel)",
+        "Track funnel stage in metadata"
+      ]
+    },
+    
+    "content_advancement": {
+      "issue": "Content doesn't clearly advance reader to next funnel stage",
+      "impact": "Reader stuck, doesn't progress, reduces conversion",
+      "what_not_to_do": [
+        "End content without clear next step",
+        "Use CTAs that don't match funnel progression",
+        "Skip bridge to next content piece"
+      ],
+      "what_to_do_instead": [
+        "End with bridge to next stage: Top → Mid (calculator), Mid → Lower (webinar)",
+        "Make next step clear: \"Want to see your numbers?\"",
+        "Track funnel progression in metadata",
+        "Create content series that advance reader"
+      ]
+    }
+  },
+  
+  "enforcement_rules": {
+    "before_generating": [
+      "Check lessons_learned.json for common issues",
+      "Verify funnel stage matches CTA type",
+      "Check signature phrase rotation (not used in last 5 pieces)",
+      "Verify permission frame count (max 2 per piece)",
+      "Review structure (not same as last 3 pieces)"
+    ],
+    "during_generation": [
+      "Vary structure from previous pieces",
+      "Use permission frames strategically (max 2)",
+      "Rotate signature phrases",
+      "Match CTA to funnel stage (1 soft for top/mid)",
+      "Provide concrete story resolutions",
+      "Use indirect quotes or narrative style",
+      "Balance number specificity"
+    ],
+    "after_generation": [
+      "Check for repetitive phrases",
+      "Verify CTA count and type",
+      "Review story resolution strength",
+      "Check dialogue authenticity",
+      "Verify number believability",
+      "Add metadata (funnel, persona, tags)",
+      "Update content index"
+    ]
+  },
+  
+  "quality_checklist": {
+    "structure": [
+      "Structure varies from previous 3 pieces",
+      "Not following identical formula",
+      "Narrative approach is appropriate"
+    ],
+    "permission_frames": [
+      "Max 2 permission frames per piece",
+      "Permission frames varied (not identical)",
+      "Used strategically, not repetitively"
+    ],
+    "signature_phrases": [
+      "Signature phrases rotated (not in last 5 pieces)",
+      "Used contextually, not forced",
+      "Max 1-2 signature phrases per piece"
+    ],
+    "ctas": [
+      "One CTA per piece",
+      "CTA matches funnel stage",
+      "CTA format appropriate (soft for top/mid)"
+    ],
+    "story_resolution": [
+      "Resolution is concrete, not vague",
+      "Shows specific outcomes or changes",
+      "Believable and realistic"
+    ],
+    "dialogue": [
+      "Dialogue feels natural (if used)",
+      "Indirect quotes preferred over direct",
+      "Not scripted or artificial"
+    ],
+    "numbers": [
+      "Numbers are believable",
+      "Not too perfect or too specific",
+      "Context provided when needed"
+    ],
+    "metadata": [
+      "Metadata file created (funnel, persona, tags)",
+      "Added to content index",
+      "Properly named and organized"
+    ]
+  }
+}
+

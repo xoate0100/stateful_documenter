@@ -1,0 +1,80 @@
+# Warehouse of Wealth Metaphor
+# Policy as warehouse for storing and accessing wealth
+# Source: Transcript Analysis - Cheri M. - June 2025
+
+metaphor_id: WAREHOUSE_OF_WEALTH_METAPHOR
+title: "Policy as Warehouse of Wealth"
+version: 1.0
+source: "Transcript Analysis - Cheri M. - June 2025"
+status: active
+
+description: |
+  Policy functions like a warehouse where money is stored, tracked, and can be 
+  accessed. Money goes in, gets credited for dividends, and can be taken out. 
+  Familiar concept that makes policy loans understandable.
+
+transcript_source:
+  - "Cheri M. - June 2025"
+  - "Miranda Wood - April 2025"
+
+original_quote: |
+  "I want you to think of the life insurance policy as your warehouse of wealth."
+  
+  "Now, it's all well and good to have the warehouse. Even better that when you 
+  put money into the warehouse, they track that and they will credit dividends 
+  based on the total amount of money that you've put into the warehouse, 
+  regardless of whether you turn around and take that money right back out of 
+  the warehouse."
+
+usage_context:
+  - Explaining how policy loans work
+  - Showing why "put in and take out" makes sense
+  - Demonstrating dividend crediting
+  - Making policy accessible and understandable
+
+written_adaptation: |
+  Think of your policy like a warehouse for your wealth. When you put money 
+  into the warehouse, it gets tracked and credited for dividends—whether you 
+  leave it there or take it right back out. The warehouse doesn't care if you 
+  store something for a day or a decade—it credits you the same way. This is 
+  why running money through your policy, even if you take it right back out, 
+  still benefits you long-term.
+
+key_points:
+  - Money goes in → gets tracked
+  - Dividends credited regardless of withdrawal
+  - Can access funds when needed
+  - Warehouse doesn't judge how long you store things
+
+psychological_impact:
+  - Makes abstract concept concrete
+  - Familiar concept (warehouse)
+  - Clear process (in → credit → out)
+  - Removes confusion about policy loans
+
+funnel_stage:
+  - mid_funnel: "Explain policy mechanics"
+  - conversion: "Show value of policy structure"
+
+persona_fit:
+  - all: "Works for all personas"
+  - faith_family_builder: "Stewardship concept"
+
+emotional_state:
+  - confusion
+  - need_for_clarity
+  - processing
+
+visual_elements:
+  - Warehouse diagram with money flow
+  - Process flowchart: In → Credit → Out
+  - Dividend crediting timeline
+
+related_metaphors:
+  - SAVINGS_ACCOUNT_METAPHOR
+  - LEFT_POCKET_RIGHT_POCKET_METAPHOR
+
+cross_references:
+  - "meta_framework/language/confirmation_patterns.yaml"
+  - "meta_framework/language/friction_resolution.yaml"
+

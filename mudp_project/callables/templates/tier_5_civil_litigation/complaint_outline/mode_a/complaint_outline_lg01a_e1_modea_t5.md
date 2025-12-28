@@ -297,3 +297,5 @@ WHEREFORE, plaintiff respectfully requests that this court:
 
 **This is a template outline only. Actual complaints must be drafted by licensed attorneys in accordance with applicable court rules, local rules, and legal requirements. This template is provided for planning and organizational purposes only and does not constitute legal advice.**
 
+
+

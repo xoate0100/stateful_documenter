@@ -1,0 +1,13 @@
+# Chapters Index
+# Registry of all chapters in the book
+
+chapters:
+  # Format:
+  # chapter_XX:
+  #   number: XX
+  #   title: Chapter Title
+  #   file: chapters/chapter_XX_title.yaml
+  #   status: planned | draft | in_progress | finalized
+  #   word_count: null
+  #   last_updated: null
+

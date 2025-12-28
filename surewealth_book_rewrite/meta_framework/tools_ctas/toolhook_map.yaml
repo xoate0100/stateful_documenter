@@ -1,0 +1,46 @@
+# Toolhook Map
+# Maps financial concepts → emotional hooks → tools → CTAs
+
+concepts:
+  # Format:
+  # - concept: concept_name
+  #   emotional_hook: hook_description
+  #   awareness_level: target_level
+  #   recommended_tool: tool_id
+  #   cta_copy: "CTA text"
+  #   urgency_trigger: "Urgency statement"
+  #   framing: "How to position"
+  
+  # Example entries:
+  - concept: roth_conversion
+    emotional_hook: fear_of_tax_spikes
+    awareness_level: solution-aware
+    recommended_tool: lifetime_tax_calculator
+    cta_copy: "What's your conversion sweet spot?"
+    urgency_trigger: "Every year you wait, taxes compound"
+    framing: "Optimize your tax strategy now"
+    
+  - concept: social_security_claiming
+    emotional_hook: fear_of_missing_benefits
+    awareness_level: problem-aware
+    recommended_tool: claiming_optimizer_pwa
+    cta_copy: "Don't give up what you've earned"
+    urgency_trigger: "Claiming wrong could cost you 5 figures"
+    framing: "Get your personalized claiming strategy"
+    
+  - concept: healthcare_costs
+    emotional_hook: ltc_anxiety
+    awareness_level: problem-aware
+    recommended_tool: healthcare_cost_estimator
+    cta_copy: "Plan now so your kids don't have to pay"
+    urgency_trigger: "Healthcare inflation compounds faster than savings"
+    framing: "Protect your family from healthcare drain"
+    
+  - concept: estate_planning
+    emotional_hook: family_conflict_loss
+    awareness_level: problem-aware
+    recommended_tool: legacy_checklist
+    cta_copy: "Who decides your legacy — you or probate?"
+    urgency_trigger: "Without a plan, the state decides"
+    framing: "This plan protects more than money"
+

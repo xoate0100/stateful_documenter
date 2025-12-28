@@ -1,0 +1,62 @@
+# Conversion Funnel Map
+# Tracks funnel stage progression and conversion points
+
+conversion_funnel:
+  stages:
+    awareness:
+      description: "Top of funnel - problem awareness"
+      emotional_state: [curious, unaware, vulnerable]
+      content_types: [blog_post, social_post, video]
+      tools: [retirement_risk_assessment]
+      cta_type: soft_cta
+      next_stage: interest
+    
+    interest:
+      description: "Mid funnel - solution awareness"
+      emotional_state: [curious, researching, comparing]
+      content_types: [blog_post, email, white_paper]
+      tools: [lifetime_tax_calculator, social_security_optimizer]
+      cta_type: primary_cta
+      next_stage: consideration
+    
+    consideration:
+      description: "Lower funnel - evaluating options"
+      emotional_state: [comparing, evaluating, seeking_proof]
+      content_types: [case_study, comparison, detailed_guide]
+      tools: [personalized_income_projection, strategy_comparison]
+      cta_type: primary_cta
+      next_stage: conversion
+    
+    conversion:
+      description: "Action stage - booking consultation"
+      emotional_state: [ready, motivated, decisive]
+      content_types: [testimonial, final_cta, booking_page]
+      tools: [booking_system]
+      cta_type: urgency_cta
+      next_stage: post_conversion
+    
+    post_conversion:
+      description: "After booking - onboarding"
+      emotional_state: [committed, engaged, learning]
+      content_types: [onboarding_email, preparation_guide]
+      tools: [preparation_checklist]
+      cta_type: engagement_cta
+      next_stage: null
+  
+  progression_triggers:
+    awareness_to_interest:
+      - tool_completion: retirement_risk_assessment
+      - content_engagement: blog_post_read
+      - time_delay: 2_days
+    
+    interest_to_consideration:
+      - tool_completion: lifetime_tax_calculator
+      - email_engagement: white_paper_download
+      - time_delay: 5_days
+    
+    consideration_to_conversion:
+      - tool_completion: personalized_income_projection
+      - content_engagement: case_study_review
+      - time_delay: 7_days
+      - urgency_trigger: limited_availability
+

@@ -1,0 +1,126 @@
+# Presuppositions & Embedded Commands
+# NLP techniques that assume positive outcomes
+# Source: Markdown Export Conversion Analysis
+
+version: 1.0
+source: "Markdown Export Conversion Analysis"
+purpose: "Language patterns that assume desired outcomes and embed commands"
+
+presuppositions:
+  future_state_assumptions:
+    description: "Language that assumes the prospect will achieve desired state"
+    patterns:
+      - "When you retire..."
+      - "Once you have this in place..."
+      - "As you build your wealth..."
+      - "When you're ready to [action]..."
+      - "Once you start [beneficial action]..."
+      - "As you grow your [asset]..."
+    
+    usage: "Use when describing future benefits or outcomes"
+  
+  partnership_assumptions:
+    description: "Language that assumes working relationship"
+    patterns:
+      - "When we work together..."
+      - "As we build this..."
+      - "Together we can..."
+      - "When you and I work on this..."
+      - "As we move forward..."
+      - "When we implement this..."
+    
+    usage: "Use to create sense of partnership and collaboration"
+  
+  positive_outcome_assumptions:
+    description: "Language that assumes positive results"
+    patterns:
+      - "Once you see how this works..."
+      - "When you experience [benefit]..."
+      - "As you start to [positive action]..."
+      - "Once you realize [benefit]..."
+      - "When you understand [concept]..."
+    
+    usage: "Use when describing benefits or outcomes"
+  
+  capability_assumptions:
+    description: "Language that assumes prospect has capability"
+    patterns:
+      - "You can [action]..."
+      - "You have the ability to..."
+      - "You're in a position to..."
+      - "You have the resources to..."
+      - "You're ready to..."
+    
+    usage: "Use to build confidence and capability"
+
+embedded_commands:
+  action_commands:
+    description: "Commands embedded in statements"
+    patterns:
+      - "You'll want to [action]..."
+      - "You'll find yourself [action]..."
+      - "You'll discover [benefit]..."
+      - "You'll notice [positive change]..."
+      - "You'll realize [insight]..."
+    
+    usage: "Use to suggest actions without direct commands"
+  
+  feeling_commands:
+    description: "Commands that embed desired emotional states"
+    patterns:
+      - "You'll feel [positive emotion]..."
+      - "You'll experience [positive state]..."
+      - "You'll enjoy [benefit]..."
+      - "You'll appreciate [benefit]..."
+    
+    usage: "Use to create positive emotional associations"
+
+usage_guidelines:
+  when_to_use:
+    - When describing future benefits
+    - When building confidence
+    - When creating partnership feeling
+    - When suggesting actions indirectly
+    - When overcoming objections
+  
+  effectiveness:
+    - Assumes positive outcomes (self-fulfilling)
+    - Reduces resistance (not direct commands)
+    - Builds confidence (assumes capability)
+    - Creates partnership (collaborative language)
+  
+  content_format:
+    email:
+      - "When we work together on this..."
+      - "Once you see how this works..."
+    
+    blog_post:
+      - "When you implement this strategy..."
+      - "As you build your wealth..."
+    
+    presentation:
+      - "When you and I work together..."
+      - "Once you have this in place..."
+    
+    conversation:
+      - "When we build this together..."
+      - "As you start to see the benefits..."
+
+examples:
+  future_state:
+    - "When you retire, you'll have [benefit]..."
+    - "Once you have this policy in place, you can [action]..."
+  
+  partnership:
+    - "When we work together, we can [outcome]..."
+    - "As we build this strategy, you'll see [benefit]..."
+  
+  positive_outcome:
+    - "Once you see how this works, you'll realize [benefit]..."
+    - "When you experience [benefit], you'll appreciate [value]..."
+
+cross_references:
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/language/future_visioning_patterns.yaml"
+  - "meta_framework/language/empowerment_patterns.yaml"
+

@@ -1,0 +1,136 @@
+# Case Study: Mark, the Engineer Who Wanted Proof
+story_vault_entry:
+  id: COMPOSITE_CLIENT_ENGINEER
+  title: "Mark, the Engineer Who Wanted Proof"
+  type: composite_case_study
+  description: >
+    Demonstrates how analytical, data-driven individuals find clarity and
+    confidence through simplified, predictable strategies over complex optimization.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: solution-aware
+  buyer_sophistication: high
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: conversion
+  user_intent_profile: comparing
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - analytical_engineer
+    - data_driven_professional
+    - paralysis_by_analysis
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - skeptical
+    - analytical
+  emotional_end_state:
+    - confident
+    - decisive
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Too many conflicting opinions
+    - Overly complex spreadsheets
+    - Paralysis by analysis
+  dreams_aspirations:
+    - Elegant simplicity
+    - Mathematical certainty
+    - Logical confidence
+  objection_patterns:
+    - "I need to see more data"
+    - "What if I optimize wrong?"
+    - "I've heard this before, show me proof"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      Mark had charts, forecasts, and models — but no confidence.
+    conflict: >
+      He realized optimization mattered less than predictability.
+    realization: >
+      The math finally told one story.
+    resolution: >
+      With fewer variables, his confidence increased dramatically.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Complexity to Clarity"
+    elements:
+      - symbol: spreadsheets
+        represents: analysis paralysis
+      - symbol: simple_math
+        represents: predictable strategy
+      - symbol: confidence
+        represents: clarity from simplicity
+
+  charts_graphs:
+    recommended:
+      - personalized_income_projection
+      - before_after_complexity_comparison
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I have all this data but no confidence"
+      - "Everyone tells me something different"
+      - "I'm stuck in analysis paralysis"
+    aspiration_language:
+      - "I want the math to tell one clear story"
+      - "I want elegant simplicity"
+      - "I want to make a decision with confidence"
+    decision_triggers:
+      - "Show me the numbers"
+      - "Let's simplify this"
+      - "I need clarity, not more complexity"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Myth_vs_Reality
+    modal_urgency_language:
+      - "Mark didn't lack information — he lacked clarity."
+      - "Optimization beats speculation."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - tool_result_page
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how the numbers simplify."
+    primary_cta:
+      - "Let's simplify your numbers."
+    urgency_trigger:
+      - "Optimization beats speculation."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - personalized_income_projection
+    interactive_tools:
+      - strategy_comparison_tool
+    downloadable_assets:
+      - simplified_planning_guide
+    webinar_integration:
+      - strategy_clarity_webinar
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Mark didn't lack information — he lacked clarity."
+    - "The math finally told one story."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null

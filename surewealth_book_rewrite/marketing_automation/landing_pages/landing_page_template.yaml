@@ -1,0 +1,61 @@
+# Landing Page Template
+# For AI-generated landing pages from book content
+
+landing_page:
+  id: LANDING_PAGE_ID
+  source_chapter: chapter_XX
+  source_content: "Content excerpt or summary"
+  
+  structure:
+    hero_section:
+      headline: "Emotional, benefit-focused headline"
+      subheadline: "Supporting statement"
+      cta_button: "Primary CTA text"
+      background_image: "optional"
+    
+    problem_section:
+      headline: "Problem statement"
+      pain_points: []
+      emotional_triggers: []
+    
+    solution_section:
+      headline: "Solution preview"
+      benefits: []
+      proof_points: []
+    
+    calculator_section:
+      tool_id: "calculator_id"
+      headline: "Get your personalized number"
+      description: "What they'll learn"
+      calculator_embed: true
+    
+    social_proof:
+      testimonials: []
+      case_studies: []
+      statistics: []
+    
+    final_cta:
+      headline: "Urgency or benefit statement"
+      cta_button: "Book your call"
+      secondary_cta: "Download white paper"
+  
+  conversion_elements:
+    email_capture: true
+    calculator_completion: true
+    booking_integration: true
+    white_paper_download: true
+  
+  tracking:
+    source: "book"
+    chapter: chapter_XX
+    campaign_id: null
+    utm_parameters:
+      utm_source: "book"
+      utm_medium: "qr_code"
+      utm_campaign: "{campaign_id}"
+  
+  seo:
+    title: "SEO-optimized title"
+    meta_description: "Compelling meta description"
+    keywords: []
+

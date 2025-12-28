@@ -1,0 +1,69 @@
+# Linguistic Patterns
+# Sentence structures and persuasive patterns for consistent content generation
+
+linguistic_patterns:
+  sentence_structures:
+    short_punchy:
+      description: "Short, direct statements for impact"
+      example: "Hope is not a strategy."
+      usage: "Opening hooks, key points, CTAs"
+    
+    rhetorical_questions:
+      description: "Questions that engage and create curiosity"
+      example: "What if the problem isn't how much you're saving — but what's quietly draining it?"
+      usage: "Headlines, transitions, engagement points"
+    
+    contrast_pairs:
+      description: "Before/after, traditional/alternative comparisons"
+      example: "Gone are the days of third parties managing your money. With SureWealth Solutions, you are in charge."
+      usage: "Problem-solution sections, differentiation"
+    
+    direct_address:
+      description: "Speaking directly to the reader"
+      example: "You are in charge of your financial security."
+      usage: "Empowerment sections, CTAs"
+  
+  persuasive_structures:
+    PAS:
+      name: "Problem-Agitate-Solve"
+      description: "Identify problem, agitate consequences, present solution"
+      structure:
+        - problem: "Traditional planning leaves you at the mercy of markets"
+        - agitate: "What happens when the market crashes at the wrong time?"
+        - solve: "The SureWealth Way provides guaranteed strategies"
+      usage: "Blog posts, email sequences, landing pages"
+    
+    Before_After_Bridge:
+      name: "Before-After-Bridge"
+      description: "Show current state, desired state, how to get there"
+      structure:
+        - before: "Uncertainty, market dependence, tax drag"
+        - after: "Confidence, control, tax efficiency"
+        - bridge: "The SureWealth Way"
+      usage: "Case studies, transformation stories"
+    
+    Myth_vs_Reality:
+      name: "Myth vs. Reality"
+      description: "Challenge conventional wisdom with facts"
+      structure:
+        - myth: "401(k) is enough for retirement"
+        - reality: "401(k) leaves you vulnerable to market timing"
+        - truth: "The SureWealth Way provides guaranteed income"
+      usage: "Educational content, objection handling"
+  
+  modal_urgency_language:
+    time_based:
+      - "Every year you wait, taxes compound"
+      - "The cost of waiting is usually invisible… until it isn't"
+      - "Don't wait until it's too late"
+    
+    opportunity_based:
+      - "Only 6 strategy calls available this month"
+      - "Tax deadlines approaching"
+      - "Limited consultation slots"
+    
+    consequence_based:
+      - "Every year the leak stays open, it compounds"
+      - "Claiming wrong could cost you 5 figures"
+      - "Without a plan, the state decides"
+

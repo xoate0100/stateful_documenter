@@ -1,0 +1,549 @@
+Petrakis - Review – 2024/11/11 15:54 CST – Transcript
+Attendees
+Andrew Daniels, pat Petrakis, pat Petrakis's Presentation
+Transcript
+pat Petrakis: 
+pat Petrakis: just join Okay, I'm gonna hop off the phone. I'll get on the call that Okay, No, hang on.
+Andrew Daniels: 
+Andrew Daniels: All right, we got sound.
+pat Petrakis: I would have sound except that my speakers I need to Hang on.
+Andrew Daniels: Okay, I can hear you.
+pat Petrakis: Now I can hear myself.
+Andrew Daniels: Okay, perfect. Here we go.
+pat Petrakis: All right.
+Andrew Daniels: Okay, so this is about let's see your TSP,…
+pat Petrakis: Howdy. Yes.
+Andrew Daniels: So that's the one we had to wait 30 days to get out. Yeah. Right.
+pat Petrakis: But I forgot to do anything.
+Andrew Daniels: How much is in there still?
+pat Petrakis: About 37,000.
+Andrew Daniels: And that is the Roth portion, right? No,…
+pat Petrakis: Let me just double check here. sorry.
+Andrew Daniels: that's okay. I just want to make sure I got the right numbers going on here.
+pat Petrakis: Plan details. Okay. investments.
+Andrew Daniels: 
+pat Petrakis: So, crazy enough, I can't tell. Okay. I'm gonna share my screen here.
+Andrew Daniels: No worries.
+Andrew Daniels: They don't ever want you to know…
+pat Petrakis: …
+Andrew Daniels: how much you actually got pre-tax.
+pat Petrakis: I just can't tell if it's the Roth or not. …
+Andrew Daniels: Yeah, I might be able to look at our records and see which one we did before. And of course, I have to call Directed IRA and get my backend access back. I had to change my email and…
+pat Petrakis: yeah. …
+Andrew Daniels: I have to wait. It's a holiday, so wait until …
+pat Petrakis: I forgot it's a holiday today, Okay. Hey, so let's see. I'm looking for share screen.
+Andrew Daniels: hold on. let me make sure you are allowed.
+pat Petrakis: present That's what it is.
+Andrew Daniels: Yep, that should be it.
+pat Petrakis: And entire screen window.
+Andrew Daniels: 
+pat Petrakis: I'll do the entire screen and share. Okay.
+Andrew Daniels: There it goes.
+Andrew Daniels: Holy tabs.
+pat Petrakis: What's happened?
+Andrew Daniels: You got to get off that tab real fast.
+pat Petrakis: Let me get to this tab there.
+Andrew Daniels: There we go.
+pat Petrakis: Can you see that?
+pat Petrakis: What was that, Andy? Okay.
+Andrew Daniels: Yes. Yeah.
+Andrew Daniels: They got lost in the mirror there.
+pat Petrakis: Okay. I don't …
+Andrew Daniels: Yeah.
+pat Petrakis: that's what that was. Okay. I didn't know how to do it.
+Andrew Daniels: Is there a statement?
+pat Petrakis: Okay. No.
+Andrew Daniels: Is there any kind of a statement? there's not.
+pat Petrakis: The only way I can get a statement is to have them send it to me and…
+Andrew Daniels: What is it?
+pat Petrakis: …
+Andrew Daniels: 
+Andrew Daniels: Go to …
+pat Petrakis: probably controvers I know.
+Andrew Daniels: there's the split withdraw. What happens if Just hover over the word Roth. amount you've contributed. that's super helpful. Jeez Louise.
+pat Petrakis: There's got to be that.
+Andrew Daniels: Go up a little bit further. Go up and see that menu on the top Keep going up. Yep. Where it says more? What does that lead Go to your documents. There we go. Quarterly account statement for October 3rd. And go ahead and open that.
+Andrew Daniels: There's your statements, by the way. I found them.
+Andrew Daniels: 
+Andrew Daniels: Is that opening? it just says about go back to that tab. Just press control W.
+pat Petrakis: Nothing's happening.
+pat Petrakis: What does that do? Nothing.
+Andrew Daniels: Close into this tab. There up at the top on the URL bar, the little slider switches next to the API. Click that. Yep. And then go to site settings. There you go. scroll down here and…
+Andrew Daniels: and move all of those. If any of them scroll down. There's one block. You want to allow popups and redirects. It's a government website, so we can allow everything.
+pat Petrakis: That's fine.
+pat Petrakis: Right. Okay.
+Andrew Daniels: There's one. Yep. Yeah, that should be good. Okay. just press control W again.
+Andrew Daniels: Press F5.
+Andrew Daniels: 
+pat Petrakis: What's that five?
+pat Petrakis: How do you know these things? What does that five do?
+00:05:00
+Andrew Daniels: It's supposed to refresh a page.
+Andrew Daniels: It is at Not the very top. There we go. Because I grew up in the 90s when all you could do was control keyboard shortcuts. That's why. So, there's your account statement. See if it pulls up this time.
+Andrew Daniels: There we go. Okay. All right.
+pat Petrakis: Gosh,…
+pat Petrakis: look at you. Okay. …
+Andrew Daniels: So, that keep scrolling down.
+pat Petrakis: yada blah blah.
+Andrew Daniels: You probably have some in both.
+pat Petrakis: Here I go.
+Andrew Daniels: Okay. Keep scrolling down.
+pat Petrakis: I bet my Okay.
+Andrew Daniels: There we go. Balances. Traditional 11 Roth 1600 had to have been from the Roth.
+pat Petrakis: So, I must have taken the majority of really so the match was significant.
+Andrew Daniels: 
+Andrew Daniels: What's left is the traditional. Yeah. What's left is this is a quarterly statement from that generated at the end of September 30th.
+pat Petrakis: I should be putting more in. but my real balance is 32, but the Roth only says 16. So, Don't I need 30 thou?
+Andrew Daniels: So, you had almost six weeks of paychecks and stuff going into it, too. So, it's the traditional I think I do remember that, too. So, we're not It probably you won't be able to get exactly 32 out.
+pat Petrakis: Don't I need 25,000 for the brownstone?
+Andrew Daniels: 25 minimum. But you should have that by now. You'll have that. Yeah.
+Andrew Daniels: because even on the statement you've got 11475 and 15321. Press control W.
+pat Petrakis: This is the statement from September. But what Yeah. Did you see my other Where's my …
+Andrew Daniels: Actually, wait before you do that, hit the little download arrow up at the top right here. Yep. and then change that and label that TSP statement September 30th 2024 but Roth space There you go. That way you can find it later and then save it somewhere sensible because we're going to have to send that into directed IRA for them to receive the funds.
+pat Petrakis: okay. I have a directed IRA file somewhere here or…
+Andrew Daniels: 
+pat Petrakis: I think. All right. I'll just put it in.
+Andrew Daniels: If you hold on,…
+Andrew Daniels: that's a really small window. up. Stay in that scrolling box that you were in.
+pat Petrakis: There's my IR drive.
+Andrew Daniels: And scroll Keep going. okay. Perfect. There it is. I thought I saw it. All right. There we go.
+pat Petrakis: Okay, there's that.
+Andrew Daniels: So, we got that hit control W. There we go. and you wanted to get Yeah.
+pat Petrakis: No, what I really have is I don't want that. I want to count activity.
+Andrew Daniels: or balance history.
+Andrew Daniels: Account balance history. That will probably show you more. There we go. So, that was for 2015. Change the year.
+pat Petrakis: Okay. …
+Andrew Daniels: 
+Andrew Daniels: That's the savings account.
+pat Petrakis: yeah. I can't…
+Andrew Daniels: That's not the same thing, is it? yeah, it is.
+pat Petrakis: because that's what happened was they quit doing this form in 2021.
+Andrew Daniels: That's awful.
+pat Petrakis: So I know.
+Andrew Daniels: But they left the functionality up three years later.
+pat Petrakis: Yeah, I know. So I'm at 37.
+Andrew Daniels: Either way, do you remember how to do the withdrawal?
+pat Petrakis: Yeah, I have to go to this and I have to do withdrawals and rollovers out and then I have to do rollover out. Whoops. What happened to that? Here we go. …
+Andrew Daniels: No. Do they send the check to you or they'll send it straight to directed IRA?
+pat Petrakis: they should send it straight to directed IRA.
+Andrew Daniels: 
+Andrew Daniels: Perfect. Yeah,…
+pat Petrakis: How come that doesn't come in?
+Andrew Daniels: that's what we want into.
+pat Petrakis: Okay, there we go. Roll over money into the plan. Self-service roll over.
+Andrew Daniels: You want to go,…
+pat Petrakis: Oops. Yeah,…
+Andrew Daniels: right? Yeah.
+pat Petrakis: I want to go out of it. But it wouldn't let me. Nothing was coming up. here we go.
+Andrew Daniels: Yeah. No,…
+pat Petrakis: Y blah blah. get started. And I'm going to use my Roth balance.
+Andrew Daniels: you want to do the traditional.
+pat Petrakis: No, traditional balance. And it's 34,…
+Andrew Daniels: That makes more sense. Yeah. So, that because we're going to keep your contributions open. So, we're going to do this again in six months once it builds up. So, just do the traditional balance.
+00:10:00
+pat Petrakis: right? Yeah,…
+Andrew Daniels: We must have done the Roth last time.
+pat Petrakis: I think we did.
+Andrew Daniels: 
+Andrew Daniels: And then while you're doing that I'll look up the information on directed.
+Andrew Daniels: They should have that published.
+pat Petrakis: But…
+pat Petrakis: what I don't want to do is do I want to take all of that out.
+Andrew Daniels: You're going to roll it over on your payment choices. you do a balance. You could take the whole thing out. It doesn't matter. Your next paycheck's going to fund it again. Yeah, that one.
+Andrew Daniels: The first box. Yeah. And it's going to an IRA.
+pat Petrakis: or a Roth IRA.
+pat Petrakis: No, no, it's traditional.
+Andrew Daniels: We will look at conversions once you decide to retire.
+pat Petrakis: Traditional. Okay. Continue. yeah. so I've been getting all kinds of Tik Tok videos, right? I haven't really looked at them because there evidently are some rule changes on Roth conversions now to decrease
+Andrew Daniels: 
+pat Petrakis: how much it's going to cost me in taxes to take it out later. But I don't really have that much that I just don't know what's my best bet on taxes. Evidently there's attack chain. Mhm.
+Andrew Daniels: We want to…
+Andrew Daniels: but because of the level of your income, it's really not going to be worth it to look at it while you still have active income. We want to look at it as soon as your income drops. We'll probably do a partial conversion. If so, let's say you retire next year On June 30th, we're going to take the other six months worth of income that you would have had from your salary and we're probably going to convert that amount. That way, we don't change your income for the year.
+pat Petrakis: Right? Because taxes,…
+Andrew Daniels: 
+pat Petrakis: if I do it now, I'm going to have way too much income. it's going to kill me taxes.
+Andrew Daniels: Yeah.
+Andrew Daniels: I mean, yeah, you're already way up in the upper echelons of the tax brackets. There's not really a lot of room to do anything. you'll you'll just be paying extra money for no reason. Now, I do agree there is a time frame because that tax cut and…
+Andrew Daniels: jobs act expires in 24. Yeah.
+pat Petrakis: So that's this year,…
+pat Petrakis: but they might Yeah,…
+Andrew Daniels: 
+pat Petrakis: but they might change it. I mean, I'm in the income bracket that it might actually still be beneficial. it's the people that have way less income that are going to have problems.
+Andrew Daniels: It's the only I mean yeah I mean for whatever it is right you're probably going to make out abandoned…
+Andrew Daniels: if they get the house the senate and the president's seat we will take full advantage economically of their shenanigans while they have it.
+pat Petrakis: Okay. are you as sick as I am about although financially it's probably is going to be better for me? But I mean for grocery prices your kids are going to have to like No,…
+Andrew Daniels: Yeah. Yeah. …
+pat Petrakis: Right.
+Andrew Daniels: I was talking to a client yesterday and I'm like, this is why I have to go find all these weird loopholes that they write in for the billionaires. I have to go on a hunt for those because they can't just make them for the billionaires.
+Andrew Daniels: 
+Andrew Daniels: If they make the rule, it has to be applied equally, but they're just counting on nobody knowing where that rule lives. So, I have to go find all these weird loopholes and carveouts for freaking Jamaican hedge fund billionaire doiciled in, Cayman Islands, whatever, so that I can figure out what they're doing and then apply it on a small scale to maybe get 50 bucks off my grocery bill.
+pat Petrakis: That's ridiculous, isn't it? Listen, by the way,…
+Andrew Daniels: It's so sweet.
+pat Petrakis: Jean and…
+pat Petrakis: I routinely buy u a half a cow. I mean, I think we have one on order about every six months. So, if you guys ever need some meat, right, and you're coming down anyway.
+Andrew Daniels: My gosh.
+Andrew Daniels: I would totally buy into that. let me know and let's be coordinated about it this time because last time I know it was right.
+pat Petrakis: Yes, I know. It worked out last time, but it was not smooth,…
+Andrew Daniels: Yeah. I don't want to cost anybody anything extra.
+pat Petrakis: So, yeah.
+Andrew Daniels: 
+pat Petrakis: And it turned out it didn't, so tell me about this. Can I take everything out? Because in some things like my State Farm 529 fund, I can't completely empty it out or else it closes it.
+Andrew Daniels: Good, right?
+Andrew Daniels: I don't think it will here because you're an active employee, but take 34 even and just make it simple.
+pat Petrakis: Okay. Just to make sure.
+Andrew Daniels: Yeah. I mean, by the time your next paycheck hits, it's going to get funded with more money anyways.
+pat Petrakis: Yeah, that's true.
+00:15:00
+pat Petrakis: Okay, continue. What did I do? I put 340,000 too many.
+Andrew Daniels: I mean,…
+Andrew Daniels: let's see if they send it to you. Yeah.
+pat Petrakis: Turns out that doesn't work. Okay, make your rollover choices. I'm going to go to blah payment choices. pass. Okay.
+Andrew Daniels: 
+Andrew Daniels: That's true because that's fine. Yeah, you want to send cash between the two accounts.
+pat Petrakis: Amount to roll over 34 grand. I think I have to go back.
+Andrew Daniels: Wait, what?
+pat Petrakis: Hang on just a second. Let me just double check on what I did here.
+Andrew Daniels: Choose how much cash to you did that. So, continue.
+pat Petrakis: But should I have I'm gonna go back one more time here.
+Andrew Daniels: That's correct.
+pat Petrakis: Okay, there we go.
+Andrew Daniels: Choose how much cash to withdraw. So 34,000. You're going to do a specific amount, not 340. Hey, hey,…
+pat Petrakis: Back. What did I do? it's adding an extra zero. I didn't Okay.
+Andrew Daniels: So, you want 340,000. I Let me get to work on that. I'll be back.
+Andrew Daniels: 
+Andrew Daniels: See if I can figure that out.
+pat Petrakis: right.
+Andrew Daniels: Okay, that's so click all the cash available.
+pat Petrakis: So, that was right. all the cash available 34,000. Yeah. Why did they say it that way?
+Andrew Daniels: There you go.
+pat Petrakis: Why don't they just say amount?
+Andrew Daniels: I don't know. They're being weird. Perfect. That looks good.
+pat Petrakis: Wait, how come it said C net amount down there at the bottom?
+Andrew Daniels: Go back.
+pat Petrakis: Sorry. cash payment.
+Andrew Daniels: No, it's okay. Net cash payment,…
+pat Petrakis: Because it's rollover.
+Andrew Daniels: right? Wait.
+pat Petrakis: Okay, wait.
+Andrew Daniels: Hover over that. yeah. Cash you received. So, Go back one. I think I see what they're saying. Make your rollover choices. Your requested withdrawal 34 amount to roll over.
+Andrew Daniels: 
+Andrew Daniels: Choose how much money to roll over. You want to say all cash available. Just put 34,000 in the specific amount. That way it cannot be Do that.
+pat Petrakis: Wait.
+pat Petrakis: All right.
+Andrew Daniels: Roll over to 34,000. That's what we want.
+pat Petrakis: And The amount of cash I receive is none.
+Andrew Daniels: Correct. Yeah.
+pat Petrakis: Okay.
+Andrew Daniels: You don't want to receive any …
+pat Petrakis: Continue. Payment rights yada blah blah. Continue. Destination. And look, it already has it, right? Isn't that nice?
+Andrew Daniels: it does have that. but you will have to update the …
+pat Petrakis: But I can't be the Roth. I have to change the account number.
+Andrew Daniels: change That's okay.
+Andrew Daniels: 
+Andrew Daniels: Hopefully you still have that new account number. That's okay. You won't try to edit it. They'll just have you put in a note. But change the rollover type first to traditional. Yep. Do you have your account number?
+pat Petrakis: traditional and…
+pat Petrakis: then that's what I was trying to get on when I first called you and…
+Andrew Daniels: Yeah. …
+pat Petrakis: it wasn't letting me log in. So, hang on.
+Andrew Daniels: hold on. I think I texted it to you.
+pat Petrakis: I have it somewhere. on. I have it in my IRA notes. So, I don't have here we go. My director traditional account is 6320880.
+Andrew Daniels: 
+pat Petrakis: Whoops. But I want to just sign in and…
+Andrew Daniels: Yeah,…
+Andrew Daniels: I found it here.
+pat Petrakis: it's this weirdo. but let me get to this. I thought I had changed it to bit warden…
+pat Petrakis: but my god.
+Andrew Daniels: That's okay.
+Andrew Daniels: My records match what you just said. 6320880. That's what I have for that account number, too. you could just close out whatever tab you've opened up and…
+pat Petrakis: Right. I know that's okay.
+pat Petrakis: Is it? Okay. So, let me go back to that. Is this where we do a control Z up W thing?
+Andrew Daniels: it'll go back to the one you were at before.
+Andrew Daniels: 
+pat Petrakis: Okay. 63 2080.
+Andrew Daniels: 20 880.
+00:20:00
+Andrew Daniels: Yep. Yeah.
+Andrew Daniels: And I pulled that from when we did the Morgan Stanley transfer, so that was fine.
+pat Petrakis: Why do they have that blocked off?
+pat Petrakis: Right. Okay.
+Andrew Daniels: Go ahead and…
+pat Petrakis: And this is my tsp account.
+Andrew Daniels: save and return. Right.
+pat Petrakis: Okay.
+Andrew Daniels: So, go ahead and save and return. Never. There you go. All right. So, now it's going to directed IRA treasure pack 0880. That's correct.
+pat Petrakis: Now, and I don't want it mailed for sure.
+Andrew Daniels: Wait a second. Hold on. Go back up. That's a rollover mailed to you.
+pat Petrakis: No, no, no. this is…
+Andrew Daniels: Yeah. Yeah.
+pat Petrakis: what I would do. Do I want it mailed?
+Andrew Daniels: So, yeah.
+pat Petrakis: Why don't I want it mailed to institution?
+Andrew Daniels: 
+Andrew Daniels: go to the institution three and…
+pat Petrakis: This one.
+Andrew Daniels: send it straight to them. So click add.
+Andrew Daniels: Yeah. Click that radio button and click add and then we can send it straight to directed IRA and the institution name is directed trust company traditional 6320.
+pat Petrakis: That's not right.
+pat Petrakis: Then maybe that's what happened then.
+pat Petrakis: This is my TSP account, no. Okay. 6320 880. Right. 632.
+Andrew Daniels: 632088. Yeah.
+Andrew Daniels: Seven digits.
+pat Petrakis: My address.
+Andrew Daniels: United States their address is 3033 here.
+Andrew Daniels: 
+Andrew Daniels: I'll just type it in the North Central Avenue in Phoenix,…
+Andrew Daniels: Arizona. sweet 400 on the line too. We were right down the street from them when we were at Dery's office.
+pat Petrakis: Oops. Sweet.
+pat Petrakis: Really did not Okay.
+Andrew Daniels: Phoenix, Arizona. 85 012.
+pat Petrakis: Let me just make sure it's right. so I've got this directed trust traditional RA. How come I don't have that right on the other one on the first place on this one.
+Andrew Daniels: No thanks. Which one?
+Andrew Daniels: 
+pat Petrakis: And I don't want that. how do…
+Andrew Daniels: …
+pat Petrakis: how do I get Yes.
+Andrew Daniels: it doesn't matter because they mailed it to you anyways. We just want to have them mail it straight to directed trust company.
+Andrew Daniels: 30 central.
+pat Petrakis: Yes. All right.
+pat Petrakis: Directed trust company central app.
+Andrew Daniels: Yeah, that looks good. 85012. That's correct.
+pat Petrakis: Okay.
+Andrew Daniels: Scroll down.
+pat Petrakis: My god.
+Andrew Daniels: You could just Roll over mailed to you. Just have them send it to you and you'll have to forward it on to directed IRA. So, option number one.
+Andrew Daniels: 
+Andrew Daniels: Yeah, we don't need to change anything. We already Click cancel.
+Andrew Daniels: We already updated the account number. So that's okay. Number one, they'll just mail you a check and you can send it on. So go back up to the top. I mean, do you think it's secure to you? Otherwise, I mean, we got it in there. We can wait and do it next week. That's okay. I mean, it doesn't matter.
+pat Petrakis: Does that feel secure to you to have it mailed to me?
+pat Petrakis: I'll probably forget to do it.
+Andrew Daniels: You just have to Yeah,…
+pat Petrakis: That's probably what happened this time. I don't know. It'll be in here. All I have to do is click that and I'll just have it mailed to me.
+Andrew Daniels: I can follow up with you. I'll reach out to you next week and…
+pat Petrakis: Good. No,…
+Andrew Daniels: remind you to send it in. okay.
+pat Petrakis: I just …
+Andrew Daniels: So, hold on a second. All right.
+Andrew Daniels: 
+Andrew Daniels: cash rollover directed IRA coming to you,…
+pat Petrakis: no. It's better,…
+Andrew Daniels: but we have it written out that for the benefit of it's to directed IRA. you can extract me 10 days after November 13th. So, they're going to take two days to process it to log in and…
+pat Petrakis: I think, if I just remind myself next Monday. Yeah. Don't you think?
+Andrew Daniels: Yeah, that's fine.
+pat Petrakis: I feel like that'd be better.
+Andrew Daniels: I mean, it's going to be processing either way. So, yeah. right.
+pat Petrakis: But this way it just directly goes by wire, right? And it'll actually go faster.
+Andrew Daniels: I don't know. The only option is for them to mail it though.
+00:25:00
+Andrew Daniels: I don't think they have So, Scroll up. Let's Choose the destination. You can have Rollover mailed to institution. Scroll down. So, yeah,…
+pat Petrakis: S***.
+pat Petrakis: I think I'll just have it mailed to them.
+Andrew Daniels: you would have it's not been mailed to them yet.
+Andrew Daniels: 
+Andrew Daniels: So if you click continue,…
+pat Petrakis: I can't submit…
+Andrew Daniels: right, click continue so we can read that notice again and…
+pat Petrakis: until Okay.
+Andrew Daniels: just see what the time frame is. All right. Postal address was added or update within the seven calendar days. In order process available, Select a direct deposit account that's been on file or…
+Andrew Daniels: request your payment after the 7-day period. Great. This is perfect. Okay, so we've done everything we can for today. Let me put a calendar appointment on here. This is just convenient because today was a holiday and you had it off.
+pat Petrakis: Yeah, I'm gonna Yes,…
+pat Petrakis: it worked for me.
+Andrew Daniels: When's your next off day?
+pat Petrakis: I am off tomorrow and then I work Wednesday, Thursday night and then Saturday night. no.
+Andrew Daniels: 
+pat Petrakis: I'm sorry. I work tomorrow, then I work Wednesday, Thursday night, and then I work Monday, Tuesday night, and then I work next weekend.
+Andrew Daniels: Monday and…
+Andrew Daniels: Tuesday night.
+pat Petrakis: Yeah. …
+Andrew Daniels: Okay. Right.
+pat Petrakis: I'll be available Monday morning. I'll probably have to do it Tuesday morning because it has to be more than seven days, right? Wait.
+Andrew Daniels: I'm going to guess they're not going to count today. So, one, two, three, four, five,…
+pat Petrakis: Okay, we'll make it on the 19th.
+Andrew Daniels: So, Tuesday is the time to do that.
+pat Petrakis: We'll put it.
+Andrew Daniels: But you work at night.
+pat Petrakis: Yeah, that's okay. as soon as I get home, I will do it. I'll put TSB transfer.
+Andrew Daniels: So that'll take some time to process. based on the game plan we lined out, that piece of it should go to one final home path.
+Andrew Daniels: 
+Andrew Daniels: The reason we wouldn't do brownstone is because we want to …
+pat Petrakis: It has to be …
+Andrew Daniels: yeah, we want to target brownstone at 10% and cap it. And you've already got that out out.
+pat Petrakis: Okay.
+Andrew Daniels: So, we're going to cap brownstone at 10% since home path is willing to securitize. Let's go there. 34,000 at 8% over the next five years is an additional 136 on top of that. So that 34 will be almost 50 by the time you need to access it and it will accumulate cash the whole time as well.
+pat Petrakis: Okay,…
+Andrew Daniels: So yeah, so I'll prep that and I won't even send it to you until next week once the transfer starts.
+pat Petrakis: that sounds great.
+Andrew Daniels: We don't need to do too many paperworks all at once.
+pat Petrakis: No, no.
+Andrew Daniels: So one thing at a time.
+Andrew Daniels: 
+Andrew Daniels: And…
+pat Petrakis: Why is so use this I use this and
+Andrew Daniels: the number one thing I can see is the big error here is if you're in transition time if you are switching to bit warden having Google password manager and bit warden you just have to be really careful about which one you update and…
+Andrew Daniels: if you update one you have to manually update otherwise you'll never know where the correct password is stored. And like I said, I don't care which one you use. I use Bit Warden because it can go on my iPhone and my Windows computer. It crosses the platforms.
+pat Petrakis: This is…
+pat Petrakis: what happened. Let's see. This is Google.
+Andrew Daniels: Yeah. Right.
+pat Petrakis: I'm gonna update that and then I'm going to get rid of it and I'll go with Bit Warden.
+Andrew Daniels: Right. Yeah.
+pat Petrakis: …
+Andrew Daniels: 
+Andrew Daniels: It might take you a couple months to groom through it, but then this is also a good time for you to delete any accounts that you're not using anymore.
+pat Petrakis: you know what? That's a really good idea.
+Andrew Daniels: You Yeah,…
+pat Petrakis: That is definitely true.
+Andrew Daniels: it's Yeah, there was what was it? The largest dump in history. Something like 10 billion passwords. So, you can pretty much assume that all of our s***'s all over the place for anybody…
+pat Petrakis: Yeah. Yeah,…
+Andrew Daniels: who wants it.
+pat Petrakis: no It's just a mess,…
+Andrew Daniels: Yeah. …
+pat Petrakis: isn't it? How come I don't have Bit Warden on my.
+Andrew Daniels: It's up at the top, right? You have that the little bitboard and…
+pat Petrakis: That No.
+Andrew Daniels: symbol. Nope. Come over to the left. Nope. It's the app icon directly next to the URL bar just to the right of the star.
+pat Petrakis: Okay.
+Andrew Daniels: That one.
+pat Petrakis: But it's …
+Andrew Daniels: And you're not logged in. Yeah.
+pat Petrakis: that's probably why.
+Andrew Daniels: 
+pat Petrakis: Come on. What's happening?
+Andrew Daniels: So basically I'm Yeah.
+00:30:00
+pat Petrakis: It's like my computer is blocked or something. Hey,…
+Andrew Daniels: It may have a timeout.
+pat Petrakis: how come my password how come my bit one doesn't stay logged in? I can't even hope not.
+Andrew Daniels: It may have a timeout setting on it. let me look at mine and I think there is a log out on you can tell it to unlock with biometrics. Unlock.
+Andrew Daniels: 
+Andrew Daniels: I don't know what that's about. It's weird. Are you in Microsoft Edge now? my god, Pat. Every There you go.
+pat Petrakis: I think I'm in Google. No, I don't know why.
+Andrew Daniels: You're in Go up Settings at the bottom Settings. Go to account security. And then to make it easier on yourself, does your computer have a Face ID or anything? Okay. Do unlock do Yeah,…
+pat Petrakis: But I do have a pen. I mean I can Okay.
+Andrew Daniels: do unlock with PIN on that and it'll have you set up a PIN number so that you can unlock really quick. Okay. And then the vault timeout,…
+pat Petrakis: …
+Andrew Daniels: I would do it on browser restart.
+pat Petrakis: that's a good idea.
+Andrew Daniels: And then it won't lock you out so much.
+pat Petrakis: Okay, that sounds good.
+Andrew Daniels: And that should be good. remember this is in the Edge browser. This is in Microsoft Edge.
+Andrew Daniels: This is not Google Chrome.
+pat Petrakis: Why am I on edge?
+Andrew Daniels: I don't know.
+pat Petrakis: My god.
+Andrew Daniels: You switched browsers and…
+Andrew Daniels: you got a 100 tabs open there, So, it looks like you're logged in on Chrome, though. There you go.
+pat Petrakis: I'm gonna help myself right now.
+pat Petrakis: That was my problem probably.
+Andrew Daniels: So, you are logged in on Chrome.
+pat Petrakis: What am I doing here? directed. I don't know.
+Andrew Daniels: Okay, hold on. What is that?
+Andrew Daniels: 
+Andrew Daniels: What is logindirected Close. Yeah,…
+pat Petrakis: But I'm going to change that might Wait a second. That might be.
+Andrew Daniels: that might have been your application. The correct is Close that for a second. Look, you have three different entries for the same one.
+pat Petrakis: That's Because I was trying to change my username, but my username is this big long thing. why can't I change it?
+Andrew Daniels: Okay. Maybe.
+pat Petrakis: I don't know. So, I should get rid of these because they're not right.
+Andrew Daniels: Don't get rid of him just yet. Try to log in with that one.
+pat Petrakis: Okay, let me get back to …
+Andrew Daniels: I'll show you something. go back. Okay, never mind.
+pat Petrakis: which one you want to go back to?
+Andrew Daniels: Go back. It's fine. Just go.
+pat Petrakis: this. Oops.
+Andrew Daniels: I was just going to show you if you have directed up from your vault.
+Andrew Daniels: 
+Andrew Daniels: Go and now that little box with the arrow,…
+pat Petrakis: Mhm. …
+Andrew Daniels: click on that little box with the arrow next to the one that you want to go to. So that gives us a clue. Click on the whole thing. just click on the name. It doesn't have a Go to edit and scroll down. New URI. So it has to have a URL to check against. It doesn't know that you're trying to log in to that website. That's why those aren't pulling up properly. So, that's part of your problem, why it should be automated is that URL has to be populated so it knows what you're trying to pull into. the one right above it. Go back to that list and…
+pat Petrakis: why do I have so many of What's love?
+Andrew Daniels: do the one that one. There you go. Yep. Okay.
+Andrew Daniels: 
+Andrew Daniels: So now if you hit the bit warden sign it doesn't show any put your curt here. I'll control L.
+pat Petrakis: I thought control C. Control L. What is control?
+Andrew Daniels: Yep. Crl L selects the entire URL.
+pat Petrakis: Wait, was all right.
+Andrew Daniels: So L there you go.
+Andrew Daniels: And then C. Now open up the Bit Warden entry.
+Andrew Daniels: 
+Andrew Daniels: undeclared. You're like hearing Paul.
+pat Petrakis: What was it?
+pat Petrakis: What happened to it? Okay, it's all right.
+Andrew Daniels: You're undeclared.
+pat Petrakis: What happened to that?
+Andrew Daniels: So go to directed.
+pat Petrakis: The scene.
+Andrew Daniels: No. Nope. You're there. You're good. Go back to Yep.
+pat Petrakis: To that.
+Andrew Daniels: You're good. And type in directed because it's not matching because that URL is not attached to the entry.
+pat Petrakis: Oops.
+Andrew Daniels: And then open that one. Click edit at the top right. There you go. and put a new URI and then click in there and press controlV. There we go. And save at the top.
+pat Petrakis: So, I hope that's the right password,…
+Andrew Daniels: There we go. before you click off of there,…
+pat Petrakis: though. …
+Andrew Daniels: go to close and press and Get into the other two. The peeper track is two and the track is 2 at Gmail. Put the URL into those two as well so that they all pull up.
+00:35:00
+pat Petrakis: All right.
+Andrew Daniels: And then once you figure out which one's the right one, delete the extra ones.
+pat Petrakis: Did I do that?
+Andrew Daniels: There you go. Save at the top. And the one with the email address at the bottom. Nope. Close.
+pat Petrakis: I didn't do that.
+Andrew Daniels: Look at the lefthand side. See how they have little web pages and…
+pat Petrakis: Yeah.
+Andrew Daniels: then the ones that don't have a little globe.
+pat Petrakis: Yeah. Got it.
+Andrew Daniels: But not that one…
+pat Petrakis: Got it.
+Andrew Daniels: because I don't know…
+pat Petrakis: No.
+Andrew Daniels: what directed Trust Co is. That was probably your application. That was the application.
+pat Petrakis: Right. Right.
+Andrew Daniels: 
+Andrew Daniels: That one.
+pat Petrakis: It's this one though.
+Andrew Daniels: So, when you're going in your Bit Warden, if you see any of those with the little globe, they don't have the URL on them. and that'll make it very difficult to All right. look at your little number box at the top. You see that? you have three entries for that website.
+pat Petrakis: Okay. It's going to tell me that.
+Andrew Daniels: Yes. Go ahead and…
+pat Petrakis: Let's see what Okay.
+Andrew Daniels: close that and then go back and get out of that. just click into the web page. You could just click on the web page. All go to the password and highlight the entire thing and right click and then go to bit warden,…
+pat Petrakis: That's hiding.
+Andrew Daniels: copy password, and pick the one that you think You think it's undeclared?
+pat Petrakis: Yeah. All right.
+Andrew Daniels: All right. Press controlV.
+Andrew Daniels: 
+pat Petrakis: Here we go. Andy, except get this out of the way.
+Andrew Daniels: I'll give it a shot.
+Andrew Daniels: So, That's okay. We'll clean this up. So, go back to your Bit Warden up at the top right here.
+Andrew Daniels: There we go. we don't need to do that yet. We're just going to figure out which one it is. …
+pat Petrakis: It's on my Google.
+pat Petrakis: I think here. Hang on. Let me just Yeah,…
+Andrew Daniels: it is. Yeah. See how you have two different password managers trying to throw stuff in there? That's going to be really confusing until you get that cleaned up.
+pat Petrakis: let's see if this is right.
+Andrew Daniels: And it locked you out, too. That's all right.
+pat Petrakis: F***. God dang.
+Andrew Daniels: I'll help I'll call them tomorrow.
+pat Petrakis: Are you kidding me?
+Andrew Daniels: Yeah, don't worry about it. I'll call them tomorrow and I'll get it unlocked. for now, just leave those where it's at. But this was good because now you understand that Google Chrome is trying to add passwords.
+Andrew Daniels: Bit Warden's trying to add passwords and you have to have that URL in there. Most of the time when you're updating your passwords, if you tell Bit Warden to save it,…
+Andrew Daniels: when the little popup comes up, it should add the URL automatically to it.
+pat Petrakis: Okay.
+pat Petrakis: So, I get that so what I should do is you'll call them will they Okay.
+Andrew Daniels: I'll call him and get him to unlock it.
+pat Petrakis: And then I will figure out the password.
+pat Petrakis: What I did was I forgot to put one symbol on the back of that. I think just them
+Andrew Daniels: Okay.
+Andrew Daniels: And yeah, soon as you get this transition switched over, your Bit Warden should go across all your devices, whether it's If it's an iPhone or a Windows, whatever, you should have one solution for all of it. And you should have randomly generated passwords, so you don't know any of them at all. And all of the URLs will match.
+Andrew Daniels: 
+Andrew Daniels: So if you get a fishing email from fac.k.com and…
+Andrew Daniels: it looks like facebook.com, that URL match won't pull up your random password that you don't know. And you're not allowed to even put passwords in sites that don't match. That's the real power of it.
+pat Petrakis: Yes. …
+pat Petrakis: that is right.
+Andrew Daniels: Yes. Just Yeah.
+pat Petrakis: So, I don't think Google does that. I't know. I don't know if Google does that or not, but anyway,…
+Andrew Daniels: 
+Andrew Daniels: Just anytime you run into password stuff,…
+pat Petrakis: very frustrating.
+Andrew Daniels: be really cautious and go slow and pay attention to which system you're operating out of, Chrome password manager or Bit Warden.
+pat Petrakis: All right. That's good advice.
+Andrew Daniels: Yeah, and it's just going to have to groom. And then the other thing I would do is as you go through those passwords, whenever you have time, it's no rush. If there's sites you don't use anymore, definitely delete those. Hey,
+Meeting ended after 00:39:41 ?
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+

@@ -1,0 +1,67 @@
+# Social Media Post Template
+# Structure for generating social posts from book content
+
+social_post:
+  platform: linkedin | twitter | facebook | instagram
+  length: 
+    linkedin: 125-3000
+    twitter: 50-280
+    facebook: 100-5000
+    instagram: 100-2200
+  
+  structure:
+    hook:
+      length: 10-20_words
+      purpose: "Grab attention immediately"
+      techniques:
+        - question
+        - bold_statement
+        - story_teaser
+        - statistic
+    
+    value:
+      length: 50-150_words
+      purpose: "Deliver core message"
+      elements:
+        - insight
+        - story_reference
+        - metaphor
+        - character_mention
+    
+    cta:
+      length: 5-15_words
+      purpose: "Drive action"
+      options:
+        - "What's your number?"
+        - "See where you stand"
+        - "Get your personalized score"
+        - "Let's run your numbers"
+        - "Scan to calculate"
+    
+    hashtags:
+      count: 3-5
+      types:
+        - topic_hashtags
+        - brand_hashtags
+        - community_hashtags
+  
+  emotional_triggers:
+    primary: curiosity | urgency | empathy | hope
+    secondary: fear_soft | relief | empowerment
+  
+  tool_integration:
+    qr_code:
+      enabled: true
+      placement: end_of_post
+      tool_id: null
+    link:
+      short_url: true
+      tracking: true
+      tool_id: null
+  
+  framework_references:
+    narratives: []
+    characters: []
+    tools: []
+    ctas: []
+

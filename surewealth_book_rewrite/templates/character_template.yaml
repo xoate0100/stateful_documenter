@@ -1,0 +1,57 @@
+# Character Profile Template
+# Use this template when creating new character profiles
+
+character:
+  id: CHARACTER_ID  # e.g., JOHN_SMITH
+  name: Full Name
+  type: composite_case_study | allegory_character | example_persona
+  first_appearance: chapter_XX
+  last_referenced: chapter_XX
+  
+  demographics:
+    age: null
+    marital_status: null
+    occupation: null
+    education: null
+    location: null  # optional
+    
+  financial_profile:
+    annual_income: null
+    savings: null
+    retirement_accounts: []
+    #   - type: 401k | ira | roth_ira | pension
+    #     balance: null
+    #     contribution_rate: null
+    home_equity: null
+    debt: null
+    other_assets: []
+    
+  emotional_profile:
+    primary_fears: []
+    aspirations: []
+    awareness_level: unaware | problem-aware | solution-aware | product-aware | most-aware
+    buyer_sophistication: low | medium | high
+    
+  narrative_arc:
+    # Track character's journey through chapters
+    # - chapter: chapter_XX
+    #   situation: Description of situation
+    #   financial_focus: What financial aspect is highlighted
+    #   emotional_state: Current emotional state
+    #   outcome: Result or lesson learned
+    
+  references:
+    # Track where character is mentioned
+    # - chapter_XX_line_YY: "Exact quote or context"
+    
+  associated_narratives:
+    # Which allegories/metaphors/case studies use this character
+    allegories: []
+    metaphors: []
+    case_studies: []
+    
+  associated_tools:
+    # Which tools/calculators are relevant for this character
+    - tool_id: null
+      context: null
+

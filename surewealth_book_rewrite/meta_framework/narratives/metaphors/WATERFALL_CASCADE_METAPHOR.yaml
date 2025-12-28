@@ -1,0 +1,69 @@
+# Waterfall/Cascade Metaphor
+# Debt paydown strategy - when one debt is paid, apply payment to next
+# Source: Transcript Analysis - Pat Petrakis - June 2024
+
+metaphor_id: WATERFALL_CASCADE_METAPHOR
+title: "Waterfall Debt Paydown Strategy"
+version: 1.0
+source: "Transcript Analysis - Pat Petrakis - June 2024"
+status: active
+
+description: |
+  When one debt is paid off, apply that payment to the next debt, creating a 
+  "waterfall" or "cascade" effect. Visual strategy that shows momentum and 
+  makes debt paydown clear.
+
+transcript_source:
+  - "Pat Petrakis - June 2024"
+  - "Multiple review calls"
+
+original_quote: |
+  "In August, I'm gonna pay off one of the other cars and then I'm gonna as 
+  you said Cascade or whatever that term is I take that payment towards the 
+  other part make sure I'll pay off the other car."
+  
+  "yes waterfall. Yeah. right"
+
+usage_context:
+  - Explaining debt paydown strategy
+  - Showing momentum in debt reduction
+  - Prioritizing which debt to pay first
+  - Creating visual understanding of strategy
+
+written_adaptation: |
+  Think of your debts like a waterfall. When you pay off the first debt, that 
+  payment doesn't disappear—it cascades down to the next debt. Then when that 
+  one is paid off, both payments cascade to the next one. Each payment you 
+  eliminate creates more momentum, like water flowing faster down a waterfall.
+
+psychological_impact:
+  - Creates visual of momentum
+  - Makes strategy clear and understandable
+  - Shows how small wins build into big wins
+  - Reduces overwhelm about multiple debts
+
+funnel_stage:
+  - mid_funnel: "Explain debt strategy"
+  - conversion: "Show debt elimination plan"
+
+persona_fit:
+  - all: "Works for all personas"
+  - engineer_retiree: "Visual, logical progression"
+
+emotional_state:
+  - overwhelm
+  - confusion
+  - hopelessness
+
+visual_elements:
+  - Waterfall diagram showing debts cascading
+  - Timeline showing debt elimination sequence
+  - Chart showing increasing payment amounts
+
+related_metaphors:
+  - None (unique strategy metaphor)
+
+cross_references:
+  - "meta_framework/language/mathematical_proof_patterns.yaml"
+  - "meta_framework/language/future_visioning_patterns.yaml"
+

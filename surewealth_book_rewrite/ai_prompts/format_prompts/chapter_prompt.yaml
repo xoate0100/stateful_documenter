@@ -1,0 +1,92 @@
+# Book Chapter Generation Prompt Template
+
+format: chapter
+length_range: 2000-5000_words
+
+structure:
+  opening:
+    hook: "Emotional or story-based hook"
+    context: "Set the stage"
+    emotional_state: "Starting emotion"
+  body:
+    sections: 3-5
+    narrative_elements: "Stories, allegories, case studies"
+    characters: "Character references"
+    tools: "Calculator/assessment mentions"
+    charts: "Visual element recommendations"
+  closing:
+    emotional_state: "Ending emotion"
+    cta: "Primary call to action"
+    tool_integration: "Embedded tool or QR code"
+
+emotional_arc:
+  start: "Initial emotional state"
+  journey: "Emotional progression through chapter"
+  end: "Target emotional state"
+  transition_language: "Use patterns from emotional_transitions.yaml"
+
+information_chunking:
+  max_concepts_per_section: 2
+  pause_indicators:
+    - "Let's pause here for a moment..."
+    - "Before we move on, let's make sure this is clear..."
+    - "Take a moment to process this..."
+    - "Here's what we've covered so far..."
+  visual_breaks:
+    - Charts after complex numbers
+    - Diagrams after process explanations
+    - Case studies after concepts
+  summary_sections:
+    - "Here's what we've covered so far..."
+    - "To recap..."
+    - "The key takeaway is..."
+
+pacing_patterns:
+  information_chunking:
+    max_paragraphs_before_break: 3
+    break_types: ["visual", "summary", "question", "case_study"]
+  confirmation_points:
+    frequency: "After every major concept"
+    format: "Rhetorical questions, summary statements, visual breaks"
+  transition_pacing:
+    fast: "For exciting/positive information"
+    moderate: "For standard explanations"
+    slow: "For complex or emotional topics"
+
+friction_prevention:
+  proactive_clarification:
+    - "You might be wondering..."
+    - "Let me clarify that..."
+    - "Here's what this means in plain English..."
+  after_complex_concepts:
+    - Simplified explanation
+    - Visual break
+    - Summary statement
+  large_numbers:
+    - Break down to daily/monthly amounts
+    - Use comparisons
+    - Provide context
+
+content_insertions:
+  - type: "chart | tool_link | illustration | worksheet"
+    location: "after_paragraph_X | end_of_chapter | sidebar"
+    element_id: "ELEMENT_ID"
+
+narrative_threads:
+  - "Running themes to weave in"
+  - "Cross-chapter continuity"
+
+example_prompt: |
+  Generate Chapter [NUMBER]: [TITLE] for the SureWealth book.
+  
+  Requirements:
+  - Length: [LENGTH] words
+  - Emotional arc: [START] → [END]
+  - Use narratives: [NARRATIVE_IDS]
+  - Reference characters: [CHARACTER_IDS]
+  - Include tools: [TOOL_IDS]
+  - Funnel stage: [STAGE]
+  - Awareness level: [LEVEL]
+  
+  Follow chapter template structure and maintain consistency with previous chapters.
+

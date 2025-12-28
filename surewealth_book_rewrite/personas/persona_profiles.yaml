@@ -1,0 +1,94 @@
+# Persona Profiles
+# Detailed persona definitions for content adaptation
+
+personas:
+  engineer_retiree:
+    name: "Engineer Retiree"
+    demographics:
+      age: 55-65
+      occupation: "Engineer, technical professional"
+      education: "College degree or higher"
+      income: "$100k-$200k"
+    
+    psychographics:
+      decision_style: "analytical, data-driven"
+      communication_preference: "charts, numbers, logic"
+      risk_tolerance: "calculated, methodical"
+      values: "precision, optimization, proof"
+    
+    voice_adaptation:
+      tone: "data-driven, calm logic"
+      emphasis: "charts, ROI, optimization"
+      language_level: "technical but accessible"
+      examples: "mathematical certainty, logical confidence"
+    
+    cta_angle: "Let's run your numbers"
+    emotional_triggers:
+      primary: "curiosity, need_for_proof"
+      secondary: "fear_of_being_wrong, desire_for_optimization"
+    
+    content_preferences:
+      formats: ["calculators", "charts", "case_studies_with_data"]
+      length: "detailed, comprehensive"
+      visuals: "charts, graphs, tables"
+  
+  faith_family_builder:
+    name: "Faith-Family Builder"
+    demographics:
+      age: 45-60
+      occupation: "Varied, often business owner"
+      education: "Some college or higher"
+      income: "$75k-$150k"
+    
+    psychographics:
+      decision_style: "values-driven, legacy-focused"
+      communication_preference: "stories, family impact"
+      risk_tolerance: "conservative, protective"
+      values: "family, legacy, stewardship, faith"
+    
+    voice_adaptation:
+      tone: "empathetic, legacy-driven"
+      emphasis: "Biblical stewardship, family protection"
+      language_level: "plainspoken, relatable"
+      examples: "protect what God entrusted you, family legacy"
+    
+    cta_angle: "Protect what God entrusted you"
+    emotional_triggers:
+      primary: "legacy_fear, family_protection"
+      secondary: "stewardship_responsibility, generational_impact"
+    
+    content_preferences:
+      formats: ["stories", "allegories", "family_case_studies"]
+      length: "moderate, story-driven"
+      visuals: "family imagery, legacy concepts"
+  
+  widow_caregiver:
+    name: "Widow/Caregiver"
+    demographics:
+      age: 60-75
+      occupation: "Retired or part-time"
+      education: "High school or some college"
+      income: "$50k-$100k"
+    
+    psychographics:
+      decision_style: "cautious, seeking guidance"
+      communication_preference: "simple, clear, safe"
+      risk_tolerance: "very low, security-focused"
+      values: "safety, simplicity, control, peace_of_mind"
+    
+    voice_adaptation:
+      tone: "soothing, clear, safe"
+      emphasis: "simplicity, control, security"
+      language_level: "very plainspoken, no jargon"
+      examples: "you don't have to do this alone, simple and safe"
+    
+    cta_angle: "You don't have to do this alone"
+    emotional_triggers:
+      primary: "fear_of_making_mistakes, need_for_guidance"
+      secondary: "overwhelm, desire_for_simplicity"
+    
+    content_preferences:
+      formats: ["simple_checklists", "step_by_step", "reassuring_stories"]
+      length: "short, digestible"
+      visuals: "simple diagrams, clear steps"
+

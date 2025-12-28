@@ -1,0 +1,85 @@
+# Confirmation Language Patterns
+# Patterns to ensure understanding (adapted from conversational "Does that make sense?")
+# Source: Transcript Analysis - ANDY_DANIELS_TRANSCRIPT_ANALYSIS.md
+
+version: 1.0
+source: "Transcript Analysis - 17 client service calls"
+purpose: "Ensure understanding and create safety for questions"
+
+confirmation_patterns:
+  written_adaptations:
+    - "Let me make sure this is clear..."
+    - "Here's what this means in plain English..."
+    - "To put it simply..."
+    - "In other words..."
+    - "Think of it this way..."
+    - "Let me clarify that..."
+    - "Here's what's actually happening..."
+  
+  rhetorical_questions:
+    - "Does this sound familiar?"
+    - "Can you see how this works?"
+    - "Makes sense, right?"
+    - "See the difference?"
+    - "Does that make sense?" (in conversational content like emails)
+    - "Does that follow?"
+    - "Are you okay with that?"
+    - "Right?" (tag question - use sparingly in written content)
+
+written_content_adaptation:
+  after_complex_explanations:
+    - "Let me make sure this is clear: [simplified version]..."
+    - "To put it simply: [simple explanation]..."
+    - "Here's what this means in plain English: [translation]..."
+  
+  transitions:
+    - "Think of it this way: [analogy]..."
+    - "In other words: [simplified version]..."
+    - "Here's what's actually happening: [explanation]..."
+  
+  rhetorical_questions:
+    - "Does this sound familiar? Many [persona] face this..."
+    - "Can you see how this works? [explanation]..."
+    - "Makes sense, right? [reinforcement]..."
+
+usage_guidelines:
+  when_to_use:
+    - After complex explanations
+    - Before moving to next concept
+    - In transitions
+    - After introducing new information
+    - When simplifying technical concepts
+  
+  emotional_states:
+    - confusion
+    - uncertainty
+    - processing
+  
+  funnel_stage:
+    - all: "Use throughout to ensure understanding"
+  
+  persona_fit:
+    - all: "Works for all personas"
+    - engineer_retiree: "Use with technical concepts"
+    - widow_caregiver: "Use frequently for clarity"
+
+examples_from_transcripts:
+  - transcript: "Multiple calls"
+    quote: "Does that make sense?"
+    frequency: "10+ times per call"
+    context: "Checking for understanding"
+  
+  - transcript: "Pat Petrakis - June 2024"
+    quote: "Does that follow?"
+    context: "Confirming understanding of concept"
+  
+  - transcript: "Multiple calls"
+    quote: "Right?" (tag question)
+    frequency: "50+ times per call"
+    context: "Building agreement and rapport"
+
+cross_references:
+  - "meta_framework/language/friction_resolution.yaml"
+  - "meta_framework/language/emotional_transitions.yaml"
+  - "ai_prompts/format_prompts/chapter_prompt.yaml"
+

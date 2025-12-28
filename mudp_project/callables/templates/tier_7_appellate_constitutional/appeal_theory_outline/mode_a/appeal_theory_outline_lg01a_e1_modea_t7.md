@@ -246,3 +246,5 @@ The trial court's factual findings were clearly erroneous because:
 
 **This is a template outline only. Actual appellate briefs must be drafted by licensed attorneys in accordance with applicable appellate rules, local rules, and legal requirements. This template is provided for planning and organizational purposes only and does not constitute legal advice.**
 
+
+

@@ -1,0 +1,58 @@
+# Chapter Metadata Template
+# Track all elements used in each chapter
+
+chapter:
+  number: XX
+  title: Chapter Title
+  status: draft | in_progress | finalized
+  
+  emotional_arc:
+    start: null  # Primary emotion at chapter start
+    end: null    # Primary emotion at chapter end
+    journey: []  # Emotional progression through chapter
+    
+  awareness_level:
+    target_start: null
+    target_end: null
+    
+  narrative_elements:
+    allegories: []  # IDs of allegories used
+    metaphors: []   # IDs of metaphors used
+    characters: []  # IDs of characters referenced
+    story_threads: []  # IDs of story threads woven in
+    case_studies: []   # IDs of case studies included
+    
+  tools_ctas:
+    embedded_tool: null  # Primary tool/calculator
+    tool_location: null  # Where in chapter
+    primary_cta: null
+    secondary_ctas: []
+    cta_framing: null  # How CTA is positioned
+    
+  content_insertions:
+    # Visual and interactive elements
+    # - type: chart | tool_link | illustration | worksheet
+    #   name: Element Name
+    #   location: after_paragraph_X | end_of_chapter | sidebar
+    #   description: null
+    
+  key_concepts:
+    # Financial concepts covered
+    # - concept: Concept Name
+    #   explanation_location: paragraph_X
+    #   associated_tool: tool_id
+    #   associated_character: character_id
+    
+  language_constraints:
+    tone: null
+    signature_phrases_used: []
+    banned_words_avoided: []
+    
+  conversion_elements:
+    emotional_trigger: null
+    curiosity_gap: null
+    proof_points: []
+    
+  word_count: null
+  reading_time_minutes: null
+

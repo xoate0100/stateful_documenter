@@ -1,0 +1,228 @@
+story_vault:
+  version: 1.0
+  purpose: >
+    Provide a stateful, atomic, reusable narrative system to ensure
+    consistent emotional persuasion, blue-ocean positioning, and
+    conversion optimization across all marketing outputs.
+  usage_rules:
+    - Do not reference external branded strategies or frameworks
+    - Focus on outcomes, emotions, and decisions — not mechanics
+    - Always preserve curiosity gaps
+    - Every story must end in an action bias toward immediate conversation
+
+  global_linguistic_rules:
+    preferred_language:
+      - plainspoken
+      - empathetic
+      - confident
+      - non-technical
+    sentence_style:
+      - short_paragraphs
+      - rhetorical_questions
+      - contrast_pairs
+    banned_language:
+      - guaranteed
+      - infinite banking
+      - bank on yourself
+      - market beating
+      - loophole
+    signature_phrases:
+      - "You’ve worked too hard to risk it now."
+      - "This isn’t about returns — it’s about control."
+      - "Hope is not a strategy."
+      - "The cost of waiting is usually invisible… until it isn’t."
+
+  stories:
+
+    - id: ALLEGORY_LEAKY_BUCKET
+      type: allegory
+      title: "The Leaky Bucket"
+      awareness_level: problem-aware
+      buyer_sophistication: medium
+      primary_theme: tax_drag
+      secondary_themes:
+        - inefficiency
+        - invisible_loss
+        - false_security
+
+      user_journey:
+        emotional_start_state:
+          - confident
+          - unaware
+        emotional_end_state:
+          - unsettled
+          - curious
+          - motivated_to_verify
+
+      pain_points:
+        - Paying more in taxes than expected
+        - Feeling like savings don’t grow fast enough
+        - Confusion about where money is leaking
+
+      dreams_aspirations:
+        - Keeping more of what they earn
+        - Predictable income
+        - Feeling smart and proactive
+
+      narrative_structure:
+        setup: >
+          A homeowner fills a bucket daily, unaware that a small crack
+          at the bottom quietly drains it overnight.
+        conflict: >
+          No matter how much water is added, the level never seems to rise.
+        realization: >
+          The issue was never the effort — it was the leak.
+        resolution: >
+          Fixing the crack changed everything, without adding more water.
+
+      metaphors_symbols:
+        bucket: lifetime wealth
+        leak: taxes and inefficiencies
+        water_added: savings and investments
+
+      charts_graphs:
+        recommended:
+          - lifetime_tax_drag_line_chart
+          - before_after_after_tax_income_table
+
+      linguistic_hooks:
+        opening_hooks:
+          - "What if the problem isn’t how much you’re saving — but what’s quietly draining it?"
+        transition_phrases:
+          - "Most people never see the leak."
+        closing_hooks:
+          - "Fixing the leak matters more than pouring faster."
+
+      call_to_actions:
+        soft_cta:
+          - "See where your money may be leaking."
+        primary_cta:
+          - "Run your personalized tax impact review."
+        urgency_trigger:
+          - "Every year the leak stays open, it compounds."
+
+      tool_integration:
+        recommended_tools:
+          - lifetime_tax_estimator
+        next_step_after_tool:
+          - strategy_call
+
+    - id: ALLEGORY_HOUSE_OF_CARDS
+      type: allegory
+      title: "The House of Cards Plan"
+      awareness_level: unaware_to_problem-aware
+      buyer_sophistication: low_to_medium
+      primary_theme: market_dependency
+      secondary_themes:
+        - fragility
+        - false_confidence
+        - sequence_risk
+
+      user_journey:
+        emotional_start_state:
+          - optimistic
+          - complacent
+        emotional_end_state:
+          - anxious
+          - alert
+          - seeking_stability
+
+      pain_points:
+        - Market volatility
+        - Fear of retirement timing
+        - Lack of income certainty
+
+      dreams_aspirations:
+        - Stability regardless of markets
+        - Sleep-at-night confidence
+        - Predictable lifestyle
+
+      narrative_structure:
+        setup: >
+          A beautiful house built quickly with impressive height.
+        conflict: >
+          A single strong gust threatens the entire structure.
+        realization: >
+          Strength wasn’t in height — it was in the foundation.
+        resolution: >
+          Rebuilding lower, stronger, and steadier brought peace of mind.
+
+      metaphors_symbols:
+        cards: market-dependent assets
+        wind: volatility and timing risk
+        foundation: income certainty
+
+      charts_graphs:
+        recommended:
+          - sequence_of_returns_visual
+          - income_floor_vs_market_chart
+
+      linguistic_hooks:
+        opening_hooks:
+          - "What happens if the market stumbles at the wrong time?"
+        closing_hooks:
+          - "Retirement shouldn’t depend on perfect timing."
+
+      call_to_actions:
+        soft_cta:
+          - "Stress-test your current plan."
+        primary_cta:
+          - "See how exposed your income really is."
+
+      tool_integration:
+        recommended_tools:
+          - retirement_risk_assessment
+        next_step_after_tool:
+          - discovery_call
+
+    - id: COMPOSITE_CLIENT_ENGINEER
+      type: composite_case_study
+      title: "Mark, the Engineer Who Wanted Proof"
+      awareness_level: solution-aware
+      buyer_sophistication: high
+      primary_theme: complexity_to_clarity
+
+      user_journey:
+        emotional_start_state:
+          - skeptical
+          - analytical
+        emotional_end_state:
+          - confident
+          - decisive
+
+      pain_points:
+        - Too many conflicting opinions
+        - Overly complex spreadsheets
+        - Paralysis by analysis
+
+      dreams_aspirations:
+        - Elegant simplicity
+        - Mathematical certainty
+        - Logical confidence
+
+      narrative_structure:
+        before: >
+          Mark had charts, forecasts, and models — but no confidence.
+        pivot: >
+          He realized optimization mattered less than predictability.
+        after: >
+          With fewer variables, his confidence increased dramatically.
+
+      linguistic_hooks:
+        opening_hooks:
+          - "Mark didn’t lack information — he lacked clarity."
+        credibility_hooks:
+          - "The math finally told one story."
+
+      call_to_actions:
+        primary_cta:
+          - "Let’s simplify your numbers."
+        framing:
+          - "Optimization beats speculation."
+
+      tool_integration:
+        recommended_tools:
+          - personalized_income_projection
+        next_step_after_tool:
+          - private_strategy_session
+

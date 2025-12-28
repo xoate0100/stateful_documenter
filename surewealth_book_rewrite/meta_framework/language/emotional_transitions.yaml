@@ -1,0 +1,117 @@
+# Emotional State Transition Language
+# Specific language patterns for moving readers through emotional states
+# Source: Transcript Analysis - 6-State Emotional Transition Model
+
+version: 1.0
+source: "Transcript Analysis - 17 client service calls"
+purpose: "Systematically move readers through emotional states"
+
+emotional_transitions:
+  fear_to_calm:
+    language_patterns:
+      - "This is normal. Many people feel this way."
+      - "You're not alone in this concern"
+      - "Let's look at the numbers—they tell a different story"
+      - "This happens to [target_group] regularly"
+      - "You're not the first person to [concern]"
+    written_adaptation:
+      - Opening paragraphs: "If you're feeling [fear], you're not alone..."
+      - Transitions: "Before we dive in, know this: [normalization]..."
+      - Case studies: "Many people feel [fear] about [situation]..."
+  
+  confusion_to_clarity:
+    language_patterns:
+      - "Let me simplify this..."
+      - "Think of it this way..."
+      - "Here's what's actually happening..."
+      - "To put it in plain English..."
+      - "Let me make sure this is clear..."
+    written_adaptation:
+      - After complex explanations: "Let me make sure this is clear: [simplified]..."
+      - Transitions: "Think of it this way: [analogy]..."
+      - Callout boxes: "Here's what this means in plain English..."
+  
+  shame_to_empowerment:
+    language_patterns:
+      - "This happens to everyone"
+      - "You're not a failure—you're human"
+      - "This is exactly why we plan for these situations"
+      - "You're not alone in [situation]"
+      - "This is normal, not a character flaw"
+    written_adaptation:
+      - Opening paragraphs: "This situation is more common than you think..."
+      - Case studies: "You're not the first person to [situation]..."
+      - Transitions: "This isn't a failure—it's an opportunity to..."
+  
+  overwhelm_to_control:
+    language_patterns:
+      - "You're in control here"
+      - "You decide [when/how]"
+      - "This gives you flexibility, not constraints"
+      - "You have options"
+      - "You're not trapped in [situation]"
+    written_adaptation:
+      - Feature descriptions: "You decide when to [action]..."
+      - Comparisons: "Unlike [traditional], you're in complete control..."
+      - CTAs: "You have the power to take control..."
+  
+  hopelessness_to_hope:
+    language_patterns:
+      - "You'll get through this"
+      - "This is temporary, not permanent"
+      - "In [timeframe], you'll be [positive_state]"
+      - "You have [time] to [recover/build/grow]"
+      - "This is a hiccup, it's a speed bump"
+    written_adaptation:
+      - Closing sections: "In [timeframe], you'll look back and see..."
+      - Case studies: "By [age], she had [achievement]..."
+      - Vision statements: "Imagine yourself [future_state]..."
+  
+  crisis_to_opportunity:
+    language_patterns:
+      - "This is exactly what [tool/strategy] was designed for"
+      - "This situation is why we [plan/prepare/build]"
+      - "This isn't a problem—it's an opportunity"
+      - "This is what it's supposed to be there for"
+    written_adaptation:
+      - Problem-solution sections: "This might seem like a crisis, but..."
+      - Transitions: "This isn't a problem—it's an opportunity to..."
+      - Case studies: "This situation is why we build [strategy]..."
+
+state_tracking:
+  initial_states:
+    - crisis
+    - confusion
+    - shame
+    - overwhelm
+    - hopelessness
+    - fear
+  
+  target_states:
+    - empowered_clarity
+    - calm_confidence
+    - hope
+    - control
+    - understanding
+
+usage_guidelines:
+  when_to_use:
+    - At section breaks
+    - In transitions between paragraphs
+    - In case study conclusions
+    - In chapter transitions
+  
+  emotional_states:
+    - Track current state
+    - Use appropriate transition language
+    - Plan transitions between states
+  
+  funnel_stage:
+    - all: "Use throughout to guide emotional journey"
+
+cross_references:
+  - "meta_framework/language/normalization_patterns.yaml"
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/language/future_visioning_patterns.yaml"
+  - "docs/book_emotional_journey.md"
+

@@ -1,0 +1,78 @@
+# Winning Templates Vault
+# High-performing content examples for AI to learn from
+
+winning_templates:
+  social_posts:
+    high_performing:
+      - platform: linkedin
+        hook: "What if the problem isn't how much you're saving — but what's quietly draining it?"
+        value: "Most people never see the leak. They focus on adding more water to the bucket, never noticing the crack at the bottom. But fixing the leak matters more than pouring faster."
+        cta: "See where your money may be leaking →"
+        engagement_rate: "4.2%"
+        conversion_rate: "2.1%"
+      
+      - platform: twitter
+        hook: "Retirement shouldn't depend on perfect timing."
+        value: "What happens if the market stumbles at the wrong time? Your plan should be built on math, not hope."
+        cta: "Stress-test your plan →"
+        engagement_rate: "3.8%"
+        conversion_rate: "1.9%"
+  
+  email_subjects:
+    high_converting:
+      - subject: "Your Tax Impact Results"
+        open_rate: "42%"
+        click_rate: "18%"
+        type: "tool_result"
+      
+      - subject: "The Leaky Bucket: What You're Missing"
+        open_rate: "38%"
+        click_rate: "15%"
+        type: "nurture"
+      
+      - subject: "Is Your Portfolio Built on Sand?"
+        open_rate: "45%"
+        click_rate: "22%"
+        type: "problem_awareness"
+      
+      - subject: "Let's Run Your Numbers, Privately"
+        open_rate: "35%"
+        click_rate: "28%"
+        type: "conversion"
+  
+  landing_pages:
+    high_converting:
+      - page_id: tax_calculator_landing
+        headline: "What's Your Lifetime Tax Impact?"
+        conversion_rate: "12%"
+        elements:
+          - calculator_embed
+          - social_proof
+          - urgency_cta
+      
+      - page_id: retirement_risk_landing
+        headline: "Is Your Retirement Plan Built on Sand?"
+        conversion_rate: "15%"
+        elements:
+          - assessment_embed
+          - problem_statement
+          - solution_preview
+  
+  ctas:
+    best_performing:
+      - cta: "Let's run your numbers, privately"
+        conversion_rate: "8.5%"
+        context: "calculator_result_page"
+      
+      - cta: "Stress-test your current plan"
+        conversion_rate: "6.2%"
+        context: "email_nurture"
+      
+      - cta: "Get your personalized Retirement Strategy Call"
+        conversion_rate: "12.3%"
+        context: "book_chapter_end"
+      
+      - cta: "What's your conversion sweet spot?"
+        conversion_rate: "5.8%"
+        context: "blog_post"
+

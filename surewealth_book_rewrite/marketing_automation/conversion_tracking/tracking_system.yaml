@@ -1,0 +1,79 @@
+# Conversion Tracking System
+# Tracks all touchpoints and conversions across the marketing funnel
+
+tracking_system:
+  touchpoints:
+    book:
+      qr_scans: true
+      page_views: false  # Physical book
+      tool_links: true
+    digital:
+      landing_pages: true
+      calculators: true
+      email_clicks: true
+      social_clicks: true
+  
+  events:
+    - event: qr_scan
+      properties:
+        - source: "book"
+        - chapter: number
+        - page: number
+        - tool_id: string
+        - timestamp: datetime
+    - event: tool_start
+      properties:
+        - tool_id: string
+        - source: string
+        - timestamp: datetime
+    - event: tool_complete
+      properties:
+        - tool_id: string
+        - result_data: object
+        - email_captured: boolean
+        - timestamp: datetime
+    - event: email_capture
+      properties:
+        - source: string
+        - tool_id: string
+        - chapter: number
+        - timestamp: datetime
+    - event: booking_created
+      properties:
+        - source: string
+        - funnel_stage: string
+        - persona: string
+        - timestamp: datetime
+    - event: white_paper_download
+      properties:
+        - source: string
+        - resource_id: string
+        - email: string
+        - timestamp: datetime
+  
+  funnel_stages:
+    - stage: awareness
+      events: [qr_scan, landing_page_view]
+    - stage: interest
+      events: [tool_start, email_capture]
+    - stage: consideration
+      events: [tool_complete, white_paper_download]
+    - stage: conversion
+      events: [booking_created]
+  
+  analytics_providers:
+    google_analytics:
+      enabled: true
+      tracking_id: "UA-XXXXX-X"
+      events: all
+    custom:
+      enabled: true
+      endpoint: "/api/track"
+      events: all
+  
+  attribution:
+    first_touch: true
+    last_touch: true
+    multi_touch: true
+    attribution_window: 30_days
+

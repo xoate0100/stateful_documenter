@@ -1,0 +1,92 @@
+# Empowerment Language Patterns
+# Patterns to emphasize client control and flexibility
+# Source: Transcript Analysis - ANDY_DANIELS_TRANSCRIPT_ANALYSIS.md
+
+version: 1.0
+source: "Transcript Analysis - 17 client service calls"
+purpose: "Restore sense of agency and control"
+
+empowerment_patterns:
+  control_language:
+    - "You decide [when/how/where]"
+    - "You're in control of [action]"
+    - "It's your choice to [action]"
+    - "You have complete flexibility to [action]"
+    - "You are in control of you will control the paybacks, you will control the schedule"
+    - "You will control the paybacks, you will control the schedule"
+    - "It's all gonna be on your schedule"
+  
+  flexibility_language:
+    - "You can [action] at any time"
+    - "There's no penalty for [action]"
+    - "You're not locked into [constraint]"
+    - "You can change your mind anytime"
+    - "Nobody's gonna question you on that, nobody's going to report to the credit bureaus"
+    - "You can take you can take all of this cash and it is not going to be reportable to the IRS"
+  
+  agency_language:
+    - "You're not trapped in [situation]"
+    - "You have options"
+    - "You have the power to [action]"
+    - "You're in the driver's seat"
+    - "This gives you choices, not constraints"
+    - "You have the flexibility to [action]"
+
+written_content_adaptation:
+  feature_descriptions:
+    - "You decide when to access your funds..."
+    - "You're in complete control of [action]..."
+    - "Unlike [traditional option], you have the flexibility to..."
+  
+  comparisons:
+    - "Unlike [traditional option], you're in complete control..."
+    - "While [traditional option] locks you in, this gives you flexibility..."
+    - "Traditional [option] limits your choices. This gives you options..."
+  
+  ctas:
+    - "You have the power to take control of your financial future..."
+    - "You decide when you're ready to [action]..."
+    - "The choice is yours..."
+
+usage_guidelines:
+  when_to_use:
+    - When client feels trapped
+    - When client needs to feel in control
+    - When explaining features
+    - In comparisons with traditional options
+    - In CTAs
+  
+  emotional_states:
+    - trapped
+    - powerless
+    - constrained
+    - victim_mentality
+  
+  funnel_stage:
+    - mid_funnel: "Show control and flexibility"
+    - conversion: "Empower decision-making"
+  
+  persona_fit:
+    - all: "Works for all personas"
+    - engineer_retiree: "Emphasize control and optimization"
+    - faith_family_builder: "Emphasize stewardship and control"
+    - widow_caregiver: "Emphasize safety and control"
+
+examples_from_transcripts:
+  - transcript: "Oct 10 - Dustin"
+    quote: "You are in control of you will control the paybacks, you will control the schedule"
+    context: "Restoring sense of control"
+  
+  - transcript: "Oct 10 - Dustin"
+    quote: "Nobody's gonna question you on that, nobody's going to report to the credit bureaus"
+    context: "Emphasizing flexibility and privacy"
+  
+  - transcript: "Oct 10 - Dustin"
+    quote: "It's all gonna be on your schedule"
+    context: "Client controls timing"
+
+cross_references:
+  - "meta_framework/language/future_visioning_patterns.yaml"
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/tools_ctas/tools_index.yaml"
+

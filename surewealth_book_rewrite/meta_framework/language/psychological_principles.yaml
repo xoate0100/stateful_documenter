@@ -1,0 +1,133 @@
+# Psychological Principles
+# 8 proven principles from transcript analysis
+# Source: Transcript Analysis - Comprehensive Psychological Principles
+
+version: 1.0
+source: "Transcript Analysis - 17 client service calls"
+purpose: "Apply proven psychological principles to written content"
+
+psychological_principles:
+  validation_before_correction:
+    pattern: "I understand [concern], and here's what's actually happening..."
+    written_adaptation: "You might be thinking [concern]. That's completely understandable. Here's what's actually happening..."
+    usage:
+      - Before correcting misconceptions
+      - When addressing concerns
+      - In problem-solution sections
+    examples:
+      - "You might be thinking this sounds too good to be true. That's completely understandable. Here's what's actually happening..."
+      - "If you're worried about [concern], you're not alone. Here's what the numbers actually show..."
+  
+  comparison_creates_clarity:
+    pattern: "While others [X], you get [Y]"
+    written_adaptation: "Traditional planning limits you to [X], but this strategy allows [Y]..."
+    usage:
+      - When explaining advantages
+      - In comparisons
+      - When showing value
+    examples:
+      - "While traditional planning limits you to 4% withdrawals, this strategy allows 8%..."
+      - "Your peers think they need $1 million to generate $40,000 in retirement. But with this strategy, you only need $500,000..."
+  
+  future_visioning_with_specificity:
+    pattern: "By [age], you'll have [achievement]"
+    written_adaptation: "Picture yourself at [age] with [achievement]..."
+    usage:
+      - In closing sections
+      - In case studies
+      - In vision statements
+    examples:
+      - "By age 65, you'll have accumulated $2 million..."
+      - "Picture yourself at retirement with complete control over your income..."
+  
+  problem_reframing_as_opportunity:
+    pattern: "This isn't a problem—it's an opportunity"
+    written_adaptation: "This might seem like a setback, but it's actually an opportunity to..."
+    usage:
+      - When reframing challenges
+      - In problem-solution sections
+      - After explaining problems
+    examples:
+      - "This might seem like a crisis, but it's exactly what [strategy] was designed for..."
+      - "What looks like a setback is actually a chance to [benefit]..."
+  
+  mathematical_proof_overcomes_emotion:
+    pattern: "Let's look at the numbers"
+    written_adaptation: "The math tells a different story. Let's break it down..."
+    usage:
+      - When emotion is clouding judgment
+      - When showing value
+      - In comparisons
+    examples:
+      - "The numbers tell a different story: [calculation]..."
+      - "Let's break that down: $12,000 per year is $33 per day..."
+  
+  progress_celebration:
+    pattern: "You've done a great job"
+    written_adaptation: "You've made incredible progress..."
+    usage:
+      - When showing growth
+      - In case studies
+      - After explaining progress
+    examples:
+      - "Look at that growth: from $145,000 to $172,000 in just [timeframe]..."
+      - "You've made incredible progress toward your goals..."
+  
+  options_not_commands:
+    pattern: "You decide [when/how]"
+    written_adaptation: "You have options. You can [option 1] or [option 2]..."
+    usage:
+      - When presenting strategies
+      - In comparisons
+      - In CTAs
+    examples:
+      - "You have options. You can [action 1] or [action 2]..."
+      - "The choice is yours. You decide when you're ready..."
+  
+  humor_and_rapport_building:
+    pattern: "This technology is going to be the end of us" (light, self-deprecating)
+    written_adaptation: "Use light, appropriate humor when context allows"
+    usage:
+      - Sparingly in written content
+      - More in social posts and emails
+      - Never at expense of client
+    examples:
+      - "I love two-year-olds. Even their tantrums are cute" (personal touch)
+      - Light observations when appropriate
+
+written_content_application:
+  opening_paragraphs:
+    - Use validation before correction
+    - Use normalization patterns
+    - Set emotional safety
+  
+  body_sections:
+    - Use comparison creates clarity
+    - Use mathematical proof
+    - Use problem reframing
+    - Celebrate progress
+  
+  closing_sections:
+    - Use future visioning
+    - Use options not commands
+    - Reinforce empowerment
+
+usage_guidelines:
+  when_to_use:
+    - Throughout content to guide emotional journey
+    - Adapt based on current emotional state
+    - Match to persona preferences
+  
+  emotional_states:
+    - Track state and apply appropriate principles
+    - Plan transitions between states
+  
+  funnel_stage:
+    - all: "Use throughout funnel"
+
+cross_references:
+  - "meta_framework/language/normalization_patterns.yaml"
+  - "meta_framework/language/reframing_patterns.yaml"
+  - "meta_framework/language/mathematical_proof_patterns.yaml"
+  - "meta_framework/language/empowerment_patterns.yaml"
+
