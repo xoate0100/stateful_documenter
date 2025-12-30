@@ -1,0 +1,80 @@
+content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_6111cc04
+title: Estate Planning and Legacy Protection
+format: chapter
+platform: book
+funnel_stage: mid_funnel
+user_intent: comparing
+persona: widow_caregiver
+topic: estate_planning_and_legacy_protection
+tags:
+- estate_planning_and_legacy_protection
+- mid_funnel
+- widow_caregiver
+emotional_goal: confidence
+narrative_used: null
+signature_phrases: []
+cta_type: soft_cta
+cta_count: 3
+permission_frames_used: 0
+word_count: 1264
+created_date: '2025-12-28T02:46:10.740850'
+status: published
+performance:
+  views: null
+  engagement: null
+  conversions: null
+related_content: []
+emotional_state: confidence
+character_ids: []
+chapter_num: 4
+validation:
+  is_valid: false
+  book_validation:
+    is_valid: true
+    issues: []
+    warnings: []
+    auto_fixes: []
+  content_validation:
+    is_valid: false
+    issues:
+    - Too many CTAs (3) for mid_funnel. Should be 1 soft CTA.
+    - Story resolution is vague - provide concrete details and outcomes
+    warnings:
+    - No permission frames used - consider adding one for engagement
+    - Consider rotating signature phrases to avoid repetition
+    - Many numbers are too round - consider using ranges or more realistic specifics
+  all_issues:
+  - Too many CTAs (3) for mid_funnel. Should be 1 soft CTA.
+  - Story resolution is vague - provide concrete details and outcomes
+  all_warnings:
+  - No permission frames used - consider adding one for engagement
+  - Consider rotating signature phrases to avoid repetition
+  - Many numbers are too round - consider using ranges or more realistic specifics
+  checklist:
+    structure: true
+    permission_frames: true
+    signature_phrases: true
+    ctas: false
+    story_resolution: false
+    dialogue: true
+    numbers: false
+    metadata: true
+  checkpoint:
+    chapter_num: 4
+    timestamp: '2025-12-28T02:46:11.416561'
+    metrics:
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\mid_funnel\book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_6111cc04.md

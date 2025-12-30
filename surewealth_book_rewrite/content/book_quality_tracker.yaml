@@ -1,0 +1,411 @@
+book_quality:
+  chapters:
+    chapter_1: &id001
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    chapter_2: &id002
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    chapter_3: &id003
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    chapter_4: &id004
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    chapter_5: &id005
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    chapter_6: &id006
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+  checkpoints:
+  - chapter_num: 1
+    timestamp: '2025-12-28T00:23:20.975183'
+    metrics: &id007
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\top_of_funnel\book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_0d808a3d.md
+  - chapter_num: 1
+    timestamp: '2025-12-28T00:23:51.873201'
+    metrics: &id008
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\top_of_funnel\book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_92b59488.md
+  - chapter_num: 1
+    timestamp: '2025-12-28T00:25:01.277818'
+    metrics: &id009
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\top_of_funnel\book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_ae7a0b18.md
+  - chapter_num: 1
+    timestamp: '2025-12-28T00:26:07.176226'
+    metrics: &id010
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\top_of_funnel\book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_40bdb839.md
+  - chapter_num: 1
+    timestamp: '2025-12-28T00:27:38.814408'
+    metrics: &id011
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\top_of_funnel\book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_869f5009.md
+  - chapter_num: 1
+    timestamp: '2025-12-28T00:28:47.999915'
+    metrics: *id001
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\top_of_funnel\book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_d1e59f19.md
+  - chapter_num: 2
+    timestamp: '2025-12-28T02:03:50.176271'
+    metrics: &id012
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\top_of_funnel\book_2025-12-28_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_dcb7c963.md
+  - chapter_num: 2
+    timestamp: '2025-12-28T02:04:39.410034'
+    metrics: *id002
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\top_of_funnel\book_2025-12-28_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_9d1c5015.md
+  - chapter_num: 3
+    timestamp: '2025-12-28T02:39:00.483622'
+    metrics: *id003
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\mid_funnel\book_2025-12-28_social-security-optimization_mid-funnel_faith-family-builder_7e40b9bd.md
+  - chapter_num: 4
+    timestamp: '2025-12-28T02:45:32.684196'
+    metrics: &id013
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\mid_funnel\book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_a8bbfaae.md
+  - chapter_num: 4
+    timestamp: '2025-12-28T02:46:11.416561'
+    metrics: &id014
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\mid_funnel\book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_6111cc04.md
+  - chapter_num: 4
+    timestamp: '2025-12-28T02:46:58.657638'
+    metrics: &id015
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\mid_funnel\book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_43d756d9.md
+  - chapter_num: 4
+    timestamp: '2025-12-28T02:47:39.172371'
+    metrics: &id016
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\mid_funnel\book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_2ed15025.md
+  - chapter_num: 4
+    timestamp: '2025-12-28T02:48:17.379103'
+    metrics: *id004
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\mid_funnel\book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_a8b1b61d.md
+  - chapter_num: 5
+    timestamp: '2025-12-28T03:05:02.719355'
+    metrics: &id017
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\mid_funnel\book_2025-12-28_healthcare-costs-and-long-term_mid-funnel_engineer-retiree_3922253d.md
+  - chapter_num: 5
+    timestamp: '2025-12-28T03:06:04.467501'
+    metrics: *id005
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\mid_funnel\book_2025-12-28_healthcare-costs-and-long-term_mid-funnel_engineer-retiree_cb32c612.md
+  - chapter_num: 6
+    timestamp: '2025-12-28T03:09:36.642673'
+    metrics: &id018
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\lower_funnel\book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_557d2e14.md
+  - chapter_num: 6
+    timestamp: '2025-12-28T03:10:26.760252'
+    metrics: &id019
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\lower_funnel\book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_4101e455.md
+  - chapter_num: 6
+    timestamp: '2025-12-28T03:11:30.369105'
+    metrics: *id006
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\lower_funnel\book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_6f8f7839.md
+  metrics_history:
+  - chapter: 1
+    timestamp: '2025-12-28T00:23:20.975183'
+    metrics: *id007
+  - chapter: 1
+    timestamp: '2025-12-28T00:23:51.873201'
+    metrics: *id008
+  - chapter: 1
+    timestamp: '2025-12-28T00:25:01.277818'
+    metrics: *id009
+  - chapter: 1
+    timestamp: '2025-12-28T00:26:07.176226'
+    metrics: *id010
+  - chapter: 1
+    timestamp: '2025-12-28T00:27:38.814408'
+    metrics: *id011
+  - chapter: 1
+    timestamp: '2025-12-28T00:28:47.999915'
+    metrics: *id001
+  - chapter: 2
+    timestamp: '2025-12-28T02:03:50.176271'
+    metrics: *id012
+  - chapter: 2
+    timestamp: '2025-12-28T02:04:39.410034'
+    metrics: *id002
+  - chapter: 3
+    timestamp: '2025-12-28T02:39:00.483622'
+    metrics: *id003
+  - chapter: 4
+    timestamp: '2025-12-28T02:45:32.684196'
+    metrics: *id013
+  - chapter: 4
+    timestamp: '2025-12-28T02:46:11.416561'
+    metrics: *id014
+  - chapter: 4
+    timestamp: '2025-12-28T02:46:58.657638'
+    metrics: *id015
+  - chapter: 4
+    timestamp: '2025-12-28T02:47:39.172371'
+    metrics: *id016
+  - chapter: 4
+    timestamp: '2025-12-28T02:48:17.379103'
+    metrics: *id004
+  - chapter: 5
+    timestamp: '2025-12-28T03:05:02.719355'
+    metrics: *id017
+  - chapter: 5
+    timestamp: '2025-12-28T03:06:04.467501'
+    metrics: *id005
+  - chapter: 6
+    timestamp: '2025-12-28T03:09:36.642673'
+    metrics: *id018
+  - chapter: 6
+    timestamp: '2025-12-28T03:10:26.761260'
+    metrics: *id019
+  - chapter: 6
+    timestamp: '2025-12-28T03:11:30.369105'
+    metrics: *id006
+  threshold: 0.9
+  last_updated: '2025-12-28T03:11:30.369105'

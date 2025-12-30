@@ -1,0 +1,31 @@
+# Signature Phrases Repository
+# Additive repository of signature phrases (similar to narratives/characters)
+
+signature_phrases:
+  # Format:
+  # PHRASE_ID:
+  #   phrase: "Hope is not a strategy"
+  #   context: "When discussing planning vs. hoping"
+  #   emotional_trigger: "urgency"
+  #   usage_tracking:
+  #     chapters: []
+  #     last_used_chapter: null
+  #     total_uses: 0
+  #   rotation_rule:
+  #     min_chapters_between: 3
+  #     strict_enforcement: true
+  #     allow_with_approval: true
+
+# Rotation rules
+rotation_rules:
+  min_chapters_between: 3
+  strict_enforcement: true
+  contextual_exceptions: "allow_with_approval"
+  
+# AI can suggest new phrases
+ai_suggestions:
+  # Format same as signature_phrases, but status: "pending_approval"
+  pending: []
+  approved: []
+  rejected: []
+

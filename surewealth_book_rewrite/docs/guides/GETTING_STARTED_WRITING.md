@@ -8,33 +8,44 @@ This guide helps you start generating content immediately without blockers.
 
 ## Step 1: Generate Your First Content
 
-### Option A: Social Media Post
+### Recommended: Use Quality-Validated Generation
 
-```bash
-python ai_prompts/prompt_builder.py \
-  --format social_post \
-  --topic tax_planning \
-  --persona engineer_retiree \
-  --narratives ALLEGORY_LEAKY_BUCKET \
-  --tools lifetime_tax_calculator \
-  --length 280 \
-  --emotional-goal curiosity
+**NEW**: Use the integrated content generation script with full validation:
+
+```python
+from scripts.generate_content_with_quality import generate_content, save_and_validate_content
+
+# Generate content with all validations
+result = generate_content(
+    topic="Tax Planning for Retirement",
+    format_type="chapter",  # or "social_post", "email", etc.
+    platform="book",
+    funnel_stage="mid_funnel",
+    persona="engineer_retiree",
+    emotional_goal="curiosity",
+    narrative_id="ALLEGORY_LEAKY_BUCKET",
+    character_ids=["JOHN_SMITH"],  # Optional
+    chapter_num=5,  # For chapters
+    emotional_state="hope",  # Optional
+    length="3000 words"
+)
+
+# After AI generates content, validate it
+validation = save_and_validate_content(
+    content_id=result['content_id'],
+    content=generated_content,
+    chapter_num=5  # If chapter
+)
+
+# Check validation results
+print(f"Valid: {validation['is_valid']}")
+print(f"Issues: {len(validation['issues'])}")
+print(f"Quality Score: {validation['checkpoint']['metrics']['overall_consistency']:.1%}")
 ```
 
-**Output:** A prompt you can paste into ChatGPT/Claude that includes all constraints.
+### Alternative: Direct Prompt Builder
 
-### Option B: Email
-
-```bash
-python ai_prompts/prompt_builder.py \
-  --format email \
-  --topic retirement_planning \
-  --persona faith_family_builder \
-  --narratives ALLEGORY_HOUSE_OF_CARDS \
-  --length 300
-```
-
-### Option C: Book Chapter
+For quick prompt generation without validation:
 
 ```bash
 python ai_prompts/prompt_builder.py \
@@ -42,18 +53,34 @@ python ai_prompts/prompt_builder.py \
   --topic tax_planning \
   --persona engineer_retiree \
   --narratives ALLEGORY_LEAKY_BUCKET \
-  --tools lifetime_tax_calculator \
+  --characters JOHN_SMITH \
   --length 3000
 ```
 
+**Output:** A prompt you can paste into ChatGPT/Claude that includes all constraints.
+
 ---
 
-## Step 2: Use the Prompt
+## Step 2: Generate and Validate Content
 
-1. Copy the generated prompt
-2. Paste into ChatGPT/Claude
-3. AI generates content following all constraints
-4. Review and refine
+1. **Copy the generated prompt** (or use the prompt from `generate_content()`)
+2. **Paste into ChatGPT/Claude** and generate content
+3. **Validate the content** using `save_and_validate_content()`:
+   - All validations run automatically
+   - Auto-fixes applied where possible
+   - Quality checkpoint runs (for chapters)
+   - Character states updated
+   - Issues flagged for review
+4. **Review validation results**:
+   - Check `validation['is_valid']` status
+   - Review `validation['issues']` and `validation['warnings']`
+   - Check quality metrics in `validation['checkpoint']`
+   - Fix any critical issues
+5. **Content is automatically**:
+   - Saved to appropriate directory
+   - Metadata created/updated
+   - Content index updated
+   - Quality tracked
 
 ---
 

@@ -1,0 +1,32 @@
+# Narrative Generation Tracker
+# Tracks AI-generated narratives and their emotional journey mapping
+
+narrative_generation_tracker:
+  # Format for new narratives:
+  # NARRATIVE_ID:
+  #   title: "Narrative Title"
+  #   type: "allegory" | "metaphor" | "case_study"
+  #   status: "draft" | "approved" | "rejected"
+  #   created_by: "ai" | "human"
+  #   created_date: "2025-12-27"
+  #   approved_date: null
+  #   emotional_journey:
+  #     reader_starting_state: "fear"  # What emotional state reader is in
+  #     reader_starting_sub_state: "mild_fear"
+  #     reader_target_state: "hope"  # What emotional state we're moving to
+  #     reader_target_sub_state: "growing_hope"
+  #     conversion_intent: "Move reader from fear to hope to enable consideration"
+  #   usage:
+  #     chapters: []
+  #     first_used: null
+  #     total_uses: 0
+
+# Approved narratives (populated as AI generates and human approves)
+approved_narratives: []
+
+# Pending approval (AI-generated, awaiting human review)
+pending_narratives: []
+
+# Rejected narratives (for learning)
+rejected_narratives: []
+

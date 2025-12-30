@@ -133,7 +133,10 @@ class ContentValidator:
             self.warnings.append("No CTA found - content should end with appropriate CTA")
     
     def _check_story_resolution(self, content: str):
-        """Check story resolution strength"""
+        """Check story resolution strength with concrete outcome validation"""
+        issues = []
+        
+        # Check for vague phrases
         vague_resolutions = [
             r"everything changed",
             r"it worked",
@@ -144,33 +147,100 @@ class ContentValidator:
         has_vague = any(re.search(pattern, content, re.IGNORECASE) for pattern in vague_resolutions)
         
         if has_vague:
-            self.issues.append("Story resolution is vague - provide concrete details and outcomes")
+            issues.append("Story resolution is vague - provide concrete details and outcomes")
+        
+        # Check for concrete resolution elements
+        # Look for specific numbers, outcomes, timelines
+        has_specific_numbers = bool(re.search(r'\$[\d,]+|[\d,]+%|[\d,]+ years?', content))
+        has_timeline = bool(re.search(r'(after|within|over|in) [\d,]+ (months?|years?|weeks?)', content, re.IGNORECASE))
+        has_before_after = bool(re.search(r'(from|to|reduced|increased|saved|cost) [\d$%]+ (to|from|by) [\d$%]+', content, re.IGNORECASE))
+        
+        # If story exists but lacks concrete elements, warn
+        story_sections = re.findall(r'## .*Story|## .*Case Study|## .*Example', content, re.IGNORECASE)
+        if story_sections and not (has_specific_numbers or has_timeline or has_before_after):
+            # Check if there's a story section with resolution
+            story_content = re.search(r'(## .*Story|## .*Case Study|## .*Example).*?(?=##|$)', content, re.IGNORECASE | re.DOTALL)
+            if story_content:
+                story_text = story_content.group(0)
+                # Check if story has resolution section
+                if re.search(r'(eventually|finally|in the end|result|outcome|resolution)', story_text, re.IGNORECASE):
+                    issues.append("Story resolution lacks concrete outcomes - add specific numbers, timelines, or before/after comparisons")
+        
+        if issues:
+            self.issues.extend(issues)
     
     def _check_dialogue(self, content: str):
-        """Check dialogue authenticity"""
-        # Find direct quotes
-        direct_quotes = re.findall(r'"[^"]{50,}"', content)
+        """Check dialogue authenticity with naturalness validation"""
+        issues = []
         
+        # Find all direct quotes (shorter threshold to catch more)
+        direct_quotes = re.findall(r'"[^"]{20,}"', content)
+        
+        # Check for scripted patterns
         scripted_patterns = [
             r'"Wait[^"]*telling me',
             r'"You\'re telling me',
+            r'"I\'ve been thinking',
         ]
         
         has_scripted = any(re.search(pattern, content, re.IGNORECASE) for pattern in scripted_patterns)
         
-        if has_scripted and len(direct_quotes) > 2:
-            self.issues.append("Dialogue feels scripted - use indirect quotes or narrative style")
+        if has_scripted:
+            issues.append("Dialogue feels scripted - use indirect quotes or narrative style")
+        
+        # Check for natural dialogue patterns
+        if direct_quotes:
+            # Check for contractions (natural speech)
+            has_contractions = any(re.search(r'\b(don\'t|won\'t|can\'t|it\'s|that\'s|you\'re|I\'m)', quote, re.IGNORECASE) for quote in direct_quotes)
+            
+            # Check for information dumps (long quotes with multiple facts)
+            long_quotes = [q for q in direct_quotes if len(q) > 100]
+            if len(long_quotes) > 2:
+                issues.append("Too many long dialogue quotes - use indirect quotes or narrative style for information")
+            
+            # Check for excessive dialogue
+            if len(direct_quotes) > 3:
+                issues.append("Too much direct dialogue - use indirect quotes or narrative style for most character thoughts")
+        
+        if issues:
+            self.issues.extend(issues)
     
     def _check_numbers(self, content: str):
-        """Check number believability"""
-        # Find dollar amounts
+        """Check number believability with context and range validation"""
+        warnings = []
+        
+        # Find all dollar amounts and percentages
         dollar_amounts = re.findall(r'\$[\d,]+', content)
+        percentages = re.findall(r'[\d,]+%', content)
+        all_numbers = dollar_amounts + percentages
         
-        # Check for too-perfect numbers (round numbers)
+        # Check for too-perfect numbers
         perfect_numbers = [amt for amt in dollar_amounts if amt.endswith(',000') or amt.endswith('00')]
+        perfect_percentages = [pct for pct in percentages if pct in ['25%', '50%', '75%', '100%', '10%', '20%', '30%', '40%', '60%', '70%', '80%', '90%']]
         
-        if len(perfect_numbers) > len(dollar_amounts) * 0.7:
-            self.warnings.append("Many numbers are too round - consider using ranges or more realistic specifics")
+        if len(dollar_amounts) > 0 and len(perfect_numbers) > len(dollar_amounts) * 0.7:
+            warnings.append("Many numbers are too round - consider using ranges or more realistic specifics")
+        
+        if len(percentages) > 0 and len(perfect_percentages) > len(percentages) * 0.6:
+            warnings.append("Many percentages are too round - consider using ranges or more realistic specifics")
+        
+        # Check for context with numbers
+        # Look for phrases like "about", "roughly", "approximately", "based on", "according to"
+        context_phrases = [
+            r'about \$[\d,]+',
+            r'roughly \$[\d,]+',
+            r'approximately \$[\d,]+',
+            r'based on .*\$[\d,]+',
+            r'according to .*\$[\d,]+',
+        ]
+        has_context = any(re.search(pattern, content, re.IGNORECASE) for pattern in context_phrases)
+        
+        # If many numbers but little context, warn
+        if len(all_numbers) > 5 and not has_context:
+            warnings.append("Numbers lack context - consider adding 'about', 'roughly', or 'based on' for believability")
+        
+        if warnings:
+            self.warnings.extend(warnings)
     
     def get_quality_checklist(self, content: str, metadata: Dict[str, Any]) -> Dict[str, bool]:
         """Run quality checklist"""

@@ -282,6 +282,7 @@ Forbidden Elements:
                     narrative_ids: Optional[List[str]] = None,
                     character_ids: Optional[List[str]] = None,
                     tool_ids: Optional[List[str]] = None,
+                    chapter_num: Optional[int] = None,
                     validate: bool = True) -> str:
         """Build complete AI prompt"""
         
@@ -318,6 +319,11 @@ Forbidden Elements:
         
         if narrative_ids:
             user_prompt += f"\n- Use narratives: {', '.join(narrative_ids)}"
+            user_prompt += "\n\nCRITICAL NARRATIVE CONSTRAINT:"
+            user_prompt += "\n- ONLY use narratives/metaphors/allegories from the framework"
+            user_prompt += "\n- If no suitable narrative exists, suggest a new narrative (with flag) and continue with closest match"
+            user_prompt += "\n- New narratives must be approved before use - you can draft, but human must approve"
+            user_prompt += "\n- DO NOT create new narratives without flagging them for approval"
         
         if character_ids:
             user_prompt += f"\n- Reference characters: {', '.join(character_ids)}"
@@ -399,9 +405,77 @@ Forbidden Elements:
                 user_prompt += "\n- Use permission frames strategically (max 2 per piece)"
                 user_prompt += "\n- Rotate signature phrases (don't repeat same ones)"
                 user_prompt += "\n- Match CTA to funnel stage (1 soft CTA for top/mid-funnel)"
-                user_prompt += "\n- Provide concrete story resolutions (not vague)"
-                user_prompt += "\n- Use indirect quotes or narrative style (not scripted dialogue)"
-                user_prompt += "\n- Balance number specificity (not too perfect, not too vague)"
+                user_prompt += "\n\nSTORY RESOLUTION REQUIREMENTS:"
+                user_prompt += "\n- Provide concrete outcomes: Specific numbers, timelines, before/after comparisons"
+                user_prompt += "\n- Show, don't tell: Instead of 'everything changed', show 'We reduced his tax bracket from 25% to 15%. Over 25 years, that saved him $200,000.'"
+                user_prompt += "\n- Make resolution believable: Not too easy, not too perfect"
+                user_prompt += "\n- Connect to reader: 'This is what's possible when...'"
+                user_prompt += "\n\nDIALOGUE REQUIREMENTS:"
+                user_prompt += "\n- Prefer indirect quotes or narrative style: 'He realized that...' instead of '\"Wait,\" he said. \"You're telling me...\"'"
+                user_prompt += "\n- Use dialogue sparingly: Only when it adds authenticity"
+                user_prompt += "\n- Make dialogue natural: Use contractions, incomplete sentences, real speech patterns"
+                user_prompt += "\n- Avoid information dumps in dialogue"
+                user_prompt += "\n\nNUMBER REQUIREMENTS:"
+                user_prompt += "\n- Use ranges when appropriate: 'about $800,000', 'roughly $600,000'"
+                user_prompt += "\n- Provide context: 'Based on average tax rates...', 'According to recent data...'"
+                user_prompt += "\n- Balance specificity: Not too vague, not too precise"
+                user_prompt += "\n- Make numbers believable: Research actual averages, use realistic specifics"
+                user_prompt += "\n\nSTRUCTURE VARIATION REQUIREMENTS:"
+                user_prompt += "\n- Vary chapter structure - don't use identical format for every chapter"
+                user_prompt += "\n- Use different storytelling devices: conversations, flash-forwards, quiz-style assessments"
+                user_prompt += "\n- Avoid repetitive phrases like 'You've been told...' - use fresh alternatives"
+                user_prompt += "\n- Rotate between different structures from the structure library"
+                user_prompt += "\n\nFOUNDATION MESSAGING REQUIREMENTS:"
+                user_prompt += "\n- Explain 'foundation' concept clearly without naming products"
+                user_prompt += "\n- Use descriptive language: 'Think income that's not tied to Wall Street's mood swings—money you can count on, no matter what the market does.'"
+                user_prompt += "\n- Explain foundation components: 'Your foundation could come from income strategies that offer guarantees, protection, and predictable payouts.'"
+                user_prompt += "\n- Don't assume readers know what foundation means"
+                user_prompt += "\n\nCREDIBILITY REQUIREMENTS:"
+                user_prompt += "\n- Add subtle references for statistics: 'According to recent data...', 'Based on Fidelity's annual retirement healthcare cost studies...'"
+                user_prompt += "\n- Reference authoritative sources when making statistical claims"
+                user_prompt += "\n- Keep citations subtle and optional (can be in footnotes or downloadable resources)"
+                user_prompt += "\n\nCHAPTER ENHANCEMENTS:"
+                user_prompt += "\n- Consider adding 'Key Takeaways' box at end of chapter with 3-5 main points"
+                user_prompt += "\n- Include 'Quick Start' actionable steps for readers not ready for full restructure"
+                user_prompt += "\n- Balance big picture with immediate actionable steps"
+                user_prompt += "\n- Optional: Add 'Looking Ahead' section for forward-looking themes (AI, national debt, economic shifts)"
+                
+                # Load foundation messaging guide
+                foundation_file = self.framework_dir / "language" / "foundation_messaging_guide.yaml"
+                if foundation_file.exists():
+                    import yaml
+                    with open(foundation_file, 'r', encoding='utf-8') as f:
+                        foundation_guide = yaml.safe_load(f)
+                        if foundation_guide and 'foundation_messaging' in foundation_guide:
+                            fm = foundation_guide['foundation_messaging']
+                            user_prompt += "\n\nFOUNDATION MESSAGING - Use these descriptions:"
+                            for desc in fm.get('descriptive_language', {}).get('primary_descriptions', [])[:3]:
+                                user_prompt += f"\n- {desc}"
+                
+                # Load retiree archetypes for personalization
+                archetypes_file = self.framework_dir / "personas" / "retiree_archetypes.yaml"
+                if archetypes_file.exists():
+                    with open(archetypes_file, 'r', encoding='utf-8') as f:
+                        archetypes = yaml.safe_load(f)
+                        if archetypes and 'retiree_archetypes' in archetypes:
+                            user_prompt += "\n\nPERSONALIZATION - Consider using retiree archetypes:"
+                            user_prompt += "\n- The Saver (conservative, security-focused)"
+                            user_prompt += "\n- The Risk-Taker (growth-oriented, comfortable with volatility)"
+                            user_prompt += "\n- The DIY Investor (research-oriented, wants to understand)"
+                            user_prompt += "\n- The Overwhelmed (feels behind, needs simple guidance)"
+                            user_prompt += "\n- Vary archetypes across chapters to personalize math examples and messaging"
+                
+                # Load citation library
+                citations_file = self.framework_dir / "references" / "citation_library.yaml"
+                if citations_file.exists():
+                    with open(citations_file, 'r', encoding='utf-8') as f:
+                        citations = yaml.safe_load(f)
+                        if citations and 'citation_library' in citations:
+                            user_prompt += "\n\nCREDIBILITY - Use subtle citations for statistics:"
+                            user_prompt += "\n- 'According to Fidelity's annual retirement healthcare cost studies...'"
+                            user_prompt += "\n- 'Based on Social Security Administration actuarial tables...'"
+                            user_prompt += "\n- 'According to U.S. Department of Health and Human Services data...'"
+                            user_prompt += "\n- Keep citations subtle and optional (can be in footnotes)"
         
         # Add content index insights if available
         if self.content_index:
@@ -424,6 +498,18 @@ Forbidden Elements:
                 user_prompt += f"\n- Ensure this content is unique and doesn't repeat previous structure"
                 user_prompt += f"\n- Vary your approach from existing content on this topic/persona"
         
+        # Add structure recommendation (AI dynamically recommends from library)
+        # CRITICAL: Ensure structure variation - don't repeat same structure in consecutive chapters
+        structure_recommendation = self._recommend_structure(chapter_num, format_type)
+        if structure_recommendation:
+            user_prompt += f"\n\nRECOMMENDED STRUCTURE: {structure_recommendation.get('name', 'Structure')}"
+            user_prompt += f"\n{structure_recommendation.get('description', '')}"
+            user_prompt += f"\n\nCRITICAL: This structure was chosen to vary from previous chapters. Do NOT follow the standard formula (Story → Analogy → Math → 'What this means' → 'Foundation' → 'Cost of waiting' → CTA)."
+            user_prompt += f"\n\nSuggested sections:\n"
+            for section in structure_recommendation.get('sections', []):
+                user_prompt += f"- {section}\n"
+            user_prompt += f"\n\nVARY YOUR APPROACH: Use different storytelling devices, vary pacing, avoid repetitive phrases like 'You've been told...'"
+        
         # Add format-specific requirements
         if 'structure' in format_template:
             user_prompt += f"\n\nFollow this structure:\n{yaml.dump(format_template['structure'], default_flow_style=False)}"
@@ -438,6 +524,39 @@ Forbidden Elements:
 Generate the content now, following all constraints and maintaining brand voice."""
         
         return full_prompt
+    
+    def _recommend_structure(self, chapter_num: Optional[int] = None, 
+                            format_type: str = "chapter") -> Optional[Dict[str, Any]]:
+        """
+        Recommend structure from library (AI dynamically chooses)
+        Returns structure recommendation based on chapter number and format
+        """
+        if format_type != "chapter":
+            return None  # Only recommend for chapters
+        
+        structure_file = self.framework_dir / "chapters" / "structure_library.yaml"
+        if not structure_file.exists():
+            return None
+        
+        try:
+            with open(structure_file, 'r', encoding='utf-8') as f:
+                structure_lib = yaml.safe_load(f)
+            
+            structures = structure_lib.get('structure_library', {}).get('structures', {})
+            if not structures:
+                return None
+            
+            # Simple rotation: cycle through structures
+            # In production, this could be more sophisticated (avoid recent, match emotional arc, etc.)
+            structure_list = list(structures.values())
+            if chapter_num:
+                idx = (chapter_num - 1) % len(structure_list)
+            else:
+                idx = 0
+            
+            return structure_list[idx]
+        except Exception:
+            return None
     
     def _determine_funnel_stage(self, format_type: str, topic: str) -> str:
         """Determine funnel stage from format and topic"""

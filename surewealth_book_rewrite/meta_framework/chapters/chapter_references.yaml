@@ -1,0 +1,39 @@
+# Chapter Reference Tracker
+# Tracks all cross-chapter references for validation
+
+chapter_references:
+  # Format:
+  # chapter_X:
+  #   references:
+  #     - target: "chapter_Y"
+  #       text: "as we discussed in Chapter Y"
+  #       topic: "tax planning"
+  #       validated: false
+  #       validation_status: "pending" | "valid" | "invalid"
+  #       validation_notes: "Topic related to Chapter Y content"
+  
+  # Planned chapters (for forward reference validation)
+  planned_chapters: []
+  
+  # Validation rules
+  validation_rules:
+    strictness: "strict"  # Reject if invalid
+    forward_references: "allowed_if_planned"  # Allow if chapter is planned
+    content_matching: "related"  # Topic must be related/mentioned
+    reference_formats:
+      - "as we discussed in Chapter X"
+      - "remember from Chapter X"
+      - "in Chapter X, we covered"
+      - "from Chapter X"
+      - "as mentioned in Chapter X"
+      # Any format acceptable
+
+# Example structure (to be populated):
+# chapter_8:
+#   references:
+#     - target: "chapter_3"
+#       text: "as we discussed in Chapter 3"
+#       topic: "tax leak"
+#       validated: false
+#       validation_status: "pending"
+

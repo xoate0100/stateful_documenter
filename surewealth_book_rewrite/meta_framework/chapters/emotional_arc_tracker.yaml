@@ -1,0 +1,72 @@
+# Emotional Arc Tracker
+# Tracks emotional progression across all chapters
+
+book_emotional_arc:
+  # Target emotional progression (to be defined per book)
+  target_progression: []
+  
+  # Actual progression (populated as chapters are generated)
+  actual_progression: []
+  
+  # Emotional states with sub-states
+  emotional_states:
+    fear:
+      sub_states:
+        - "mild_fear"
+        - "moderate_fear"
+        - "deep_fear"
+        - "anxiety"
+    concern:
+      sub_states:
+        - "mild_concern"
+        - "moderate_concern"
+        - "deep_concern"
+        - "worry"
+    hope:
+      sub_states:
+        - "glimmer_of_hope"
+        - "growing_hope"
+        - "strong_hope"
+        - "optimism"
+    confidence:
+      sub_states:
+        - "emerging_confidence"
+        - "growing_confidence"
+        - "strong_confidence"
+        - "certainty"
+    action:
+      sub_states:
+        - "readiness"
+        - "commitment"
+        - "taking_action"
+        - "implementation"
+  
+  # Validation rules
+  validation_rules:
+    - "Smooth transitions preferred (gradual progression)"
+    - "Regression allowed with justification"
+    - "Track sub-states for granularity"
+    - "Warn on regression, don't block"
+  
+  # Transition rules
+  allowed_transitions:
+    smooth:
+      - "fear → concern"
+      - "concern → hope"
+      - "hope → confidence"
+      - "confidence → action"
+    jumps_allowed: false  # Smooth transitions only
+    regression_allowed: true  # With reason/justification
+
+# Chapter emotional state tracking
+chapters:
+  # Format:
+  # chapter_1:
+  #   target_state: "fear"
+  #   target_sub_state: "mild_fear"
+  #   actual_state: null
+  #   actual_sub_state: null
+  #   transition_from: null
+  #   regression: false
+  #   justification: null
+

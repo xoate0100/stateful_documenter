@@ -1,6 +1,6 @@
 # SureWealth Book Rewrite - Master Documentation Index
 
-**Last Updated:** 2025-12-27
+**Last Updated:** 2025-12-28
 **Project:** SureWealth Book Rewrite
 **Project Type:** Documentation/Content Generation
 
@@ -39,9 +39,18 @@ This is the master reference for all documentation in the SureWealth Book Rewrit
 - **`analysis/CONTENT_STRUCTURE_PROPOSAL.md`** - Proposed content directory structure
 - **`analysis/PATTERN_INTEGRATION_VALIDATION_REPORT.md`** - Pattern integration validation
 - **`analysis/MARKDOWN_EXPORT_CONVERSION_ANALYSIS.md`** - Conversion pattern analysis from markdown exports
+- **`analysis/VOC_CTQ_AI_BOOK_GENERATION.md`** - Voice of Customer & Critical to Quality analysis for book generation
+- **`analysis/STRESS_TEST_ANALYSIS.md`** - Stress test analysis identifying edge cases and failure modes
+- **`analysis/STRESS_TEST_RECOMMENDATIONS.md`** - Implementation plan for stress test fixes
+- **`analysis/IMPLEMENTATION_DECISIONS.md`** - Human decisions for all implementation choices
+- **`analysis/IMPLEMENTATION_STATUS.md`** - Implementation progress tracking for all 9 fixes
+- **`analysis/ENHANCED_VALIDATOR_TEST_RESULTS.md`** - Test results from enhanced validator testing on Chapters 1-4
+- **`analysis/BOOK_EDITORIAL_FEEDBACK.md`** - Comprehensive editorial feedback and recommendations for book improvement
+- **`guides/EDITORIAL_IMPROVEMENTS_IMPLEMENTATION.md`** - Implementation guide for P0/P1/P2 editorial improvements
+- **`analysis/INTEGRATION_COMPLETE.md`** - Complete integration status (all fixes implemented)
+- **`analysis/BOOK_GENERATION_QUALITY_FORECAST.md`** - Executive summary for decision-making
 - **`METADATA_AND_INDEX_INTEGRATION.md`** - Content metadata and indexing system documentation
 - **`FINAL_INTEGRATION_STATUS.md`** - Final integration status (2025-12-27)
-- **`INTEGRATION_COMPLETE.md`** - Integration completion report
 
 ### Transcript Analysis
 - **`analysis/ANDY_DANIELS_TRANSCRIPT_ANALYSIS.md`** - Complete analysis of 17 client service transcripts
@@ -57,9 +66,10 @@ This is the master reference for all documentation in the SureWealth Book Rewrit
 
 ### System Usage
 - **`guides/CONTENT_GENERATION_SYSTEM.md`** - Complete content generation system guide
-- **`guides/CONTENT_VALIDATION_GUIDE.md`** - Content quality validation guide
+- **`guides/CONTENT_VALIDATION_GUIDE.md`** - **NEW** Complete validation system guide (all 8+ checks, auto-fix, quality tracking)
 - **`guides/COMPLIANCE_ENFORCEMENT_GUIDE.md`** - Compliance system usage guide
 - **`guides/LANDING_PAGE_INTEGRATION.md`** - Landing page generation integration guide
+- **`guides/GETTING_STARTED_WRITING.md`** - Quick start guide (updated with new validation system)
 
 ---
 

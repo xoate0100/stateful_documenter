@@ -1,0 +1,78 @@
+content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_40bdb839
+title: The Hidden Risks in Your Retirement Plan
+format: chapter
+platform: book
+funnel_stage: top_of_funnel
+user_intent: researching
+persona: engineer_retiree
+topic: the_hidden_risks_in_your_retirement_plan
+tags:
+- the_hidden_risks_in_your_retirement_plan
+- top_of_funnel
+- engineer_retiree
+emotional_goal: fear
+narrative_used: ALLEGORY_HOUSE_OF_CARDS
+signature_phrases: []
+cta_type: soft_cta
+cta_count: 3
+permission_frames_used: 0
+word_count: 1329
+created_date: '2025-12-28T00:26:06.869669'
+status: published
+performance:
+  views: null
+  engagement: null
+  conversions: null
+related_content: []
+emotional_state: fear
+character_ids: []
+chapter_num: 1
+validation:
+  is_valid: false
+  book_validation:
+    is_valid: true
+    issues: []
+    warnings: []
+    auto_fixes: []
+  content_validation:
+    is_valid: false
+    issues:
+    - Too many CTAs (3) for top_of_funnel. Should be 1 soft CTA.
+    warnings:
+    - No permission frames used - consider adding one for engagement
+    - Consider rotating signature phrases to avoid repetition
+    - Many numbers are too round - consider using ranges or more realistic specifics
+  all_issues:
+  - Too many CTAs (3) for top_of_funnel. Should be 1 soft CTA.
+  all_warnings:
+  - No permission frames used - consider adding one for engagement
+  - Consider rotating signature phrases to avoid repetition
+  - Many numbers are too round - consider using ranges or more realistic specifics
+  checklist:
+    structure: true
+    permission_frames: true
+    signature_phrases: true
+    ctas: false
+    story_resolution: true
+    dialogue: true
+    numbers: false
+    metadata: true
+  checkpoint:
+    chapter_num: 1
+    timestamp: '2025-12-28T00:26:07.176226'
+    metrics:
+      compliance_rate: 1.0
+      character_consistency: 1.0
+      narrative_adherence: 1.0
+      cta_appropriateness: 1.0
+      emotional_arc_continuity: 1.0
+      structure_variation: 0.85
+      signature_phrase_rotation: 1.0
+      technical_accuracy: 1.0
+      overall_consistency: 0.98125
+    validation_results:
+      is_valid: true
+      issues_count: 0
+      warnings_count: 0
+      auto_fixes_count: 0
+    content_file: content\published\book\top_of_funnel\book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_40bdb839.md

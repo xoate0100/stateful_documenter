@@ -1,0 +1,139 @@
+# Chapter Structure Library
+# 10+ different chapter structures for maximum variability
+# CRITICAL: Rotate structures across chapters to avoid predictability
+# DO NOT use identical structure for consecutive chapters
+
+structure_library:
+  structures:
+    structure_1_story_first:
+      name: "Story-First Opening"
+      description: "Opens with narrative, then transitions to concept"
+      opening_type: "narrative"
+      sections:
+        - "Hook: Story/narrative opening"
+        - "Transition: Connect story to concept"
+        - "Body: Explain concept"
+        - "Application: How it applies to reader"
+        - "CTA: Appropriate call to action"
+      emotional_arc: "Story creates emotional connection first"
+      
+    structure_2_question_first:
+      name: "Question-First Opening"
+      description: "Opens with engaging question"
+      opening_type: "question"
+      sections:
+        - "Hook: Engaging question"
+        - "Context: Why this question matters"
+        - "Body: Answer/explanation"
+        - "Implication: What this means for reader"
+        - "CTA: Question-based CTA"
+      emotional_arc: "Question creates curiosity gap"
+      
+    structure_3_statistic_first:
+      name: "Statistic-First Opening"
+      description: "Opens with compelling data"
+      opening_type: "statistic"
+      sections:
+        - "Hook: Surprising statistic"
+        - "Context: What this number means"
+        - "Body: Deep dive into concept"
+        - "Personalization: How it affects reader"
+        - "CTA: Data-driven CTA"
+      emotional_arc: "Statistic creates urgency/concern"
+      
+    structure_4_direct_address:
+      name: "Direct-Address Opening"
+      description: "Opens with direct 'You' statement"
+      opening_type: "direct_address"
+      sections:
+        - "Hook: Direct 'You' statement"
+        - "Problem: What you're facing"
+        - "Body: Solution/explanation"
+        - "Benefit: What this means for you"
+        - "CTA: Direct, personal CTA"
+      emotional_arc: "Direct address creates identification"
+      
+    structure_5_case_study_first:
+      name: "Case-Study-First Opening"
+      description: "Opens with real-world example"
+      opening_type: "case_study"
+      sections:
+        - "Hook: Case study introduction"
+        - "Story: Case study details"
+        - "Lesson: What we learn"
+        - "Application: How reader can apply"
+        - "CTA: Example-based CTA"
+      emotional_arc: "Case study creates relatability"
+      
+    structure_6_problem_first:
+      name: "Problem-First Opening"
+      description: "Opens with problem statement"
+      opening_type: "problem"
+      sections:
+        - "Hook: Problem statement"
+        - "Impact: Why this problem matters"
+        - "Body: Solution explanation"
+        - "Proof: Evidence it works"
+        - "CTA: Solution-focused CTA"
+      emotional_arc: "Problem creates tension, solution releases"
+      
+    structure_7_contrast_first:
+      name: "Contrast-First Opening"
+      description: "Opens with before/after contrast"
+      opening_type: "contrast"
+      sections:
+        - "Hook: Before/after contrast"
+        - "The Gap: What's missing"
+        - "Body: How to bridge gap"
+        - "Vision: What success looks like"
+        - "CTA: Transformation CTA"
+      emotional_arc: "Contrast creates desire for change"
+      
+    structure_8_metaphor_first:
+      name: "Metaphor-First Opening"
+      description: "Opens with metaphor/allegory"
+      opening_type: "metaphor"
+      sections:
+        - "Hook: Metaphor introduction"
+        - "Metaphor: Full metaphor explanation"
+        - "Connection: Connect to financial concept"
+        - "Body: Concept details"
+        - "CTA: Metaphor-reinforced CTA"
+      emotional_arc: "Metaphor creates understanding through analogy"
+      
+    structure_9_scenario_first:
+      name: "Scenario-First Opening"
+      description: "Opens with 'what if' scenario"
+      opening_type: "scenario"
+      sections:
+        - "Hook: 'What if' scenario"
+        - "Exploration: Walk through scenario"
+        - "Reality: Connect to real situation"
+        - "Body: Concept explanation"
+        - "CTA: Scenario-based CTA"
+      emotional_arc: "Scenario creates future visioning"
+      
+    structure_10_statement_first:
+      name: "Statement-First Opening"
+      description: "Opens with bold, counterintuitive statement"
+      opening_type: "statement"
+      sections:
+        - "Hook: Bold statement"
+        - "Challenge: Why this seems wrong"
+        - "Proof: Evidence it's right"
+        - "Body: Full explanation"
+        - "CTA: Authority-based CTA"
+      emotional_arc: "Statement creates cognitive dissonance, then resolution"
+
+# Structure selection rules
+selection_rules:
+  method: "ai_recommends"  # AI recommends dynamically
+  rotation: "flexible"  # Track but don't enforce strict rotation
+  tracking: true  # Track usage for editor review
+  allow_reuse: true  # Can reuse structures (flexibility for conversion)
+
+# Usage tracking
+usage_tracking:
+  # Populated as chapters are generated
+  chapters: []
+

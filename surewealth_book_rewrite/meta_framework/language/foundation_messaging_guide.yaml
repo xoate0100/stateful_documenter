@@ -1,0 +1,46 @@
+# Foundation Messaging Guide
+# Provides clear, descriptive language for "foundation" concept without naming products
+
+foundation_messaging:
+  core_concept:
+    description: "The foundation represents guaranteed income that's not dependent on market performance"
+    key_characteristics:
+      - "Protected from market volatility"
+      - "Predictable and reliable"
+      - "Not tied to Wall Street's mood swings"
+      - "Money you can count on, no matter what the market does"
+  
+  descriptive_language:
+    primary_descriptions:
+      - "Think income that's not tied to Wall Street's mood swings—money you can count on, no matter what the market does."
+      - "Your foundation could come from income strategies that offer guarantees, protection, and predictable payouts."
+      - "Income that doesn't depend on perfect market timing—money that's there when you need it, regardless of what happens in the markets."
+      - "A guaranteed income floor that covers your basic expenses, protected from market volatility."
+      - "Income strategies that offer guarantees, protection, and predictable payouts—regardless of market conditions."
+    
+    component_descriptions:
+      - "Strategies that offer guarantees, protection, and predictable payouts"
+      - "Income that's protected from market volatility"
+      - "Money you can count on, no matter what the market does"
+      - "Predictable income streams that aren't subject to sequence risk"
+      - "Guaranteed income floor that covers basic expenses"
+    
+    benefit_descriptions:
+      - "When your retirement income doesn't depend on market timing—when it's guaranteed regardless of what happens in the markets—you've built a foundation, not a house of cards."
+      - "If you have a guaranteed income stream that covers your basic needs, you can take more risk with the rest of your money."
+      - "When you have a foundation you can count on, you can pursue growth knowing that your security is protected."
+      - "The foundation creates the floor. The security. The confidence that comes from knowing your basic needs are covered."
+  
+  what_to_avoid:
+    - "Don't name specific products (life insurance, annuities, etc.)"
+    - "Don't assume readers know what 'foundation' means"
+    - "Don't use vague language like 'the foundation creates security' without explanation"
+    - "Don't skip explanation of what creates the foundation"
+  
+  usage_guidelines:
+    - "Always explain what 'foundation' means when first introduced"
+    - "Use descriptive language that paints a clear picture"
+    - "Connect foundation to reader's specific situation"
+    - "Explain foundation components without naming products"
+    - "Show how foundation differs from market-dependent income"
+

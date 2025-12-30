@@ -1,0 +1,100 @@
+# Retiree Archetypes
+# Different personas/styles of retirees to personalize content delivery
+
+retiree_archetypes:
+  the_saver:
+    name: "The Saver"
+    description: "Conservative, risk-averse, focused on security and preservation"
+    characteristics:
+      - "Prioritizes security over growth"
+      - "Worried about losing what they've saved"
+      - "Prefers guaranteed outcomes"
+      - "Values predictability and stability"
+    pain_points:
+      - "Fear of market downturns"
+      - "Worried about running out of money"
+      - "Uncertainty about future"
+    messaging_approach:
+      - "Emphasize security and protection"
+      - "Focus on guaranteed income floor"
+      - "Show how foundation reduces risk"
+      - "Highlight predictability and stability"
+    math_examples:
+      - "Show how guaranteed income reduces sequence risk"
+      - "Demonstrate protection from market volatility"
+      - "Illustrate predictable income streams"
+  
+  the_risk_taker:
+    name: "The Risk-Taker"
+    description: "Growth-oriented, comfortable with market volatility, seeks maximum returns"
+    characteristics:
+      - "Prioritizes growth over security"
+      - "Comfortable with market risk"
+      - "Believes in market recovery"
+      - "Wants to maximize returns"
+    pain_points:
+      - "Sequence risk in retirement"
+      - "Tax drag on growth"
+      - "Need for income during downturns"
+    messaging_approach:
+      - "Show how foundation enables more risk-taking"
+      - "Demonstrate that foundation doesn't eliminate growth"
+      - "Explain how foundation protects while allowing upside"
+      - "Frame foundation as risk management, not risk elimination"
+    math_examples:
+      - "Show how foundation allows more aggressive growth strategies"
+      - "Demonstrate tax efficiency of foundation strategies"
+      - "Illustrate how foundation protects during downturns"
+  
+  the_diy_investor:
+    name: "The DIY Investor"
+    description: "Self-directed, research-oriented, wants to understand everything"
+    characteristics:
+      - "Likes to research and understand"
+      - "Prefers to be in control"
+      - "Values education and information"
+      - "Skeptical of advisors"
+    pain_points:
+      - "Complexity of retirement planning"
+      - "Hidden risks they don't understand"
+      - "Lack of comprehensive strategy"
+    messaging_approach:
+      - "Provide detailed explanations"
+      - "Show the math and mechanics"
+      - "Address skepticism directly"
+      - "Emphasize control and understanding"
+    math_examples:
+      - "Break down complex concepts step-by-step"
+      - "Show detailed calculations"
+      - "Illustrate before/after scenarios with numbers"
+  
+  the_overwhelmed:
+    name: "The Overwhelmed"
+    description: "Feels behind, anxious, doesn't know where to start"
+    characteristics:
+      - "Feels like it's too late"
+      - "Overwhelmed by complexity"
+      - "Anxious about retirement"
+      - "Needs simple, clear guidance"
+    pain_points:
+      - "Feels behind on planning"
+      - "Doesn't know where to start"
+      - "Anxiety about future"
+      - "Complexity paralysis"
+    messaging_approach:
+      - "Emphasize 'it's never too late'"
+      - "Provide simple, actionable steps"
+      - "Reduce anxiety with clear guidance"
+      - "Show quick wins and progress"
+    math_examples:
+      - "Show simple, clear calculations"
+      - "Demonstrate that small changes matter"
+      - "Illustrate progress over time"
+  
+  usage_guidelines:
+    - "Match archetype to chapter topic and persona"
+    - "Vary archetypes across chapters to widen relevance"
+    - "Personalize math examples based on archetype"
+    - "Adjust messaging tone to match archetype"
+    - "Use archetypes to vary 'average vs actual' contrast delivery"
+

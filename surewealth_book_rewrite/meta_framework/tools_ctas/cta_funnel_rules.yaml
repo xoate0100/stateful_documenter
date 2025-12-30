@@ -1,0 +1,50 @@
+# CTA Funnel Rules
+# Defines allowed CTAs and limits by funnel stage
+
+cta_funnel_rules:
+  top_of_funnel:
+    description: "Problem-aware, early stage - low pressure"
+    max_count: 1
+    allowed_cta_types:
+      - "soft_cta"
+      - "question_based_cta"
+      - "curiosity_cta"
+    forbidden_phrases:
+      # Context-dependent - only flag if clearly inappropriate
+      - "schedule a consultation"  # Usually too aggressive
+      - "call now"  # Usually too aggressive
+      - "book a meeting"  # Usually too aggressive
+    context_aware: true
+    # Some phrases may be OK in specific contexts
+    
+  mid_funnel:
+    description: "Solution-aware, researching - moderate engagement"
+    max_count: 3
+    allowed_cta_types:
+      - "soft_cta"
+      - "question_based_cta"
+      - "curiosity_cta"
+      - "benefit_lead_cta"
+    forbidden_phrases: []
+    # More flexibility in mid-funnel
+    
+  lower_funnel:
+    description: "Ready to act - higher engagement acceptable"
+    max_count: 4
+    allowed_cta_types:
+      - "primary_cta"
+      - "urgency_cta"
+      - "question_based_cta"
+      - "benefit_lead_cta"
+    forbidden_phrases: []
+    # Maximum flexibility in lower funnel
+
+# Auto-correction rules
+auto_correction:
+  enabled: true
+  strategy: "replace_with_appropriate"
+  fallback_options:
+    - "pre_sell_reference"  # "Read more about this in Chapter X"
+    - "closest_allowed_cta"  # Use closest allowed CTA type
+    - "question_based_cta"  # Default to question-based
+

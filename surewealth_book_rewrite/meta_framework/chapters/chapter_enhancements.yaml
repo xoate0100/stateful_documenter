@@ -1,0 +1,73 @@
+# Chapter Enhancement Templates
+# Templates for summaries, quick wins, and forward-looking sections
+
+chapter_enhancements:
+  key_takeaways_template:
+    format: "boxed_bullet_points"
+    structure:
+      - title: "Key Takeaways:"
+      - bullets: 3-5
+      - style: "scannable and memorable"
+    examples:
+      - "Market timing risk is real—and unavoidable."
+      - "You can't avoid risk, but you can control income sources."
+      - "The sooner you secure guaranteed income, the more flexibility you'll have."
+      - "Tax drag can cost hundreds of thousands over retirement."
+      - "Healthcare costs accelerate as you age."
+    placement: "end_of_chapter"
+    guidelines:
+      - "Summarize 3-5 main points per chapter"
+      - "Use visual breaks (boxes, sidebars) for summaries"
+      - "Reinforce core messages at chapter end"
+      - "Make takeaways scannable and memorable"
+  
+  quick_wins_template:
+    format: "actionable_steps"
+    structure:
+      - title: "Quick Start:"
+      - steps: 2-4
+      - style: "immediate, actionable"
+    examples:
+      - "Review your last 3 years of taxes for overpaid retirement plan distributions."
+      - "Estimate how much of your income is guaranteed vs. variable."
+      - "Calculate your sequence risk exposure."
+      - "Review your Social Security claiming strategy."
+      - "Estimate your healthcare costs in retirement."
+    placement: "after_main_content_before_cta"
+    guidelines:
+      - "Offer quick-start wins for readers not ready for full restructure"
+      - "Provide small actionable steps"
+      - "Create progress milestones for action-oriented readers"
+      - "Balance big picture with immediate actions"
+      - "Make readers feel they're making progress even with small steps"
+  
+  looking_ahead_template:
+    format: "sidebar_or_section"
+    structure:
+      - title: "Looking Ahead:" or "What Smart Retirees Are Preparing For Now"
+      - themes: 2-4
+      - style: "forward-looking, evergreen"
+    themes:
+      - "AI replacing traditional jobs"
+      - "Rising national debt implications on tax policy"
+      - "Economic shifts that might alter retirement planning assumptions"
+      - "Healthcare policy changes"
+      - "Social Security trust fund status"
+    examples:
+      - "The 5-Year Outlook: What Could Change, and How to Prepare"
+      - "What Smart Retirees Are Preparing For Now"
+      - "Future-Proofing Your Retirement Plan"
+    placement: "optional_section_or_sidebar"
+    guidelines:
+      - "Add longevity to content, making it evergreen yet aware of current shifts"
+      - "Balance present risks with future preparation"
+      - "Keep forward-looking themes relevant and actionable"
+      - "Don't overdo future speculation - keep it grounded"
+  
+  usage_guidelines:
+    - "Not every chapter needs every enhancement"
+    - "Vary enhancements across chapters"
+    - "Match enhancement to chapter topic and funnel stage"
+    - "Keep enhancements optional and flexible"
+    - "Don't force enhancements if they don't fit naturally"
+

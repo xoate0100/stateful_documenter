@@ -1,0 +1,82 @@
+# Citation Library
+# Authoritative sources for statistical claims and credibility
+
+citation_library:
+  healthcare_costs:
+    - source: "Fidelity's annual retirement healthcare cost studies"
+      usage: "According to Fidelity's annual retirement healthcare cost studies..."
+      context: "Healthcare cost projections, long-term care statistics"
+    
+    - source: "Congressional Budget Office (CBO) reports"
+      usage: "Based on Congressional Budget Office projections..."
+      context: "Healthcare policy, Medicare costs, long-term care"
+    
+    - source: "HealthView Services retirement healthcare cost data"
+      usage: "According to HealthView Services retirement healthcare cost data..."
+      context: "Healthcare inflation, retirement healthcare expenses"
+  
+  social_security:
+    - source: "Social Security Administration (SSA) actuarial tables"
+      usage: "According to Social Security Administration actuarial tables..."
+      context: "Life expectancy, claiming strategies, benefit calculations"
+    
+    - source: "SSA Office of the Chief Actuary"
+      usage: "Based on SSA Office of the Chief Actuary data..."
+      context: "Social Security projections, trust fund status"
+  
+  retirement_planning:
+    - source: "Employee Benefit Research Institute (EBRI)"
+      usage: "According to Employee Benefit Research Institute research..."
+      context: "Retirement readiness, savings rates, retirement trends"
+    
+    - source: "Center for Retirement Research at Boston College"
+      usage: "Based on Center for Retirement Research at Boston College studies..."
+      context: "Retirement security, income adequacy, retirement risks"
+  
+  taxes:
+    - source: "Congressional Budget Office (CBO) tax projections"
+      usage: "According to Congressional Budget Office tax projections..."
+      context: "Tax policy, tax rates, future tax implications"
+    
+    - source: "Tax Foundation research"
+      usage: "Based on Tax Foundation research..."
+      context: "Tax efficiency, tax strategies, tax impact analysis"
+  
+  long_term_care:
+    - source: "U.S. Department of Health and Human Services"
+      usage: "According to U.S. Department of Health and Human Services data..."
+      context: "Long-term care statistics, care needs, care costs"
+    
+    - source: "Genworth Cost of Care Survey"
+      usage: "Based on Genworth's annual Cost of Care Survey..."
+      context: "Long-term care costs, regional variations, care trends"
+  
+  market_volatility:
+    - source: "Morningstar research"
+      usage: "According to Morningstar research..."
+      context: "Market returns, sequence risk, retirement withdrawal strategies"
+    
+    - source: "Vanguard research"
+      usage: "Based on Vanguard research..."
+      context: "Retirement planning, withdrawal strategies, portfolio construction"
+  
+  usage_guidelines:
+    - "Use citations subtly - don't break flow"
+    - "Keep citations optional - can be in footnotes or downloadable resources"
+    - "Match citation to claim - use appropriate source for topic"
+    - "Balance emotional storytelling with data credibility"
+    - "Use 'According to...' or 'Based on...' phrasing"
+  
+  common_statistics:
+    "70% of people over 65 will need long-term care":
+      source: "U.S. Department of Health and Human Services"
+      usage: "According to U.S. Department of Health and Human Services data, about 70% of people over 65 will need long-term care at some point."
+    
+    "Average healthcare costs in retirement":
+      source: "Fidelity's annual retirement healthcare cost studies"
+      usage: "According to Fidelity's annual retirement healthcare cost studies, a healthy 65-year-old couple can expect to spend roughly $300,000 on healthcare over their retirement."
+    
+    "Social Security claiming impact":
+      source: "Social Security Administration actuarial tables"
+      usage: "Based on Social Security Administration actuarial tables, the difference between claiming at 62 and claiming at 70 can be hundreds of thousands of dollars over a lifetime."
+

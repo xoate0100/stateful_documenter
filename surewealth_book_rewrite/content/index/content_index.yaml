@@ -1,0 +1,386 @@
+content_index:
+  total_pieces: 50
+  by_funnel:
+    top_of_funnel: 24
+    mid_funnel: 19
+    lower_funnel: 7
+  by_persona:
+    engineer_retiree: 36
+    faith_family_builder: 3
+    widow_caregiver: 11
+  by_topic:
+    the_hidden_risks_in_your_retirement_plan: 19
+    tax_planning_strategies_for_retirement: 5
+    social_security_optimization: 3
+    estate_planning_and_legacy_protection: 11
+    healthcare_costs_and_long-term_care_planning: 5
+    success_stories_and_next_steps: 7
+  by_platform:
+    book: 50
+  by_format:
+    chapter: 50
+  by_tag:
+    the_hidden_risks_in_your_retirement_plan: 19
+    top_of_funnel: 24
+    engineer_retiree: 36
+    tax_planning_strategies_for_retirement: 5
+    social_security_optimization: 3
+    mid_funnel: 19
+    faith_family_builder: 3
+    estate_planning_and_legacy_protection: 11
+    widow_caregiver: 11
+    healthcare_costs_and_long-term_care_planning: 5
+    success_stories_and_next_steps: 7
+    lower_funnel: 7
+  recent_content:
+  - content_id: book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_6f8f7839
+    title: Success Stories and Next Steps
+    funnel: lower_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:11:29.642603'
+  - content_id: book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_6f8f7839
+    title: Success Stories and Next Steps
+    funnel: lower_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:11:29.642603'
+  - content_id: book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_4101e455
+    title: Success Stories and Next Steps
+    funnel: lower_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:10:26.263049'
+  - content_id: book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_4101e455
+    title: Success Stories and Next Steps
+    funnel: lower_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:10:26.263049'
+  - content_id: book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_557d2e14
+    title: Success Stories and Next Steps
+    funnel: lower_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:09:35.926383'
+  - content_id: book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_557d2e14
+    title: Success Stories and Next Steps
+    funnel: lower_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:09:35.926383'
+  - content_id: book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_60055bff
+    title: Success Stories and Next Steps
+    funnel: lower_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:08:29.697701'
+  - content_id: book_2025-12-28_healthcare-costs-and-long-term_mid-funnel_engineer-retiree_cb32c612
+    title: Healthcare Costs and Long-Term Care Planning
+    funnel: mid_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:06:03.996508'
+  - content_id: book_2025-12-28_healthcare-costs-and-long-term_mid-funnel_engineer-retiree_cb32c612
+    title: Healthcare Costs and Long-Term Care Planning
+    funnel: mid_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:06:03.996508'
+  - content_id: book_2025-12-28_healthcare-costs-and-long-term_mid-funnel_engineer-retiree_3922253d
+    title: Healthcare Costs and Long-Term Care Planning
+    funnel: mid_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:05:01.818475'
+  - content_id: book_2025-12-28_healthcare-costs-and-long-term_mid-funnel_engineer-retiree_3922253d
+    title: Healthcare Costs and Long-Term Care Planning
+    funnel: mid_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:05:01.818475'
+  - content_id: book_2025-12-28_healthcare-costs-and-long-term_mid-funnel_engineer-retiree_49a06752
+    title: Healthcare Costs and Long-Term Care Planning
+    funnel: mid_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T03:04:13.357599'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_a8b1b61d
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:48:16.803216'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_a8b1b61d
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:48:16.803216'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_2ed15025
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:47:38.309929'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_2ed15025
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:47:38.309929'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_43d756d9
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:46:58.073260'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_43d756d9
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:46:58.073260'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_6111cc04
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:46:10.740850'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_6111cc04
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:46:10.740850'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_a8bbfaae
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:45:32.300850'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_a8bbfaae
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:45:32.300850'
+  - content_id: book_2025-12-28_estate-planning-and-legacy-pro_mid-funnel_widow-caregiver_f4127f9a
+    title: Estate Planning and Legacy Protection
+    funnel: mid_funnel
+    persona: widow_caregiver
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:44:52.106470'
+  - content_id: book_2025-12-28_social-security-optimization_mid-funnel_faith-family-builder_7e40b9bd
+    title: Social Security Optimization
+    funnel: mid_funnel
+    persona: faith_family_builder
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:38:59.953795'
+  - content_id: book_2025-12-28_social-security-optimization_mid-funnel_faith-family-builder_7e40b9bd
+    title: Social Security Optimization
+    funnel: mid_funnel
+    persona: faith_family_builder
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:38:59.953795'
+  - content_id: book_2025-12-28_social-security-optimization_mid-funnel_faith-family-builder_52f6c4e7
+    title: Social Security Optimization
+    funnel: mid_funnel
+    persona: faith_family_builder
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:38:16.357742'
+  - content_id: book_2025-12-28_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_9d1c5015
+    title: Tax Planning Strategies for Retirement
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:04:39.024655'
+  - content_id: book_2025-12-28_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_9d1c5015
+    title: Tax Planning Strategies for Retirement
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:04:39.024655'
+  - content_id: book_2025-12-28_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_dcb7c963
+    title: Tax Planning Strategies for Retirement
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:03:49.812275'
+  - content_id: book_2025-12-28_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_dcb7c963
+    title: Tax Planning Strategies for Retirement
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:03:49.812275'
+  - content_id: book_2025-12-28_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_9804d03c
+    title: Tax Planning Strategies for Retirement
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T02:03:04.228954'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_d1e59f19
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:28:47.659614'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_d1e59f19
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:28:47.659614'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_869f5009
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:27:38.501043'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_869f5009
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:27:38.501043'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_40bdb839
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:26:06.869669'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_40bdb839
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:26:06.869669'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_ae7a0b18
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:25:00.973375'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_ae7a0b18
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:25:00.973375'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_92b59488
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:23:51.597719'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_92b59488
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:23:51.597719'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_0d808a3d
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:23:20.787841'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_0d808a3d
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:23:20.787841'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_fe73b163
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:22:24.126843'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_a1344604
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:21:37.997562'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_3a26a0ed
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:21:05.131661'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_ae119c00
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:20:32.639667'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_3f416e66
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:19:30.351359'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_b0e5b8d7
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:18:29.215717'
+  - content_id: book_2025-12-28_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_fb12fe5f
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2025-12-28T00:17:02.525497'
+  last_updated: '2025-12-28T03:11:30.663542'

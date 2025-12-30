@@ -1,0 +1,36 @@
+# Permission Frames Repository
+# Repository of permission frame phrases for variety
+
+permission_frames:
+  opening:
+    - "If you don't mind me asking..."
+    - "Before we go any further..."
+    - "Let me share something with you..."
+    - "If you'll allow me..."
+    - "Can I ask you something?"
+  
+  transition:
+    - "Before we move on..."
+    - "Let me pause here for a moment..."
+    - "If you don't mind, let me..."
+    - "Before we continue..."
+  
+  sensitive_question:
+    - "If you don't mind me asking..."
+    - "Can I ask you a personal question?"
+    - "Would it be okay if I asked..."
+    - "I hope you don't mind if I ask..."
+
+# Usage rules
+usage_rules:
+  max_per_chapter: 2
+  strict_enforcement: true
+  require_variety: true
+  # Must use different phrases if using multiple frames
+
+# AI can suggest new frames
+ai_suggestions:
+  pending: []
+  approved: []
+  rejected: []
+

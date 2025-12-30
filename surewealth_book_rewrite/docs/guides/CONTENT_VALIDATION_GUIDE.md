@@ -1,290 +1,322 @@
 # Content Validation Guide
 
+**Last Updated:** 2025-12-27
+
+Complete guide to the content validation system with all quality checks, auto-fixes, and tracking.
+
+---
+
 ## Overview
 
-The content validation system provides **robust, context-aware validation** of generated content against framework constraints. It minimizes false positives and provides detailed reporting with idempotent run tracking.
+The content validation system provides comprehensive quality assurance for all generated content, with:
+
+- **Pre-generation validation**: Check narratives, characters, framework elements before generation
+- **Post-generation validation**: 8+ validation checks on generated content
+- **Auto-fix system**: Automatic correction of fixable issues
+- **Quality checkpoints**: Automatic quality tracking after every chapter
+- **Editor tracker**: Issue flagging with file, line, scenario details
 
 ---
 
-## Features
+## Validation Systems
 
-### ✅ Robust Validation
-- **Context-aware checking** - Not just simple regex
-- **Word boundary matching** - Avoids false positives from partial matches
-- **False positive filtering** - Ignores matches in code blocks, URLs, quotes
-- **Multiple validation categories** - Banned words, AI phrases, length, tone, signature phrases
+### 1. Narrative Validation
 
-### ✅ Idempotent Runs
-- **Unique run IDs** - Based on content hash + timestamp
-- **Run tracking** - Saves validation results for reuse
-- **No duplicate analysis** - Same content = same results (unless forced)
+**Purpose**: Ensure only framework narratives are used
 
-### ✅ Comprehensive Reporting
-- **Detailed issues** - Location, context, suggestions
-- **Categorized by severity** - Errors, warnings, info
-- **JSON output** - Machine-readable reports
-- **Human-readable** - Console-friendly format
+**Checks**:
+- Pre-generation: Validate narrative IDs exist in framework
+- Post-generation: Detect unauthorized narratives
+- AI-assisted creation: New narratives require approval
 
----
+**Files**:
+- `meta_framework/narratives/narrative_validator.py`
+- `meta_framework/narratives/narrative_generation_tracker.yaml`
 
-## Usage
+**Usage**:
+```python
+from meta_framework.narratives.narrative_validator import NarrativeValidator
 
-### Basic Validation
-
-```bash
-# Validate content from file
-python scripts/content_validator.py \
-  --content-file content/chapters/chapter_01.md \
-  --format chapter
-
-# Validate content from stdin/string
-python scripts/content_validator.py \
-  --content "Your content here..." \
-  --format social_post \
-  --format-subtype linkedin
-```
-
-### With Output
-
-```bash
-# Save JSON report
-python scripts/content_validator.py \
-  --content-file content/emails/email_001.md \
-  --format email \
-  --output validation_report.json
-```
-
-### Idempotent Runs
-
-```bash
-# Use specific run ID (for tracking)
-python scripts/content_validator.py \
-  --content-file content.md \
-  --format chapter \
-  --run-id my-validation-run-001
-
-# Force revalidation (ignore cached results)
-python scripts/content_validator.py \
-  --content-file content.md \
-  --format chapter \
-  --force-revalidate
+validator = NarrativeValidator()
+is_valid, missing, suggestions = validator.validate_narrative_ids(["ALLEGORY_LEAKY_BUCKET"])
 ```
 
 ---
 
-## Validation Categories
+### 2. Character State Validation
 
-### 1. Banned Words (Error)
-Checks for compliance/positioning banned words:
-- `guaranteed_returns`
-- `passive_income`
-- `infinite_banking`
-- `bank_on_yourself`
-- `market_beating`
-- `loophole`
-- `guaranteed` (standalone)
+**Purpose**: Ensure character consistency across all chapters
 
-**Features:**
-- Word boundary matching (avoids partial matches)
-- Case insensitive
-- Context-aware (ignores code blocks, URLs)
-- Provides location and context
+**Checks**:
+- All attributes locked by default
+- Character references match state
+- Controlled evolution tracked
+- Usage tracked across chapters
 
-### 2. AI Phrases (Warning)
-Checks for AI-sounding phrases:
-- "delve into"
-- "harness the power of"
-- "comprehensive guide"
-- "in conclusion"
-- "it's important to note"
-- "unlock your potential"
-- "revolutionizing the landscape"
+**Files**:
+- `meta_framework/characters/character_state_manager.py`
+- `meta_framework/characters/character_state.yaml`
 
-**Features:**
-- Flexible whitespace matching
-- Case insensitive
-- Context-aware filtering
+**Usage**:
+```python
+from meta_framework.characters.character_state_manager import CharacterStateManager
 
-### 3. Length Validation (Warning)
-Checks content length against format requirements:
-
-**Format Limits:**
-- **Social Posts:**
-  - LinkedIn: 125-3000 chars
-  - Twitter: 50-280 chars
-  - Facebook: 100-5000 chars
-  - Instagram: 100-2200 chars
-- **Emails:**
-  - Nurture: 200-400 words
-  - Conversion: 150-300 words
-  - Follow-up: 100-200 words
-- **Chapters:** 2000-5000 words
-- **Blog Posts:** 500-2000 words
-
-### 4. Signature Phrases (Info)
-Checks if signature phrases are used:
-- "You've worked too hard to risk it now."
-- "This isn't about returns — it's about control."
-- "Hope is not a strategy."
-- etc.
-
-**Note:** This is informational only - not an error if missing.
-
-### 5. Tone Compliance (Info)
-Checks for overly formal language:
-- "furthermore", "moreover", "nevertheless"
-- "thus", "hence", "therefore"
-- "in conclusion", "to summarize"
-
-**Note:** Suggests more conversational language.
-
----
-
-## False Positive Prevention
-
-The validator uses several techniques to minimize false positives:
-
-1. **Word Boundary Matching**
-   - Uses `\b` regex boundaries
-   - Prevents partial word matches
-
-2. **Context Filtering**
-   - Ignores matches in code blocks (markdown backticks)
-   - Ignores matches in URLs
-   - Considers quote context
-
-3. **Case Insensitive**
-   - Handles variations in capitalization
-
-4. **Flexible Whitespace**
-   - Handles variations in spacing for phrases
-
----
-
-## Run Tracking
-
-### Run IDs
-- **Auto-generated:** `{timestamp}-{content_hash}`
-- **Custom:** Use `--run-id` for specific tracking
-- **Stored:** `tracking/validation_runs/{run_id}.json`
-
-### Run Data
-Each run includes:
-- Run ID and timestamp
-- Content hash (for idempotency)
-- Format type
-- All issues found
-- Summary statistics
-- Status (passed/failed/warnings)
-
-### Idempotency
-- Same content = same hash = same results
-- Use `--force-revalidate` to override
-- Runs are cached for efficiency
-
----
-
-## Integration with Prompt Builder
-
-The prompt builder now includes **pre-generation validation**:
-
-```bash
-# Validation happens automatically
-python ai_prompts/prompt_builder.py \
-  --format chapter \
-  --topic tax_planning \
-  --narratives ALLEGORY_LEAKY_BUCKET \
-  --characters JOHN_SMITH
-
-# Skip validation if needed
-python ai_prompts/prompt_builder.py \
-  --format chapter \
-  --topic tax_planning \
-  --skip-validation
-```
-
-**Validates:**
-- Format exists
-- Persona exists
-- Narrative IDs exist
-- Character IDs exist
-- Tool IDs exist
-
-**Errors prevent prompt generation** - Fix issues before proceeding.
-
----
-
-## Example Output
-
-```
-============================================================
-Content Validation Report
-============================================================
-Run ID: 20240101120000-abc12345
-Format: chapter
-Status: WARNINGS
-Timestamp: 2024-01-01T12:00:00
-
-Summary:
-  Total Issues: 3
-  Errors: 0
-  Warnings: 2
-  Info: 1
-  Word Count: 3245
-  Char Count: 18234
-
-============================================================
-Issues Found:
-============================================================
-
-AI_PHRASE (1 issues):
-  [WARNING] AI-sounding phrase found: 'delve into'
-    Location: Line 45
-    Context: ...we will delve into the mechanics of...
-    Suggestion: Rephrase to sound more natural and human
-
-LENGTH (1 issues):
-  [WARNING] Content too long: 3245 words (maximum: 3000)
-    Location: Overall
-    Suggestion: Condense content to meet maximum length requirement
-
-SIGNATURE_PHRASES (1 issues):
-  [INFO] No signature phrases found
-    Location: Overall
-    Suggestion: Consider using signature phrases naturally in content
-
-============================================================
+manager = CharacterStateManager()
+manager.record_character_usage("JOHN_SMITH", chapter_num=5, content=content)
 ```
 
 ---
 
-## JSON Report Format
+### 3. CTA Appropriateness Validation
 
-```json
+**Purpose**: Ensure CTAs match funnel stage
+
+**Rules**:
+- Top-funnel: Max 1 CTA (soft/question-based)
+- Mid-funnel: Max 3 CTAs
+- Lower-funnel: Max 4 CTAs
+- Auto-fix: Replace inappropriate CTAs
+
+**Files**:
+- `meta_framework/tools_ctas/cta_funnel_rules.yaml`
+- `meta_framework/content_quality/book_validator.py`
+
+**Auto-Fix**:
+- Inappropriate CTAs automatically replaced
+- Pre-sell references used when needed ("Read more in Chapter X")
+
+---
+
+### 4. Emotional Arc Validation
+
+**Purpose**: Ensure smooth emotional progression
+
+**Checks**:
+- Sub-state tracking (mild/moderate/deep)
+- Smooth transitions preferred
+- Regression allowed with justification
+- Warnings (doesn't block)
+
+**Files**:
+- `meta_framework/chapters/emotional_arc_tracker.yaml`
+- `meta_framework/content_quality/book_validator.py`
+
+---
+
+### 5. Chapter Reference Validation
+
+**Purpose**: Validate all cross-chapter references
+
+**Checks**:
+- Strict validation: Reject if invalid
+- Forward references allowed if chapter planned
+- Related content matching (not exact)
+- Any reference format acceptable
+
+**Files**:
+- `meta_framework/chapters/chapter_references.yaml`
+- `meta_framework/content_quality/book_validator.py`
+
+---
+
+### 6. Signature Phrase Rotation
+
+**Purpose**: Prevent over-repetition of signature phrases
+
+**Rules**:
+- Minimum 3 chapters between uses
+- Strict enforcement: Reject if too recent
+- Allow with approval if contextually perfect
+
+**Files**:
+- `meta_framework/language/signature_phrases_repository.yaml`
+- `meta_framework/content_quality/book_validator.py`
+
+---
+
+### 7. Permission Frame Limits
+
+**Purpose**: Prevent overuse of permission frames
+
+**Rules**:
+- Max 2 per chapter
+- Strict enforcement: Reject if limit exceeded
+- Require variety: Different phrases if using multiple
+
+**Files**:
+- `meta_framework/language/permission_frames_repository.yaml`
+- `meta_framework/content_quality/book_validator.py`
+
+---
+
+### 8. Structure Variation Tracking
+
+**Purpose**: Track structure usage for variety
+
+**Features**:
+- 10-structure library
+- Flexible tracking (doesn't enforce strict rotation)
+- AI recommends dynamically
+- Shows in editor review
+
+**Files**:
+- `meta_framework/chapters/structure_library.yaml`
+- `ai_prompts/prompt_builder.py`
+
+---
+
+## Quality Checkpoints
+
+### Automatic Checkpoints
+
+Quality checkpoints run automatically after every chapter:
+
+**Metrics Tracked**:
+- Compliance rate
+- Character consistency
+- Narrative adherence
+- CTA appropriateness
+- Emotional arc continuity
+- Structure variation
+- Signature phrase rotation
+- Technical accuracy
+- Overall consistency
+
+**Threshold**: 90% - Warns if any metric drops below
+
+**Reporting**: Hierarchical (summary with expandable details)
+
+**Files**:
+- `scripts/book_quality_tracker.py`
+- `content/book_quality_tracker.yaml`
+
+---
+
+## Editor Tracker
+
+### Issue Flagging
+
+The editor tracker flags issues for review with:
+- File path
+- Line number (when available)
+- Scenario overview
+- Specific issue/flag
+- Timestamp
+
+**Files**:
+- `content/editor_tracker/issues.yaml`
+- `meta_framework/content_quality/book_validator.py` (EditorTracker class)
+
+---
+
+## Usage Examples
+
+### Full Validation Workflow
+
+```python
+from scripts.generate_content_with_quality import generate_content, save_and_validate_content
+
+# 1. Generate content
+result = generate_content(
+    topic="Tax Planning for Retirement",
+    format_type="chapter",
+    platform="book",
+    funnel_stage="mid_funnel",
+    persona="engineer_retiree",
+    emotional_goal="curiosity",
+    narrative_id="ALLEGORY_LEAKY_BUCKET",
+    character_ids=["JOHN_SMITH"],
+    chapter_num=5,
+    emotional_state="hope"
+)
+
+# 2. AI generates content (external step)
+generated_content = "..."  # From ChatGPT/Claude
+
+# 3. Validate content
+validation = save_and_validate_content(
+    content_id=result['content_id'],
+    content=generated_content,
+    chapter_num=5
+)
+
+# 4. Check results
+if validation['is_valid']:
+    print("✅ Content passed all validations")
+else:
+    print("❌ Issues found:")
+    for issue in validation['issues']:
+        print(f"  - {issue}")
+
+# 5. Review quality metrics
+if validation['checkpoint']:
+    metrics = validation['checkpoint']['metrics']
+    print(f"Overall Consistency: {metrics['overall_consistency']:.1%}")
+    print(f"Character Consistency: {metrics['character_consistency']:.1%}")
+    print(f"CTA Appropriateness: {metrics['cta_appropriateness']:.1%}")
+```
+
+### Manual Validation
+
+```python
+from meta_framework.content_quality.book_validator import BookValidator
+
+validator = BookValidator()
+
+results = validator.validate_all(
+    content=content,
+    metadata=metadata,
+    chapter_num=5
+)
+
+print(f"Valid: {results['is_valid']}")
+print(f"Issues: {results['issues']}")
+print(f"Warnings: {results['warnings']}")
+print(f"Auto-Fixes: {results['auto_fixes']}")
+```
+
+---
+
+## Validation Results
+
+### Result Structure
+
+```python
 {
-  "run_id": "20240101120000-abc12345",
-  "timestamp": "2024-01-01T12:00:00",
-  "content_hash": "abc123...",
-  "format_type": "chapter",
-  "status": "warnings",
-  "issues": [
-    {
-      "severity": "warning",
-      "category": "ai_phrase",
-      "message": "AI-sounding phrase found: 'delve into'",
-      "location": "Line 45, position 1234",
-      "context": "...we will delve into the mechanics...",
-      "suggestion": "Rephrase to sound more natural and human"
+    'is_valid': bool,  # True if passes all critical checks
+    'issues': List[str],  # Critical issues (blocking)
+    'warnings': List[str],  # Warnings (non-blocking)
+    'auto_fixes': List[str],  # Auto-fixes applied
+    'corrected_content': str,  # Content after auto-fixes
+    'checkpoint': Dict,  # Quality checkpoint results (if chapter)
+    'content_file': str,  # Path to saved content
+    'metadata_file': str  # Path to metadata file
+}
+```
+
+### Quality Checkpoint Structure
+
+```python
+{
+    'chapter_num': int,
+    'timestamp': str,
+    'metrics': {
+        'compliance_rate': float,
+        'character_consistency': float,
+        'narrative_adherence': float,
+        'cta_appropriateness': float,
+        'emotional_arc_continuity': float,
+        'structure_variation': float,
+        'signature_phrase_rotation': float,
+        'technical_accuracy': float,
+        'overall_consistency': float
+    },
+    'validation_results': {
+        'is_valid': bool,
+        'issues_count': int,
+        'warnings_count': int,
+        'auto_fixes_count': int
     }
-  ],
-  "summary": {
-    "total_issues": 3,
-    "errors": 0,
-    "warnings": 2,
-    "info": 1,
-    "word_count": 3245,
-    "char_count": 18234
-  }
 }
 ```
 
@@ -292,117 +324,43 @@ SIGNATURE_PHRASES (1 issues):
 
 ## Best Practices
 
-### 1. Validate After Generation
-Always validate content after AI generation:
-
-```bash
-# Generate content
-python ai_prompts/prompt_builder.py --format chapter --topic tax_planning > prompt.txt
-# (Use prompt with AI to generate content)
-# Save to content/chapters/chapter_01.md
-
-# Validate generated content
-python scripts/content_validator.py \
-  --content-file content/chapters/chapter_01.md \
-  --format chapter
-```
-
-### 2. Use Run IDs for Tracking
-Track validation runs for specific content:
-
-```bash
-python scripts/content_validator.py \
-  --content-file content.md \
-  --format chapter \
-  --run-id chapter-01-v2 \
-  --output validation_reports/chapter-01-v2.json
-```
-
-### 3. Integrate into Workflow
-Add validation to your content generation workflow:
-
-```bash
-#!/bin/bash
-# generate_and_validate.sh
-
-# Generate prompt
-python ai_prompts/prompt_builder.py \
-  --format chapter \
-  --topic "$1" \
-  --output prompts/chapter_prompt.txt
-
-# (Generate content using prompt)
-
-# Validate content
-python scripts/content_validator.py \
-  --content-file "content/chapters/$1.md" \
-  --format chapter \
-  --output "validation_reports/$1.json"
-
-# Check exit code
-if [ $? -eq 0 ]; then
-  echo "✅ Validation passed"
-else
-  echo "❌ Validation failed - check report"
-  exit 1
-fi
-```
-
-### 4. Review Reports
-- Check JSON reports for detailed analysis
-- Use context to understand issues
-- Apply suggestions to fix problems
+1. **Always use `generate_content_with_quality.py`** for book chapters
+2. **Review validation results** before publishing
+3. **Check quality checkpoints** after every chapter
+4. **Review editor tracker** for flagged issues
+5. **Fix critical issues** before continuing
+6. **Monitor quality trends** across chapters
 
 ---
 
 ## Troubleshooting
 
-### False Positives
-If you get false positives:
-1. Check the context in the report
-2. Verify it's not in a code block or URL
-3. If legitimate, consider adding exception rules
+### Common Issues
 
-### Missing Validations
-If expected validations aren't running:
-1. Check format type is correct
-2. Verify format limits are defined
-3. Check vocabulary file exists
+**Issue**: "Narrative not found in framework"
+- **Solution**: Use existing narrative or request AI-assisted creation
 
-### Run ID Conflicts
-If run IDs conflict:
-1. Use custom run IDs with `--run-id`
-2. Use `--force-revalidate` to override cache
-3. Check `tracking/validation_runs/` for existing runs
+**Issue**: "Character inconsistency detected"
+- **Solution**: Check character state, update if evolution is intentional
 
----
+**Issue**: "CTA doesn't match funnel stage"
+- **Solution**: Auto-fix will replace, but review appropriateness
 
-## Advanced Usage
+**Issue**: "Too many permission frames"
+- **Solution**: Reduce to max 2, vary language
 
-### Batch Validation
-
-```bash
-# Validate all chapters
-for file in content/chapters/*.md; do
-  python scripts/content_validator.py \
-    --content-file "$file" \
-    --format chapter \
-    --output "validation_reports/$(basename $file .md).json"
-done
-```
-
-### CI/CD Integration
-
-```yaml
-# Example GitHub Actions
-- name: Validate Content
-  run: |
-    python scripts/content_validator.py \
-      --content-file content/chapters/chapter_01.md \
-      --format chapter
-```
+**Issue**: "Signature phrase used too recently"
+- **Solution**: Use different phrase or request approval exception
 
 ---
 
-*For questions or issues, see the main documentation or check validation run files in `tracking/validation_runs/`.*
+## Related Documentation
 
+- `docs/analysis/IMPLEMENTATION_STATUS.md` - Implementation details
+- `docs/analysis/INTEGRATION_COMPLETE.md` - System integration
+- `docs/analysis/STRESS_TEST_ANALYSIS.md` - Edge case testing
+- `README.md` - Project overview
+
+---
+
+*For questions or issues, review the implementation documentation or check the editor tracker for flagged issues.*

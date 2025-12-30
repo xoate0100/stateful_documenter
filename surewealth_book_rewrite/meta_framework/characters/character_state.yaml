@@ -1,0 +1,51 @@
+# Character State Tracking
+# Tracks character attributes and usage across all chapters
+
+character_states:
+  # Format:
+  # CHARACTER_ID:
+  #   base_profile:
+  #     name: "Full Name"
+  #     income: 100000
+  #     situation: "single_father"
+  #     age: 45
+  #     # Add other attributes as needed
+  #   locked_attributes:
+  #     - "name"
+  #     - "income"
+  #     - "situation"
+  #     - "age"
+  #     # All attributes are locked by default
+  #   usage_tracking:
+  #     chapters: [2, 5, 8, 12]
+  #     last_reference: "Chapter 8"
+  #     total_references: 4
+  #   evolution_tracking:
+  #     allowed: true
+  #     changes: []
+  #     # Changes must be approved and tracked
+  #   additional_attributes:
+  #     # New attributes can be added as story requires
+  #     # Must be added to tracker to maintain consistency
+
+# Example (to be populated with actual characters):
+# JOHN_SMITH:
+#   base_profile:
+#     name: "John Smith"
+#     income: 100000
+#     situation: "single_father"
+#     age: 45
+#   locked_attributes:
+#     - "name"
+#     - "income"
+#     - "situation"
+#     - "age"
+#   usage_tracking:
+#     chapters: []
+#     last_reference: null
+#     total_references: 0
+#   evolution_tracking:
+#     allowed: true
+#     changes: []
+#   additional_attributes: {}
+
