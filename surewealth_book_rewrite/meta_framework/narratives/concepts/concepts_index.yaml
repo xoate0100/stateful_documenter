@@ -1,0 +1,40 @@
+# Concepts Index
+# Registry of all strategic concepts and psychological frameworks
+
+concepts:
+  CONCEPT_PERMISSION_TO_SPEND:
+    title: "Permission to Spend"
+    file: narratives/concepts/PERMISSION_TO_SPEND.yaml
+    primary_theme: psychological_framework
+    blue_ocean_term: "SPF (Spending Permission Framework)"
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Possible_to_double_income-report-1.txt"
+  
+  CONCEPT_DEATH_BENEFIT_ASSET_REPLACEMENT:
+    title: "Death Benefit Asset Replacement"
+    file: narratives/concepts/DEATH_BENEFIT_ASSET_REPLACEMENT.yaml
+    primary_theme: legacy_protection
+    blue_ocean_term: "LAR (Legacy Asset Replacement)"
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Possible_to_double_income-report-1.txt"
+  
+  CONCEPT_STRATEGIC_ASSET_LEVERAGE:
+    title: "Strategic Asset Leverage"
+    file: narratives/concepts/STRATEGIC_ASSET_LEVERAGE.yaml
+    primary_theme: leverage_growth
+    blue_ocean_term: "SAL (Strategic Asset Leverage)"
+    used_in_chapters: []
+    status: active
+    source: "User requirement - policy loan strategies"
+  
+  CONCEPT_SECURE_NOTES_DOUBLE_DIP:
+    title: "Secure Notes Double-Dip Strategy"
+    file: narratives/concepts/SECURE_NOTES_DOUBLE_DIP.yaml
+    primary_theme: growth_acceleration
+    blue_ocean_term: "SNDD (Secure Notes Double-Dip)"
+    used_in_chapters: []
+    status: active
+    source: "User requirement - secure notes with policy loans"
+

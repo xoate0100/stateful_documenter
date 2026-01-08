@@ -215,7 +215,8 @@ def generate_content(
         'metadata': metadata,
         'content_id': content_id,
         'file_paths': file_paths,
-        'validation': None  # Will be populated when content is validated
+        'validation': None,  # Will be populated when content is validated
+        'expected_length': length  # Store for validation
     }
 
 
@@ -242,6 +243,9 @@ def save_and_validate_content(
     metadata = metadata_manager.load_metadata(content_id)
     if not metadata:
         raise ValueError(f"Metadata not found for content_id: {content_id}")
+    
+    # Get expected length from metadata if available
+    expected_length = metadata.get('expected_length') or metadata.get('length')
     
     print(f"\n{'='*70}")
     print(f"Validating Content: {content_id}")
@@ -297,9 +301,11 @@ def save_and_validate_content(
         with open(content_file, 'w', encoding='utf-8') as f:
             f.write(content)
     
-    # Run ContentValidator (lessons learned)
-    print(f"  Running ContentValidator...")
-    is_valid, issues, warnings = validator.validate_content(content, metadata)
+    # Run ContentValidator (lessons learned + edge cases)
+    print(f"  Running ContentValidator with comprehensive validation...")
+    # Get expected length from metadata or chapter spec
+    expected_length = metadata.get('expected_length') or metadata.get('length')
+    is_valid, issues, warnings = validator.validate_content(content, metadata, expected_length=expected_length)
     
     # Combine validation results
     all_issues = book_validation.get('issues', []) + issues
@@ -357,19 +363,34 @@ def save_and_validate_content(
     # Update index with updated metadata
     index_manager.add_content(metadata)
     
+    # Check for critical issues (length, compliance, required elements)
+    critical_issues = [i for i in all_issues if 'CRITICAL' in i or 'too short' in i.lower() or 'compliance violation' in i.lower()]
+    should_reject = len(critical_issues) > 0
+    
     # Print summary
     print(f"\n{'='*70}")
     print(f"Validation Complete")
     print(f"{'='*70}")
-    print(f"  Valid: {'[OK]' if metadata['validation']['is_valid'] else '[FAIL]'}")
+    print(f"  Valid: {'[OK]' if metadata['validation']['is_valid'] and not should_reject else '[FAIL]'}")
     print(f"  Issues: {len(all_issues)}")
     print(f"  Warnings: {len(all_warnings)}")
+    
+    if critical_issues:
+        print(f"\n  [FAIL] CRITICAL ISSUES FOUND ({len(critical_issues)}):")
+        for issue in critical_issues[:5]:  # Show first 5
+            print(f"    - {issue}")
+        if len(critical_issues) > 5:
+            print(f"    ... and {len(critical_issues) - 5} more")
+        print(f"\n  [ACTION REQUIRED] Content will be REJECTED. Regenerate with fixes.")
+    
     if checkpoint:
         print(f"  Quality Score: {checkpoint.get('metrics', {}).get('overall_consistency', 0):.1%}")
     print(f"{'='*70}\n")
     
     return {
-        'is_valid': metadata['validation']['is_valid'],
+        'is_valid': metadata['validation']['is_valid'] and not should_reject,
+        'should_reject': should_reject,
+        'critical_issues': critical_issues,
         'issues': all_issues,
         'warnings': all_warnings,
         'checklist': checklist,

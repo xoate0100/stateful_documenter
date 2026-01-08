@@ -1,0 +1,161 @@
+# Allegory: The Family Well
+story_vault_entry:
+  id: ALLEGORY_FAMILY_WELL
+  title: "The Family Well"
+  type: allegory
+  description: >
+    A family digs their own well instead of relying on external water sources.
+    Represents creating your own financial foundation (guaranteed income) rather
+    than depending on market returns or external sources. Emphasizes legacy,
+    self-sufficiency, and generational wealth.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: medium
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: mid_funnel
+  user_intent_profile: researching
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - late_career_executive_retirement_window
+    - successful_business_owner_exit_strategy
+    - squeeze_parent_retirement_education
+    - public_servant_pension_gap
+    - dual_income_professional_no_pension
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - dependent
+    - uncertain
+    - vulnerable
+  emotional_end_state:
+    - independent
+    - secure
+    - legacy_focused
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Relying on external sources (market, banks, employers)
+    - Uncertainty about future availability
+    - No control over access
+    - Worry about leaving nothing for family
+  dreams_aspirations:
+    - Self-sufficiency
+    - Generational legacy
+    - Control over resources
+    - Reliable, consistent access
+  objection_patterns:
+    - "But I can just use the market"
+    - "Banks are reliable, aren't they?"
+    - "I don't need to build my own system"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      A family relies on a shared village well. It works fine—until it doesn't.
+      During droughts, the well runs dry. During disputes, access is restricted.
+      The family pays fees, waits in line, and has no control.
+    conflict: >
+      A severe drought hits. The village well runs dry. The family realizes
+      they're completely dependent on something they don't control. They watch
+      their neighbors who dug their own wells continue to thrive.
+    realization: >
+      The family decides to dig their own well. It's hard work upfront, and
+      it takes time. But once complete, they have their own reliable source.
+      They control access, they're not subject to others' decisions, and
+      they can pass it down to their children.
+    resolution: >
+      Years later, the family's well still provides. Their children inherit
+      not just the well, but the wisdom of self-sufficiency. They're no longer
+      dependent on external sources—they've created their own foundation.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Digging Your Own Well"
+    elements:
+      - symbol: village_well
+        represents: market-dependent or external financial sources
+      - symbol: family_well
+        represents: guaranteed income foundation
+      - symbol: drought
+        represents: market downturns or economic crises
+      - symbol: inheritance
+        represents: generational wealth transfer
+
+  charts_graphs:
+    recommended:
+      - guaranteed_income_vs_market_comparison
+      - generational_wealth_illustration
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I'm dependent on the market"
+      - "I have no control over my retirement income"
+      - "What if the market fails me?"
+      - "I'm worried about leaving nothing for my family"
+    aspiration_language:
+      - "I want to create my own financial foundation"
+      - "I want to be self-sufficient"
+      - "I want to leave a legacy for my family"
+      - "I want control over my resources"
+    decision_triggers:
+      - "I need to dig my own well"
+      - "I want to be independent"
+      - "I want to create a legacy"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Legacy_Protection
+    modal_urgency_language:
+      - "Dig your own well before the drought hits."
+      - "Create your own foundation—don't depend on others."
+      - "Build what you can pass down to your children."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - lead_magnet_teaser
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to dig your own financial well."
+    primary_cta:
+      - "Let's build your family's financial foundation."
+    urgency_trigger:
+      - "Dig your own well before the drought hits."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - guaranteed_income_calculator
+      - legacy_planning_calculator
+    interactive_tools:
+      - foundation_builder
+    downloadable_assets:
+      - family_legacy_guide
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Dig your own well before the drought hits."
+    - "Create your own foundation—don't depend on others."
+    - "Build what you can pass down to your children."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null
+

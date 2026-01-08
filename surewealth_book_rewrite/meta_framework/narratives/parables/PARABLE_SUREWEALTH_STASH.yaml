@@ -1,0 +1,168 @@
+# Parable: The SureWealth Stash
+story_vault_entry:
+  id: PARABLE_SUREWEALTH_STASH
+  title: "The SureWealth Stash"
+  type: legacy_parable
+  description: >
+    A folksy, memorable device similar to the "Tin Can Theory" that helps people
+    understand that rate of return doesn't matter if you're a "save to spend" person.
+    The SureWealth Stash has guaranteed growth, but more importantly, it's "locked"
+    (requires intentional access), so people end up with more money than in accounts
+    where they can easily withdraw. Emphasizes the value of intentional access and
+    guaranteed growth over chasing returns.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: low
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: mid_funnel
+  user_intent_profile: researching
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - early_retiree_immediate_need
+    - late_career_executive_retirement_window
+    - successful_business_owner_exit_strategy
+    - dual_income_professional_no_pension
+    - squeeze_parent_retirement_education
+    - public_servant_pension_gap
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - chasing_returns
+    - uncertain
+    - tempted
+  emotional_end_state:
+    - focused
+    - secure
+    - intentional
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Chasing higher returns
+    - "Save to spend" habits
+    - Easy access leading to withdrawals
+    - Rate of return obsession
+  dreams_aspirations:
+    - Actually keeping what you save
+    - Guaranteed growth
+    - Intentional access
+    - Building wealth over time
+  objection_patterns:
+    - "But I can get a better rate of return"
+    - "What if I need the money?"
+    - "I need higher returns"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      Imagine three ways to save: The SureWealth Stash (guaranteed growth,
+      intentional access), a regular savings account (modest growth, easy access),
+      and a mutual fund (higher potential returns, easy access). You put $100
+      a month into each, with the goal of saving for retirement.
+    conflict: >
+      Over 17 years, which one would you have more money in? Most people guess
+      the mutual fund—after all, it has the highest potential returns. But here's
+      the reality: if you're like most Americans, you're a "save to spend" person.
+      You save with a goal, but when that goal feels far away, you dip into it.
+    realization: >
+      The SureWealth Stash requires intentional access—you can't just swipe a
+      card or click a button. That intentional barrier means you actually keep
+      what you save. The savings account? Easy access means easy withdrawals.
+      The mutual fund? Market dips create fear, leading to withdrawals at the
+      wrong time.
+    resolution: >
+      The SureWealth Stash isn't about the highest return—it's about actually
+      keeping what you save. Guaranteed growth plus intentional access means
+      you build wealth over time, not just save to spend. The rate of return
+      doesn't matter if you don't keep the money.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "The SureWealth Stash"
+    elements:
+      - symbol: stash
+        represents: policy with intentional access
+      - symbol: guaranteed_growth
+        represents: predictable, steady growth
+      - symbol: intentional_access
+        represents: requires thought to access (not impulsive)
+      - symbol: save_to_spend
+        represents: common American savings habit
+
+  charts_graphs:
+    recommended:
+      - three_circles_comparison
+      - guaranteed_vs_volatile_comparison
+      - intentional_access_illustration
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I can get a better rate of return"
+      - "I need higher returns"
+      - "What if I need the money?"
+    aspiration_language:
+      - "I want to actually keep what I save"
+      - "I want guaranteed growth"
+      - "I want to build wealth over time"
+    decision_triggers:
+      - "Maybe I should focus on keeping what I save"
+      - "I want guaranteed growth"
+      - "I want intentional access"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Myth_vs_Reality
+    modal_urgency_language:
+      - "The rate of return doesn't matter if you don't keep the money."
+      - "Your SureWealth Stash—where you actually keep what you save."
+      - "Guaranteed growth plus intentional access equals wealth."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - lead_magnet_teaser
+    - tool_result_page
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how the SureWealth Stash helps you keep what you save."
+    primary_cta:
+      - "Let's build your SureWealth Stash."
+    urgency_trigger:
+      - "The rate of return doesn't matter if you don't keep the money."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - stash_comparison_calculator
+      - guaranteed_growth_calculator
+    interactive_tools:
+      - stash_simulator
+    downloadable_assets:
+      - surewealth_stash_guide
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "The rate of return doesn't matter if you don't keep the money."
+    - "Your SureWealth Stash—where you actually keep what you save."
+    - "Guaranteed growth plus intentional access equals wealth."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null
+

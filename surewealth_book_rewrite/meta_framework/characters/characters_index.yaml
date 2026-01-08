@@ -9,4 +9,29 @@ characters:
   #   first_appearance: chapter_XX
   #   last_referenced: chapter_XX
   #   status: active | archived
+  #   target_persona: persona_id
+  
+  SARAH_EARLY_RETIREE:
+    name: Sarah Mitchell
+    file: characters/characters/SARAH_EARLY_RETIREE.yaml
+    first_appearance: null
+    last_referenced: null
+    status: active
+    target_persona: early_retiree_immediate_need
+  
+  ROBERT_EXECUTIVE:
+    name: Robert Chen
+    file: characters/characters/ROBERT_EXECUTIVE.yaml
+    first_appearance: null
+    last_referenced: null
+    status: active
+    target_persona: late_career_executive_retirement_window
+  
+  MARIA_BUSINESS_OWNER:
+    name: Maria Rodriguez
+    file: characters/characters/MARIA_BUSINESS_OWNER.yaml
+    first_appearance: null
+    last_referenced: null
+    status: active
+    target_persona: successful_business_owner_exit_strategy
 

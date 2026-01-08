@@ -1,0 +1,165 @@
+# Parable: The Fox and the Chicken Coop
+story_vault_entry:
+  id: PARABLE_FOX_CHICKEN_COOP
+  title: "The Fox and the Chicken Coop"
+  type: legacy_parable
+  description: >
+    The government (fox) controls the rules for Roth IRAs and other retirement
+    accounts. They can change the rules at any time, remove advantages, tax
+    distributions, or change contribution limits. You're trusting the fox to
+    protect your chickens (retirement savings). Emphasizes control, trust, and
+    the risk of government rule changes.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: medium
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: mid_funnel
+  user_intent_profile: researching
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - late_career_executive_retirement_window
+    - dual_income_professional_no_pension
+    - successful_business_owner_exit_strategy
+    - squeeze_parent_retirement_education
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - trusting
+    - confident
+    - secure
+  emotional_end_state:
+    - concerned
+    - aware
+    - seeking_control
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Trusting government rules won't change
+    - Assuming Roth advantages are permanent
+    - Not understanding government control
+    - Risk of rule changes
+  dreams_aspirations:
+    - Control over own money
+    - Protection from rule changes
+    - Independence from government
+    - Predictable rules
+  objection_patterns:
+    - "But Roth is tax-free"
+    - "The government wouldn't change the rules"
+    - "Roth is the best option"
+    - "It's guaranteed"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      A farmer builds a chicken coop and asks the fox to design the security
+      system. The fox promises: "I'll protect your chickens. They'll be safe
+      here. I'll even give you tax benefits for using my system." The farmer
+      trusts the fox, puts all his chickens in the fox-designed coop.
+    conflict: >
+      Years pass. The chickens grow, multiply, become valuable. The farmer
+      needs his chickens. But the fox says: "I've changed the rules. Now
+      you can only take out a few chickens at a time. And I'm taking a
+      percentage. The rules I promised? I can change them anytime."
+    realization: >
+      The farmer realizes his mistake: he trusted the fox to protect his
+      chickens. But the fox controls the rules, and the fox can change them
+      at any time. The farmer has no control—the fox does.
+    resolution: >
+      The farmer learns: don't let the fox build your chicken coop. Control
+      your own money, your own rules, your own security. The fox will always
+      be the fox—and the fox controls the rules.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Fox Building the Chicken Coop"
+    elements:
+      - symbol: fox
+        represents: government controlling rules
+      - symbol: chicken_coop
+        represents: Roth IRA or government-controlled account
+      - symbol: chickens
+        represents: retirement savings
+      - symbol: rule_changes
+        represents: government changing tax rules
+
+  charts_graphs:
+    recommended:
+      - government_control_illustration
+      - rule_change_timeline
+      - control_comparison
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "But Roth is tax-free"
+      - "The government wouldn't change the rules"
+      - "Roth is guaranteed"
+      - "It's the best option"
+    aspiration_language:
+      - "I want control over my money"
+      - "I want protection from rule changes"
+      - "I want independence from government"
+      - "I want predictable rules"
+    decision_triggers:
+      - "Maybe I shouldn't trust the fox"
+      - "I want control"
+      - "I want to protect myself from rule changes"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Cautionary_Tale
+    modal_urgency_language:
+      - "Don't let the fox build your chicken coop."
+      - "The fox controls the rules—and the fox can change them."
+      - "The government will always be the government—and they control the rules."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - lead_magnet_teaser
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to protect yourself from the fox."
+    primary_cta:
+      - "Let's build your own chicken coop."
+    urgency_trigger:
+      - "Don't let the fox build your chicken coop."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - government_control_calculator
+      - rule_change_risk_calculator
+    interactive_tools:
+      - fox_simulator
+    downloadable_assets:
+      - fox_protection_guide
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+    - educational_only
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Don't let the fox build your chicken coop."
+    - "The fox controls the rules—and the fox can change them."
+    - "The government will always be the government—and they control the rules."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null
+

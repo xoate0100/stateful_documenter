@@ -1,0 +1,157 @@
+# Case Study: Sarah, the Early Retiree Who Needed Income Now
+story_vault_entry:
+  id: COMPOSITE_CLIENT_EARLY_RETIREE
+  title: "Sarah, the Early Retiree Who Needed Income Now"
+  type: composite_case_study
+  description: >
+    Demonstrates how someone who just retired needs immediate income strategy
+    and sequence risk protection, not just long-term planning.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: medium
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: conversion
+  user_intent_profile: ready_to_act
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - early_retiree_immediate_need
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - anxious
+    - urgent
+    - uncertain
+  emotional_end_state:
+    - secure
+    - confident
+    - protected
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Just retired, need income immediately
+    - Worried about market downturn affecting withdrawals
+    - Sequence risk is real and immediate
+    - Healthcare costs unknown
+  dreams_aspirations:
+    - Guaranteed income floor
+    - Protection from market volatility
+    - Peace of mind in retirement
+    - Predictable income stream
+  objection_patterns:
+    - "I need income now, not in 5 years"
+    - "What if the market crashes right after I retire?"
+    - "I can't wait for strategies to work"
+    - "I need protection, not just growth"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      Sarah retired at 65 with $1.2 million in her 401(k). She thought she was set.
+      But the first month of retirement brought a new reality: she needed income now,
+      and every market dip felt like a threat to her future.
+    conflict: >
+      The market dropped 15% in her first six months of retirement. Her advisor
+      told her to "stay the course," but Sarah realized that advice worked for
+      accumulation, not distribution. She needed protection, not patience.
+    realization: >
+      Sarah discovered that retirement income isn't about waiting for the market
+      to recover—it's about creating a foundation that doesn't depend on market timing.
+      The sequence risk was real, and she needed a strategy that protected her now.
+    resolution: >
+      With a guaranteed income floor in place, Sarah could take withdrawals
+      without fear. The market could fluctuate, but her income stayed predictable.
+      She had protection when she needed it most—right at the start of retirement.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Foundation First"
+    elements:
+      - symbol: foundation
+        represents: guaranteed income floor
+      - symbol: market_fluctuations
+        represents: sequence risk
+      - symbol: protection
+        represents: income security
+
+  charts_graphs:
+    recommended:
+      - sequence_risk_illustration
+      - income_strategy_timeline
+      - before_after_income_comparison
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I just retired and I need income now"
+      - "What if the market crashes right after I start withdrawing?"
+      - "I can't wait for strategies to work—I need protection now"
+      - "The sequence risk is real and it's happening to me"
+    aspiration_language:
+      - "I want guaranteed income I can count on"
+      - "I want protection from market volatility"
+      - "I want peace of mind in retirement"
+      - "I want predictable income, not market-dependent withdrawals"
+    decision_triggers:
+      - "I need to protect my retirement now"
+      - "Show me how to create guaranteed income"
+      - "I can't afford to wait"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Problem_Agitate_Solve
+    modal_urgency_language:
+      - "The sequence risk is real—and it's happening right now."
+      - "You've retired. Now let's protect what you have."
+      - "Protect your retirement while you still can."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - tool_result_page
+    - webinar_slide
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to protect your retirement income from sequence risk."
+    primary_cta:
+      - "Protect your retirement now—the sequence risk is real"
+    urgency_trigger:
+      - "The sequence risk is real—and it's happening right now."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - sequence_risk_calculator
+      - income_strategy_calculator
+    interactive_tools:
+      - retirement_income_planner
+    downloadable_assets:
+      - early_retirement_income_guide
+    webinar_integration:
+      - sequence_risk_protection_webinar
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "You've retired. Now let's protect what you have."
+    - "The sequence risk is real—here's how to protect against it."
+    - "Protect your retirement while you still can."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters:
+      - SARAH_EARLY_RETIREE
+    last_used: null
+

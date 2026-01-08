@@ -1,0 +1,76 @@
+# Current Retirement Scenarios - 2026
+# Replaces outdated 2008 financial crisis references
+
+current_scenarios:
+  covid_early_retirement:
+    title: "Retired During COVID-19 (2020-2021)"
+    description: "Health concerns, job market uncertainty, or lifestyle changes led to early retirement during the pandemic"
+    psychological_hooks:
+      - "Many people who retired during or after COVID-19 did so earlier than planned, often with less savings than they'd hoped for"
+      - "The pandemic forced difficult choices: retire early due to health concerns, or keep working in an uncertain environment"
+      - "Some retirees had to tap into savings during the pandemic, widening the retirement savings gap"
+    sources:
+      - "Pew Research Center: 'Amid the pandemic, a rising share of older U.S. adults are now retired' (2021)"
+      - "U.S. Census Bureau: Survey of Income and Program Participation (2021)"
+      - "Forbes: 'COVID-19 Exacerbated Financial Disparities and the Retirement Savings Gap' (2021)"
+    usage_notes: "Use for stories about early retirement, health concerns, or pandemic impact on savings"
+    
+  high_inflation_retirement:
+    title: "Retired During High Inflation (2022-2023)"
+    description: "Retired when inflation was surging, fixed income not keeping up with rising costs"
+    psychological_hooks:
+      - "You've saved $800,000 for retirement. But what happens when inflation erodes that purchasing power?"
+      - "When the same groceries cost 20% more than they did two years ago, your fixed income doesn't stretch as far"
+      - "Retirees on fixed incomes face significant challenges when inflation persists"
+    sources:
+      - "Bureau of Labor Statistics (BLS) Consumer Price Index (CPI) data"
+      - "Federal Reserve economic analysis"
+      - "Consumer research on retiree spending patterns"
+    usage_notes: "Use for stories about purchasing power, cost of living, or fixed income challenges"
+    
+  current_planning:
+    title: "Planning to Retire in 2026-2027"
+    description: "Facing new Secure Act 2.0 rules, market volatility, healthcare costs, and Social Security uncertainty"
+    psychological_hooks:
+      - "You're planning to retire in 2026, but the rules have changed. Secure Act 2.0 brings new requirements and opportunities"
+      - "Market volatility makes retirement timing uncertain. When should you retire? How much do you really need?"
+      - "Healthcare costs are rising faster than expected. Will your savings cover what you need?"
+    sources:
+      - "SECURE Act 2.0 legislative text and analysis"
+      - "Congressional statements on retirement readiness concerns"
+      - "Kiplinger, Fidelity, NerdWallet analyses of Secure Act 2.0"
+    usage_notes: "Use for forward-looking content, planning scenarios, or Secure Act 2.0 discussions"
+    
+  recent_retirement:
+    title: "Retired in 2024-2025"
+    description: "Retired during market volatility, facing sequence risk, higher healthcare costs, and inflation"
+    psychological_hooks:
+      - "You retired in 2024, right when the market was volatile. Sequence of returns risk became real"
+      - "Healthcare costs are higher than you expected. Medicare premiums keep rising"
+      - "Inflation is eroding your purchasing power faster than you planned for"
+    sources:
+      - "DALBAR Quantitative Analysis of Investor Behavior"
+      - "Morningstar retirement readiness studies"
+      - "Centers for Medicare & Medicaid Services (CMS) data"
+    usage_notes: "Use for stories about current retirees facing real-time challenges"
+    
+  market_volatility_2024_2025:
+    title: "Market Volatility Impact (2024-2025)"
+    description: "Retirees experiencing sequence of returns risk during recent market volatility"
+    psychological_hooks:
+      - "The market dropped 15% in 2024, right when you needed to start taking withdrawals"
+      - "You're selling low to cover expenses, while your portfolio is down"
+      - "Sequence of returns risk isn't theoretical—it's happening right now"
+    sources:
+      - "DALBAR Quantitative Analysis of Investor Behavior"
+      - "Morningstar research on sequence of returns risk"
+      - "Market analysis from Vanguard/BlackRock"
+    usage_notes: "Use for sequence risk discussions, market timing concerns, or withdrawal strategy challenges"
+
+outdated_scenarios:
+  financial_crisis_2008:
+    title: "Retired in 2008 after Financial Crisis"
+    status: "OUTDATED - DO NOT USE"
+    replacement: "Use 'covid_early_retirement' or 'recent_retirement' instead"
+    reason: "Too far in the past (18 years ago), not relatable to current retirees"
+

@@ -1,0 +1,167 @@
+# Metaphor: Accessible Funds (Replaces "Savings Account")
+story_vault_entry:
+  id: ACCESSIBLE_FUNDS_METAPHOR
+  title: "Accessible Funds"
+  type: metaphor
+  description: >
+    Reframes policy loans as accessing your own funds, similar to how you
+    might access money you've set aside. Removes shame and obligation.
+    Policy loans become a normal financial tool, not debt. Replaces "Savings
+    Account" metaphor which cannot be legally/ethically used.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: low
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: mid_funnel
+  user_intent_profile: researching
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - early_retiree_immediate_need
+    - successful_business_owner_exit_strategy
+    - dual_income_professional_no_pension
+    - squeeze_parent_retirement_education
+    - public_servant_pension_gap
+    - widow_caregiver
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - shame
+    - fear
+    - confusion
+    - resistance
+  emotional_end_state:
+    - normal
+    - confident
+    - clear
+    - empowered
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Shame about using policy funds
+    - Fear of "debt"
+    - Confusion about policy loans
+    - Resistance to accessing funds
+  dreams_aspirations:
+    - Normal financial behavior
+    - Easy access to funds
+    - No shame or obligation
+    - Clear understanding
+  objection_patterns:
+    - "I don't want to go into debt"
+    - "I feel bad about using the money"
+    - "I thought I couldn't touch it"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      You've set aside money for a purpose—maybe for a career change, maybe
+      for an opportunity, maybe for an emergency. When you need it, you access
+      it. There's no shame in using money you've set aside—that's what it's
+      there for.
+    conflict: >
+      But with a policy, you might feel like accessing your funds is "going into
+      debt" or "doing something wrong." You might feel shame or obligation
+      about using money that's yours.
+    realization: >
+      Your policy funds are your money, set aside for your needs. Accessing
+      them is no different than accessing any other money you've set aside.
+      There's no debt, no shame, no obligation—just accessing your own funds.
+    resolution: >
+      Think of your policy like money you've set aside. When you need it, you
+      access it. When you have extra, you add to it. It's your money, your
+      access, your control. No shame, no debt—just your funds, accessible
+      when you need them.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Accessing Your Funds"
+    elements:
+      - symbol: set_aside_money
+        represents: cash value accumulation
+      - symbol: accessing_funds
+        represents: policy loans
+      - symbol: no_shame
+        represents: normal financial behavior
+      - symbol: your_control
+        represents: policy loan flexibility
+
+  charts_graphs:
+    recommended:
+      - simple_diagram_fund_access
+      - comparison_chart_policy_vs_other_funds
+      - access_timeline
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I don't want to go into debt"
+      - "I feel bad about using the money"
+      - "I thought I couldn't touch it"
+      - "I'm ashamed to use it"
+    aspiration_language:
+      - "I want to access my funds when I need them"
+      - "I want no shame or obligation"
+      - "I want it to feel normal"
+      - "I want easy access"
+    decision_triggers:
+      - "I want to access my funds"
+      - "I want no shame"
+      - "I want it to be normal"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Normalization
+    modal_urgency_language:
+      - "Access your funds—no shame, no debt, just your money."
+      - "It's your money, set aside for your needs."
+      - "When you need it, you access it—that's what it's there for."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - tool_result_page
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to access your funds when you need them."
+    primary_cta:
+      - "Let's set up your accessible funds."
+    urgency_trigger:
+      - "Your funds, your access, your control."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - fund_access_calculator
+      - policy_loan_calculator
+    interactive_tools:
+      - fund_access_simulator
+    downloadable_assets:
+      - accessible_funds_guide
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+    - do_not_claim_savings_account
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Access your funds—no shame, no debt, just your money."
+    - "It's your money, set aside for your needs."
+    - "When you need it, you access it—that's what it's there for."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null
+

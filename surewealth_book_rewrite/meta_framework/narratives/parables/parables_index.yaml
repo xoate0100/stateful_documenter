@@ -1,0 +1,37 @@
+# Parables Index
+# Registry of all parables used in the book
+
+parables:
+  PARABLE_GOOSE_GOLDEN_EGGS:
+    title: "The Goose That Laid the Golden Eggs"
+    file: narratives/parables/PARABLE_GOOSE_GOLDEN_EGGS.yaml
+    primary_theme: principal_preservation
+    used_in_chapters: []
+    status: active
+    source: "Adapted from classic fable, inspired by Infinite Banking"
+  
+  PARABLE_UNSHAKABLE_TREE:
+    title: "The Unshakable Tree"
+    file: narratives/parables/PARABLE_UNSHAKABLE_TREE.yaml
+    primary_theme: stability_through_storms
+    used_in_chapters: []
+    status: active
+    source: "Inspired by SureWealth stability messaging"
+  
+  PARABLE_SUREWEALTH_STASH:
+    title: "The SureWealth Stash"
+    file: narratives/parables/PARABLE_SUREWEALTH_STASH.yaml
+    primary_theme: intentional_access_guaranteed_growth
+    used_in_chapters: []
+    status: active
+    source: "Inspired by Tin Can Theory, adapted for SureWealth"
+  
+  PARABLE_FOX_CHICKEN_COOP:
+    title: "The Fox and the Chicken Coop"
+    file: narratives/parables/PARABLE_FOX_CHICKEN_COOP.yaml
+    primary_theme: government_rule_risk
+    blue_ocean_term: "GRR (Government Rule Risk)"
+    used_in_chapters: []
+    status: active
+    source: "User concept - Roth DISadvantage, government control"
+

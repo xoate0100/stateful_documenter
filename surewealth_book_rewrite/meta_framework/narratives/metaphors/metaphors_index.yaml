@@ -7,8 +7,17 @@ metaphors:
     file: narratives/metaphors/SAVINGS_ACCOUNT_METAPHOR.yaml
     primary_theme: policy_loans
     used_in_chapters: []
-    status: active
+    status: deprecated
+    note: "DEPRECATED - Cannot legally claim policy is a savings account. Use ACCESSIBLE_FUNDS_METAPHOR instead."
     source: "Transcript Analysis - Oct 10 - Dustin"
+  
+  ACCESSIBLE_FUNDS_METAPHOR:
+    title: "Accessible Funds"
+    file: narratives/metaphors/ACCESSIBLE_FUNDS_METAPHOR.yaml
+    primary_theme: policy_loans
+    used_in_chapters: []
+    status: active
+    source: "Replacement for SAVINGS_ACCOUNT_METAPHOR - legally compliant"
   
   WATERFALL_CASCADE_METAPHOR:
     title: "Waterfall Debt Paydown Strategy"
@@ -31,8 +40,25 @@ metaphors:
     file: narratives/metaphors/WAREHOUSE_OF_WEALTH_METAPHOR.yaml
     primary_theme: policy_mechanics
     used_in_chapters: []
-    status: active
+    status: deprecated
+    note: "DEPRECATED - Trademarked by Infinite Banking. Use SUREWEALTH_STORE_METAPHOR instead."
     source: "Transcript Analysis - Cheri M. - June 2025"
+  
+  SUREWEALTH_STORE_METAPHOR:
+    title: "The SureWealth Store"
+    file: narratives/metaphors/SUREWEALTH_STORE_METAPHOR.yaml
+    primary_theme: policy_mechanics
+    used_in_chapters: []
+    status: active
+    source: "Replacement for WAREHOUSE_OF_WEALTH_METAPHOR - SureWealth branded"
+  
+  BUILDING_YOUR_BANK_METAPHOR:
+    title: "Building Your Bank"
+    file: narratives/metaphors/BUILDING_YOUR_BANK_METAPHOR.yaml
+    primary_theme: financial_independence
+    used_in_chapters: []
+    status: active
+    source: "Replacement for BECOMING_YOUR_OWN_BANKER - alliterative, memorable"
   
   LEFT_POCKET_RIGHT_POCKET_METAPHOR:
     title: "Left Pocket to Right Pocket"
@@ -57,4 +83,12 @@ metaphors:
     used_in_chapters: []
     status: active
     source: "Transcript Analysis - Oct 10 - Dustin"
+  
+  BECOMING_YOUR_OWN_BANKER_METAPHOR:
+    title: "Becoming Your Own Banker"
+    file: narratives/metaphors/BECOMING_YOUR_OWN_BANKER_METAPHOR.yaml
+    primary_theme: financial_independence
+    used_in_chapters: []
+    status: active
+    source: "Inspired by Infinite Banking Concept and Bank On Yourself"
 

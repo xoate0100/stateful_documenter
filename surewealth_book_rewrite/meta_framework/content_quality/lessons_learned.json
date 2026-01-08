@@ -513,6 +513,73 @@
       "examples": {
         "good": "**Quick Start:**\n- Review your last 3 years of taxes for overpaid retirement plan distributions.\n- Estimate how much of your income is guaranteed vs. variable.\n- Calculate your sequence risk exposure."
       }
+    },
+    "ai_speak_patterns": {
+      "issue": "Content contains AI-generated language patterns that sound stilted and formulaic: 'This isn't speculation. This is data from authoritative sources. This is what actually happens.' Pattern 'This isn't X, it's Y' appears 26+ times. Generic citations like 'Federal Reserve consumer research' lack specificity.",
+      "first_discovered": "2026-01-08",
+      "impact": "High - Breaks suspension of disbelief, sounds AI-generated, paternalizes readers, reduces credibility",
+      "what_not_to_do": [
+        "Use patterns like 'This isn't speculation. This is data from authoritative sources.'",
+        "Say 'This is what actually happens' after citing data",
+        "Use generic citations like 'Federal Reserve consumer research' or 'According to recent data'",
+        "Overuse 'This isn't X, it's Y' contrast pattern",
+        "Tell readers that sources are 'authoritative' - let citations speak for themselves",
+        "Use phrases like 'This isn't about making you afraid. This is about making you aware.'"
+      ],
+      "what_to_do_instead": [
+        "Cite specific studies: 'Morningstar's 2025 Retirement Readiness Study found...'",
+        "Use specific report names: 'The Federal Reserve's 2024 Survey of Consumer Finances shows...'",
+        "Include dates and study names: 'Fidelity's 2026 Retiree Health Care Cost Estimate projects...'",
+        "Vary sentence structure - don't always use 'This isn't X, it's Y'",
+        "Let citations speak for themselves - don't explain they're authoritative",
+        "Use direct statements instead of contrasts: 'The math is clear...' instead of 'This isn't about fear, it's about math'",
+        "Remove redundant phrases like 'This is what actually happens'"
+      ],
+      "examples": {
+        "bad": "This isn't speculation. This is data from authoritative sources. This is what actually happens.",
+        "bad": "According to Federal Reserve consumer research, about 60% of retirees...",
+        "bad": "This isn't about fear. This is about math.",
+        "bad": "This isn't about making you afraid. This is about making you aware.",
+        "good": "Morningstar's 2025 Retirement Readiness Study found that 40% of retirees experience a market downturn in their first five years.",
+        "good": "The Federal Reserve's 2024 Survey of Consumer Finances shows that 60% of retirees end up in the same tax bracket.",
+        "good": "The math is clear: if you're taking withdrawals during a downturn, you're selling low.",
+        "good": "Here's what the data shows: retirees who have guaranteed income covering 60% of expenses are more likely to maintain their standard of living."
+      }
+    },
+    "exact_phrase_repetition": {
+      "issue": "Exact phrases (5+ words) or sentences (10+ words) repeated within the same chapter. Example: 'The goal is to give you the information you need to make decisions based on reality, not hope.' appears twice in Chapter 1 (lines 194 and 228) and twice in Chapter 2.",
+      "first_discovered": "2026-01-08",
+      "impact": "Critical - Breaks suspension of disbelief, signals AI-generated content, reduces credibility and relatability, interrupts flow, reduces conversion potential",
+      "what_not_to_do": [
+        "Repeat exact phrases (5+ words) within the same chapter",
+        "Repeat exact sentences (10+ words) within the same chapter",
+        "Use same transition phrase 3+ times in same chapter",
+        "Use same sentence structure pattern 3+ times in close proximity",
+        "Use same word 3+ times in 500-word window without variation"
+      ],
+      "what_to_do_instead": [
+        "Vary language while maintaining meaning: 'The goal is...' → 'My aim is...' → 'The purpose is...'",
+        "Rotate transition phrases: 'But here's what...' → 'However...' → 'In contrast...' → 'Meanwhile...'",
+        "Vary sentence structure: Mix simple, compound, complex sentences",
+        "Use synonyms strategically: 'vulnerable' → 'at risk' → 'exposed' → 'susceptible'",
+        "Use pronouns and references to avoid repetition after first mention",
+        "Vary paragraph openings: question, statement, statistic, story"
+      ],
+      "examples": {
+        "bad": "The goal is to give you the information you need to make decisions based on reality, not hope. [content] The goal is to give you the information you need to make decisions based on reality, not hope.",
+        "bad": "Here's what this means: [X]. Here's what that means: [Y]. Here's what it means: [Z].",
+        "bad": "But here's what... But here's what... But here's what...",
+        "good": "The goal is to give you the information you need to make decisions based on reality, not hope. [content] My aim is to help you make informed decisions grounded in facts, not assumptions.",
+        "good": "Here's what this means: [X]. The implication? [Y]. In practical terms: [Z].",
+        "good": "But here's what... However... In contrast... Meanwhile..."
+      },
+      "edge_cases": {
+        "intentional_repetition": "Allow if clearly rhetorical (anaphora, epistrophe) and limited to 2-3 instances",
+        "technical_terms": "Allow necessary repetition but vary introduction: 'sequence risk' → 'sequence of returns risk' → 'this timing risk'",
+        "chapter_transitions": "Allow similar phrases for transitions but vary: 'Next, we'll explore...' → 'Coming up...' → 'In Chapter X...'",
+        "signature_phrases": "Allow across chapters (with rotation) but prevent exact repetition within same chapter",
+        "citations": "Allow citations to repeat but vary introduction: 'Morningstar's study' → 'The Morningstar research' → 'According to Morningstar'"
+      }
     }
   },
   

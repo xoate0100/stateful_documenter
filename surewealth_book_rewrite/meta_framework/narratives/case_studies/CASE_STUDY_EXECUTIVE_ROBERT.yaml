@@ -1,0 +1,161 @@
+# Case Study: Robert, the Executive with a Closing Window
+story_vault_entry:
+  id: COMPOSITE_CLIENT_EXECUTIVE
+  title: "Robert, the Executive with a Closing Window"
+  type: composite_case_study
+  description: >
+    Demonstrates how late-career executives need strategic planning for stock options,
+    deferred comp, and tax optimization before retirement window closes.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: solution-aware
+  buyer_sophistication: high
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: conversion
+  user_intent_profile: comparing
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - late_career_executive_retirement_window
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - strategic
+    - concerned
+    - time_pressured
+  emotional_end_state:
+    - optimized
+    - confident
+    - in_control
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Retirement window closing (2-5 years)
+    - Stock options timing decisions
+    - Deferred comp distribution strategy
+    - High tax bracket optimization
+    - Need to create guaranteed income (no pension)
+  dreams_aspirations:
+    - Strategic tax optimization
+    - Legacy protection
+    - Control over retirement timing
+    - Guaranteed income creation
+  objection_patterns:
+    - "I need to optimize my stock options before retirement"
+    - "How do I handle deferred comp distribution?"
+    - "I don't have a pension—how do I create guaranteed income?"
+    - "The window is closing—I need a strategy now"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      Robert was 60, a VP at a Fortune 500 company, with $2 million in his 401(k),
+      $500K in stock options, and $300K in deferred comp. Retirement was three years away,
+      and he realized he had a closing window to optimize everything.
+    conflict: >
+      Robert's advisor told him to "just keep saving," but Robert knew that wasn't enough.
+      He needed to optimize stock option timing, plan deferred comp distribution, and
+      create guaranteed income—all while managing a high tax bracket. The window was closing.
+    realization: >
+      Robert discovered that strategic planning wasn't about waiting—it was about
+      optimizing the transition. He needed to coordinate stock options, deferred comp,
+      and tax strategies before retirement, not after. The window was closing, and
+      every year mattered.
+    resolution: >
+      With a coordinated strategy, Robert optimized his stock options, planned his
+      deferred comp distribution, and created a guaranteed income foundation. He
+      protected his legacy and controlled his retirement timing. The window was closing,
+      but he was ready.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Closing Window"
+    elements:
+      - symbol: window
+        represents: retirement transition period
+      - symbol: optimization
+        represents: strategic coordination
+      - symbol: legacy
+        represents: wealth protection
+
+  charts_graphs:
+    recommended:
+      - retirement_timeline
+      - tax_optimization_comparison
+      - stock_option_timing_strategy
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "My retirement window is closing—I need to optimize now"
+      - "I have stock options and deferred comp—how do I coordinate this?"
+      - "I don't have a pension—how do I create guaranteed income?"
+      - "I'm in a high tax bracket—how do I optimize?"
+    aspiration_language:
+      - "I want to optimize my retirement transition"
+      - "I want to protect my legacy"
+      - "I want control over my retirement timing"
+      - "I want strategic tax optimization"
+    decision_triggers:
+      - "The window is closing—I need a strategy"
+      - "Show me how to optimize before retirement"
+      - "I need to coordinate stock options and deferred comp"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Strategic_Planning
+    modal_urgency_language:
+      - "Your retirement window is closing. Let's optimize your strategy."
+      - "The window is closing—every year matters."
+      - "Optimize your retirement strategy before the window closes."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - tool_result_page
+    - webinar_slide
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to optimize your retirement transition."
+    primary_cta:
+      - "Optimize your retirement strategy before the window closes"
+    urgency_trigger:
+      - "The window is closing—every year matters."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - stock_option_optimizer
+      - deferred_comp_planner
+      - tax_optimization_calculator
+    interactive_tools:
+      - retirement_transition_planner
+    downloadable_assets:
+      - executive_retirement_guide
+    webinar_integration:
+      - executive_retirement_optimization_webinar
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Your retirement window is closing. Let's optimize your strategy."
+    - "The window is closing—every year matters."
+    - "Optimize your retirement strategy before the window closes."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters:
+      - ROBERT_EXECUTIVE
+    last_used: null
+

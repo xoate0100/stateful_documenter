@@ -1,0 +1,154 @@
+# Metaphor: Becoming Your Own Banker
+story_vault_entry:
+  id: BECOMING_YOUR_OWN_BANKER_METAPHOR
+  title: "Becoming Your Own Banker"
+  type: metaphor
+  description: >
+    Instead of borrowing from banks and paying interest to them, you create
+    your own banking system using cash value. You borrow from yourself,
+    pay interest to yourself, and recapture what would have gone to banks.
+    Emphasizes control, recapturing interest, and financial independence.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: solution-aware
+  buyer_sophistication: high
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: conversion
+  user_intent_profile: comparing
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - late_career_executive_retirement_window
+    - successful_business_owner_exit_strategy
+    - dual_income_professional_no_pension
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - dependent
+    - paying_others
+    - out_of_control
+  emotional_end_state:
+    - independent
+    - recapturing_interest
+    - in_control
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Paying interest to banks
+    - No control over loan terms
+    - Dependent on external lenders
+    - Losing money to interest payments
+  dreams_aspirations:
+    - Recapturing interest
+    - Control over borrowing
+    - Financial independence
+    - Becoming self-sufficient
+  objection_patterns:
+    - "But banks are convenient"
+    - "I don't need to borrow"
+    - "It's too complicated"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      You need to finance a car. You go to the bank, get a loan, and pay
+      interest to the bank. The bank profits from your need. You're dependent
+      on their terms, their approval, their rates.
+    conflict: >
+      You realize: every time you borrow, you're paying interest to someone else.
+      Over a lifetime, that's hundreds of thousands of dollars going to banks
+      instead of staying with you.
+    realization: >
+      What if you could become your own banker? Instead of borrowing from a bank,
+      you borrow from your own cash value. You pay interest, but you pay it to
+      yourself. You recapture what would have gone to the bank.
+    resolution: >
+      By becoming your own banker, you control the terms, you recapture the
+      interest, and you build wealth instead of paying it to others. You're no
+      longer dependent—you're independent.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Your Own Bank"
+    elements:
+      - symbol: traditional_bank
+        represents: external lenders, paying interest to others
+      - symbol: your_own_bank
+        represents: cash value system, recapturing interest
+      - symbol: interest_payments
+        represents: money flowing to you vs. away from you
+
+  charts_graphs:
+    recommended:
+      - interest_recapture_comparison
+      - banking_system_illustration
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I'm tired of paying interest to banks"
+      - "I have no control over loan terms"
+      - "I'm dependent on external lenders"
+    aspiration_language:
+      - "I want to recapture my interest"
+      - "I want to be my own banker"
+      - "I want financial independence"
+    decision_triggers:
+      - "I want to become my own banker"
+      - "I want to recapture interest"
+      - "I want control"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Independence_Empowerment
+    modal_urgency_language:
+      - "Become your own banker—recapture your interest."
+      - "Stop paying banks—start paying yourself."
+      - "Control your borrowing—control your future."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - tool_result_page
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to become your own banker."
+    primary_cta:
+      - "Let's build your own banking system."
+    urgency_trigger:
+      - "Stop paying banks—start paying yourself."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - interest_recapture_calculator
+      - banking_system_builder
+    interactive_tools:
+      - your_own_bank_simulator
+    downloadable_assets:
+      - banking_independence_guide
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Become your own banker—recapture your interest."
+    - "Stop paying banks—start paying yourself."
+    - "Control your borrowing—control your future."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null
+

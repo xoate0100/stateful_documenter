@@ -1,0 +1,158 @@
+# Parable: The Unshakable Tree
+story_vault_entry:
+  id: PARABLE_UNSHAKABLE_TREE
+  title: "The Unshakable Tree"
+  type: legacy_parable
+  description: >
+    A tree with deep roots stands firm through storms. Represents a well-structured
+    financial plan with guaranteed growth and tax advantages that provides stability
+    during market volatility and economic uncertainty.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: medium
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: mid_funnel
+  user_intent_profile: researching
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - early_retiree_immediate_need
+    - late_career_executive_retirement_window
+    - successful_business_owner_exit_strategy
+    - dual_income_professional_no_pension
+    - squeeze_parent_retirement_education
+    - public_servant_pension_gap
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - anxious
+    - uncertain
+    - vulnerable
+  emotional_end_state:
+    - secure
+    - confident
+    - stable
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Market volatility anxiety
+    - Fear of economic downturns
+    - Uncertainty about stability
+    - Worry about plan failing
+  dreams_aspirations:
+    - Unshakeable foundation
+    - Stability through storms
+    - Deep roots (guaranteed growth)
+    - Protection from volatility
+  objection_patterns:
+    - "What if the market crashes?"
+    - "How do I know it will hold?"
+    - "Everything seems uncertain"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      Two trees grow side by side. One has shallow roots, reaching for quick
+      growth above ground. The other has deep roots, growing slowly but
+      establishing a strong foundation.
+    conflict: >
+      A severe storm hits. Winds howl, rain pounds, the ground shakes. The
+      shallow-rooted tree sways dangerously, loses branches, and nearly topples.
+      The deep-rooted tree stands firm, its roots holding it steady.
+    realization: >
+      The storm passes. The shallow-rooted tree is damaged, weakened, struggling
+      to recover. The deep-rooted tree stands tall, barely affected. The difference
+      wasn't visible during calm weather—it showed during the storm.
+    resolution: >
+      The deep-rooted tree represents a financial plan built on guaranteed growth
+      and tax advantages. It may not grow as fast during good times, but it stands
+      firm when storms hit. The roots—the foundation—are what matter.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Deep Roots"
+    elements:
+      - symbol: shallow_roots
+        represents: market-dependent, volatile strategies
+      - symbol: deep_roots
+        represents: guaranteed growth foundation
+      - symbol: storm
+        represents: market downturns, economic crises
+      - symbol: standing_firm
+        represents: stability and protection
+
+  charts_graphs:
+    recommended:
+      - guaranteed_vs_volatile_comparison
+      - stability_during_crises_illustration
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I'm worried about market crashes"
+      - "What if my plan fails during a downturn?"
+      - "Everything seems so uncertain"
+    aspiration_language:
+      - "I want an unshakeable foundation"
+      - "I want to stand firm through storms"
+      - "I want deep roots that hold me steady"
+    decision_triggers:
+      - "I need deep roots"
+      - "I want to stand firm"
+      - "I need an unshakeable plan"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Stability_Through_Storms
+    modal_urgency_language:
+      - "Build deep roots before the storm hits."
+      - "The difference shows during the storm, not during calm weather."
+      - "Stand firm when others sway."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - lead_magnet_teaser
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to build deep financial roots."
+    primary_cta:
+      - "Let's build your unshakeable foundation."
+    urgency_trigger:
+      - "Build deep roots before the storm hits."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - stability_calculator
+      - guaranteed_growth_calculator
+    interactive_tools:
+      - root_builder
+    downloadable_assets:
+      - stability_guide
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Build deep roots before the storm hits."
+    - "The difference shows during the storm, not during calm weather."
+    - "Stand firm when others sway."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null
+

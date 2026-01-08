@@ -1,0 +1,62 @@
+# Character: Maria - Business Owner
+character:
+  id: MARIA_BUSINESS_OWNER
+  name: Maria Rodriguez
+  type: composite_case_study
+  first_appearance: null
+  last_referenced: null
+  
+  demographics:
+    age: 61
+    marital_status: married
+    occupation: Construction Company Owner
+    education: High school, some college
+    location: Suburban
+    
+  financial_profile:
+    annual_income: $150,000 (variable)
+    savings: $200,000
+    retirement_accounts:
+      - type: 401k
+        balance: 300000
+        contribution_rate: 0
+    home_equity: $500,000
+    debt: $100,000 (business loan)
+    other_assets:
+      - type: business_equity
+        value: 2000000
+    
+  emotional_profile:
+    primary_fears:
+      - Losing what she built
+      - Exit strategy mistakes
+      - Legacy not protected
+      - Loss of control
+    aspirations:
+      - Protect what she built
+      - Create exit strategy
+      - Maintain control
+      - Legacy protection
+    awareness_level: problem-aware
+    buyer_sophistication: medium
+    
+  narrative_arc:
+    # Track character's journey through chapters
+    
+  references:
+    # Track where character is mentioned
+    
+  associated_narratives:
+    allegories:
+      - ALLEGORY_LEAKY_BUCKET
+    metaphors:
+      - WAREHOUSE_OF_WEALTH_METAPHOR
+    case_studies:
+      - COMPOSITE_CLIENT_BUSINESS_OWNER
+    
+  associated_tools:
+    - tool_id: exit_strategy_planner
+      context: Business owner retirement planning
+    - tool_id: equity_conversion_calculator
+      context: Business exit strategy
+

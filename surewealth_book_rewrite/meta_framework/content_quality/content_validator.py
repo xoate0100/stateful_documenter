@@ -24,35 +24,50 @@ class ContentValidator:
         self.issues = []
         self.warnings = []
     
-    def validate_content(self, content: str, metadata: Dict[str, Any]) -> Tuple[bool, List[str], List[str]]:
+    def validate_content(self, content: str, metadata: Dict[str, Any], 
+                        expected_length: str = None) -> Tuple[bool, List[str], List[str]]:
         """
-        Validate content against lessons learned
+        Validate content against lessons learned and edge cases
+        
+        Args:
+            content: Content to validate
+            metadata: Content metadata
+            expected_length: Expected length specification (e.g., "3000-4000 words")
         
         Returns: (is_valid, issues, warnings)
         """
         self.issues = []
         self.warnings = []
         
-        # Check structure variation
+        # P0 - CRITICAL: Length validation (must pass)
+        if expected_length:
+            self._check_length(content, expected_length)
+        
+        # P0 - CRITICAL: Compliance validation (must pass)
+        self._check_compliance(content)
+        
+        # P0 - CRITICAL: Required elements validation (must pass)
+        self._check_required_elements(content, metadata)
+        
+        # P0 - CRITICAL: Structure validation (must pass)
+        self._check_structure_completeness(content, metadata)
+        
+        # P1 - HIGH: Content quality checks
         self._check_structure_variation(content, metadata)
-        
-        # Check permission frames
         self._check_permission_frames(content)
-        
-        # Check signature phrases
         self._check_signature_phrases(content, metadata)
-        
-        # Check CTAs
         self._check_ctas(content, metadata)
-        
-        # Check story resolution
         self._check_story_resolution(content)
-        
-        # Check dialogue
         self._check_dialogue(content)
-        
-        # Check numbers
         self._check_numbers(content)
+        
+        # P1 - HIGH: Repetition and specificity
+        self._check_repetition(content)
+        self._check_specificity(content)
+        
+        # P2 - MEDIUM: Additional quality checks
+        self._check_citations(content)
+        self._check_generic_language(content)
         
         return len(self.issues) == 0, self.issues, self.warnings
     
@@ -241,6 +256,334 @@ class ContentValidator:
         
         if warnings:
             self.warnings.extend(warnings)
+    
+    def _check_length(self, content: str, expected_length: str):
+        """P0 - CRITICAL: Validate content length against expected length"""
+        word_count = len(re.findall(r'\b\w+\b', content))
+        
+        # Parse expected length (e.g., "3000-4000 words" or "3000 words")
+        if '-' in expected_length:
+            min_words, max_words = map(int, expected_length.replace(' words', '').split('-'))
+        else:
+            min_words = int(expected_length.replace(' words', '').replace('word', '').strip())
+            max_words = min_words
+        
+        # Critical: Reject if below minimum
+        if word_count < min_words:
+            gap = min_words - word_count
+            gap_pct = (gap / min_words * 100) if min_words > 0 else 0
+            self.issues.append(
+                f"CRITICAL: Content too short - {word_count:,} words (expected {min_words:,}-{max_words:,}). "
+                f"Gap: {gap:,} words ({gap_pct:.1f}% short). Content will be rejected."
+            )
+        # Warning: Above maximum
+        elif word_count > max_words:
+            excess = word_count - max_words
+            excess_pct = (excess / max_words * 100) if max_words > 0 else 0
+            self.warnings.append(
+                f"Content exceeds maximum - {word_count:,} words (expected {min_words:,}-{max_words:,}). "
+                f"Excess: {excess:,} words ({excess_pct:.1f}% over). Consider trimming."
+            )
+        # Warning: Below target (middle of range)
+        elif word_count < (min_words + max_words) / 2:
+            target = (min_words + max_words) / 2
+            gap = target - word_count
+            self.warnings.append(
+                f"Content below target - {word_count:,} words (target: ~{target:.0f} words). "
+                f"Consider expanding by {gap:.0f} words."
+            )
+    
+    def _check_compliance(self, content: str):
+        """P0 - CRITICAL: Check for compliance violations"""
+        # Load compliance enforcer
+        try:
+            from meta_framework.language.compliance_enforcer import ComplianceEnforcer
+            enforcer = ComplianceEnforcer()
+            violations = enforcer.validate_text(content)
+            
+            if violations:
+                for violation in violations:
+                    banned = violation.get('banned_phrase', 'unknown')
+                    alternatives = violation.get('alternatives', [])
+                    self.issues.append(
+                        f"CRITICAL: Compliance violation - '{banned}' found. "
+                        f"Use alternatives: {', '.join(alternatives[:3])}"
+                    )
+        except Exception as e:
+            # If compliance enforcer not available, warn but don't block
+            self.warnings.append(f"Compliance validation unavailable: {str(e)}")
+    
+    def _check_required_elements(self, content: str, metadata: Dict[str, Any]):
+        """P0 - CRITICAL: Check for required elements based on format type"""
+        format_type = metadata.get('format_type', 'unknown')
+        
+        if format_type == 'chapter':
+            # Chapters must have: opening hook, body sections, CTA
+            has_hook = bool(re.search(r'## .*[Hh]ook|## .*[Ii]ntroduction|^[^#].*[?!]', content[:500], re.MULTILINE))
+            has_body = bool(re.search(r'## .+', content))
+            has_cta = bool(re.search(r'## Your Next Step|## Next Step|CTA|call to action', content, re.IGNORECASE))
+            
+            if not has_hook:
+                self.issues.append("CRITICAL: Missing opening hook or introduction")
+            if not has_body:
+                self.issues.append("CRITICAL: Missing body sections")
+            if not has_cta:
+                self.issues.append("CRITICAL: Missing CTA section")
+        
+        # Check for required narratives if specified
+        narrative_ids = metadata.get('narrative_ids', [])
+        if narrative_ids:
+            # Check if narratives are actually used (basic check)
+            narrative_mentions = sum(1 for nid in narrative_ids if re.search(nid.replace('_', ' '), content, re.IGNORECASE))
+            if narrative_mentions == 0:
+                self.warnings.append(f"Specified narratives not clearly used: {', '.join(narrative_ids)}")
+    
+    def _check_structure_completeness(self, content: str, metadata: Dict[str, Any]):
+        """P0 - CRITICAL: Validate structure completeness"""
+        format_type = metadata.get('format_type', 'unknown')
+        
+        if format_type == 'chapter':
+            # Check for required chapter sections
+            required_sections = [
+                r'^# Chapter \d+:',  # Chapter title
+                r'## .+',  # At least one section
+            ]
+            
+            for pattern in required_sections:
+                if not re.search(pattern, content, re.MULTILINE):
+                    self.issues.append(f"CRITICAL: Missing required structure element: {pattern}")
+    
+    def _check_repetition(self, content: str):
+        """P0 - CRITICAL: Check for exact phrase repetition and other repetitive patterns"""
+        # P0 - CRITICAL: Check for exact phrase repetition (5+ words)
+        words = re.findall(r'\b\w+\b', content.lower())
+        
+        # Check for exact phrase duplicates (5-word, 6-word, 7-word phrases)
+        exact_duplicates = []
+        for n in [5, 6, 7, 8, 9, 10]:  # Check 5-10 word phrases
+            phrase_counts = {}
+            for i in range(len(words) - n + 1):
+                phrase = ' '.join(words[i:i+n])
+                if phrase not in phrase_counts:
+                    phrase_counts[phrase] = []
+                phrase_counts[phrase].append(i)
+            
+            # Find phrases that appear 2+ times
+            for phrase, positions in phrase_counts.items():
+                if len(positions) > 1:
+                    # Filter out common phrases that are okay to repeat
+                    if not self._is_common_phrase(phrase):
+                        exact_duplicates.append({
+                            'phrase': phrase,
+                            'count': len(positions),
+                            'length': n
+                        })
+        
+        if exact_duplicates:
+            # Group by phrase length and get most problematic
+            by_length = {}
+            for dup in exact_duplicates:
+                length = dup['length']
+                if length not in by_length:
+                    by_length[length] = []
+                by_length[length].append(dup)
+            
+            # Report longest duplicates first (most problematic)
+            for length in sorted(by_length.keys(), reverse=True):
+                dups = by_length[length]
+                if dups:
+                    worst = max(dups, key=lambda x: x['count'])
+                    self.issues.append(
+                        f"CRITICAL: Exact phrase repetition detected: '{worst['phrase'][:80]}...' "
+                        f"appears {worst['count']} times ({worst['length']}-word phrase). "
+                        f"Must vary language while maintaining meaning."
+                    )
+                    break  # Report most problematic one
+        
+        # P0 - CRITICAL: Check for repeated sentences (exact matches, 10+ words)
+        sentences = re.split(r'[.!?]+\s+', content)
+        sentence_counts = {}
+        for sentence in sentences:
+            sentence_clean = sentence.strip().lower()
+            # Only check longer sentences (10+ words) to avoid false positives
+            word_count = len(re.findall(r'\b\w+\b', sentence_clean))
+            if word_count >= 10:
+                sentence_counts[sentence_clean] = sentence_counts.get(sentence_clean, 0) + 1
+        
+        repeated_sentences = {s: c for s, c in sentence_counts.items() if c > 1}
+        if repeated_sentences:
+            worst = max(repeated_sentences.items(), key=lambda x: x[1])
+            self.issues.append(
+                f"CRITICAL: Exact sentence repetition detected: '{worst[0][:80]}...' "
+                f"appears {worst[1]} times. Must vary sentence structure."
+            )
+        
+        # P1 - HIGH: Check for sentence structure repetition
+        structure_patterns = [
+            r"here's what (.+?) means",
+            r"let me show you (.+?)",
+            r"the difference\? (.+?)",
+            r"but here's what (.+?) doesn't tell you",
+            r"this isn't about (.+?), it's about (.+?)",
+        ]
+        
+        structure_counts = {}
+        for pattern in structure_patterns:
+            matches = re.findall(pattern, content, re.IGNORECASE)
+            if len(matches) > 2:
+                structure_counts[pattern] = len(matches)
+        
+        if structure_counts:
+            worst_pattern = max(structure_counts.items(), key=lambda x: x[1])
+            self.warnings.append(
+                f"Repetitive sentence structure detected: pattern appears {worst_pattern[1]} times. "
+                f"Consider varying sentence structure."
+            )
+        
+        # P1 - HIGH: Check for word frequency in close proximity (500-word windows)
+        word_positions = {}
+        for i, word in enumerate(words):
+            if word not in word_positions:
+                word_positions[word] = []
+            word_positions[word].append(i)
+        
+        # Check for words that appear 3+ times in close proximity
+        proximity_issues = []
+        for word, positions in word_positions.items():
+            if len(positions) >= 3 and not self._is_common_word(word):
+                # Check if positions are within 500 words of each other
+                for i in range(len(positions) - 2):
+                    window = positions[i:i+3]
+                    if window[-1] - window[0] < 500:  # Within 500 words
+                        proximity_issues.append({
+                            'word': word,
+                            'count': len([p for p in positions if window[0] <= p <= window[-1]]),
+                            'window': window[-1] - window[0]
+                        })
+                        break
+        
+        if proximity_issues:
+            worst = max(proximity_issues, key=lambda x: x['count'])
+            self.warnings.append(
+                f"Word repetition in close proximity: '{worst['word']}' appears {worst['count']} times "
+                f"within {worst['window']} words. Consider using synonyms or varying terminology."
+            )
+        
+        # P1 - HIGH: Check for transition phrase repetition
+        transition_phrases = [
+            r"but here's what",
+            r"the difference\?",
+            r"let me show you",
+            r"here's what (.+?) means",
+            r"this is about",
+        ]
+        
+        transition_counts = {}
+        for pattern in transition_phrases:
+            count = len(re.findall(pattern, content, re.IGNORECASE))
+            if count > 2:
+                transition_counts[pattern] = count
+        
+        if transition_counts:
+            worst = max(transition_counts.items(), key=lambda x: x[1])
+            self.warnings.append(
+                f"Transition phrase repetition: '{worst[0]}' appears {worst[1]} times. "
+                f"Consider rotating transition phrases."
+            )
+    
+    def _is_common_phrase(self, phrase: str) -> bool:
+        """Check if phrase is a common phrase that's okay to repeat"""
+        common_phrases = [
+            'the market is',
+            'in retirement',
+            'of your',
+            'you can',
+            'this is',
+            'that is',
+            'it is',
+            'there are',
+            'you have',
+            'you need',
+            'you want',
+            'you should',
+            'you will',
+            'if you',
+            'when you',
+            'what you',
+            'how you',
+            'why you',
+        ]
+        return phrase in common_phrases or any(phrase.startswith(cp) for cp in common_phrases)
+    
+    def _is_common_word(self, word: str) -> bool:
+        """Check if word is a common word that's okay to repeat"""
+        common_words = {
+            'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
+            'of', 'with', 'by', 'from', 'as', 'is', 'are', 'was', 'were', 'be',
+            'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will',
+            'would', 'could', 'should', 'may', 'might', 'must', 'can', 'this',
+            'that', 'these', 'those', 'i', 'you', 'he', 'she', 'it', 'we', 'they',
+            'your', 'his', 'her', 'its', 'our', 'their', 'retirement', 'retirees',
+            'retiree', 'market', 'income', 'tax', 'taxes', 'money', 'dollar',
+            'dollars', 'year', 'years', 'time', 'times'
+        }
+        return word.lower() in common_words
+    
+    def _check_specificity(self, content: str):
+        """P1 - HIGH: Check for generic/vague content"""
+        # Check for generic phrases
+        generic_phrases = [
+            r'\bsome people\b',
+            r'\bmany cases\b',
+            r'\boften\b',
+            r'\bsometimes\b',
+            r'\btypically\b',
+            r'\bgenerally\b',
+        ]
+        
+        generic_count = sum(len(re.findall(pattern, content, re.IGNORECASE)) for pattern in generic_phrases)
+        if generic_count > 10:
+            self.warnings.append(f"High use of generic language ({generic_count} instances). Add specific examples and concrete details.")
+        
+        # Check for proper nouns (specificity indicator)
+        proper_nouns = len(re.findall(r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\b', content))
+        if proper_nouns < 3 and len(content) > 2000:
+            self.warnings.append("Low specificity - few proper nouns or specific references. Add concrete examples, names, or specific details.")
+    
+    def _check_citations(self, content: str):
+        """P2 - MEDIUM: Check for citations on statistical claims"""
+        # Find statistical claims (numbers with % or dollar amounts in context)
+        stats = re.findall(r'[\d,]+%|[\d,]+\s*(percent|percentage|rate)', content, re.IGNORECASE)
+        dollar_stats = re.findall(r'\$[\d,]+.*?(cost|spend|save|lose|worth)', content, re.IGNORECASE)
+        
+        # Check for citation phrases
+        citation_phrases = [
+            r'according to',
+            r'based on',
+            r'research shows',
+            r'studies indicate',
+            r'data from',
+        ]
+        
+        has_citations = any(re.search(pattern, content, re.IGNORECASE) for pattern in citation_phrases)
+        
+        if (len(stats) + len(dollar_stats)) > 3 and not has_citations:
+            self.warnings.append("Statistical claims without citations. Add 'According to...' or 'Based on...' for credibility.")
+    
+    def _check_generic_language(self, content: str):
+        """P2 - MEDIUM: Check for overly generic language"""
+        # Check for vague qualifiers
+        vague_qualifiers = [
+            r'\bvery\b',
+            r'\bquite\b',
+            r'\brather\b',
+            r'\bpretty\b',
+            r'\bsomewhat\b',
+        ]
+        
+        vague_count = sum(len(re.findall(pattern, content, re.IGNORECASE)) for pattern in vague_qualifiers)
+        if vague_count > 15:
+            self.warnings.append(f"High use of vague qualifiers ({vague_count} instances). Use more specific, concrete language.")
     
     def get_quality_checklist(self, content: str, metadata: Dict[str, Any]) -> Dict[str, bool]:
         """Run quality checklist"""

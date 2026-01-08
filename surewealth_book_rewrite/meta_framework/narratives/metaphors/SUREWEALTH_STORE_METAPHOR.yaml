@@ -1,0 +1,158 @@
+# Metaphor: The SureWealth Store
+story_vault_entry:
+  id: SUREWEALTH_STORE_METAPHOR
+  title: "The SureWealth Store"
+  type: metaphor
+  description: >
+    Policy functions like a store where wealth is stored, tracked, and can be
+    accessed. Money goes in, gets credited for dividends, and can be taken out.
+    Familiar concept that makes policy loans understandable. Replaces "Warehouse
+    of Wealth" which is trademarked by Infinite Banking.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: medium
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: mid_funnel
+  user_intent_profile: researching
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - early_retiree_immediate_need
+    - late_career_executive_retirement_window
+    - successful_business_owner_exit_strategy
+    - dual_income_professional_no_pension
+    - squeeze_parent_retirement_education
+    - public_servant_pension_gap
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - confusion
+    - need_for_clarity
+    - processing
+  emotional_end_state:
+    - clarity
+    - understanding
+    - confidence
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Confusion about how policy loans work
+    - Uncertainty about accessing funds
+    - Need for clarity on policy mechanics
+  dreams_aspirations:
+    - Clear understanding
+    - Easy access to funds
+    - Predictable system
+  objection_patterns:
+    - "I don't understand how this works"
+    - "How do I get my money out?"
+    - "It seems complicated"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      Think of your policy like your SureWealth Store—a place where you store
+      your wealth. When you put money into the store, it gets tracked and
+      credited for dividends, whether you leave it there or take it right back out.
+    conflict: >
+      You might wonder: "If I take money out, do I lose the benefits?" The store
+      doesn't care how long you store something—it credits you the same way
+      whether it's there for a day or a decade.
+    realization: >
+      The SureWealth Store tracks everything you put in, credits you for dividends
+      based on what you've stored, and lets you access your funds when you need
+      them. It's your store—you control what goes in and what comes out.
+    resolution: >
+      By using your SureWealth Store, you can run money through it, take it out
+      when needed, and still benefit from the dividend crediting. It's your store,
+      your wealth, your control.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Your SureWealth Store"
+    elements:
+      - symbol: store
+        represents: policy structure
+      - symbol: storing_wealth
+        represents: cash value accumulation
+      - symbol: accessing_funds
+        represents: policy loans
+      - symbol: dividend_crediting
+        represents: growth regardless of withdrawals
+
+  charts_graphs:
+    recommended:
+      - store_diagram_with_money_flow
+      - process_flowchart_in_credit_out
+      - dividend_crediting_timeline
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I don't understand how this works"
+      - "How do I get my money out?"
+      - "It seems complicated"
+    aspiration_language:
+      - "I want to understand how this works"
+      - "I want easy access to my funds"
+      - "I want a clear system"
+    decision_triggers:
+      - "I want to understand my SureWealth Store"
+      - "Show me how the store works"
+      - "I want clarity"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Clarity_Through_Familiarity
+    modal_urgency_language:
+      - "Your SureWealth Store—where you store your wealth."
+      - "The store tracks everything, credits dividends, and gives you access."
+      - "It's your store—you control what goes in and what comes out."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - tool_result_page
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how your SureWealth Store works."
+    primary_cta:
+      - "Let's set up your SureWealth Store."
+    urgency_trigger:
+      - "Start storing your wealth in your own store."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - store_value_calculator
+      - dividend_crediting_calculator
+    interactive_tools:
+      - store_simulator
+    downloadable_assets:
+      - surewealth_store_guide
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Your SureWealth Store—where you store your wealth."
+    - "The store tracks everything, credits dividends, and gives you access."
+    - "It's your store—you control what goes in and what comes out."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null
+

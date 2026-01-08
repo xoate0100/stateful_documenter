@@ -137,11 +137,53 @@ class BookGenerator:
             output_content=False  # We'll validate after AI generation
         )
         
+        # Store expected length in metadata for validation
+        if 'metadata' in result and result['metadata']:
+            result['metadata']['expected_length'] = chapter_spec.get('length', '3000-4000 words')
+        
         print(f"\n[OK] Prompt generated: {result['file_paths']['prompt']}")
         print(f"[OK] Metadata created: {result['file_paths']['metadata']}")
         
         # Step 2: If content provided, validate it
         if generated_content:
+            # First, check length immediately (before full validation)
+            from scripts.generate_content_with_quality import count_words
+            word_count = count_words(generated_content)
+            expected_length = chapter_spec.get('length', '3000-4000 words')
+            
+            # Parse expected length
+            if '-' in expected_length:
+                min_words, max_words = map(int, expected_length.replace(' words', '').split('-'))
+            else:
+                min_words = int(expected_length.replace(' words', '').replace('word', '').strip())
+                max_words = min_words
+            
+            print(f"\n{'='*80}")
+            print(f"LENGTH CHECK (Pre-Validation)")
+            print(f"{'='*80}")
+            print(f"  Word Count: {word_count:,}")
+            print(f"  Expected: {min_words:,}-{max_words:,} words")
+            
+            if word_count < min_words:
+                gap = min_words - word_count
+                gap_pct = (gap / min_words * 100) if min_words > 0 else 0
+                print(f"  [FAIL] Content too short - {gap:,} words short ({gap_pct:.1f}%)")
+                print(f"  [ACTION] Content will be rejected. Regenerate with explicit length enforcement.")
+                return {
+                    'success': False,
+                    'error': f"Content too short: {word_count:,} words (expected {min_words:,}-{max_words:,})",
+                    'word_count': word_count,
+                    'expected_min': min_words,
+                    'expected_max': max_words,
+                    'gap': gap
+                }
+            elif word_count > max_words:
+                excess = word_count - max_words
+                print(f"  [WARN] Content exceeds maximum by {excess:,} words")
+            else:
+                print(f"  [OK] Length acceptable")
+            print(f"{'='*80}\n")
+            
             print(f"\n{'-'*80}")
             print("VALIDATING GENERATED CONTENT")
             print(f"{'-'*80}\n")
@@ -151,6 +193,22 @@ class BookGenerator:
                 content=generated_content,
                 chapter_num=chapter_spec['chapter_num']
             )
+            
+            # Check if validation indicates rejection
+            if validation.get('should_reject') or validation.get('critical_issues'):
+                print(f"\n{'='*80}")
+                print(f"CONTENT REJECTED - CRITICAL ISSUES FOUND")
+                print(f"{'='*80}")
+                for issue in validation.get('critical_issues', [])[:5]:
+                    print(f"  - {issue}")
+                if len(validation.get('critical_issues', [])) > 5:
+                    print(f"  ... and {len(validation['critical_issues']) - 5} more")
+                print(f"\n  Regenerate content with fixes before proceeding.")
+                return {
+                    'success': False,
+                    'error': 'Content rejected due to critical validation issues',
+                    'validation': validation
+                }
             
             # Step 3: Analyze quality and update lessons learned
             self._analyze_quality(chapter_spec, validation, generated_content)

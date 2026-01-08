@@ -1,0 +1,155 @@
+# Parable: The Goose That Laid the Golden Eggs
+story_vault_entry:
+  id: PARABLE_GOOSE_GOLDEN_EGGS
+  title: "The Goose That Laid the Golden Eggs"
+  type: legacy_parable
+  description: >
+    The classic fable adapted for retirement: don't kill the goose (cash value)
+    to get all the eggs at once. Preserve the asset that produces income, rather
+    than depleting it. Emphasizes protecting capital while accessing income.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: low
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: mid_funnel
+  user_intent_profile: researching
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - early_retiree_immediate_need
+    - late_career_executive_retirement_window
+    - successful_business_owner_exit_strategy
+    - dual_income_professional_no_pension
+    - squeeze_parent_retirement_education
+    - public_servant_pension_gap
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - tempted
+    - short_sighted
+    - greedy
+  emotional_end_state:
+    - wise
+    - patient
+    - protected
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Temptation to access all money at once
+    - Pressure to spend principal
+    - Fear of running out
+    - Short-term thinking
+  dreams_aspirations:
+    - Preserve capital
+    - Access income without depleting assets
+    - Long-term security
+    - Sustainable withdrawals
+  objection_patterns:
+    - "Why not just take it all out?"
+    - "I need the money now"
+    - "What if I don't live long enough?"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      A farmer has a goose that lays one golden egg each day. The eggs provide
+      steady income. The farmer is grateful but sometimes wishes for more.
+    conflict: >
+      The farmer becomes impatient. He thinks: "If I kill the goose, I can
+      get all the eggs at once. I'll have everything immediately." He kills
+      the goose, opens it, and finds nothing inside.
+    realization: >
+      The farmer realizes his mistake. The goose wasn't the treasure—the goose
+      was the system that produced the treasure. By killing it, he destroyed
+      his source of ongoing income.
+    resolution: >
+      The farmer learns: protect the asset that produces income. Don't destroy
+      what gives you ongoing returns. The goose was worth more alive, producing
+      eggs every day, than dead with a one-time payout.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Protect the Goose"
+    elements:
+      - symbol: goose
+        represents: cash value or income-producing asset
+      - symbol: golden_eggs
+        represents: income or withdrawals
+      - symbol: killing_goose
+        represents: depleting principal or cashing out
+
+  charts_graphs:
+    recommended:
+      - principal_preservation_comparison
+      - sustainable_withdrawal_illustration
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I need all my money now"
+      - "Why not just cash out?"
+      - "I'm tempted to take it all"
+    aspiration_language:
+      - "I want to preserve my capital"
+      - "I want income without depleting assets"
+      - "I want the goose to keep laying eggs"
+    decision_triggers:
+      - "Maybe I should protect the asset"
+      - "I want ongoing income"
+      - "I don't want to kill the goose"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Cautionary_Tale
+    modal_urgency_language:
+      - "Don't kill the goose to get all the eggs at once."
+      - "Protect the asset that produces your income."
+      - "The goose is worth more alive than dead."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - lead_magnet_teaser
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to protect your golden goose."
+    primary_cta:
+      - "Let's protect your income-producing assets."
+    urgency_trigger:
+      - "Don't kill the goose to get all the eggs at once."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - principal_preservation_calculator
+      - sustainable_withdrawal_calculator
+    interactive_tools:
+      - goose_protector
+    downloadable_assets:
+      - asset_preservation_guide
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Don't kill the goose to get all the eggs at once."
+    - "Protect the asset that produces your income."
+    - "The goose is worth more alive than dead."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null
+

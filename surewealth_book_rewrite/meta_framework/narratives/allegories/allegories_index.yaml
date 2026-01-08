@@ -31,4 +31,37 @@ allegories:
     used_in_chapters: []
     status: active
     source: "Transcript Analysis - Elizabeth Wiltsie - Aug 2025"
+  
+  ALLEGORY_TORTOISE_AND_HARE:
+    title: "The Tortoise and the Hare"
+    file: narratives/allegories/ALLEGORY_TORTOISE_AND_HARE.yaml
+    primary_theme: steady_vs_volatile_growth
+    used_in_chapters: []
+    status: active
+    source: "Inspired by Bank On Yourself, adapted for SureWealth"
+  
+  ALLEGORY_FAMILY_WELL:
+    title: "The Family Well"
+    file: narratives/allegories/ALLEGORY_FAMILY_WELL.yaml
+    primary_theme: self_sufficiency_legacy
+    used_in_chapters: []
+    status: active
+    source: "Inspired by Infinite Banking and Your Family Bank"
+  
+  ALLEGORY_ORCHARD_KEEPER:
+    title: "The Orchard Keeper"
+    file: narratives/allegories/ALLEGORY_ORCHARD_KEEPER.yaml
+    primary_theme: long_term_cultivation
+    used_in_chapters: []
+    status: active
+    source: "Inspired by Infinite Banking Concept"
+  
+  ALLEGORY_TICKING_TAX_BOMB:
+    title: "The Ticking Tax Bomb"
+    file: narratives/allegories/ALLEGORY_TICKING_TAX_BOMB.yaml
+    primary_theme: tax_deferral_trap
+    blue_ocean_term: "TDT (Tax Deferral Trap)"
+    used_in_chapters: []
+    status: active
+    source: "Transcript Analysis - Five-Simple-Steps-Report-0413.txt"
 

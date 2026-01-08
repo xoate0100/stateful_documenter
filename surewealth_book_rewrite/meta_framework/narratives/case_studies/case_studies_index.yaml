@@ -6,6 +6,31 @@ case_studies:
     title: "Mark, the Engineer Who Wanted Proof"
     file: narratives/case_studies/CASE_STUDY_MARK_ENGINEER.yaml
     primary_theme: complexity_to_clarity
+    target_persona: engineer_retiree
+    used_in_chapters: []
+    status: active
+  
+  COMPOSITE_CLIENT_EARLY_RETIREE:
+    title: "Sarah, the Early Retiree Who Needed Income Now"
+    file: narratives/case_studies/CASE_STUDY_EARLY_RETIREE_SARAH.yaml
+    primary_theme: immediate_income_protection
+    target_persona: early_retiree_immediate_need
+    used_in_chapters: []
+    status: active
+  
+  COMPOSITE_CLIENT_EXECUTIVE:
+    title: "Robert, the Executive with a Closing Window"
+    file: narratives/case_studies/CASE_STUDY_EXECUTIVE_ROBERT.yaml
+    primary_theme: strategic_retirement_optimization
+    target_persona: late_career_executive_retirement_window
+    used_in_chapters: []
+    status: active
+  
+  COMPOSITE_CLIENT_BUSINESS_OWNER:
+    title: "Maria, the Business Owner Who Needed an Exit Strategy"
+    file: narratives/case_studies/CASE_STUDY_BUSINESS_OWNER_MARIA.yaml
+    primary_theme: exit_strategy_legacy_protection
+    target_persona: successful_business_owner_exit_strategy
     used_in_chapters: []
     status: active
 

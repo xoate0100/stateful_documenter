@@ -1,0 +1,158 @@
+# Case Study: Maria, the Business Owner Who Needed an Exit Strategy
+story_vault_entry:
+  id: COMPOSITE_CLIENT_BUSINESS_OWNER
+  title: "Maria, the Business Owner Who Needed an Exit Strategy"
+  type: composite_case_study
+  description: >
+    Demonstrates how business owners with high equity and low liquidity need
+    exit strategy planning while protecting their legacy.
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: problem-aware
+  buyer_sophistication: medium
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: conversion
+  user_intent_profile: researching
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - successful_business_owner_exit_strategy
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - independent
+    - concerned
+    - legacy_focused
+  emotional_end_state:
+    - protected
+    - strategic
+    - in_control
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Business value tied up, low liquidity
+    - Need exit strategy in 6 years
+    - Worried about protecting legacy
+    - Retirement planning while running business
+  dreams_aspirations:
+    - Protect what she built
+    - Create exit strategy
+    - Maintain control
+    - Legacy protection
+  objection_patterns:
+    - "I've built this business—how do I protect it?"
+    - "I need an exit strategy but don't know where to start"
+    - "How do I plan retirement while running the business?"
+    - "I want to maintain control"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      Maria owned a construction company for 25 years. The business was worth
+      $2 million, but she had only $200,000 in liquid savings. Retirement was
+      6 years away, and she needed an exit strategy—but she also needed to
+      protect what she'd built.
+    conflict: >
+      Maria's advisor told her to "just sell the business," but Maria knew
+      it wasn't that simple. She needed to plan the exit, protect her legacy,
+      and create retirement income—all while maintaining control of the process.
+    realization: >
+      Maria discovered that exit strategy wasn't about selling—it was about
+      protecting what she built while creating the income she needed. She
+      could maintain control and protect her legacy, not just liquidate.
+    resolution: >
+      With a coordinated strategy, Maria created her exit plan while protecting
+      her business value. She maintained control, protected her legacy, and
+      created retirement income. She'd built something—and now she was protecting it.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Protecting What You Built"
+    elements:
+      - symbol: building
+        represents: business legacy
+      - symbol: foundation
+        represents: exit strategy
+      - symbol: protection
+        represents: legacy preservation
+
+  charts_graphs:
+    recommended:
+      - exit_strategy_timeline
+      - equity_conversion_strategy
+      - legacy_protection_comparison
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I've built this business—how do I protect it?"
+      - "I need an exit strategy but don't know where to start"
+      - "My business value is tied up—how do I create liquidity?"
+      - "I want to maintain control"
+    aspiration_language:
+      - "I want to protect what I built"
+      - "I want to create my exit strategy"
+      - "I want to maintain control"
+      - "I want legacy protection"
+    decision_triggers:
+      - "I need to protect what I built"
+      - "Show me how to create an exit strategy"
+      - "I want to maintain control"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Legacy_Protection
+    modal_urgency_language:
+      - "You've built something. Now let's protect it."
+      - "Create your exit strategy and protect what you've built."
+      - "Your business is your legacy—let's protect it."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - tool_result_page
+    - webinar_slide
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to create your exit strategy."
+    primary_cta:
+      - "Create your exit strategy and protect what you've built"
+    urgency_trigger:
+      - "Your exit timeline is approaching—plan now."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - exit_strategy_planner
+      - equity_conversion_calculator
+    interactive_tools:
+      - business_exit_planner
+    downloadable_assets:
+      - business_owner_exit_guide
+    webinar_integration:
+      - business_exit_strategy_webinar
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "You've built something. Now let's protect it."
+    - "Create your exit strategy and protect what you've built."
+    - "Your business is your legacy—let's protect it."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters:
+      - MARIA_BUSINESS_OWNER
+    last_used: null
+

@@ -1,29 +1,31 @@
 content_index:
-  total_pieces: 50
+  total_pieces: 61
   by_funnel:
-    top_of_funnel: 24
+    top_of_funnel: 35
     mid_funnel: 19
     lower_funnel: 7
   by_persona:
-    engineer_retiree: 36
+    engineer_retiree: 47
     faith_family_builder: 3
     widow_caregiver: 11
   by_topic:
-    the_hidden_risks_in_your_retirement_plan: 19
-    tax_planning_strategies_for_retirement: 5
+    the_hidden_risks_in_your_retirement_plan: 23
+    tax_planning_strategies_for_retirement: 8
     social_security_optimization: 3
     estate_planning_and_legacy_protection: 11
     healthcare_costs_and_long-term_care_planning: 5
     success_stories_and_next_steps: 7
+    secure_act_2.0:_what_engineers_need_to_know_about_retirement_changes_in_2026: 4
   by_platform:
-    book: 50
+    book: 57
+    blog: 4
   by_format:
-    chapter: 50
+    chapter: 61
   by_tag:
-    the_hidden_risks_in_your_retirement_plan: 19
-    top_of_funnel: 24
-    engineer_retiree: 36
-    tax_planning_strategies_for_retirement: 5
+    the_hidden_risks_in_your_retirement_plan: 23
+    top_of_funnel: 35
+    engineer_retiree: 47
+    tax_planning_strategies_for_retirement: 8
     social_security_optimization: 3
     mid_funnel: 19
     faith_family_builder: 3
@@ -32,7 +34,89 @@ content_index:
     healthcare_costs_and_long-term_care_planning: 5
     success_stories_and_next_steps: 7
     lower_funnel: 7
+    secure_act_2.0:_what_engineers_need_to_know_about_retirement_changes_in_2026: 4
   recent_content:
+  - content_id: blog_2026-01-08_secure-act-2.0:-what-engineers_top-of-funnel_engineer-retiree_dfb39ec6
+    title: 'SECURE Act 2.0: What Engineers Need to Know About Retirement Changes in
+      2026'
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: blog
+    format: chapter
+    created: '2026-01-08T02:49:13.436498'
+  - content_id: blog_2026-01-08_secure-act-2.0:-what-engineers_top-of-funnel_engineer-retiree_dfb39ec6
+    title: 'SECURE Act 2.0: What Engineers Need to Know About Retirement Changes in
+      2026'
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: blog
+    format: chapter
+    created: '2026-01-08T02:49:13.436498'
+  - content_id: blog_2026-01-08_secure-act-2.0:-what-engineers_top-of-funnel_engineer-retiree_dfb39ec6
+    title: 'SECURE Act 2.0: What Engineers Need to Know About Retirement Changes in
+      2026'
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: blog
+    format: chapter
+    created: '2026-01-08T02:49:13.436498'
+  - content_id: blog_2026-01-08_secure-act-2.0:-what-engineers_top-of-funnel_engineer-retiree_dfb39ec6
+    title: 'SECURE Act 2.0: What Engineers Need to Know About Retirement Changes in
+      2026'
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: blog
+    format: chapter
+    created: '2026-01-08T02:49:13.436498'
+  - content_id: book_2026-01-08_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_7b9e97fd
+    title: Tax Planning Strategies for Retirement
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2026-01-08T00:43:44.344234'
+  - content_id: book_2026-01-08_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_7b9e97fd
+    title: Tax Planning Strategies for Retirement
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2026-01-08T00:43:44.344234'
+  - content_id: book_2026-01-08_tax-planning-strategies-for-re_top-of-funnel_engineer-retiree_90d519b9
+    title: Tax Planning Strategies for Retirement
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2026-01-08T00:40:49.599336'
+  - content_id: book_2026-01-07_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_dc95334c
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2026-01-07T22:55:09.311338'
+  - content_id: book_2026-01-07_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_dc95334c
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2026-01-07T22:55:09.311338'
+  - content_id: book_2026-01-07_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_12eee682
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2026-01-07T22:44:13.471953'
+  - content_id: book_2026-01-07_the-hidden-risks-in-your-retir_top-of-funnel_engineer-retiree_7b8a878d
+    title: The Hidden Risks in Your Retirement Plan
+    funnel: top_of_funnel
+    persona: engineer_retiree
+    platform: book
+    format: chapter
+    created: '2026-01-07T22:38:45.037278'
   - content_id: book_2025-12-28_success-stories-and-next-steps_lower-funnel_engineer-retiree_6f8f7839
     title: Success Stories and Next Steps
     funnel: lower_funnel
@@ -383,4 +467,4 @@ content_index:
     platform: book
     format: chapter
     created: '2025-12-28T00:17:02.525497'
-  last_updated: '2025-12-28T03:11:30.663542'
+  last_updated: '2026-01-08T02:57:45.013451'

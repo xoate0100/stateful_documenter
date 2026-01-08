@@ -1,0 +1,65 @@
+book_id: surewealth_retirement_income_book
+title: 'The SureWealth Way: Building Retirement Income That Lasts'
+status: in_progress
+total_chapters: 6
+chapters:
+  chapter_01:
+    number: 1
+    title: Retirement Reality Check
+    filename: chapter_01_retirement_reality_check.md
+    status: approved
+    version: 1
+    funnel_stage: top_of_funnel
+    last_updated: '2026-01-07'
+    current_path: content\published\book\top_of_funnel\chapter_01_retirement_reality_check.md
+    target_path: content/published/book/chapters/chapter_01_retirement_reality_check.md
+  chapter_02:
+    number: 2
+    title: The Tax Leak Draining Your Wealth
+    filename: chapter_02_tax_leak_draining_wealth.md
+    status: approved
+    version: 1
+    funnel_stage: top_of_funnel
+    last_updated: '2026-01-07'
+    current_path: content\published\book\top_of_funnel\chapter_02_tax_leak_draining_wealth.md
+    target_path: content/published/book/chapters/chapter_02_the_tax_leak_draining_your_wealth.md
+  chapter_03:
+    number: 3
+    title: 'Social Security: The Claiming Strategy Most People Miss'
+    filename: chapter_03_social_security_claiming_strategy.md
+    status: approved
+    version: 1
+    funnel_stage: mid_funnel
+    last_updated: '2026-01-07'
+    current_path: content\published\book\mid_funnel\chapter_03_social_security_claiming_strategy.md
+    target_path: content/published/book/chapters/chapter_03_social_security_the_claiming_strategy_most_people_miss.md
+  chapter_04:
+    number: 4
+    title: 'Protecting Your Legacy: Estate Planning That Works'
+    filename: chapter_04_estate_planning_legacy_protection.md
+    status: approved
+    version: 1
+    funnel_stage: mid_funnel
+    last_updated: '2026-01-07'
+    current_path: content\published\book\mid_funnel\chapter_04_estate_planning_legacy_protection.md
+    target_path: content/published/book/chapters/chapter_04_protecting_your_legacy_estate_planning_that_works.md
+  chapter_05:
+    number: 5
+    title: 'Healthcare and Longevity: Planning for the Unknown'
+    filename: chapter_05_healthcare_longevity_planning.md
+    status: approved
+    version: 1
+    funnel_stage: mid_funnel
+    last_updated: '2026-01-07'
+    current_path: content\published\book\mid_funnel\chapter_05_healthcare_longevity_planning.md
+    target_path: content/published/book/chapters/chapter_05_healthcare_and_longevity_planning_for_the_unknown.md
+  chapter_06:
+    number: 6
+    title: 'Real Outcomes: From Crisis to Confidence'
+    filename: chapter_06_real_outcomes_crisis_to_confidence.md
+    status: approved
+    version: 1
+    funnel_stage: lower_funnel
+    last_updated: '2026-01-07'
+    current_path: content\published\book\lower_funnel\chapter_06_real_outcomes_crisis_to_confidence.md
+    target_path: content/published/book/chapters/chapter_06_real_outcomes_from_crisis_to_confidence.md

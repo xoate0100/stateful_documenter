@@ -1,0 +1,249 @@
+# Strategic Concepts Library
+# Blue Ocean Terminology and Strategic Frameworks
+# Based on SureWealthTerms.txt and transcript analysis
+
+version: 1.0
+last_updated: 2026-01-08
+purpose: Central library of strategic concepts, blue ocean terms, and frameworks for content generation
+
+# ─── Blue Ocean Terminology (Acronyms) ────────────────────────
+blue_ocean_terms:
+  # Debt Arbitrage & Optimization
+  SDO:
+    name: "Strategic Debt Optimization"
+    description: "Refinancing or restructuring debt to lower borrowing costs and improve financial position"
+    context: "Long-term financial structuring, major life events"
+    example: "Using policy loan from whole-life insurance to pay off high-interest credit card debt, then repaying policy loan at lower rate"
+  
+  CET:
+    name: "Capital Efficiency Transfer"
+    description: "Moving debt across instruments to optimize capital costs and create arbitrage opportunities"
+    context: "Capital structure arbitrage, hedging risky investments"
+    example: "Using cash-value life insurance loan to fund short-term investment instead of selling appreciated assets"
+  
+  # Tactical Execution
+  DVS:
+    name: "Debt Velocity Shift"
+    description: "Quickly moving debt obligations to optimize liquidity and interest costs"
+    context: "Liquidity optimization, quick wins"
+    example: "Using 0% promotional auto loan while investing cash at higher return"
+  
+  ALS:
+    name: "Arbitrage Liquidity Shift"
+    description: "Taking advantage of low-cost financing to fund opportunities"
+    context: "Real estate investing, debt consolidation"
+    example: "Using policy loan from whole-life insurance to fund real estate opportunity, then refinancing property at lower rate to repay policy loan"
+  
+  FFA:
+    name: "Financial Flow Arbitrage"
+    description: "Optimizing financial positioning through strategic debt movement"
+    context: "Business capitalization, unexpected expenses"
+    example: "Taking policy loan from whole life to fund business growth while preserving cash reserves"
+  
+  # Action-Oriented Methods
+  DART:
+    name: "Debt Allocation & Recapture Technique"
+    description: "Recapturing cash through strategic debt movement and allocation"
+    context: "Mortgage payoff acceleration, credit card optimization"
+    example: "Using policy loan from whole-life insurance for lump-sum mortgage payments, then repaying policy loan with freed-up cash flow"
+  
+  LIFT:
+    name: "Liquidity-Informed Funding Transfer"
+    description: "Bridging liquidity gaps through strategic funding transfers"
+    context: "Business expansion, debt optimization"
+    example: "Using business line of credit to cover operating expenses while waiting for invoice payments"
+  
+  SMART:
+    name: "Strategic Money Allocation & Recapitalization Technique"
+    description: "Restructuring funds for efficiency and strategic positioning"
+    context: "Real estate, tax-efficient investing"
+    example: "Using policy loan from whole-life insurance to fund down payment for vacation/rental property, maintaining liquidity in policy"
+  
+  # Short-Term Optimization
+  FLEX:
+    name: "Funding Liquidity Exchange Strategy"
+    description: "Temporarily allocating funds to optimize liquidity"
+    context: "Small business cash flow, emergency fund management"
+    example: "Using business credit card grace period to float expenses before transferring to lower-rate option"
+  
+  CASH:
+    name: "Capital Arbitrage & Strategic Hedging"
+    description: "Using debt instruments to control risk and fund opportunities"
+    context: "Risk hedging, short-term tax strategy"
+    example: "Using policy loan from whole-life insurance instead of selling appreciated stocks to avoid capital gains, then repaying loan with future cash flow"
+
+# ─── Strategic Concepts (Non-Acronym) ─────────────────────────
+strategic_concepts:
+  # Tax & Retirement Concepts
+  tax_deferral_trap:
+    name: "Tax Deferral Trap (TDT)"
+    description: "401(k) and tax-deferred accounts create future tax liability that compounds. When you withdraw, you pay taxes on everything—principal AND growth."
+    narrative_tool: "ALLEGORY_TICKING_TAX_BOMB"
+    blue_ocean_term: "TDT"
+    key_points:
+      - "Tax deferral isn't tax elimination"
+      - "You pay taxes on a bigger number later"
+      - "The longer it grows, the bigger the tax bomb"
+    usage: "When discussing 401(k) limitations, tax planning, retirement income"
+  
+  roth_disadvantage:
+    name: "Roth DISadvantage / Government Rule Risk (GRR)"
+    description: "Government controls Roth rules and can change them at any time. 'Fox building the chicken coop'—you're trusting the fox to protect your chickens."
+    narrative_tool: "PARABLE_FOX_CHICKEN_COOP"
+    blue_ocean_term: "GRR"
+    key_points:
+      - "Government controls the rules"
+      - "Rules can change at any time"
+      - "You have no control"
+    usage: "When discussing Roth IRAs, government-controlled accounts, control vs. trust"
+  
+  inherited_ira_acceleration:
+    name: "Inheritance Tax Acceleration (ITA)"
+    description: "SECURE Act eliminated 'stretch' IRA. Beneficiaries must withdraw within 10 years, creating tax burden and accelerating tax payments."
+    narrative_tool: null  # Can create if needed
+    blue_ocean_term: "ITA"
+    key_points:
+      - "No more stretch IRA for most beneficiaries"
+      - "10-year withdrawal requirement"
+      - "Creates tax burden for heirs"
+    usage: "When discussing estate planning, legacy protection, inherited retirement accounts"
+  
+  medicaid_clawback:
+    name: "Estate Recovery Risk (ERR)"
+    description: "States can recover Medicaid costs from estate after death. Your estate may be subject to recovery for long-term care costs."
+    narrative_tool: null  # Can create if needed
+    blue_ocean_term: "ERR"
+    key_points:
+      - "States can recover Medicaid costs"
+      - "Estate may be subject to recovery"
+      - "Planning can protect assets"
+    usage: "When discussing estate planning, long-term care, asset protection"
+  
+  irmaa_rules:
+    name: "Medicare Premium Penalty (MPP)"
+    description: "Income-Related Monthly Adjustment Amount—higher Medicare premiums for higher income retirees. Can significantly increase healthcare costs."
+    narrative_tool: null  # Can create if needed
+    blue_ocean_term: "MPP"
+    key_points:
+      - "Higher income = higher Medicare premiums"
+      - "Can significantly increase healthcare costs"
+      - "Income planning can minimize impact"
+    usage: "When discussing retirement income planning, healthcare costs, tax-efficient withdrawals"
+  
+  # Psychological & Behavioral Concepts
+  permission_to_spend:
+    name: "Spending Permission Framework (SPF)"
+    description: "Giving clients 'permission' to spend their money by showing they've protected their future. Removes guilt about spending principal."
+    narrative_tool: "CONCEPT_PERMISSION_TO_SPEND"
+    blue_ocean_term: "SPF"
+    key_points:
+      - "Remove guilt about spending"
+      - "Enable enjoyment of wealth"
+      - "Protect future while spending now"
+    usage: "When addressing spending guilt, wealth enjoyment, psychological barriers"
+  
+  # Legacy & Estate Concepts
+  death_benefit_asset_replacement:
+    name: "Legacy Asset Replacement (LAR)"
+    description: "Using death benefit to replace assets spent during lifetime, preserving estate for heirs. Enables spending while protecting legacy."
+    narrative_tool: "CONCEPT_DEATH_BENEFIT_ASSET_REPLACEMENT"
+    blue_ocean_term: "LAR"
+    key_points:
+      - "Replace what you spend"
+      - "Protect legacy while enjoying wealth"
+      - "Balance spending and legacy"
+    usage: "When discussing estate planning, legacy protection, spending in retirement"
+  
+  maximum_lifetime_value:
+    name: "Lifetime Value Optimization (LVO)"
+    description: "The total economic value a person generates over their lifetime. Used to justify life insurance and financial planning."
+    narrative_tool: null  # Can create if needed
+    blue_ocean_term: "LVO"
+    key_points:
+      - "Protect and optimize lifetime value"
+      - "Justify planning and insurance"
+      - "Human capital focus"
+    usage: "When justifying planning, life insurance, human capital protection"
+  
+  # Tax Optimization Concepts
+  laffer_curve_application:
+    name: "Optimal Tax Positioning (OTP)"
+    description: "Application of Laffer Curve to personal finance: there's an optimal point for tax-deferred vs. tax-free strategies."
+    narrative_tool: null  # Can create if needed
+    blue_ocean_term: "OTP"
+    key_points:
+      - "Optimal tax rate exists"
+      - "Balance tax-deferred and tax-free"
+      - "Strategic tax positioning"
+    usage: "When discussing tax optimization, strategic tax planning"
+  
+  # Income Concepts
+  lifetime_income_foundation:
+    name: "Lifetime Income Foundation (LIF)"
+    description: "Using annuities or guaranteed income strategies to create guaranteed lifetime income floor."
+    narrative_tool: null  # Already covered in foundation messaging
+    blue_ocean_term: "LIF"
+    key_points:
+      - "Guaranteed income floor"
+      - "Lifetime income protection"
+      - "Foundation for retirement"
+    usage: "When discussing retirement income, foundation messaging"
+  
+  # Leverage & Growth Concepts
+  strategic_asset_leverage:
+    name: "Strategic Asset Leverage (SAL)"
+    description: "Using whole-life insurance policy loans to leverage assets and create growth opportunities. Policy loans provide low-cost capital while maintaining policy growth and liquidity."
+    narrative_tool: null  # Can create if needed
+    blue_ocean_term: "SAL"
+    key_points:
+      - "Policy loans provide low-cost capital"
+      - "Maintain policy growth while leveraging"
+      - "Strategic use of policy cash value"
+      - "Recapture interest through policy loans"
+    usage: "When discussing leveraging assets, policy loan strategies, growth acceleration"
+  
+  secure_notes_double_dip:
+    name: "Secure Notes Double-Dip Strategy (SNDD)"
+    description: "Using promissory notes backed by single real estate property combined with policy loans to 'legally double-dip' returns. Policy loan funds the note purchase, note payments repay policy loan, creating dual returns on same capital."
+    narrative_tool: null  # Can create if needed
+    blue_ocean_term: "SNDD"
+    key_points:
+      - "Promissory note backed by real estate"
+      - "Policy loan funds note purchase"
+      - "Note payments repay policy loan"
+      - "Dual returns on same capital"
+      - "Legal and compliant strategy"
+    usage: "When discussing growth acceleration, real estate investing, policy loan strategies"
+
+# ─── Usage Guidelines ────────────────────────────────────────
+usage_guidelines:
+  blue_ocean_terms:
+    - "Use acronyms (SDO, CET, etc.) for sophisticated audiences"
+    - "Explain acronyms on first use"
+    - "Use in written content, presentations, case studies"
+    - "Create brandable, memorable terms"
+  
+  strategic_concepts:
+    - "Use narrative tools when available (allegories, parables)"
+    - "Reference blue ocean terms for sophistication"
+    - "Explain concepts clearly, then use terms"
+    - "Match concept to persona sophistication level"
+  
+  narrative_tools:
+    - "Use allegories for problem awareness"
+    - "Use parables for legacy/trust themes"
+    - "Use concepts for solution awareness"
+    - "Match tool to emotional journey"
+
+# ─── Cross-References ────────────────────────────────────────
+cross_references:
+  narratives:
+    - "ALLEGORY_TICKING_TAX_BOMB"
+    - "PARABLE_FOX_CHICKEN_COOP"
+    - "CONCEPT_PERMISSION_TO_SPEND"
+    - "CONCEPT_DEATH_BENEFIT_ASSET_REPLACEMENT"
+  language:
+    - "language/reframing_patterns.yaml"
+    - "language/normalization_patterns.yaml"
+    - "language/permission_frames.yaml"
+

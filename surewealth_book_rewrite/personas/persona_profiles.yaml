@@ -1,9 +1,400 @@
 # Persona Profiles
-# Detailed persona definitions for content adaptation
+# Focus: "Pension and Pivot" Phase - Life Stage + Financial Architecture
+# Shift from "Technical/Analytical" to "Stability and Legacy"
+# Multiple "Front Doors" for Self-Identification
 
 personas:
+  # ========================================
+  # TIER 1: MUST HAVE (Highest Priority)
+  # ========================================
+  
+  early_retiree_immediate_need:
+    name: "Early Retiree - Immediate Need"
+    tier: 1
+    priority: "MUST HAVE"
+    life_stage: "Just Retired (0-2 years)"
+    demographics:
+      age: 60-70
+      occupation: "Recently retired professional, executive, business owner"
+      education: "College degree or higher"
+      income: "Retirement income + savings withdrawals"
+      financial_architecture: "Retired with assets, need income strategy NOW, sequence risk immediate concern"
+      minimum_resources: "$500K+ in assets"
+    
+    psychographics:
+      decision_style: "urgency-driven, stability-seeking, action-oriented"
+      communication_preference: "immediate solutions, security outcomes, protection stories"
+      risk_tolerance: "conservative, security-focused, risk-averse"
+      values: "stability, security, peace_of_mind, protection, control"
+      life_pressures: "Just retired, need income strategy immediately, sequence risk is real, tax optimization critical"
+      urgency_drivers: "Immediate need, no time to wait, market volatility concerns, healthcare costs"
+    
+    voice_adaptation:
+      tone: "urgent but reassuring, security-focused, outcome-driven"
+      emphasis: "immediate protection, security now, income strategy, sequence risk protection"
+      language_level: "plainspoken, direct, outcome-focused"
+      examples: "You've retired. Now let's protect what you have and create the income you need. The sequence risk is real—here's how to protect against it."
+    
+    cta_angle: "Protect your retirement now—the sequence risk is real"
+    emotional_triggers:
+      primary: "immediate_fear, sequence_risk_concern, security_needs"
+      secondary: "protection_desire, stability_craving, peace_of_mind"
+    
+    content_preferences:
+      formats: ["immediate_solutions", "security_stories", "sequence_risk_cases", "income_strategy"]
+      length: "moderate, outcome-focused"
+      visuals: "sequence risk charts, income strategy timelines, security imagery"
+    
+    example_scenarios:
+      - "65-year-old who just retired with $1.2M in 401(k), needs income strategy now, worried about market downturn"
+      - "62-year-old executive who took early retirement, has assets but needs guaranteed income, sequence risk concern"
+      - "68-year-old business owner who sold business and retired, needs income strategy and tax optimization"
+  
+  late_career_executive_retirement_window:
+    name: "Late-Career Executive - Retirement Window"
+    tier: 1
+    priority: "MUST HAVE"
+    life_stage: "Pension and Pivot (2-5 years from retirement)"
+    demographics:
+      age: 58-65
+      occupation: "Corporate executive, VP, Director, Senior Manager"
+      education: "College degree or higher, often MBA"
+      income: "$150k-$400k+"
+      financial_architecture: "401(k) + stock options + deferred comp + high tax bracket, no pension, need to create guaranteed income"
+      minimum_resources: "$1M-$5M+ in assets"
+    
+    psychographics:
+      decision_style: "strategic, legacy-focused, control-oriented"
+      communication_preference: "strategic outcomes, legacy protection, tax optimization, control"
+      risk_tolerance: "calculated, but values security and control"
+      values: "legacy, control, independence, strategic_thinking, family_protection"
+      life_pressures: "Retirement window closing (2-5 years), high tax bracket, stock options timing, deferred comp decisions, sequence risk planning"
+      urgency_drivers: "Window closing, tax optimization critical, stock option decisions, deferred comp timing"
+    
+    voice_adaptation:
+      tone: "strategic, legacy-driven, control-focused"
+      emphasis: "strategic planning, legacy protection, tax optimization, control and independence"
+      language_level: "professional but accessible, outcome-focused"
+      examples: "Your retirement window is closing. Let's optimize your tax strategy, protect your legacy, and create the income you need."
+    
+    cta_angle: "Optimize your retirement strategy before the window closes"
+    emotional_triggers:
+      primary: "window_closing_fear, legacy_protection, tax_concern"
+      secondary: "strategic_control, independence_maintenance, family_provision"
+    
+    content_preferences:
+      formats: ["strategic_planning", "tax_optimization_cases", "legacy_protection", "executive_stories"]
+      length: "moderate to detailed, strategic"
+      visuals: "tax optimization charts, retirement timeline, legacy concepts"
+    
+    example_scenarios:
+      - "60-year-old VP with $2M in 401(k) + stock options, retirement in 3 years, high tax bracket, needs strategy"
+      - "63-year-old Director with deferred comp, retirement in 4 years, needs income strategy and tax optimization"
+      - "59-year-old Senior Manager with $1.5M assets, retirement in 2 years, sequence risk concern"
+  
+  # ========================================
+  # TIER 2: HIGH NEED (Strong Priority)
+  # ========================================
+  
+  successful_business_owner_exit_strategy:
+    name: "Successful Business Owner - Exit Strategy"
+    tier: 2
+    priority: "HIGH NEED"
+    life_stage: "Pension and Pivot (5-7 years from retirement)"
+    demographics:
+      age: 55-65
+      occupation: "Business owner (professional services, retail, manufacturing, construction, trades)"
+      education: "High school to college degree"
+      income: "$100k-$300k+ (variable)"
+      financial_architecture: "High business equity ($500K-$5M+) + low liquidity + retirement savings, need exit strategy"
+      minimum_resources: "$500K+ in business equity"
+    
+    psychographics:
+      decision_style: "independent, legacy-focused, control-oriented"
+      communication_preference: "exit strategy outcomes, legacy protection, independence stories"
+      risk_tolerance: "calculated, values control and independence"
+      values: "independence, legacy, control, building_something_lasting, family_protection"
+      life_pressures: "Business value tied up, need exit strategy, retirement planning, possibly education funding, maintaining control"
+      urgency_drivers: "Exit timeline (5-7 years), liquidity needs, retirement planning, legacy protection"
+    
+    voice_adaptation:
+      tone: "independent, legacy-driven, outcome-focused"
+      emphasis: "exit strategy, legacy protection, maintaining control, protecting what you built"
+      language_level: "plainspoken, direct, outcome-focused"
+      examples: "You've built something. Now let's create your exit strategy, protect your legacy, and secure your retirement."
+    
+    cta_angle: "Create your exit strategy and protect what you've built"
+    emotional_triggers:
+      primary: "exit_strategy_concern, legacy_protection, independence_fear"
+      secondary: "building_success, control_maintenance, family_provision"
+    
+    content_preferences:
+      formats: ["exit_strategy_stories", "equity_conversion_cases", "legacy_protection", "business_owner_stories"]
+      length: "moderate to detailed, outcome-focused"
+      visuals: "exit strategy timelines, equity charts, legacy concepts"
+    
+    example_scenarios:
+      - "61-year-old construction company owner with $2M in business equity but $200K in liquid savings, planning exit in 6 years"
+      - "59-year-old professional services owner with $1.5M business value, needs exit strategy and retirement income plan"
+      - "63-year-old manufacturing business owner with $3M equity, planning exit in 5 years, needs liquidity strategy"
+  
+  dual_income_professional_no_pension:
+    name: "Dual-Income Professional - No Pension"
+    tier: 2
+    priority: "HIGH NEED"
+    life_stage: "Pension and Pivot (5-7 years from retirement)"
+    demographics:
+      age: 55-65
+      occupation: "Professional couple (both working: managers, professionals, corporate employees)"
+      education: "College degree or higher"
+      income: "$150k-$300k+ (combined)"
+      financial_architecture: "401(k) focused, no pension, need to create guaranteed income, high tax bracket"
+      minimum_resources: "$500K-$2M+ in assets"
+    
+    psychographics:
+      decision_style: "strategic, security-seeking, family-focused"
+      communication_preference: "income strategy outcomes, security stories, tax optimization"
+      risk_tolerance: "conservative, security-focused"
+      values: "stability, security, family_protection, independence, peace_of_mind"
+      life_pressures: "No pension, need to create guaranteed income, high tax bracket, sequence risk planning, possibly education funding"
+      urgency_drivers: "No pension security, need to create income, tax optimization, sequence risk"
+    
+    voice_adaptation:
+      tone: "strategic, security-focused, family-oriented"
+      emphasis: "creating guaranteed income, tax optimization, security and stability, family protection"
+      language_level: "professional but accessible, outcome-focused"
+      examples: "You don't have a pension, but you can create one. Let's build your guaranteed income strategy and optimize your taxes."
+    
+    cta_angle: "Create your guaranteed income strategy—you don't have a pension, but you can build one"
+    emotional_triggers:
+      primary: "pension_gap_fear, income_creation_need, security_concern"
+      secondary: "family_protection, stability_needs, independence_desire"
+    
+    content_preferences:
+      formats: ["income_strategy_stories", "tax_optimization_cases", "security_focused", "professional_couples"]
+      length: "moderate, outcome-focused"
+      visuals: "income strategy charts, tax optimization, security imagery"
+    
+    example_scenarios:
+      - "58-year-old professional couple with $1.2M in 401(k)s, no pension, retirement in 6 years, need income strategy"
+      - "62-year-old dual-income managers with $800K assets, high tax bracket, need guaranteed income and tax optimization"
+      - "60-year-old professional couple with $1.5M, retirement in 5 years, sequence risk concern, no pension"
+  
+  # ========================================
+  # TIER 2: HIGH NEED (Current Groups - Refined)
+  # ========================================
+  
+  squeeze_parent_retirement_education:
+    name: "Squeeze Parent - Retirement and Education"
+    tier: 2
+    priority: "HIGH NEED"
+    life_stage: "Pension and Pivot (5-7 years from retirement) + Education Funding"
+    demographics:
+      age: 50-60
+      occupation: "Professional, Manager, Business Owner, Public Servant"
+      education: "College degree or higher"
+      income: "$80k-$180k"
+      financial_architecture: "Retirement savings + education funding (529 plans, tuition payments) + competing priorities"
+      minimum_resources: "$300K+ in assets with savings capacity"
+    
+    psychographics:
+      decision_style: "family-focused, legacy-oriented, stability-seeking"
+      communication_preference: "family impact, legacy stories, stability outcomes, balance"
+      risk_tolerance: "conservative, family-protective"
+      values: "family_legacy, education, stability, providing_for_next_generation, balance"
+      life_pressures: "Simultaneous retirement planning (5-7 years) + tuition payments, balancing competing priorities, family legacy"
+      urgency_drivers: "Education costs immediate, retirement window closing, balancing priorities, family legacy"
+    
+    voice_adaptation:
+      tone: "family-focused, legacy-driven, balancing"
+      emphasis: "family legacy, education investment, retirement security, balancing priorities"
+      language_level: "plainspoken, family-oriented, outcome-focused"
+      examples: "You're funding their future while planning yours. Here's how to do both without sacrificing either."
+    
+    cta_angle: "Fund their education and secure your retirement"
+    emotional_triggers:
+      primary: "family_legacy_fear, education_concern, retirement_balance"
+      secondary: "providing_for_family, generational_impact, stability_needs"
+    
+    content_preferences:
+      formats: ["family_stories", "education_retirement_balance", "legacy_cases", "balance_strategies"]
+      length: "moderate, family-focused"
+      visuals: "education + retirement charts, family imagery, balance concepts"
+    
+    example_scenarios:
+      - "55-year-old professional with one kid in college and one starting, retirement in 6 years, balancing 529 contributions with retirement savings"
+      - "52-year-old manager with two high school kids, retirement in 7 years, needs strategy for education + retirement"
+      - "58-year-old business owner funding college while planning business exit and retirement"
+  
+  # ========================================
+  # TIER 3: MODERATE NEED (Qualified)
+  # ========================================
+  
+  public_servant_pension_gap:
+    name: "Public Servant - Pension Gap"
+    tier: 3
+    priority: "MODERATE NEED"
+    life_stage: "Pension and Pivot (5-7 years from retirement)"
+    demographics:
+      age: 55-65
+      occupation: "Teacher, Nurse, Federal Employee, Firefighter, Police Officer"
+      education: "College degree or higher"
+      income: "$60k-$120k"
+      financial_architecture: "Pension security (covers 50-70% of expenses) + gap funding needs + healthcare concerns"
+      minimum_resources: "$200K+ in additional savings/assets"
+    
+    psychographics:
+      decision_style: "stability-focused, service-oriented, security-seeking"
+      communication_preference: "stories, outcomes, security-focused, gap analysis"
+      risk_tolerance: "very conservative, security-focused"
+      values: "stability, service, security, legacy, peace_of_mind, healthcare_concern"
+      life_pressures: "Pension may not cover full expenses, healthcare costs, inflation impact on gap, gap funding needs"
+      urgency_drivers: "Healthcare cost gap, inflation eroding gap, window closing for gap funding"
+    
+    voice_adaptation:
+      tone: "stable, reassuring, security-focused, gap-aware"
+      emphasis: "pension security, bridging the gap, healthcare protection, stability, gap analysis"
+      language_level: "plainspoken, relatable, outcome-focused"
+      examples: "Your pension is secure, but the gap is real—especially with healthcare costs. Here's how to bridge it safely."
+    
+    cta_angle: "Bridge the gap safely, especially for healthcare"
+    emotional_triggers:
+      primary: "stability_fear, gap_concern, healthcare_worry"
+      secondary: "service_recognition, security_needs, peace_of_mind"
+    
+    content_preferences:
+      formats: ["gap_analysis", "healthcare_security_stories", "pension_gap_cases", "security_focused"]
+      length: "moderate, security-focused"
+      visuals: "pension gap charts, healthcare cost projections, security imagery"
+    
+    example_scenarios:
+      - "58-year-old teacher with 30 years of service, pension covers 60% of expenses, worried about healthcare costs and inflation eroding the gap"
+      - "62-year-old federal employee with pension + TSP, concerned about gap between pension and desired lifestyle, healthcare costs"
+      - "59-year-old nurse with pension + 403(b), needs to bridge gap while maintaining security, healthcare concerns"
+  
+  # ========================================
+  # MULTI-LAYERED PERSONA COMBINATIONS
+  # ========================================
+  
+  veteran_business_owner_tuition_exit:
+    name: "Veteran Business Owner + Tuition + Exit Strategy"
+    tier: 2
+    priority: "HIGH NEED"
+    life_stage: "Pension and Pivot (5-7 years from retirement)"
+    demographics:
+      age: 55-65
+      occupation: "Small business owner (veteran)"
+      education: "Some college to college degree"
+      income: "$100k-$250k (variable)"
+      financial_architecture: "High business equity + low liquidity + retirement savings + education funding"
+      minimum_resources: "$500K+ in business equity"
+    
+    psychographics:
+      decision_style: "independent, legacy-focused, family-oriented"
+      communication_preference: "outcomes, independence, family legacy, exit strategy"
+      risk_tolerance: "calculated, values control and independence"
+      values: "independence, legacy, service, family_protection, control"
+      life_pressures: "Funding kid's tuition while planning business exit in 6 years, retirement planning, family legacy"
+      urgency_drivers: "Exit timeline, education costs, retirement planning, family legacy"
+    
+    voice_adaptation:
+      tone: "independent, legacy-driven, family-focused"
+      emphasis: "protecting what you built, funding education, exit strategy, family legacy"
+      language_level: "plainspoken, direct, outcome-focused"
+      examples: "You've served your country and built a business. Now let's protect it, fund their education, and create your exit strategy."
+    
+    cta_angle: "Protect what you've built, fund their education, and create your exit strategy"
+    emotional_triggers:
+      primary: "legacy_protection, family_provision, exit_strategy_concern"
+      secondary: "service_recognition, independence_maintenance, generational_impact"
+    
+    content_preferences:
+      formats: ["exit_strategy_stories", "education_retirement_balance", "legacy_protection", "veteran_stories"]
+      length: "moderate to detailed, outcome-focused"
+      visuals: "exit strategy timelines, education + retirement charts, legacy concepts"
+  
+  teacher_pension_gap_healthcare:
+    name: "Teacher + Pension Gap + Healthcare"
+    tier: 3
+    priority: "MODERATE NEED"
+    life_stage: "Pension and Pivot (5-7 years from retirement)"
+    demographics:
+      age: 55-65
+      occupation: "Public school teacher"
+      education: "College degree or higher"
+      income: "$50k-$90k"
+      financial_architecture: "Pension security (covers 50-70% of expenses) + gap funding needs + healthcare concerns"
+      minimum_resources: "$200K+ in additional savings/assets"
+    
+    psychographics:
+      decision_style: "stability-focused, security-seeking"
+      communication_preference: "stories, security outcomes, gap analysis, healthcare focus"
+      risk_tolerance: "very conservative, security-focused"
+      values: "stability, service, security, peace_of_mind, healthcare_concern"
+      life_pressures: "Pension covers 60%, worried about healthcare costs, inflation eroding the gap"
+      urgency_drivers: "Healthcare cost gap, inflation impact, window closing"
+    
+    voice_adaptation:
+      tone: "stable, reassuring, security-focused, healthcare-aware"
+      emphasis: "pension security, bridging the gap, healthcare protection, stability"
+      language_level: "plainspoken, relatable, outcome-focused"
+      examples: "Your pension is secure, but the gap is real—especially with healthcare costs. Here's how to bridge it safely."
+    
+    cta_angle: "Bridge the gap safely, especially for healthcare"
+    emotional_triggers:
+      primary: "stability_fear, gap_concern, healthcare_worry"
+      secondary: "service_recognition, security_needs, peace_of_mind"
+    
+    content_preferences:
+      formats: ["gap_analysis", "healthcare_security_stories", "pension_gap_cases"]
+      length: "moderate, security-focused"
+      visuals: "pension gap charts, healthcare cost projections, security imagery"
+  
+  nurse_college_kids_retirement:
+    name: "Nurse + College Kids + Retirement"
+    tier: 2
+    priority: "HIGH NEED"
+    life_stage: "Pension and Pivot (5-7 years from retirement) + Education Funding"
+    demographics:
+      age: 50-60
+      occupation: "Registered nurse"
+      education: "College degree"
+      income: "$60k-$100k"
+      financial_architecture: "Pension + 403(b) + education funding + retirement savings"
+      minimum_resources: "$300K+ in assets with savings capacity"
+    
+    psychographics:
+      decision_style: "family-focused, stability-seeking, service-oriented"
+      communication_preference: "family impact, stability outcomes, security stories"
+      risk_tolerance: "conservative, family-protective"
+      values: "family_legacy, education, stability, service, providing_for_family"
+      life_pressures: "Two kids in college, retirement in 5 years, balancing education funding with retirement savings"
+      urgency_drivers: "Education costs immediate, retirement window closing, family legacy"
+    
+    voice_adaptation:
+      tone: "family-focused, stable, service-oriented"
+      emphasis: "family legacy, education investment, retirement security, balancing priorities"
+      language_level: "plainspoken, family-oriented, outcome-focused"
+      examples: "You've served others your whole career. Now let's secure your retirement while funding their education."
+    
+    cta_angle: "Secure your retirement while funding their education"
+    emotional_triggers:
+      primary: "family_legacy_fear, education_concern, retirement_balance"
+      secondary: "service_recognition, family_provision, stability_needs"
+    
+    content_preferences:
+      formats: ["family_stories", "education_retirement_balance", "pension_security"]
+      length: "moderate, family-focused"
+      visuals: "education + retirement charts, family imagery, balance concepts"
+  
+  # ========================================
+  # LEGACY PERSONAS (Maintained for Backward Compatibility)
+  # ========================================
+  
   engineer_retiree:
     name: "Engineer Retiree"
+    tier: 3
+    note: "Legacy persona - use sparingly, prefer Pension and Pivot personas"
     demographics:
       age: 55-65
       occupation: "Engineer, technical professional"
@@ -34,6 +425,7 @@ personas:
   
   faith_family_builder:
     name: "Faith-Family Builder"
+    tier: 3
     demographics:
       age: 45-60
       occupation: "Varied, often business owner"
@@ -64,6 +456,7 @@ personas:
   
   widow_caregiver:
     name: "Widow/Caregiver"
+    tier: 3
     demographics:
       age: 60-75
       occupation: "Retired or part-time"
@@ -91,4 +484,3 @@ personas:
       formats: ["simple_checklists", "step_by_step", "reassuring_stories"]
       length: "short, digestible"
       visuals: "simple diagrams, clear steps"
-

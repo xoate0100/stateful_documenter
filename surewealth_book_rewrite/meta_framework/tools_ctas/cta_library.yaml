@@ -74,6 +74,44 @@ ctas:
     - "No obligation, just information"
     - "This is exactly what [strategy] was designed for"
 
+# ─── Persona-Specific CTAs ────────────────────────────────────
+persona_specific_ctas:
+  early_retiree_immediate_need:
+    primary: "Protect your retirement now—the sequence risk is real"
+    soft: "See how to protect your retirement income from sequence risk"
+    urgency: "The sequence risk is real—and it's happening right now"
+    question_based: "If you could protect your retirement income from market volatility, would it be worth 20 minutes?"
+  
+  late_career_executive_retirement_window:
+    primary: "Optimize your retirement strategy before the window closes"
+    soft: "See how to optimize your retirement transition"
+    urgency: "The window is closing—every year matters"
+    question_based: "If you could optimize your stock options and deferred comp before retirement, would it be worth a conversation?"
+  
+  successful_business_owner_exit_strategy:
+    primary: "Create your exit strategy and protect what you've built"
+    soft: "See how to create your exit strategy"
+    urgency: "Your exit timeline is approaching—plan now"
+    question_based: "If you could protect what you've built while creating your exit strategy, would it be worth 20 minutes?"
+  
+  dual_income_professional_no_pension:
+    primary: "Create your guaranteed income strategy—you don't have a pension, but you can build one"
+    soft: "See how to create guaranteed income without a pension"
+    urgency: "You don't have a pension—but you can build one"
+    question_based: "If you could create guaranteed income like a pension, would it be worth a conversation?"
+  
+  squeeze_parent_retirement_education:
+    primary: "Fund their education and secure your retirement"
+    soft: "See how to balance education funding with retirement"
+    urgency: "Their education and your retirement—you can do both"
+    question_based: "If you could fund their education and secure your retirement, would it be worth 20 minutes?"
+  
+  public_servant_pension_gap:
+    primary: "Bridge the gap safely, especially for healthcare"
+    soft: "See how to bridge your pension gap"
+    urgency: "The gap is real—especially with healthcare costs"
+    question_based: "If you could bridge your pension gap safely, would it be worth a conversation?"
+
 usage_guidelines:
   best_practices:
     - "Use question-based CTAs for highest conversion (6.7% response rate documented)"
@@ -81,6 +119,7 @@ usage_guidelines:
     - "Lead with benefit, not action"
     - "Use time commitment frames ('Would it be worth 20 minutes?')"
     - "Avoid hard sales language - use invitations"
+    - "Use persona-specific CTAs from persona_specific_ctas section when persona is known"
   
   funnel_stage:
     top_of_funnel:

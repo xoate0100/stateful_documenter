@@ -1,0 +1,164 @@
+# Concept: Death Benefit Asset Replacement
+story_vault_entry:
+  id: CONCEPT_DEATH_BENEFIT_ASSET_REPLACEMENT
+  title: "Death Benefit Asset Replacement"
+  type: strategy_concept
+  description: >
+    Using death benefit to replace assets spent during lifetime, preserving
+    estate for heirs. When you spend principal during retirement, the death
+    benefit replaces it for your heirs. Enables "permission to spend" while
+    protecting legacy. Also known as "Asset Replacement Strategy."
+
+# ─── Awareness & Sophistication ───────────────────────────────
+  awareness_level: solution-aware
+  buyer_sophistication: medium
+
+# ─── Funnel Mapping ───────────────────────────────────────────
+  funnel_stage: conversion
+  user_intent_profile: comparing
+
+# ─── Psychographics & Personas ────────────────────────────────
+  target_personas:
+    - late_career_executive_retirement_window
+    - successful_business_owner_exit_strategy
+    - early_retiree_immediate_need
+    - squeeze_parent_retirement_education
+
+# ─── Emotional Journey ────────────────────────────────────────
+  emotional_start_state:
+    - conflicted
+    - hoarding
+    - legacy_focused
+  emotional_end_state:
+    - balanced
+    - enjoying
+    - legacy_protected
+
+# ─── Pain, Desire, Objections ─────────────────────────────────
+  pain_points:
+    - Conflict between spending and legacy
+    - Hoarding money for heirs
+    - Can't enjoy wealth because of legacy concerns
+    - Worry about spending principal
+  dreams_aspirations:
+    - Enjoy wealth now
+    - Protect legacy for heirs
+    - Balance spending and legacy
+    - Replace what you spend
+  objection_patterns:
+    - "I can't spend—it's for my heirs"
+    - "I need to leave something"
+    - "What if I spend too much?"
+
+# ─── Narrative Content Structure ──────────────────────────────
+  narrative_structure:
+    setup: >
+      You've saved $1 million for retirement. You want to enjoy it—travel,
+      help family, live well. But you also want to leave something for your
+      heirs. Every dollar you spend feels like a dollar less for them. You're
+      caught between enjoying your wealth and protecting your legacy.
+    conflict: >
+      You spend $100,000 on a dream vacation and home improvements. You enjoy
+      it, but you feel guilty. "That's $100,000 my heirs won't get," you think.
+      So you stop spending. You hoard the money, protect it, but don't enjoy
+      the wealth you've worked so hard to build.
+    realization: >
+      What if you could replace what you spend? What if every dollar you spend
+      during retirement could be replaced for your heirs through a death benefit?
+      You could enjoy your wealth now AND protect your legacy. You don't have
+      to choose—you can do both.
+    resolution: >
+      With death benefit asset replacement, you can spend your principal,
+      enjoy your retirement, and know that your heirs will still receive what
+      you intended. You've replaced what you spend, so you can enjoy it now
+      and protect your legacy later.
+
+# ─── Metaphors & Visual Language ──────────────────────────────
+  metaphors_symbols:
+    primary_metaphor: "Replacing What You Spend"
+    elements:
+      - symbol: spending_principal
+        represents: enjoying wealth during lifetime
+      - symbol: death_benefit
+        represents: replacement for heirs
+      - symbol: balance
+        represents: enjoying now, protecting later
+      - symbol: legacy
+        represents: what you leave behind
+
+  charts_graphs:
+    recommended:
+      - asset_replacement_illustration
+      - spending_vs_legacy_comparison
+      - replacement_timeline
+
+# ─── Voice of the Customer NLP ────────────────────────────────
+  voc_phrases:
+    pain_language:
+      - "I can't spend—it's for my heirs"
+      - "I need to leave something"
+      - "What if I spend too much?"
+      - "I'm conflicted between spending and legacy"
+    aspiration_language:
+      - "I want to enjoy my wealth and protect my legacy"
+      - "I want to replace what I spend"
+      - "I want to do both—enjoy now and protect later"
+      - "I want balance"
+    decision_triggers:
+      - "I want to replace what I spend"
+      - "I want to enjoy my wealth and protect my legacy"
+      - "I want balance"
+
+# ─── Linguistic Patterns & Persuasive Models ──────────────────
+  linguistic_patterns:
+    persuasive_structures:
+      - Before_After_Bridge
+      - Legacy_Protection
+    modal_urgency_language:
+      - "Replace what you spend—protect your legacy."
+      - "Enjoy your wealth now—your heirs are still protected."
+      - "You don't have to choose—you can do both."
+
+# ─── Distribution Targets (Multichannel) ──────────────────────
+  distribution_targets:
+    - book_chapter
+    - email_nurture
+    - webinar_slide
+    - tool_result_page
+
+# ─── CTA System ───────────────────────────────────────────────
+  call_to_actions:
+    soft_cta:
+      - "See how to replace what you spend."
+    primary_cta:
+      - "Let's set up your asset replacement strategy."
+    urgency_trigger:
+      - "Replace what you spend—protect your legacy."
+
+# ─── Tool & Asset Hooks ───────────────────────────────────────
+  asset_hooks:
+    calculators:
+      - asset_replacement_calculator
+      - legacy_protection_calculator
+    interactive_tools:
+      - replacement_simulator
+    downloadable_assets:
+      - asset_replacement_guide
+
+# ─── Compliance & Risk Flags ──────────────────────────────────
+  compliance_flags:
+    - soft_language_required
+    - avoid_product_reference
+
+# ─── Signature Phrases (If Any) ───────────────────────────────
+  signature_phrases:
+    - "Replace what you spend—protect your legacy."
+    - "Enjoy your wealth now—your heirs are still protected."
+    - "You don't have to choose—you can do both."
+
+# ─── Usage Tracking (Project-Specific) ──────────────────────
+  usage_tracking:
+    used_in_chapters: []
+    associated_characters: []
+    last_used: null
+

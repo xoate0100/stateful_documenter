@@ -30,6 +30,11 @@ except ImportError:
     ContentMetadata = None
     ContentIndex = None
 
+try:
+    from personas.persona_selection_logic import PersonaSelector
+except ImportError:
+    PersonaSelector = None
+
 
 class PromptBuilder:
     """Builds AI prompts with framework constraints"""
@@ -71,6 +76,15 @@ class PromptBuilder:
                 self.content_index = None
         else:
             self.content_index = None
+        
+        # Initialize persona selector if available
+        if PersonaSelector:
+            try:
+                self.persona_selector = PersonaSelector()
+            except Exception:
+                self.persona_selector = None
+        else:
+            self.persona_selector = None
         
     def load_system_prompt(self) -> str:
         """Load base system prompt"""
@@ -283,8 +297,19 @@ Forbidden Elements:
                     character_ids: Optional[List[str]] = None,
                     tool_ids: Optional[List[str]] = None,
                     chapter_num: Optional[int] = None,
-                    validate: bool = True) -> str:
+                    validate: bool = True,
+                    auto_select_persona: bool = True) -> str:
         """Build complete AI prompt"""
+        
+        # Auto-select persona if not provided and selector available
+        if not persona and auto_select_persona and self.persona_selector:
+            persona = self.persona_selector.select_persona(
+                topic=topic,
+                prefer_tier=1,  # Prefer Tier 1 (MUST HAVE) personas
+                exclude_legacy=True  # Exclude legacy personas by default
+            )
+            if persona:
+                print(f"[INFO] Auto-selected persona: {persona} (Tier 1 priority)")
         
         # Validate request if requested
         if validate:
@@ -312,7 +337,22 @@ Forbidden Elements:
             user_prompt += f" for persona: {persona}"
         
         if length:
-            user_prompt += f"\n- Length: {length}"
+            # Parse length to get min/max
+            if '-' in length:
+                min_words, max_words = map(int, length.replace(' words', '').split('-'))
+            else:
+                min_words = int(length.replace(' words', '').replace('word', '').strip())
+                max_words = min_words
+            
+            user_prompt += f"\n\nCRITICAL LENGTH REQUIREMENT:"
+            user_prompt += f"\n- This content MUST be exactly {length}"
+            user_prompt += f"\n- Minimum word count: {min_words:,} words (REQUIRED - content will be rejected if shorter)"
+            user_prompt += f"\n- Maximum word count: {max_words:,} words (do not exceed)"
+            user_prompt += f"\n- Target word count: ~{(min_words + max_words) // 2:,} words (aim for middle of range)"
+            user_prompt += f"\n- Do not stop writing until you reach the minimum word count"
+            user_prompt += f"\n- Expand sections, add examples, provide detailed explanations, include case studies, and elaborate on concepts to meet length"
+            user_prompt += f"\n- If you finish early, expand existing sections rather than stopping"
+            user_prompt += f"\n- Length is NOT optional - it is a hard requirement"
         
         if emotional_goal:
             user_prompt += f"\n- Emotional goal: {emotional_goal}"
@@ -405,6 +445,25 @@ Forbidden Elements:
                 user_prompt += "\n- Use permission frames strategically (max 2 per piece)"
                 user_prompt += "\n- Rotate signature phrases (don't repeat same ones)"
                 user_prompt += "\n- Match CTA to funnel stage (1 soft CTA for top/mid-funnel)"
+                user_prompt += "\n\nTONE REQUIREMENTS - CRITICAL:"
+                user_prompt += "\n- NEVER use AI-speak patterns: 'This isn't speculation. This is data from authoritative sources.'"
+                user_prompt += "\n- NEVER say 'authoritative sources' or 'this is data' - just cite naturally"
+                user_prompt += "\n- NEVER use 'This isn't X, it's Y' pattern more than once per chapter (it's overused)"
+                user_prompt += "\n- NEVER use 'This isn't about making you afraid. This is about making you aware.'"
+                user_prompt += "\n- Use direct statements instead: 'The math is clear...' or 'Here's what the data shows...'"
+                user_prompt += "\n- Let citations speak for themselves - don't explain they're authoritative"
+                user_prompt += "\n- Use specific study names and dates, not generic 'research' or 'data'"
+                user_prompt += "\n\nPHRASE REPETITION - CRITICAL:"
+                user_prompt += "\n- NEVER repeat exact phrases (5+ words) within the same chapter"
+                user_prompt += "\n- NEVER repeat exact sentences (10+ words) within the same chapter"
+                user_prompt += "\n- Vary language while maintaining meaning: 'The goal is...' → 'My aim is...' → 'The purpose is...'"
+                user_prompt += "\n- Rotate transition phrases: 'But here's what...' → 'However...' → 'In contrast...' → 'Meanwhile...'"
+                user_prompt += "\n- Vary sentence structure: Don't use same pattern 3+ times in close proximity"
+                user_prompt += "\n- Use synonyms strategically: Don't use same word 3+ times in 500-word window"
+                user_prompt += "\n- Examples of varied phrasings:"
+                user_prompt += "\n  * 'The goal is...' / 'My aim is...' / 'The purpose is...' / 'I want to help you...'"
+                user_prompt += "\n  * 'make decisions based on reality' / 'make informed decisions grounded in facts' / 'base decisions on facts'"
+                user_prompt += "\n  * 'But here's what...' / 'However...' / 'In contrast...' / 'What's interesting is...'"
                 user_prompt += "\n\nSTORY RESOLUTION REQUIREMENTS:"
                 user_prompt += "\n- Provide concrete outcomes: Specific numbers, timelines, before/after comparisons"
                 user_prompt += "\n- Show, don't tell: Instead of 'everything changed', show 'We reduced his tax bracket from 25% to 15%. Over 25 years, that saved him $200,000.'"
@@ -465,10 +524,74 @@ Forbidden Elements:
                             user_prompt += "\n- The Overwhelmed (feels behind, needs simple guidance)"
                             user_prompt += "\n- Vary archetypes across chapters to personalize math examples and messaging"
                 
-                # Load citation library
-                citations_file = self.framework_dir / "references" / "citation_library.yaml"
+                # Load current scenarios (2026) - CRITICAL: Replace outdated 2008 references
+                scenarios_file = self.framework_dir / "references" / "current_scenarios_2026.yaml"
+                if scenarios_file.exists():
+                    with open(scenarios_file, 'r', encoding='utf-8') as f:
+                        scenarios = yaml.safe_load(f)
+                        if scenarios and 'current_scenarios' in scenarios:
+                            user_prompt += "\n\nCURRENT SCENARIOS (2026) - CRITICAL:"
+                            user_prompt += "\n- NEVER reference 'retired in 2008 after financial crisis' - this is 18 years old and not relatable"
+                            user_prompt += "\n- Use current, relatable scenarios that resonate with 2026 retirees:"
+                            for key, scenario in list(scenarios['current_scenarios'].items())[:3]:
+                                user_prompt += f"\n  * {scenario.get('title', key)}: {scenario.get('description', '')}"
+                            user_prompt += "\n- Focus on: COVID-19 early retirement, high inflation impact, current market volatility, Secure Act 2.0 changes"
+                            user_prompt += "\n- Make scenarios fresh and psychologically relevant to readers TODAY"
+                
+                # Load enhanced citation library (2026)
+                citations_file = self.framework_dir / "references" / "citation_library_2026.yaml"
                 if citations_file.exists():
                     with open(citations_file, 'r', encoding='utf-8') as f:
+                        citations = yaml.safe_load(f)
+                        if citations and 'citation_library' in citations:
+                            user_prompt += "\n\nCITATION REQUIREMENTS (2026):"
+                            user_prompt += "\n- Cite specific studies, reports, or data releases for ALL statistical claims"
+                            user_prompt += "\n- Minimum 2-3 citations per chapter for statistical claims"
+                            user_prompt += "\n- Use specific study names, report titles, or data releases - NOT generic 'research' or 'data'"
+                            user_prompt += "\n- Examples of good citations:"
+                            
+                            # Research organizations
+                            if 'research_organizations' in citations['citation_library']:
+                                user_prompt += "\n  Research Organizations:"
+                                for org_key, org_data in list(citations['citation_library']['research_organizations'].items())[:3]:
+                                    org_name = org_data.get('name', org_key)
+                                    if 'studies' in org_data and org_data['studies']:
+                                        study = org_data['studies'][0]
+                                        template = study.get('citation_template', '')
+                                        if template:
+                                            user_prompt += f"\n    - {org_name}: {template}"
+                            
+                            # Government sources
+                            if 'government_sources' in citations['citation_library']:
+                                user_prompt += "\n  Government Sources:"
+                                for gov_key, gov_data in list(citations['citation_library']['government_sources'].items())[:3]:
+                                    gov_name = gov_data.get('name', gov_key)
+                                    template = gov_data.get('citation_template', '')
+                                    if template:
+                                        user_prompt += f"\n    - {gov_name}: {template}"
+                            
+                            # Industry leaders
+                            if 'industry_leaders' in citations['citation_library']:
+                                user_prompt += "\n  Industry Leaders:"
+                                for leader_key, leader_data in list(citations['citation_library']['industry_leaders'].items())[:1]:
+                                    leader_name = leader_data.get('name', leader_key)
+                                    template = leader_data.get('citation_template', '')
+                                    if template:
+                                        user_prompt += f"\n    - {leader_name}: {template}"
+                            
+                            user_prompt += "\n- Keep citations natural and integrated - let the source speak for itself"
+                            user_prompt += "\n- DO NOT say 'authoritative sources' or 'this is data' - just cite the source naturally"
+                            user_prompt += "\n- DO NOT use patterns like 'This isn't speculation. This is data from authoritative sources.'"
+                            user_prompt += "\n- Examples of natural citations:"
+                            user_prompt += "\n  * 'Morningstar's 2025 Retirement Readiness Study found that 40% of retirees...'"
+                            user_prompt += "\n  * 'The Federal Reserve's 2024 Survey of Consumer Finances shows that...'"
+                            user_prompt += "\n  * 'Fidelity's 2026 Retiree Health Care Cost Estimate projects that...'"
+                            user_prompt += "\n  * 'Bureau of Labor Statistics CPI data from December 2025 indicates...'"
+                            
+                # Also load old citation library for backward compatibility
+                old_citations_file = self.framework_dir / "references" / "citation_library.yaml"
+                if old_citations_file.exists() and not citations_file.exists():
+                    with open(old_citations_file, 'r', encoding='utf-8') as f:
                         citations = yaml.safe_load(f)
                         if citations and 'citation_library' in citations:
                             user_prompt += "\n\nCREDIBILITY - Use subtle citations for statistics:"

@@ -1,7 +1,204 @@
 # Persona Voice Adaptation System
 # Dynamic voice shifting based on target persona
+# Multiple "Front Doors" for Self-Identification
 
 persona_adaptations:
+  # ========================================
+  # TIER 1: MUST HAVE
+  # ========================================
+  
+  early_retiree_immediate_need:
+    voice_shift:
+      tone: "urgent but reassuring, security-focused, outcome-driven"
+      formality: "warm, approachable, immediate"
+      sentence_structure: "Direct statements, immediate solutions, security-focused"
+    
+    emphasis:
+      - "Immediate protection"
+      - "Security now"
+      - "Income strategy"
+      - "Sequence risk protection"
+      - "Protect what you have"
+    
+    language_preferences:
+      use_stories: true
+      use_immediate_solutions: true
+      use_security_language: true
+      technical_depth: "low"  # Plain language, outcome-focused
+    
+    cta_angle: "Protect your retirement now—the sequence risk is real"
+    emotional_approach:
+      primary: "immediate_fear, sequence_risk_concern, security_needs"
+      secondary: "protection_desire, stability_craving, peace_of_mind"
+    
+    example_phrases:
+      - "You've retired. Now let's protect what you have."
+      - "The sequence risk is real—here's how to protect against it."
+      - "You need income strategy now, not later."
+      - "Protect your retirement while you still can."
+  
+  late_career_executive_retirement_window:
+    voice_shift:
+      tone: "strategic, legacy-driven, control-focused"
+      formality: "professional but accessible"
+      sentence_structure: "Strategic statements, legacy focus, control-oriented"
+    
+    emphasis:
+      - "Strategic planning"
+      - "Legacy protection"
+      - "Tax optimization"
+      - "Control and independence"
+      - "Window closing"
+    
+    language_preferences:
+      use_strategic_language: true
+      use_tax_optimization: true
+      use_legacy_concepts: true
+      technical_depth: "medium"  # Some technical with explanation
+    
+    cta_angle: "Optimize your retirement strategy before the window closes"
+    emotional_approach:
+      primary: "window_closing_fear, legacy_protection, tax_concern"
+      secondary: "strategic_control, independence_maintenance, family_provision"
+    
+    example_phrases:
+      - "Your retirement window is closing. Let's optimize your strategy."
+      - "Protect your legacy while optimizing your taxes."
+      - "Strategic planning now prevents problems later."
+      - "Control your retirement, don't let it control you."
+  
+  # ========================================
+  # TIER 2: HIGH NEED
+  # ========================================
+  
+  successful_business_owner_exit_strategy:
+    voice_shift:
+      tone: "independent, legacy-driven, outcome-focused"
+      formality: "direct, approachable"
+      sentence_structure: "Outcome-focused, legacy-oriented, control statements"
+    
+    emphasis:
+      - "Exit strategy"
+      - "Legacy protection"
+      - "Maintaining control"
+      - "Protecting what you built"
+      - "Independence"
+    
+    language_preferences:
+      use_exit_strategy: true
+      use_legacy_concepts: true
+      use_independence_language: true
+      technical_depth: "low"  # Plain language, outcome-focused
+    
+    cta_angle: "Create your exit strategy and protect what you've built"
+    emotional_approach:
+      primary: "exit_strategy_concern, legacy_protection, independence_fear"
+      secondary: "building_success, control_maintenance, family_provision"
+    
+    example_phrases:
+      - "You've built something. Now let's protect it."
+      - "Create your exit strategy and secure your legacy."
+      - "Protect what you built while maintaining control."
+      - "Your business is your legacy—let's protect it."
+  
+  dual_income_professional_no_pension:
+    voice_shift:
+      tone: "strategic, security-focused, family-oriented"
+      formality: "professional but accessible"
+      sentence_structure: "Strategic statements, security focus, family-oriented"
+    
+    emphasis:
+      - "Creating guaranteed income"
+      - "Tax optimization"
+      - "Security and stability"
+      - "Family protection"
+      - "Building your pension"
+    
+    language_preferences:
+      use_income_strategy: true
+      use_tax_optimization: true
+      use_security_language: true
+      technical_depth: "medium"  # Some technical with explanation
+    
+    cta_angle: "Create your guaranteed income strategy—you don't have a pension, but you can build one"
+    emotional_approach:
+      primary: "pension_gap_fear, income_creation_need, security_concern"
+      secondary: "family_protection, stability_needs, independence_desire"
+    
+    example_phrases:
+      - "You don't have a pension, but you can create one."
+      - "Build your guaranteed income strategy."
+      - "Secure your retirement without a pension."
+      - "Create the security you need."
+  
+  squeeze_parent_retirement_education:
+    voice_shift:
+      tone: "family-focused, legacy-driven, balancing"
+      formality: "warm, approachable"
+      sentence_structure: "Family-oriented, balance-focused, legacy statements"
+    
+    emphasis:
+      - "Family legacy"
+      - "Education investment"
+      - "Retirement security"
+      - "Balancing priorities"
+      - "Doing both"
+    
+    language_preferences:
+      use_family_stories: true
+      use_balance_concepts: true
+      use_legacy_language: true
+      technical_depth: "low"  # Plain language, family-focused
+    
+    cta_angle: "Fund their education and secure your retirement"
+    emotional_approach:
+      primary: "family_legacy_fear, education_concern, retirement_balance"
+      secondary: "providing_for_family, generational_impact, stability_needs"
+    
+    example_phrases:
+      - "You're funding their future while planning yours."
+      - "Do both without sacrificing either."
+      - "Fund their education and secure your retirement."
+      - "Balance their future with yours."
+  
+  # ========================================
+  # TIER 3: MODERATE NEED
+  # ========================================
+  
+  public_servant_pension_gap:
+    voice_shift:
+      tone: "stable, reassuring, security-focused, gap-aware"
+      formality: "warm, approachable"
+      sentence_structure: "Reassuring statements, gap-focused, security-oriented"
+    
+    emphasis:
+      - "Pension security"
+      - "Bridging the gap"
+      - "Healthcare protection"
+      - "Stability"
+      - "Gap analysis"
+    
+    language_preferences:
+      use_gap_analysis: true
+      use_security_language: true
+      use_healthcare_focus: true
+      technical_depth: "low"  # Plain language, security-focused
+    
+    cta_angle: "Bridge the gap safely, especially for healthcare"
+    emotional_approach:
+      primary: "stability_fear, gap_concern, healthcare_worry"
+      secondary: "service_recognition, security_needs, peace_of_mind"
+    
+    example_phrases:
+      - "Your pension is secure, but the gap is real."
+      - "Bridge the gap safely, especially for healthcare."
+      - "Protect your pension gap."
+      - "Secure your gap funding."
+  
+  # ========================================
+  # LEGACY PERSONAS
+  # ========================================
+  
   engineer_retiree:
     voice_shift:
       tone: "data-driven, calm logic"
@@ -63,20 +260,20 @@ persona_adaptations:
   widow_caregiver:
     voice_shift:
       tone: "soothing, clear, safe"
-      formality: "very approachable, reassuring"
-      sentence_structure: "Simple, clear, step-by-step"
+      formality: "warm, very approachable"
+      sentence_structure: "Simple, clear, reassuring"
     
     emphasis:
       - "Simplicity"
       - "Control"
       - "Security"
-      - "Peace of mind"
+      - "You don't have to do this alone"
     
     language_preferences:
       use_simple_language: true
-      avoid_jargon: true
-      use_reassurance: true
-      technical_depth: "very_low"  # No jargon
+      use_reassuring_stories: true
+      use_step_by_step: true
+      technical_depth: "very low"  # Very plain language
     
     cta_angle: "You don't have to do this alone"
     emotional_approach:
@@ -86,13 +283,5 @@ persona_adaptations:
     example_phrases:
       - "You don't have to do this alone"
       - "Simple and safe"
-      - "We'll guide you step by step"
-      - "Peace of mind"
-
-adaptation_rules:
-  - "Always match tone to persona"
-  - "Adjust technical depth based on persona"
-  - "Use persona-specific phrases naturally"
-  - "Maintain brand voice while adapting"
-  - "Never lose empathy regardless of persona"
-
+      - "Step by step"
+      - "We'll guide you"
