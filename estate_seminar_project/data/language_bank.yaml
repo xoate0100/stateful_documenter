@@ -1,0 +1,207 @@
+# Language Bank - Structured Data
+# Source: Lines 446-469 of evidence/source_material.md
+
+safety_lines:
+  use_timing: "Early and often"
+  
+  lines:
+    - text: "No one is behind—most families don't have this organized."
+      when_to_use:
+        - "Opening/intro"
+        - "When addressing perfectionism"
+        - "When people feel behind"
+        - "Module F (Objections)"
+      purpose: "Normalizes the situation, reduces shame, creates permission"
+      emotional_effect: "Relief, permission"
+    
+    - text: "Today is educational. Take what's useful; ignore what isn't."
+      when_to_use:
+        - "Opening/intro (must use)"
+        - "Throughout seminar (reinforce)"
+        - "When addressing skepticism"
+        - "Closing"
+      purpose: "Sets expectations, reduces suspicion, creates safety"
+      emotional_effect: "Safety, autonomy"
+    
+    - text: "You can do this yourself. Help is optional."
+      when_to_use:
+        - "Opening/intro (must use)"
+        - "Module D (DIY System)"
+        - "Throughout seminar (reinforce)"
+        - "Closing"
+      purpose: "Reinforces autonomy, reduces pressure, creates permission"
+      emotional_effect: "Agency, competence"
+
+neutral_mentions_legacy_lock:
+  lines:
+    - text: "Some people like paper binders. Others prefer structured platforms that guide the process with worksheets and steps."
+      when_to_use:
+        - "Module D (DIY System)"
+        - "When discussing organization options"
+        - "Worksheet walkthrough"
+      purpose: "Neutral framing of options, mentions Legacy Lock as example"
+      compliance: "Educational, not sales"
+      emotional_effect: "Neutral, informative"
+    
+    - text: "Legacy Lock is one example of a guided system with worksheets like the 3WHY and trustee appointment tools."
+      when_to_use:
+        - "Module D (DIY System)"
+        - "When discussing structured platforms"
+        - "Worksheet walkthrough"
+      purpose: "Mentions Legacy Lock as example, not pitch"
+      compliance: "Educational example, not sales"
+      emotional_effect: "Informative, neutral"
+
+trust_funding_line:
+  critical: true
+  text: "A trust that isn't properly funded may not work as intended."
+  when_to_use:
+    - "Module B (Estate Planning Basics) - when defining Trust"
+    - "Module C (Pitfalls) - when discussing unfunded trust risk"
+    - "Worksheet 6 (Trust Funding Awareness)"
+    - "Any discussion of trusts"
+  purpose: "Creates awareness of critical concept"
+  compliance: "Educational, not legal advice"
+  emotional_effect: "Awareness, not panic"
+  note: "Must be followed by disclaimer if giving more detail"
+
+permission_based_help:
+  lines:
+    - text: "If you ever get stuck, and you want a second set of eyes, we're available—only if you ask."
+      when_to_use:
+        - "Closing"
+        - "Support Spectrum slide"
+        - "Follow-up materials"
+        - "Q&A responses"
+      purpose: "Offers help without pressure"
+      compliance: "Permission-based, no urgency"
+      emotional_effect: "Agency, relief"
+    
+    - text: "If your situation is complex, it can be helpful to coordinate retirement, tax, and legacy decisions."
+      when_to_use:
+        - "Support Spectrum slide (Path 3)"
+        - "Closing"
+        - "When discussing comprehensive coordination"
+      purpose: "Describes when help might be useful"
+      compliance: "Educational, not sales"
+      emotional_effect: "Informative, neutral"
+
+additional_language_blocks:
+  opening_intro:
+    text: "Welcome. Today is education only—no sales pitch. You'll leave with clear next steps and worksheets. You can do this yourself, and help is optional later."
+    components:
+      - "Sets expectations (education only)"
+      - "Delivers on promise (worksheets)"
+      - "Reinforces autonomy (you can do this yourself)"
+      - "Permission-based (help is optional)"
+  
+  module_transitions:
+    text: "Let's move to [next topic]. Remember, this is education only. Take what's useful."
+    purpose: "Reinforces safety and autonomy between modules"
+  
+  qa_transition:
+    text: "No follow-up requirement from today. If you have questions, I'm happy to answer them. If you want help later, we're available—only if you ask."
+    purpose: "Reduces suspicion, reinforces no obligation"
+  
+  closing:
+    text: "Your next step is to complete one worksheet this week. If you get stuck and want help, we're available—no obligation."
+    purpose: "Canonical CTA, permission-based, no pressure"
+
+language_patterns:
+  permission_based:
+    you_can:
+      - "You can start with one worksheet"
+      - "You can do this yourself"
+      - "You can add more later"
+    if_you_want:
+      - "If you want help..."
+      - "If you want a second set of eyes..."
+      - "If you choose to get help..."
+    optional:
+      - "Help is optional"
+      - "Support is optional"
+      - "This is optional"
+  
+  autonomy_respecting:
+    your_choice:
+      - "The choice is yours"
+      - "You decide when and if..."
+      - "You're in control..."
+    no_pressure:
+      - "No pressure, no obligation"
+      - "No urgency"
+      - "Take your time"
+  
+  educational_framing:
+    this_is_educational:
+      - "This is educational and not legal advice"
+      - "Today is educational only"
+      - "This is for educational purposes"
+    youll_learn:
+      - "You'll learn about..."
+      - "We'll cover..."
+      - "This will help you understand..."
+
+forbidden_language_patterns:
+  urgency:
+    - "Time is running out"
+    - "Limited time offer"
+    - "Act now"
+    - "Don't wait"
+  pressure:
+    - "You must..."
+    - "You need to..."
+    - "Required to..."
+    - "Critical that you..."
+  fear:
+    - "If you die tomorrow..."
+    - "Your family will suffer if..."
+    - "You're putting loved ones at risk..."
+    - "Critical mistake..."
+  shame:
+    - "You should have..."
+    - "Most people have..."
+    - "You're behind if..."
+    - "Why haven't you..."
+  sales:
+    - "Book your consultation"
+    - "Schedule now"
+    - "Limited spots"
+    - "Special offer"
+
+usage_guidelines:
+  when_to_use:
+    slides: "Use safety lines and permission-based help"
+    scripts: "Use opening/closing language, transitions"
+    worksheets: "Use permission-based framing"
+    one_pagers: "Use educational framing"
+    follow_ups: "Use permission-based help"
+  
+  how_to_use:
+    - "Copy directly - These blocks are ready to use"
+    - "Adapt slightly - Can modify for context, but maintain compliance"
+    - "Combine - Can combine blocks for longer content"
+    - "Verify - Always check against compliance rules"
+  
+  quality_check:
+    - "Is it permission-based?"
+    - "Does it avoid urgency/pressure?"
+    - "Does it support the emotional arc?"
+    - "Is it compliant with 'no sales' rules?"
+    - "Does it respect autonomy?"
+
+integration:
+  with_emotional_arc:
+    - "Safety lines → Support Safety (step 1)"
+    - "Permission-based help → Support Agency (step 5)"
+    - "Educational framing → Support Clarity (step 2)"
+  with_compliance:
+    - "All language blocks are compliance-safe"
+    - "Permission-based, not prescriptive"
+    - "Educational, not sales"
+    - "Autonomy-respecting"
+  with_modules:
+    - "Safety lines in intro and throughout"
+    - "Trust funding line in Modules B and C"
+    - "Permission-based help in closing"
+    - "Neutral Legacy Lock mentions in Module D"

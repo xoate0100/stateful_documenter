@@ -48,10 +48,15 @@ This is the master reference for all documentation in this repository, including
 
 ## Documentation Projects
 
-### [mudp_project](C:\Users\andre\source\cursor-repos\stateful_documenter\mudp_project/)
+### [mudp_project](mudp_project/)
 - **Description:** Extract and structure MUDP system from stream-of-consciousness chat
 - **README:** [README.md](mudp_project/README.md)
 - **Master Index:** [MASTER_INDEX.md](mudp_project/docs/MASTER_INDEX.md) - Comprehensive project documentation
+
+### [kiwi_project](kiwi_project/)
+- **Description:** Comprehensive technical, philosophical, social and practical architecture for Kiwi platform (Roblox alternative)
+- **README:** [README.md](kiwi_project/README.md)
+- **Master Index:** [MASTER_INDEX.md](kiwi_project/docs/MASTER_INDEX.md) - Complete platform architecture documentation
 
 ---
 

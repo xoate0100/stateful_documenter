@@ -1,0 +1,75 @@
+# Canonical Seminar Constraints - Structured Data
+# Source: Lines 6-46 of evidence/source_material.md
+
+seminar_format:
+  total_length_minutes: 60
+  intro_minutes: 5
+  intro_content: "safety + expectations"
+  closing_minutes: "5-7"
+  closing_content: "recap + self-directed next steps + optional support invitation"
+  content_minutes: "48-50"
+
+compliance_rules:
+  allowed:
+    - "Education, frameworks, neutral explanations, definitions"
+    - "Tools/worksheets that attendees can use independently"
+    - "Permission-based support statements (opt-in only, no urgency)"
+    - "\"If you ever get stuck…\" language"
+  
+  not_allowed:
+    - "Pitching products/packages, price anchoring, scarcity (\"limited spots\"), deadline offers"
+    - "Testimonials presented as conversion proof"
+    - "Case studies that end in \"then they hired us\""
+    - "Booking links on the main slides as a CTA"
+
+audience_type: "Suspicious, Informed Buyers"
+
+audience_characteristics:
+  expectations:
+    - "Expect a hidden pitch"
+    - "High skepticism"
+    - "Autonomy-sensitive"
+  motivations:
+    - "Control"
+    - "Dignity"
+    - "Family harmony"
+    - "Simplicity"
+  communication_approach:
+    - "Avoid fear tactics"
+    - "Use calm, competence-building value"
+
+audience_emotional_profile:
+  primary_risk: "Here comes the pitch."
+  primary_goal: "I can handle this; I'm in control; these people are trustworthy."
+
+emotional_engineering:
+  required_arc:
+    - "Safety"
+    - "Clarity"
+    - "Competence"
+    - "Relief"
+    - "Agency"
+    - "Peace"
+  
+  forbidden_triggers:
+    - "Panic, doom, guilt-heavy framing"
+    - "\"If you die tomorrow…\" urgency"
+    - "Shame (\"you should have done this already\")"
+  
+  preferred_triggers:
+    - "Relief (\"This is simpler than I thought\")"
+    - "Control (\"Here's the next step\")"
+    - "Dignity (\"Your wishes deserve clarity\")"
+    - "Protection (\"Reduce burden on family\")"
+
+compliance_validation_checklist:
+  - "No product pitches or packages mentioned"
+  - "No price anchoring or pricing information"
+  - "No scarcity tactics (\"limited spots\", \"deadline offers\")"
+  - "No testimonials as conversion proof"
+  - "No case studies ending in \"then they hired us\""
+  - "No booking links on main slides"
+  - "Permission-based language only (\"if you want\", \"optional\", \"available if you ask\")"
+  - "Educational framing maintained throughout"
+  - "Autonomy-respecting language used"
+  - "Emotional triggers are preferred (relief, control, dignity, protection), not forbidden (panic, doom, guilt, shame)"

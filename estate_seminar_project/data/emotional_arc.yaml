@@ -1,0 +1,170 @@
+# Emotional Engineering Framework - Structured Data
+# Source: Lines 117-145 of evidence/source_material.md
+
+emotional_labels:
+  before_state:
+    definition: "What they feel entering this micro-topic"
+    purpose: "Acknowledge where they are emotionally, so you can meet them there"
+    examples:
+      - "Vague anxiety (Module A)"
+      - "Overwhelm, confusion (Module B)"
+      - "False confidence (Module C)"
+      - "Paralysis (Module D)"
+      - "Sterile 'paperwork' vibe (Module E)"
+      - "Avoidance (Module F)"
+  
+  after_state:
+    definition: "What they should feel after you teach it"
+    purpose: "Define the emotional destination, so content can be designed to achieve it"
+    examples:
+      - "Conceptual clarity + safety (Module A)"
+      - "Simplification; 'this is manageable' (Module B)"
+      - "Constructive awareness + motivation (Module C)"
+      - "Competence + momentum (Module D)"
+      - "Meaning, connection, calm (Module E)"
+      - "Permission + self-efficacy (Module F)"
+
+required_emotional_arc:
+  progression:
+    - "Safety"
+    - "Clarity"
+    - "Competence"
+    - "Relief"
+    - "Agency"
+    - "Peace"
+  
+  arc_by_module:
+    intro: "Establishes Safety"
+    module_a: "Safety → Clarity"
+    module_b: "Clarity → Competence"
+    module_c: "Competence → Relief"
+    module_d: "Relief → Agency"
+    module_e: "Agency → Peace"
+    module_f: "Reinforces Agency and Peace"
+    closing: "Reinforces Peace"
+
+forbidden_emotional_triggers:
+  panic_doom_guilt:
+    - "Panic, doom, guilt-heavy framing"
+    - "If you don't do this, your family will suffer"
+    - "You're putting your loved ones at risk"
+    - "This is a critical mistake"
+  
+  urgency:
+    - "\"If you die tomorrow…\" urgency"
+    - "If you die tomorrow without a will..."
+    - "What happens if you're in an accident today?"
+    - "Time is running out"
+  
+  shame:
+    - "Shame ('You should have done this already')"
+    - "You should have done this years ago"
+    - "Most people have this done by now"
+    - "Why haven't you done this yet?"
+  
+  why_forbidden:
+    - "They trigger the audience's primary fear: 'Here comes the pitch'"
+    - "They create urgency that feels like sales pressure"
+    - "They violate the 'no sales' compliance rules"
+    - "They damage trust and autonomy"
+
+preferred_emotional_triggers:
+  relief:
+    examples:
+      - "This is simpler than I thought"
+      - "This is more manageable than it seems"
+      - "You don't have to understand everything"
+      - "The worksheets make it simple"
+  
+  control:
+    examples:
+      - "Here's the next step"
+      - "You can start with one worksheet"
+      - "Here's what to do next"
+      - "You're in control of the process"
+  
+  dignity:
+    examples:
+      - "Your wishes deserve clarity"
+      - "Your wishes matter"
+      - "You deserve clarity about your legacy"
+      - "This is about honoring your intentions"
+  
+  protection:
+    examples:
+      - "Reduce burden on family"
+      - "This makes it easier for your family"
+      - "Planning now is a gift to loved ones"
+      - "This reduces confusion and conflict"
+  
+  why_they_work:
+    - "They respect autonomy and control"
+    - "They build competence and confidence"
+    - "They create positive motivation"
+    - "They align with audience values (control, dignity, family harmony)"
+
+atomic_delivery_model:
+  definition: "Each module, worksheet, and piece of content has clear before/after states and specific content that moves attendees from before to after"
+  
+  components:
+    - "Clear before state (where they are emotionally)"
+    - "Clear after state (where they should be)"
+    - "Specific content that moves them from before to after"
+    - "Measurable outcome (can verify the emotional shift)"
+  
+  application:
+    for_modules:
+      - "Define before/after emotional states"
+      - "Design content to achieve the emotional shift"
+      - "Verify the shift is happening"
+      - "Adjust if needed"
+    
+    for_worksheets:
+      - "Define before/after emotional states"
+      - "Design prompts to achieve the shift"
+      - "Verify completion creates the outcome"
+      - "Adjust if needed"
+
+emotional_engineering_checklist:
+  - "Before state is clearly defined"
+  - "After state is clearly defined"
+  - "Content moves from before to after"
+  - "No forbidden emotional triggers used"
+  - "Preferred emotional triggers included"
+  - "Aligns with required emotional arc"
+  - "Respects audience autonomy"
+  - "Builds competence, not fear"
+
+integration:
+  compliance_alignment:
+    - "Emotional engineering supports 'no sales' compliance"
+    - "Preferred triggers respect autonomy"
+    - "Forbidden triggers are also compliance violations"
+    - "Emotional arc builds trust, not pressure"
+  
+  brand_alignment:
+    surewealth_tone: "calm, factual, mathematically/structurally oriented"
+    legacy_lock: "guided system (not pressure)"
+    both_brands: "align with preferred emotional triggers"
+
+usage_in_content_generation:
+  for_slides:
+    - "Each slide should support the emotional arc"
+    - "Use preferred triggers in slide copy"
+    - "Avoid forbidden triggers"
+  
+  for_worksheets:
+    - "Define before/after states for each worksheet"
+    - "Design prompts to achieve emotional outcomes"
+    - "Include emotional labels if helpful"
+  
+  for_scripts:
+    - "Use emotional language that supports the arc"
+    - "Acknowledge before states"
+    - "Guide to after states"
+    - "Use preferred triggers in transitions"
+  
+  for_one_pagers:
+    - "Support the emotional arc"
+    - "Use preferred triggers"
+    - "Avoid forbidden triggers"

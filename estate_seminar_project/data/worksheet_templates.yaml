@@ -1,0 +1,319 @@
+# Worksheet Templates - Structured Data
+# Source: Lines 274-386 of evidence/source_material.md
+
+universal_requirements:
+  format:
+    length: "1-2 pages maximum"
+    language: "Simple, plain English"
+    whitespace: "Large whitespace for easy reading and writing"
+    checkboxes: "Use checkboxes for easy completion"
+    framing: "\"10-minute completion\" or \"10-minute start\" framing"
+  
+  design_principles:
+    - "Clean, uncluttered layout"
+    - "Ample space for writing"
+    - "Clear section headers"
+    - "Friendly, approachable tone"
+    - "Easy to scan and complete"
+
+required_elements:
+  - "Title (clear, descriptive)"
+  - "\"10-Minute Start\" framing"
+  - "Purpose statement (brief explanation)"
+  - "Content elements (checklists, blanks, tables, prompts)"
+  - "Disclaimer (if legal/medical-adjacent)"
+  - "Emotional before/after labels (optional)"
+
+worksheet_1_legacy_snapshot:
+  title: "Legacy Snapshot"
+  purpose: "Reduce overwhelm; establish baseline"
+  length: "1 page"
+  time_estimate: "10-minute start"
+  
+  emotional_outcomes:
+    before: "Uncertain, scattered"
+    after: "Oriented, relieved"
+  
+  sections:
+    - name: "Documents I Have"
+      type: "checkboxes"
+      items:
+        - "Will"
+        - "Trust"
+        - "POA (Fin) - Financial Power of Attorney"
+        - "POA (Health) - Healthcare Power of Attorney"
+        - "Healthcare directive"
+    
+    - name: "Where Stored"
+      type: "blank"
+      prompt: "Where stored (physical + digital): __________________"
+    
+    - name: "Who Knows Where They Are"
+      type: "blank"
+      prompt: "Who knows where they are: __________________"
+    
+    - name: "Immediate Next Step"
+      type: "checkboxes"
+      prompt: "Immediate next step (choose one):"
+      items:
+        - "Locate documents"
+        - "Name decision makers"
+        - "Check beneficiaries"
+        - "Start digital inventory"
+
+worksheet_2_decision_maker_map:
+  title: "Decision-Maker Map"
+  purpose: "Reduce family chaos"
+  length: "1-2 pages"
+  time_estimate: "10-minute start"
+  
+  emotional_outcomes:
+    before: "Discomfort"
+    after: "Responsible confidence"
+  
+  sections:
+    - name: "Financial Agent"
+      type: "blanks"
+      prompts:
+        - "If I can't act, my financial agent is: _________"
+        - "Backup: _________"
+    
+    - name: "Healthcare Agent"
+      type: "blanks"
+      prompts:
+        - "My healthcare agent is: _________"
+        - "Backup: _________"
+    
+    - name: "Executor / Successor Trustee"
+      type: "blanks"
+      prompts:
+        - "Executor / successor trustee candidates: _________"
+        - "Backup: _________"
+    
+    - name: "Notes"
+      type: "blank"
+      prompt: "\"Why I chose them\" (1 sentence)"
+
+worksheet_3_asset_beneficiary_alignment:
+  title: "Asset & Beneficiary Alignment"
+  purpose: "Identify mismatches and needed updates"
+  length: "1-2 pages"
+  time_estimate: "10-minute start"
+  
+  emotional_outcomes:
+    before: "Avoidance"
+    after: "Clarity + urgency without panic"
+  
+  format: "Table with 5 columns"
+  
+  columns:
+    - name: "Asset / Account"
+      type: "text"
+      examples:
+        - "Bank accounts (checking, savings, CDs)"
+        - "Investment accounts (401k, IRA, brokerage)"
+        - "Real estate (home, rental property)"
+        - "Life insurance policies"
+        - "Retirement accounts"
+        - "Business interests"
+    
+    - name: "Approx Value (Range OK)"
+      type: "text"
+      guidance: "Ranges are fine (e.g., '$50k-$100k'). 'Unknown' is acceptable."
+    
+    - name: "Owner/Title (Me / Joint / Trust / Unknown)"
+      type: "options"
+      options:
+        - "Me"
+        - "Joint"
+        - "Trust"
+        - "Unknown"
+      guidance: "This determines if asset will go through probate or follow trust terms."
+    
+    - name: "Beneficiary Listed? (Y/N/Unknown)"
+      type: "options"
+      options:
+        - "Y"
+        - "N"
+        - "Unknown"
+      guidance: "Beneficiaries on accounts override will/trust, so this is critical."
+    
+    - name: "Needs Update? (Y/N)"
+      type: "options"
+      options:
+        - "Y"
+        - "N"
+        - "Leave blank if unsure"
+      guidance: "Mark items where beneficiary is outdated, title doesn't match estate plan, or no beneficiary where one is needed."
+  
+  minimum_rows: 10
+
+worksheet_4_digital_legacy_inventory:
+  title: "Digital Legacy Inventory"
+  purpose: "Ensure digital assets are accessible and managed"
+  length: "1-2 pages"
+  time_estimate: "10-minute start"
+  
+  emotional_outcomes:
+    before: "Blind spot"
+    after: "Modern confidence"
+  
+  sections:
+    - name: "Categories"
+      type: "category_sections"
+      categories:
+        - name: "Email"
+          items: "Email accounts (personal, work, etc.)"
+        
+        - name: "Photos/Cloud"
+          items: "Photo storage (Google Photos, iCloud, etc.), Cloud storage (Dropbox, OneDrive, etc.)"
+        
+        - name: "Banking"
+          items: "Online banking accounts, Investment platforms, Cryptocurrency (if applicable), Payment apps (PayPal, Venmo, etc.)"
+        
+        - name: "Subscriptions"
+          items: "Streaming services (Netflix, Spotify, etc.), Software subscriptions, Cloud services, Memberships"
+        
+        - name: "Social Media"
+          items: "Facebook, Instagram, Twitter, LinkedIn, etc."
+        
+        - name: "Devices"
+          items: "Computers, tablets, phones"
+    
+    - name: "Key Questions"
+      type: "questions"
+      questions:
+        - question: "Where are passwords stored?"
+          options:
+            - "Password manager (which one?)"
+            - "Written down (where?)"
+            - "Browser saved"
+            - "Unknown/forgotten"
+          guidance: "Encourage secure password management system."
+        
+        - question: "Who should access what?"
+          guidance: "Not everything needs to be accessible. Some accounts may need to be deleted. Some may need to be preserved. Define who gets access to what."
+        
+        - question: "What do I want deleted vs preserved?"
+          guidance: "Some accounts should be deleted (privacy). Some should be preserved (memories, important files). Some should be memorialized (social media). Document preferences."
+
+worksheet_5_annual_review_triggers:
+  title: "Annual Review Triggers"
+  purpose: "Create permission and process mindset (not perfectionism)"
+  length: "1 page"
+  time_estimate: "10-minute start"
+  
+  emotional_outcomes:
+    before: "Perfectionism"
+    after: "Permission + process mindset"
+  
+  format: "Checkbox list"
+  
+  triggers:
+    - "Marriage/divorce"
+    - "New child/grandchild"
+    - "Move states"
+    - "Home purchase/sale"
+    - "Major account change"
+    - "Health change"
+    - "Business change"
+    - "Death in family"
+  
+  optional_section:
+    name: "Additional Notes"
+    purpose: "Other triggers specific to their situation, notes about when last reviewed, reminder to review annually even without major changes"
+
+worksheet_6_trust_funding_awareness:
+  title: "Trust Funding Awareness"
+  subtitle: "(Education-only)"
+  purpose: "Awareness that trusts must be funded to work (educational, not legal advice)"
+  length: "1-2 pages"
+  time_estimate: "10-minute start"
+  
+  emotional_outcomes:
+    before: "Unaware or uncertain"
+    after: "Aware and informed"
+  
+  required_disclaimer: "This is educational, not legal advice."
+  disclaimer_placement: "Prominent (top or prominent location)"
+  
+  sections:
+    - name: "Concept Bullets"
+      type: "educational_content"
+      bullets:
+        - concept: "A trust may fail to avoid probate if not funded"
+          explanation: "A trust document alone doesn't protect assets. Assets must be transferred into the trust name for the trust to work."
+        
+        - concept: "Funding = aligning titles/ownership/beneficiary structures with intent"
+          explanation: "Funding means transferring asset ownership to the trust. This includes real estate deeds, bank accounts, investment accounts. Beneficiary designations should align with trust intentions. Titles and ownership must match the estate plan."
+    
+    - name: "Mini-Checklist"
+      type: "checkboxes"
+      items:
+        - "Real estate deeds reviewed"
+        - "Bank accounts titled reviewed"
+        - "Beneficiaries reviewed"
+      guidance: "These are review items, not legal instructions. Consult an attorney for actual funding steps."
+    
+    - name: "Attorney Reminder"
+      type: "reminder"
+      text: "\"Ask an attorney for legal specifics\" reminder"
+      purpose: "Reinforce that this is educational, not legal advice"
+      guidance: "Trust funding involves legal processes (deed transfers, account retitling, etc.) that require attorney guidance. This worksheet creates awareness, not instructions."
+
+generation_rules:
+  when_creating_worksheet:
+    must_include:
+      - "Title + '10-minute start' framing"
+      - "Checklist / blanks"
+      - "One disclaimer line if legal/medical-adjacent"
+      - "Emotional before/after labels (if requested)"
+  
+  format_requirements:
+    - "1-2 pages maximum"
+    - "Simple, plain English"
+    - "Large whitespace"
+    - "Checkboxes where appropriate"
+    - "\"10-minute start\" framing"
+  
+  compliance_requirements:
+    - "No urgency or pressure language"
+    - "Permission-based language"
+    - "Educational framing"
+    - "Self-directed completion"
+    - "Support is optional"
+
+language_guidelines:
+  do_use:
+    - "\"You can start with...\""
+    - "\"10-minute start\""
+    - "\"Choose one...\""
+    - "\"This is a start...\""
+    - "\"You can add more later...\""
+    - "\"Don't worry about completing everything...\""
+    - "\"Permission to...\""
+  
+  dont_use:
+    - "\"You must...\""
+    - "\"Required to...\""
+    - "\"Urgent...\""
+    - "\"Critical mistake if...\""
+    - "\"Time is running out...\""
+    - "\"You should have...\""
+    - "Pressure or urgency language"
+
+integration:
+  with_modules:
+    - "Worksheets should align with module content"
+    - "Reference module concepts where appropriate"
+    - "Support module learning objectives"
+  
+  with_other_worksheets:
+    - "Worksheets can reference each other"
+    - "'Next step' options can lead to other worksheets"
+    - "Create logical flow between worksheets"
+  
+  with_seminar_promise:
+    - "Each worksheet delivers a specific walk-away win"
+    - "Worksheets support 'clear next steps' promise"
+    - "Worksheets enable 'you can do this yourself' promise"

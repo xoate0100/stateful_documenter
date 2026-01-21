@@ -1,0 +1,278 @@
+# MVP Specification - Estate Seminar Documentation Project
+# This file defines the project structure for generating financial seminar presentations
+# from the "Legacy, Locked" educational seminar knowledge base
+
+# Required Core Fields
+Project: "estate_seminar"
+Project_Type: "documentation"  # documentation | programming
+Maturity: "L2.5"  # L2 | L2.5 | L3
+Architecture: "documentation-hierarchical"  # Descriptive architecture type
+Repo_Type: "documentation"  # frontend | backend | fullstack | microservice | monorepo | documentation
+Execution_Mode: "Controlled Agentic Execution"  # Human Directed | Controlled Agentic Execution | Fully Agentic
+
+# Goals and Principles
+GOALS_AND_PRINCIPLES:
+  goals:
+    - "Enable AI LLM to generate any seminar-related asset (slides, worksheets, one-pagers, checklists, facilitator scripts, compliant CTAs, follow-up materials) without additional instructions"
+    - "Maintain strict 'no sales pitch' posture in all generated content"
+    - "Create comprehensive knowledge base for 'Legacy, Locked' educational seminar"
+    - "Support SureWealth Solutions and Legacy Lock brand positioning while maintaining compliance"
+    - "Generate presentation materials that respect audience autonomy and reduce skepticism"
+  principles:
+    - "Education only - no sales pitches, urgency, or scarcity tactics"
+    - "Autonomy-respecting language and permission-based support offers"
+    - "Emotional engineering: Safety → Clarity → Competence → Relief → Agency → Peace"
+    - "Compliance-first: All content must pass 'no sales' compliance rules"
+    - "Atomic delivery model: Each module has clear before/after emotional states"
+    - "Documentation serves content generation: All assets derive from canonical knowledge base"
+
+# Documentation Structure (replaces MONOREPO_LAYOUT for documentation projects)
+DOCUMENTATION_STRUCTURE:
+  docs_directory: "docs/"
+  data_directory: "data/"
+  plans_directory: "plans/"
+  evidence_directory: "evidence/"
+  callables_directory: "callables/"
+  
+  # Subdirectories for organized documentation
+  docs_subdirectories:
+    - "core_knowledge/"      # Canonical seminar constraints, brand facts, promises
+    - "content_modules/"      # Educational curriculum modules (A-F)
+    - "worksheets/"          # Worksheet templates and generation rules
+    - "outputs/"             # Generated slides, one-pagers, scripts
+    - "compliance/"          # Compliance rules, guardrails, language bank
+  
+  callables_subdirectories:
+    - "templates/"          # Reusable templates for worksheets, slides, one-pagers
+
+# Content Organization
+CONTENT_ORGANIZATION:
+  primary_systems:
+    - name: "Canonical Seminar Constraints"
+      description: "Format, compliance rules, audience type, emotional engineering"
+      location: "docs/core_knowledge/seminar_constraints.md"
+    - name: "Brand & Entity Facts"
+      description: "SureWealth Solutions and Legacy Lock positioning and facts"
+      location: "docs/core_knowledge/brand_facts.md"
+    - name: "Seminar Promise & Walk-Away Wins"
+      description: "Explicit promises and deliverables attendees receive"
+      location: "docs/core_knowledge/seminar_promise.md"
+    - name: "Educational Curriculum Modules"
+      description: "Modules A-F covering legacy definition through objections"
+      location: "docs/content_modules/"
+    - name: "Worksheet System"
+      description: "6 canonical worksheets with templates and generation rules"
+      location: "docs/worksheets/"
+    - name: "Compliance & Language Bank"
+      description: "Guardrails, language patterns, and compliance-safe CTAs"
+      location: "docs/compliance/"
+  
+  structured_data_files:
+    - "data/seminar_constraints.yaml"
+    - "data/brand_facts.yaml"
+    - "data/worksheet_templates.yaml"
+    - "data/language_bank.yaml"
+    - "data/emotional_arc.yaml"
+
+# Source Material
+SOURCE_MATERIAL:
+  source_file: "../estate_seminar.md"
+  source_type: "knowledge_base"
+  total_lines: 549
+  extraction_protocol: "INGESTION_PROTOCOL.md"
+  analysis_document: "evidence/source_analysis.md"
+
+# Extraction Tasks
+EXTRACTION_TASKS:
+  high_priority:
+    - "Extract Canonical Seminar Constraints (format, compliance rules, audience type)"
+    - "Extract Brand & Entity Facts (SureWealth, Legacy Lock)"
+    - "Extract Seminar Promise & Walk-Away Wins"
+    - "Extract Educational Curriculum Modules (A-F)"
+    - "Extract Worksheet Templates (6 worksheets)"
+    - "Extract Compliance Rules & Language Bank"
+  
+  medium_priority:
+    - "Extract Emotional Engineering Framework"
+    - "Extract Output Generation Specifications"
+    - "Extract Guardrails (accuracy + ethics)"
+    - "Extract One-Pager Templates"
+    - "Extract Slide System Rules"
+  
+  lower_priority:
+    - "Extract specific examples and edge cases"
+    - "Create cross-reference mapping"
+    - "Extract template variations"
+
+# Quality Assurance
+QUALITY_ASSURANCE:
+  legal_review_required: true
+  compliance_review_required: true
+  completeness_tracking: true
+  cross_reference_validation: true
+  source_attribution: true
+  no_sales_validation: true
+
+# Active Plan Template
+# This will be used to generate 6_ai_runtime_context/ACTIVE_PLAN.yaml
+ACTIVE_PLAN_TEMPLATE:
+  plan_id: "estate-seminar-documentation-phase-1"
+  project_type: "documentation"
+  goal: "Extract and structure comprehensive estate seminar knowledge base from source material for AI-driven content generation"
+  status: "active"
+  auto_commit: true
+  commit_frequency: checkpoint_based
+  commit_checkpoints:
+    after_phases: true
+    after_task_count: 3
+    after_file_threshold: 5
+    force_commit_on_checkpoint: true
+  
+  phases:
+    - id: "phase-1"
+      name: "Project Setup & Core Knowledge Extraction"
+      status: "in_progress"
+      tasks:
+        - id: 1
+          name: "Create project structure and MVP specification"
+          status: "in_progress"
+          outputs: ["MVP_SPECIFICATION.yaml", "README.md"]
+        - id: 2
+          name: "Extract Canonical Seminar Constraints"
+          status: "pending"
+          outputs: ["docs/core_knowledge/seminar_constraints.md", "data/seminar_constraints.yaml"]
+        - id: 3
+          name: "Extract Brand & Entity Facts"
+          status: "pending"
+          outputs: ["docs/core_knowledge/brand_facts.md", "data/brand_facts.yaml"]
+        - id: 4
+          name: "Extract Seminar Promise & Walk-Away Wins"
+          status: "pending"
+          outputs: ["docs/core_knowledge/seminar_promise.md"]
+        - id: 5
+          name: "Create source analysis document"
+          status: "pending"
+          outputs: ["evidence/source_analysis.md"]
+    
+    - id: "phase-2"
+      name: "Educational Curriculum & Content Modules"
+      status: "pending"
+      tasks:
+        - id: 6
+          name: "Extract Educational Curriculum Modules (A-F)"
+          status: "pending"
+          outputs: ["docs/content_modules/module_a_legacy_definition.md", "docs/content_modules/module_b_estate_basics.md", "docs/content_modules/module_c_pitfalls.md", "docs/content_modules/module_d_diy_system.md", "docs/content_modules/module_e_family_values.md", "docs/content_modules/module_f_objections.md"]
+        - id: 7
+          name: "Extract Emotional Engineering Framework"
+          status: "pending"
+          outputs: ["docs/core_knowledge/emotional_engineering.md", "data/emotional_arc.yaml"]
+        - id: 8
+          name: "Extract SureWealth Integration Guidelines"
+          status: "pending"
+          outputs: ["docs/core_knowledge/surewealth_integration.md"]
+    
+    - id: "phase-3"
+      name: "Worksheets & Templates"
+      status: "pending"
+      tasks:
+        - id: 9
+          name: "Extract Worksheet Templates (6 worksheets)"
+          status: "pending"
+          outputs: ["docs/worksheets/worksheet_1_legacy_snapshot.md", "docs/worksheets/worksheet_2_decision_maker_map.md", "docs/worksheets/worksheet_3_asset_beneficiary_alignment.md", "docs/worksheets/worksheet_4_digital_legacy_inventory.md", "docs/worksheets/worksheet_5_annual_review_triggers.md", "docs/worksheets/worksheet_6_trust_funding_awareness.md", "data/worksheet_templates.yaml"]
+        - id: 10
+          name: "Create worksheet generation rules"
+          status: "pending"
+          outputs: ["docs/worksheets/generation_rules.md"]
+    
+    - id: "phase-4"
+      name: "Compliance & Output Generation"
+      status: "pending"
+      tasks:
+        - id: 11
+          name: "Extract Compliance Rules & Guardrails"
+          status: "pending"
+          outputs: ["docs/compliance/compliance_rules.md", "docs/compliance/guardrails.md"]
+        - id: 12
+          name: "Extract Language Bank & Copy Blocks"
+          status: "pending"
+          outputs: ["docs/compliance/language_bank.md", "data/language_bank.yaml"]
+        - id: 13
+          name: "Extract Output Generation Specifications"
+          status: "pending"
+          outputs: ["docs/compliance/output_specifications.md"]
+        - id: 14
+          name: "Extract One-Pager Templates"
+          status: "pending"
+          outputs: ["callables/templates/one_pager_a_estate_planning.md", "callables/templates/one_pager_b_family_conversation.md", "callables/templates/one_pager_c_support_spectrum.md"]
+        - id: 15
+          name: "Extract Slide System Rules"
+          status: "pending"
+          outputs: ["docs/compliance/slide_system.md"]
+    
+    - id: "phase-5"
+      name: "Master Index & Integration"
+      status: "pending"
+      tasks:
+        - id: 16
+          name: "Create master index and navigation"
+          status: "pending"
+          outputs: ["docs/MASTER_INDEX.md"]
+        - id: 17
+          name: "Create cross-reference mapping"
+          status: "pending"
+          outputs: ["evidence/cross_references.md"]
+
+# Feature Flags Reference
+FEATURE_FLAGS_REFERENCE:
+  cursor_agent_mode: "sandboxed"
+  agentic_write_ops: true
+  modify_meta_framework: false
+  documentation_project: true
+
+# Summary for Initializer
+SUMMARY_FOR_INITIALIZER:
+  intent:
+    - "Extract comprehensive estate seminar knowledge base from source material"
+    - "Structure content into organized documentation hierarchy for AI-driven content generation"
+    - "Create compliance-safe templates and generation rules for all seminar assets"
+    - "Establish structured data files for constraints, brand facts, worksheets, and language patterns"
+    - "Maintain source attribution and traceability"
+    - "Enable systematic generation of slides, worksheets, one-pagers, scripts, and follow-up materials"
+
+# Deliverables
+DELIVERABLES:
+  documentation:
+    - "Core knowledge base (constraints, brand facts, promises, emotional engineering)"
+    - "Educational curriculum modules (A-F with atomic outcomes)"
+    - "Worksheet system (6 worksheets with templates and generation rules)"
+    - "Compliance framework (rules, guardrails, language bank)"
+    - "Output generation specifications (for slides, worksheets, one-pagers, scripts)"
+    - "One-pager templates (A, B, C)"
+    - "Slide system rules and structure"
+  
+  structured_data:
+    - "Seminar constraints (YAML)"
+    - "Brand facts (YAML)"
+    - "Worksheet templates (YAML)"
+    - "Language bank (YAML)"
+    - "Emotional arc (YAML)"
+  
+  templates:
+    - "Worksheet templates (6 worksheets)"
+    - "One-pager templates (3 one-pagers)"
+    - "Slide generation templates"
+    - "Facilitator script templates"
+  
+  plans:
+    - "Documentation extraction phases"
+    - "Content generation roadmap"
+    - "Compliance validation checklist"
+
+# Success Metrics
+SUCCESS_METRICS:
+  extraction_completeness: "All high-priority components extracted and structured"
+  documentation_quality: "All documents properly formatted and cross-referenced"
+  compliance_readiness: "All content passes 'no sales' compliance validation"
+  generation_capability: "AI can generate any seminar asset without additional instructions"
+  brand_consistency: "All content maintains SureWealth and Legacy Lock positioning"
+  traceability: "All content traceable to source with section references"

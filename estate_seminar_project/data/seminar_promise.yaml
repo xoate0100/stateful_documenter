@@ -1,0 +1,88 @@
+# Seminar Promise - Structured Data
+# Source: Lines 92-115 of evidence/source_material.md
+
+explicit_promise:
+  statements:
+    - "Today is education only."
+    - "You'll leave with clear next steps and worksheets."
+    - "You can do this yourself—support is optional later."
+  
+  timing: "Say this early"
+  
+  purpose:
+    - "Sets expectations immediately"
+    - "Reduces skepticism ('Here comes the pitch')"
+    - "Establishes autonomy and control"
+    - "Creates safety and trust"
+
+walk_away_wins:
+  - name: "Legacy Snapshot"
+    description: "What exists, where it is, who knows"
+    purpose: "Reduce overwhelm; establish baseline"
+    delivered_via: "Worksheet 1 — Legacy Snapshot"
+  
+  - name: "Decision-Maker Map"
+    description: "Who acts if I can't"
+    purpose: "Reduce family chaos"
+    delivered_via: "Worksheet 2 — Decision-Maker Map"
+  
+  - name: "Asset & Beneficiary Alignment Checklist"
+    description: "Inventory of assets, ownership, and beneficiary designations"
+    purpose: "Identify mismatches and needed updates"
+    delivered_via: "Worksheet 3 — Asset & Beneficiary Alignment"
+  
+  - name: "Digital Legacy Inventory"
+    description: "Catalog of digital assets, accounts, and access information"
+    purpose: "Ensure digital assets are accessible and managed"
+    delivered_via: "Worksheet 4 — Digital Legacy Inventory"
+  
+  - name: "Annual Review Trigger List"
+    description: "Life events that should trigger estate plan review"
+    purpose: "Create permission and process mindset (not perfectionism)"
+    delivered_via: "Worksheet 5 — Annual Review Triggers"
+  
+  - name: "Funding Awareness Checklist"
+    description: "Trust funding concepts and review checklist (educational, not legal advice)"
+    purpose: "Awareness that trusts must be funded to work"
+    delivered_via: "Worksheet 6 — Trust Funding Awareness"
+
+promise_delivery_requirements:
+  must_deliver:
+    - "All six worksheets must be provided"
+    - "Worksheets must be usable independently"
+    - "Clear next steps must be defined"
+    - "Support must be framed as optional"
+  
+  must_not_deliver:
+    - "Sales pitches or product packages"
+    - "Urgency or scarcity"
+    - "Required follow-up commitments"
+    - "Booking links or CTAs (except the single canonical CTA)"
+
+emotional_arc_integration:
+  safety: "Today is education only"
+  clarity: "You'll leave with clear next steps"
+  competence: "You can do this yourself"
+  relief: "Worksheets provide structure and reduce overwhelm"
+  agency: "Support is optional later"
+  peace: "Clear path forward without pressure"
+
+compliance_notes:
+  - "The promise must be stated early and reinforced throughout"
+  - "All promises must be kept—no bait-and-switch"
+  - "Support is always optional and permission-based"
+  - "The educational contract must be preserved"
+  - "The single canonical CTA is the only sales-related element allowed"
+
+usage_in_content_generation:
+  opening_slides_script:
+    - "Include all three explicit promises"
+  
+  throughout_seminar:
+    - "Reinforce that support is optional"
+  
+  closing:
+    - "Recap promises delivered (all six worksheets)"
+  
+  cta:
+    - "Use only the canonical CTA (see compliance section)"

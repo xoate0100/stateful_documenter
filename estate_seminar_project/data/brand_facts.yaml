@@ -1,0 +1,101 @@
+# Brand & Entity Facts - Structured Data
+# Source: Lines 48-90 of evidence/source_material.md
+
+surewealth_solutions:
+  positioning:
+    tagline: "guaranteed strategies"
+    emphasis: "clients being 'in charge' rather than relying on Wall Street volatility"
+  
+  core_messaging:
+    - "mathematically verifiable guidance"
+    - "NO sales hype… Just the facts."
+  
+  typical_clients:
+    - "Nearing retirement or retired"
+    - "Often have $250,000+ saved for retirement"
+    - "Tired of market volatility"
+  
+  team:
+    founder: "Andy Daniels"
+    emphasis: "growing wealth without unnecessary risk/volatility"
+    additional: "other strategists/partners"
+  
+  content_themes:
+    - "private pensions"
+    - "strategies designed to create predictable retirement income independent of market volatility"
+    - "Referenced in podcast/blog content"
+  
+  seminar_positioning:
+    critical: "SureWealth is presented as a planning and coordination resource people can choose after they try the DIY steps—not the reason they came."
+
+legacy_lock:
+  positioning: "step-by-step 'living system' using videos + worksheets + guided steps"
+  
+  toolkit_components:
+    - "3WHY Worksheet & Videos"
+    - "Trustee Appointment Worksheet"
+    - "Funding Strategy Outline (to help properly fund a trust)"
+    - "Family Communication Package"
+  
+  platform:
+    name: "LegacyLock (MyLegacyLock / LegacyLock software)"
+    description: "DIY estate planning technology platform generating attorney-drafted estate planning documents in all 50 states"
+    documents_included:
+      - "Revocable Living Trust"
+      - "Last Will & Testament"
+      - "Powers of Attorney"
+      - "and much more"
+  
+  funding_emphasis:
+    critical_concept: "If a trust isn't properly funded, it doesn't work"
+    consequence: "unfunded assets may go through probate"
+    toolkit_purpose: "ensure correct funding steps"
+  
+  operational_note: "Some MyLegacyLock pages may fail to open due to security token restrictions in automated browsing; rely on the cited accessible sources above for stable claims."
+
+surewealth_integration:
+  support_spectrum:
+    path_1: "Self-Directed (worksheets + self-review)"
+    path_2: "Guided Validation (second set of eyes)"
+    path_3: "Comprehensive Coordination (complex assets, tax, retirement income coordination)"
+    
+    statement: "Our work at SureWealth tends to show up in Paths 2 and 3 when people ask for help."
+    
+    restrictions:
+      - "Do not mention packages/pricing"
+      - "No urgency"
+    
+    compliance_reason: "It explains options rather than soliciting."
+  
+  tone_requirements:
+    because: "SureWealth claims 'NO sales hype… Just the facts'"
+    keep_language:
+      - "Calm, factual, mathematically/structurally oriented"
+      - "Autonomy-respecting"
+      - "Zero 'high-pressure advisor' cues"
+  
+  safe_statements:
+    - "Retirement planning strategies designed to reduce volatility exposure and improve predictability"
+    - "Planning tools/forecasting to clarify retirement income outlook"
+    - "Clients often near/at retirement; commonly $250k+ saved"
+    
+    warning: "Avoid making promises beyond cited language."
+
+usage_guidelines:
+  mentioning_surewealth:
+    - "Present as optional support resource"
+    - "Use permission-based language ('if you want', 'available if you ask')"
+    - "Emphasize DIY-first approach"
+    - "No urgency, no pricing, no packages"
+  
+  mentioning_legacy_lock:
+    - "Present as example of structured guidance system"
+    - "Neutral framing: 'Some people like paper binders. Others prefer structured platforms...'"
+    - "Not a pitch—just an organizational option"
+    - "Can mention toolkit components as examples of helpful tools"
+  
+  compliance_reminder:
+    - "Never overclaim capabilities"
+    - "Only state what is supported in source material"
+    - "Maintain educational, non-sales posture"
+    - "Support is always optional and permission-based"
