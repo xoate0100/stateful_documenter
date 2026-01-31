@@ -1,0 +1,145 @@
+# Age Tier Definitions
+# Source: kiwi_ingestion.txt lines 100-108
+# Status: Core Data Structure
+# Last Updated: 2025-01-14
+
+age_tiers:
+  child:
+    age_range: [0, 9]
+    description: "Maximum restrictions, whitelist-only social"
+    capabilities:
+      chat_modes:
+        - emoji_only
+        - preset_messages
+      social_graph:
+        - whitelist_only
+      game_creation:
+        - template_based
+      economy_access:
+        - none
+      api_restrictions:
+        - no_direct_messaging
+        - no_voice_chat
+        - no_economy_transactions
+        - no_advanced_creation
+    trust_signals_required:
+      - time_on_platform: 30_days
+      - parental_confirmation: true
+      - incident_free: true
+
+  tween:
+    age_range: [10, 12]
+    description: "Moderate restrictions, supervised social"
+    capabilities:
+      chat_modes:
+        - emoji_only
+        - preset_messages
+        - limited_text
+      social_graph:
+        - whitelist_only
+        - friend_of_friend
+      game_creation:
+        - template_based
+        - guided_creation
+      economy_access:
+        - parent_controlled
+      api_restrictions:
+        - no_private_voice
+        - no_direct_messaging_unless_whitelisted
+        - no_economy_transactions_unless_parent_approved
+    trust_signals_required:
+      - time_on_platform: 60_days
+      - parental_confirmation: true
+      - incident_free: true
+      - moderator_review: basic
+
+  teen:
+    age_range: [13, 15]
+    description: "Graduated permissions, monitored social"
+    capabilities:
+      chat_modes:
+        - emoji_only
+        - preset_messages
+        - limited_text
+        - full_text
+      social_graph:
+        - whitelist_only
+        - friend_of_friend
+        - community_based
+      game_creation:
+        - template_based
+        - guided_creation
+        - advanced_tools
+      economy_access:
+        - parent_controlled
+        - capped_access
+      api_restrictions:
+        - no_private_voice_unless_parent_approved
+        - no_dating_features
+        - no_adult_content
+    trust_signals_required:
+      - time_on_platform: 90_days
+      - parental_confirmation: true
+      - incident_free: true
+      - moderator_review: standard
+      - community_contributions: basic
+
+  youth:
+    age_range: [16, 17]
+    description: "Near-adult permissions, self-regulation tools"
+    capabilities:
+      chat_modes:
+        - all_modes
+      social_graph:
+        - all_types_with_tools
+      game_creation:
+        - all_tools
+      economy_access:
+        - capped_access
+        - self_regulated
+      api_restrictions:
+        - no_adult_content
+        - no_adult_social_spaces
+        - no_adult_economy_features
+    trust_signals_required:
+      - time_on_platform: 120_days
+      - parental_confirmation: optional
+      - incident_free: true
+      - moderator_review: advanced
+      - community_contributions: significant
+
+  adult:
+    age_range: [18, null]
+    description: "Full permissions, separate infrastructure"
+    capabilities:
+      chat_modes:
+        - all_modes
+      social_graph:
+        - all_types
+      game_creation:
+        - all_tools
+      economy_access:
+        - full_access
+      api_restrictions:
+        - none
+    trust_signals_required:
+      - age_verification: true
+    special_features:
+      - adult_social_zones
+      - adult_discovery
+      - adult_chat_infrastructure
+      - adult_only_voice_video
+
+# Escalation Barriers (applies to all minors)
+escalation_barriers:
+  - no_off_platform_contact_sharing
+  - no_private_voice_for_minors
+  - no_dating_affordances
+  - age_verification_barriers
+
+# Progressive Trust Model
+progressive_trust:
+  unlock_mechanism: "trust_signals_accumulate"
+  reduction_mechanism: "incidents_reduce_trust"
+  rebuilding_mechanism: "time_and_positive_behavior"
+  maximum_trust: "age_tier_maximum"

@@ -1,0 +1,111 @@
+# Virtuous Cycle Definitions
+# Source: kiwi_ingestion.txt lines 244-260, 509-521
+# Status: Core Strategic Framework
+# Last Updated: 2025-01-14
+
+virtuous_cycle:
+  name: "The 10-Step Virtuous Cycle"
+  description: "The flywheel that makes Kiwi get better over time, not worse"
+  steps:
+    - id: 1
+      name: "Safer defaults"
+      description: "Architectural safety from the start"
+      outcome: "Parent trust increases"
+    
+    - id: 2
+      name: "Parent trust increases"
+      description: "Parents see platform is safe"
+      outcome: "Better kids + better creators join"
+    
+    - id: 3
+      name: "Better kids + better creators join"
+      description: "Quality users attracted to safe platform"
+      outcome: "Less moderation load per user"
+    
+    - id: 4
+      name: "Less moderation load per user"
+      description: "Fewer incidents, less work needed"
+      outcome: "Moderators improve quality, not firefighting"
+    
+    - id: 5
+      name: "Moderators improve quality, not firefighting"
+      description: "Professional moderation can focus on quality"
+      outcome: "Discovery trust improves"
+    
+    - id: 6
+      name: "Discovery trust improves"
+      description: "Users trust discovery algorithm"
+      outcome: "Less clone spam, more originality"
+    
+    - id: 7
+      name: "Less clone spam, more originality"
+      description: "Quality content rises to top"
+      outcome: "Platform reputation strengthens"
+    
+    - id: 8
+      name: "Platform reputation strengthens"
+      description: "External recognition of safety and quality"
+      outcome: "Lower external fees + regulatory pressure"
+    
+    - id: 9
+      name: "Lower external fees + regulatory pressure"
+      description: "Partners offer discounts, regulators trust"
+      outcome: "More resources reinvested into safety & quality"
+    
+    - id: 10
+      name: "More resources reinvested into safety & quality"
+      description: "Platform improves itself"
+      outcome: "Safer defaults (cycle continues)"
+
+  expanded_loop:
+    name: "Expanded Virtuous Loop"
+    steps:
+      - "Human drives acknowledged"
+      - "Acceptable paths provided"
+      - "Incentives aligned with safety"
+      - "Bad behavior isolated"
+      - "Trust increases"
+      - "Capital stabilizes"
+      - "Creators diversify"
+      - "Moderators gain legitimacy"
+      - "Parents engage"
+      - "Platform improves itself"
+
+  meta_optimization:
+    name: "Incentives > Enforcement"
+    principle: "Make bad behavior economically irrational"
+    comparison:
+      human_drives:
+        desire:
+          bad_platforms: "Suppressed → leaks"
+          kiwi: "Contained → isolated"
+        profit:
+          bad_platforms: "Extractive"
+          kiwi: "Compounding"
+        attention:
+          bad_platforms: "Weaponized"
+          kiwi: "Managed"
+        power:
+          bad_platforms: "Centralized"
+          kiwi: "Balanced"
+        creativity:
+          bad_platforms: "Narrow"
+          kiwi: "Multi-path"
+        rule_breaking:
+          bad_platforms: "Rewarded"
+          kiwi: "Made irrational"
+
+  circumvention_prevention:
+    principle: "Circumvention becomes irrational when:"
+    conditions:
+      - "Official paths are better"
+      - "Rewards are higher inside"
+      - "Risks are higher outside"
+      - "Governance is transparent"
+      - "Enforcement is predictable"
+    outcome: "Bad behavior is economically stupid, not just forbidden"
+
+  anti_enshittification:
+    description: "Anti-enshittification by design"
+    mechanism: "Trust compounds instead of extracting value"
+    result: "Platform gets better over time, not worse"

@@ -1,0 +1,286 @@
+# MVP Specification - Kiwi Platform Documentation Project
+# This file defines the project structure for a comprehensive documentation project
+# for Kiwi, a Roblox alternative platform with constitutional governance
+
+# Required Core Fields
+Project: "kiwi"
+Project_Type: "documentation"  # documentation | programming
+Maturity: "L2.5"  # L2 | L2.5 | L3
+Architecture: "documentation-hierarchical"  # Descriptive architecture type
+Repo_Type: "documentation"  # frontend | backend | fullstack | microservice | monorepo | documentation
+Execution_Mode: "Controlled Agentic Execution"  # Human Directed | Controlled Agentic Execution | Fully Agentic
+
+# Goals and Principles
+GOALS_AND_PRINCIPLES:
+  goals:
+    - "Document comprehensive technical, philosophical, social and practical architecture for Kiwi platform"
+    - "Create governance documentation for company operations, software development, and communication"
+    - "Establish constitutional framework for platform governance (Governance/Control/Execution planes)"
+    - "Document safety architecture without surveillance (progressive trust, capability-based permissions)"
+    - "Define moderation system as paid, professional infrastructure"
+    - "Create dual ledger measurement system (economic + cultural metrics)"
+    - "Document social harm counter-architecture and protection mechanisms"
+    - "Establish research charter and cultural export protocols"
+  principles:
+    - "Safety is structural, not procedural - enforced by architecture, permissions, and incentives"
+    - "No single actor may control incentives - power separation, not goodwill"
+    - "Trust compounds or collapses - every decision must increase long-term trust density"
+    - "Protect without exposing - safety must not require disclosure"
+    - "Incentives > Enforcement - make bad behavior economically irrational"
+    - "Documentation serves all aspects: governance, development, roadmaps, communication, culture, marketing/sales"
+
+# Documentation Structure (replaces MONOREPO_LAYOUT for documentation projects)
+DOCUMENTATION_STRUCTURE:
+  docs_directory: "docs/"
+  data_directory: "data/"
+  plans_directory: "plans/"
+  evidence_directory: "evidence/"
+  callables_directory: "callables/"
+  
+  # Subdirectories for organized documentation
+  docs_subdirectories:
+    - "strategic/"      # First principles, philosophy, core axioms
+    - "governance/"     # Governance plane, chambers, constitutional structure
+    - "technical/"      # Control plane, execution plane, technical architecture
+    - "operational/"    # Moderation system, safety protocols, operational procedures
+    - "social/"         # Social harm counter-architecture, cultural systems
+  
+  callables_subdirectories:
+    - "templates/"      # Reusable document templates
+
+# Content Organization
+CONTENT_ORGANIZATION:
+  primary_systems:
+    - name: "First Principles (Axioms)"
+      description: "Three non-negotiable axioms that prevent incentive drift"
+      location: "docs/strategic/first_principles.md"
+    - name: "Three-Plane Architecture"
+      description: "Governance Plane, Control Plane, Execution Plane separation"
+      location: "docs/governance/three_plane_architecture.md"
+    - name: "Safety Architecture"
+      description: "Progressive trust, capability-based permissions, no surveillance"
+      location: "docs/technical/safety_architecture.md"
+    - name: "Moderation System"
+      description: "Paid, professional moderation as first-class economy"
+      location: "docs/operational/moderation_system.md"
+    - name: "Social Harm Counter-Architecture"
+      description: "Protection mechanisms without surveillance or exposure"
+      location: "docs/social/harm_counter_architecture.md"
+    - name: "Dual Ledger System"
+      description: "Economic + Cultural metrics for platform health"
+      location: "docs/strategic/dual_ledger_system.md"
+    - name: "Research Charter"
+      description: "Sociological export and research protocols"
+      location: "docs/strategic/research_charter.md"
+  
+  structured_data_files:
+    - "data/governance_chambers.yaml"
+    - "data/safety_permissions.yaml"
+    - "data/moderation_structure.yaml"
+    - "data/age_tiers.yaml"
+    - "data/metrics_definitions.yaml"
+    - "data/virtuous_cycle.yaml"
+
+# Source Material
+SOURCE_MATERIAL:
+  source_file: "../kiwi_ingestion.txt"
+  source_type: "architectural_framework"
+  total_lines: 1048
+  extraction_protocol: "INGESTION_PROTOCOL.md"
+  analysis_document: "evidence/source_analysis.md"
+
+# Extraction Tasks
+EXTRACTION_TASKS:
+  high_priority:
+    - "Extract First Principles (3 Axioms)"
+    - "Extract Three-Plane Architecture (Governance/Control/Execution)"
+    - "Extract Safety Architecture (Progressive Trust System)"
+    - "Extract Moderation System (Paid Professional Infrastructure)"
+    - "Extract Social Harm Counter-Architecture"
+    - "Extract Dual Ledger Measurement System"
+  
+  medium_priority:
+    - "Extract Governance Chambers (6 Chambers of Power)"
+    - "Extract Age-Tiered Permission System"
+    - "Extract Creator Economy (Multiple Value Paths)"
+    - "Extract Investor Sandboxing Structure"
+    - "Extract Fee Sharing & Partner Alignment"
+    - "Extract Research Charter"
+  
+  lower_priority:
+    - "Extract specific implementation details"
+    - "Extract cultural counterweights"
+    - "Extract measurement definitions"
+    - "Extract template structures"
+
+# Quality Assurance
+QUALITY_ASSURANCE:
+  legal_review_required: false
+  technical_review_required: true
+  completeness_tracking: true
+  cross_reference_validation: true
+  source_attribution: true
+  governance_review_required: true
+
+# Active Plan Template
+# This will be used to generate 6_ai_runtime_context/ACTIVE_PLAN.yaml
+ACTIVE_PLAN_TEMPLATE:
+  plan_id: "kiwi-documentation-phase-1"
+  project_type: "documentation"
+  goal: "Extract and structure comprehensive Kiwi platform architecture from source material"
+  status: "active"
+  auto_commit: true
+  commit_frequency: checkpoint_based
+  commit_checkpoints:
+    after_phases: true
+    after_task_count: 3
+    after_file_threshold: 5
+    force_commit_on_checkpoint: true
+  
+  phases:
+    - id: "phase-1"
+      name: "Project Setup & Core Principles"
+      status: "in_progress"
+      tasks:
+        - id: 1
+          name: "Create project structure and MVP specification"
+          status: "in_progress"
+          outputs: ["MVP_SPECIFICATION.yaml", "README.md"]
+        - id: 2
+          name: "Extract First Principles (3 Axioms)"
+          status: "pending"
+          outputs: ["docs/strategic/first_principles.md"]
+        - id: 3
+          name: "Create source analysis document"
+          status: "pending"
+          outputs: ["evidence/source_analysis.md"]
+    
+    - id: "phase-2"
+      name: "Core Architecture Documentation"
+      status: "pending"
+      tasks:
+        - id: 4
+          name: "Document Three-Plane Architecture"
+          status: "pending"
+          outputs: ["docs/governance/three_plane_architecture.md"]
+        - id: 5
+          name: "Document Governance Plane (Constitution)"
+          status: "pending"
+          outputs: ["docs/governance/governance_plane.md", "data/governance_chambers.yaml"]
+        - id: 6
+          name: "Document Control Plane (Safety & Permissions)"
+          status: "pending"
+          outputs: ["docs/technical/control_plane.md", "data/safety_permissions.yaml"]
+        - id: 7
+          name: "Document Execution Plane (Creator Tools)"
+          status: "pending"
+          outputs: ["docs/technical/execution_plane.md"]
+    
+    - id: "phase-3"
+      name: "Safety & Moderation Systems"
+      status: "pending"
+      tasks:
+        - id: 8
+          name: "Document Safety Architecture (Progressive Trust)"
+          status: "pending"
+          outputs: ["docs/technical/safety_architecture.md", "data/age_tiers.yaml"]
+        - id: 9
+          name: "Document Moderation System (Paid Professional)"
+          status: "pending"
+          outputs: ["docs/operational/moderation_system.md", "data/moderation_structure.yaml"]
+        - id: 10
+          name: "Document Social Harm Counter-Architecture"
+          status: "pending"
+          outputs: ["docs/social/harm_counter_architecture.md"]
+    
+    - id: "phase-4"
+      name: "Measurement & Research Systems"
+      status: "pending"
+      tasks:
+        - id: 11
+          name: "Document Dual Ledger System (Economic + Cultural)"
+          status: "pending"
+          outputs: ["docs/strategic/dual_ledger_system.md", "data/metrics_definitions.yaml"]
+        - id: 12
+          name: "Document Research Charter"
+          status: "pending"
+          outputs: ["docs/strategic/research_charter.md"]
+        - id: 13
+          name: "Document Virtuous Cycle"
+          status: "pending"
+          outputs: ["docs/strategic/virtuous_cycle.md", "data/virtuous_cycle.yaml"]
+    
+    - id: "phase-5"
+      name: "Supporting Systems & Integration"
+      status: "pending"
+      tasks:
+        - id: 14
+          name: "Document Creator Economy (Multiple Value Paths)"
+          status: "pending"
+          outputs: ["docs/operational/creator_economy.md"]
+        - id: 15
+          name: "Document Investor Sandboxing"
+          status: "pending"
+          outputs: ["docs/governance/investor_sandboxing.md"]
+        - id: 16
+          name: "Document Fee Sharing & Partner Alignment"
+          status: "pending"
+          outputs: ["docs/operational/fee_sharing.md"]
+        - id: 17
+          name: "Create master index and navigation"
+          status: "pending"
+          outputs: ["docs/MASTER_INDEX.md"]
+
+# Feature Flags Reference
+FEATURE_FLAGS_REFERENCE:
+  cursor_agent_mode: "sandboxed"
+  agentic_write_ops: true
+  modify_meta_framework: false
+  documentation_project: true
+
+# Summary for Initializer
+SUMMARY_FOR_INITIALIZER:
+  intent:
+    - "Extract comprehensive Kiwi platform architecture from source material"
+    - "Structure content into organized documentation hierarchy"
+    - "Create governance, technical, operational, and social documentation"
+    - "Establish structured data files for systems and metrics"
+    - "Maintain source attribution and traceability"
+    - "Enable systematic documentation for all company aspects"
+
+# Deliverables
+DELIVERABLES:
+  documentation:
+    - "Strategic overview documents (First Principles, Virtuous Cycle)"
+    - "Governance framework (Three-Plane Architecture, Chambers)"
+    - "Technical architecture (Control Plane, Execution Plane, Safety)"
+    - "Operational systems (Moderation, Creator Economy, Fee Sharing)"
+    - "Social systems (Harm Counter-Architecture, Cultural Metrics)"
+    - "Research and measurement systems (Dual Ledger, Research Charter)"
+  
+  structured_data:
+    - "Governance chambers (YAML)"
+    - "Safety permissions (YAML)"
+    - "Age tiers (YAML)"
+    - "Moderation structure (YAML)"
+    - "Metrics definitions (YAML)"
+    - "Virtuous cycle (YAML)"
+  
+  templates:
+    - "Governance document templates"
+    - "Technical specification templates"
+    - "Operational procedure templates"
+  
+  plans:
+    - "Documentation extraction phases"
+    - "Implementation roadmap"
+    - "Governance activation plan"
+
+# Success Metrics
+SUCCESS_METRICS:
+  extraction_completeness: "All high-priority components extracted and structured"
+  documentation_quality: "All documents properly formatted and cross-referenced"
+  governance_clarity: "Constitutional framework clearly documented for all stakeholders"
+  technical_specification: "Technical architecture detailed enough for implementation"
+  operational_readiness: "Operational procedures documented for day-to-day operations"
+  traceability: "All content traceable to source with line references"
